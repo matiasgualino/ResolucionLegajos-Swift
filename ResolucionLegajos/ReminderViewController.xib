@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReminderViewController" customModule="ResolucionLegajos" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6a-LW-RH1">
+                    <rect key="frame" x="15" y="80" width="570" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="7Io-ed-StT"/>
+                    </constraints>
+                    <string key="text">Ups!
+Encontramos un legajo sin resolver.</string>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nro: 9999999/1 - Martinez, Alberto o Alberto Martinez" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4K-qf-DHm">
+                    <rect key="frame" x="30" y="270" width="540" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="jCZ-Lz-Adv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0V2-Pg-jA4">
+                    <rect key="frame" x="8" y="540" width="584" height="30"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="OLVIDAR">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvZ-VT-pfZ">
+                    <rect key="frame" x="8" y="492" width="584" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="1DF-5h-Tim"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="RESOLVER">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.82745098039999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="N4K-qf-DHm" firstAttribute="top" secondItem="R6a-LW-RH1" secondAttribute="bottom" constant="50" id="3kO-at-XaJ"/>
+                <constraint firstAttribute="bottom" secondItem="0V2-Pg-jA4" secondAttribute="bottom" constant="30" id="4nF-75-yak"/>
+                <constraint firstAttribute="trailing" secondItem="R6a-LW-RH1" secondAttribute="trailing" constant="15" id="E0O-XV-lgI"/>
+                <constraint firstItem="R6a-LW-RH1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="LFU-0s-c3A"/>
+                <constraint firstItem="0V2-Pg-jA4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="MMH-1Y-kEZ"/>
+                <constraint firstItem="R6a-LW-RH1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="N5s-Oi-EHZ"/>
+                <constraint firstAttribute="trailing" secondItem="0V2-Pg-jA4" secondAttribute="trailing" constant="8" id="Odx-wf-SvQ"/>
+                <constraint firstAttribute="trailing" secondItem="N4K-qf-DHm" secondAttribute="trailing" constant="30" id="Z5G-E8-irs"/>
+                <constraint firstItem="uvZ-VT-pfZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="d4I-BN-gXJ"/>
+                <constraint firstItem="R6a-LW-RH1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="smQ-oW-axq"/>
+                <constraint firstItem="N4K-qf-DHm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="tjK-qK-kNC"/>
+                <constraint firstItem="0V2-Pg-jA4" firstAttribute="top" secondItem="uvZ-VT-pfZ" secondAttribute="bottom" constant="8" id="uAb-ZO-mzw"/>
+                <constraint firstAttribute="trailing" secondItem="uvZ-VT-pfZ" secondAttribute="trailing" constant="8" id="vEe-W9-2S8"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

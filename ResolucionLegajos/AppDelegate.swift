@@ -13,10 +13,23 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
-
+    var nav : UINavigationController?
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
+
+		UINavigationBar.appearance().tintColor = UIColor.blackColor()
+		UINavigationBar.appearance().barTintColor = Constants.YELLOW_COLOR
+		UIBarButtonItem.appearance().tintColor = UIColor.blackColor()
+		
+		let controller = Constants.getAccessToken() != nil ? MainViewController() : LoginViewController()
+		
+		self.nav = UINavigationController(rootViewController: controller)
+		
+		self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+		self.window?.rootViewController = nav
+		self.window?.makeKeyAndVisible()
+		
 		return true
 	}
 

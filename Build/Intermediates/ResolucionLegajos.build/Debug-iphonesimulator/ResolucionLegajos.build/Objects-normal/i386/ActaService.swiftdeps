@@ -1,0 +1,615 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ActaService"
+provides-nominal:
+- "C17ResolucionLegajos11ActaService"
+provides-member:
+- ["C17ResolucionLegajos11ActaService", ""]
+provides-dynamic-lookup:
+- "finalizarResolucion"
+- "getLegajo"
+- "GET_ALL_LEGAJOS_METHOD"
+- "GET_LEGAJO_METHOD"
+- "SUSPENDER_RESOLUCION_URI"
+- "suspenderResolucion"
+- "SUSPENDER_RESOLUCION_METHOD"
+- "FINALIZAR_RESOLUCION_URI"
+- "GET_LEGAJO_URI"
+- "FINALIZAR_RESOLUCION_METHOD"
+- "GET_ALL_LEGAJOS_URI"
+- "getAllLegajos"
+depends-top-level:
+- !private "Alamofire"
+- "StringLiteralType"
+- "NSObject"
+- !private "NSDictionary"
+- "Legajo"
+- !private "NSUTF8StringEncoding"
+- !private "+"
+- "Void"
+- "ActaService"
+- !private "NSMutableURLRequest"
+- "String"
+- !private "Constants"
+- !private "NSURL"
+- "PostLegajoRequest"
+- !private "!="
+- !private "NSArray"
+- !private "NSString"
+- "NSError"
+depends-member:
+- !private ["C17ResolucionLegajos11ActaService", "ActaService"]
+- !private ["C17ResolucionLegajos11ActaService", "Alamofire"]
+- !private ["C17ResolucionLegajos11ActaService", "Constants"]
+- ["C17ResolucionLegajos11ActaService", "FINALIZAR_RESOLUCION_METHOD"]
+- ["C17ResolucionLegajos11ActaService", "FINALIZAR_RESOLUCION_URI"]
+- ["C17ResolucionLegajos11ActaService", "GET_ALL_LEGAJOS_METHOD"]
+- ["C17ResolucionLegajos11ActaService", "GET_ALL_LEGAJOS_URI"]
+- ["C17ResolucionLegajos11ActaService", "GET_LEGAJO_METHOD"]
+- ["C17ResolucionLegajos11ActaService", "GET_LEGAJO_URI"]
+- ["C17ResolucionLegajos11ActaService", "Legajo"]
+- !private ["C17ResolucionLegajos11ActaService", "NSArray"]
+- !private ["C17ResolucionLegajos11ActaService", "NSDictionary"]
+- ["C17ResolucionLegajos11ActaService", "NSError"]
+- !private ["C17ResolucionLegajos11ActaService", "NSMutableURLRequest"]
+- !private ["C17ResolucionLegajos11ActaService", "NSString"]
+- !private ["C17ResolucionLegajos11ActaService", "NSURL"]
+- !private ["C17ResolucionLegajos11ActaService", "NSUTF8StringEncoding"]
+- ["C17ResolucionLegajos11ActaService", "PostLegajoRequest"]
+- ["C17ResolucionLegajos11ActaService", "SUSPENDER_RESOLUCION_METHOD"]
+- ["C17ResolucionLegajos11ActaService", "SUSPENDER_RESOLUCION_URI"]
+- ["C17ResolucionLegajos11ActaService", "String"]
+- ["C17ResolucionLegajos11ActaService", "Void"]
+- ["C17ResolucionLegajos11ActaService", "deinit"]
+- ["C17ResolucionLegajos11ActaService", "finalizarResolucion"]
+- ["C17ResolucionLegajos11ActaService", "getAllLegajos"]
+- ["C17ResolucionLegajos11ActaService", "getLegajo"]
+- ["C17ResolucionLegajos11ActaService", "init"]
+- ["C17ResolucionLegajos11ActaService", "suspenderResolucion"]
+- !private ["PSs9AnyObject", "ActaService"]
+- !private ["PSs9AnyObject", "Alamofire"]
+- !private ["PSs9AnyObject", "BASE_URL"]
+- !private ["PSs9AnyObject", "Constants"]
+- !private ["PSs9AnyObject", "Element"]
+- ["PSs9AnyObject", "FINALIZAR_RESOLUCION_METHOD"]
+- ["PSs9AnyObject", "FINALIZAR_RESOLUCION_URI"]
+- ["PSs9AnyObject", "GET_ALL_LEGAJOS_METHOD"]
+- ["PSs9AnyObject", "GET_ALL_LEGAJOS_URI"]
+- ["PSs9AnyObject", "GET_LEGAJO_METHOD"]
+- ["PSs9AnyObject", "GET_LEGAJO_URI"]
+- !private ["PSs9AnyObject", "Generator"]
+- !private ["PSs9AnyObject", "HTTPBody"]
+- !private ["PSs9AnyObject", "HTTPMethod"]
+- !private ["PSs9AnyObject", "Legajo"]
+- !private ["PSs9AnyObject", "NSMutableURLRequest"]
+- !private ["PSs9AnyObject", "NSURL"]
+- !private ["PSs9AnyObject", "NSUTF8StringEncoding"]
+- ["PSs9AnyObject", "SUSPENDER_RESOLUCION_METHOD"]
+- ["PSs9AnyObject", "SUSPENDER_RESOLUCION_URI"]
+- !private ["PSs9AnyObject", "dataUsingEncoding"]
+- !private ["PSs9AnyObject", "deinit"]
+- ["PSs9AnyObject", "finalizarResolucion"]
+- !private ["PSs9AnyObject", "fromJSON"]
+- ["PSs9AnyObject", "getAllLegajos"]
+- ["PSs9AnyObject", "getLegajo"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "objectForKey"]
+- !private ["PSs9AnyObject", "responseJSON"]
+- !private ["PSs9AnyObject", "setValue"]
+- ["PSs9AnyObject", "suspenderResolucion"]
+- !private ["PSs9AnyObject", "toJSONString"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- !private ["Sa", "init"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "_Element"]
+- !private ["PSs23ArrayLiteralConvertible", "append"]
+- !private ["PSs23ArrayLiteralConvertible", "init"]
+- !private ["VSs10ArraySlice", "Generator"]
+- !private ["VSs10ArraySlice", "Index"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "ActaService"]
+- !private ["PSs11CVarArgType", "Alamofire"]
+- !private ["PSs11CVarArgType", "BASE_URL"]
+- !private ["PSs11CVarArgType", "Constants"]
+- !private ["PSs11CVarArgType", "Distance"]
+- ["PSs11CVarArgType", "FINALIZAR_RESOLUCION_METHOD"]
+- ["PSs11CVarArgType", "FINALIZAR_RESOLUCION_URI"]
+- ["PSs11CVarArgType", "GET_ALL_LEGAJOS_METHOD"]
+- ["PSs11CVarArgType", "GET_ALL_LEGAJOS_URI"]
+- ["PSs11CVarArgType", "GET_LEGAJO_METHOD"]
+- ["PSs11CVarArgType", "GET_LEGAJO_URI"]
+- !private ["PSs11CVarArgType", "Generator"]
+- !private ["PSs11CVarArgType", "HTTPBody"]
+- !private ["PSs11CVarArgType", "HTTPMethod"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "Legajo"]
+- !private ["PSs11CVarArgType", "NSMutableURLRequest"]
+- !private ["PSs11CVarArgType", "NSURL"]
+- !private ["PSs11CVarArgType", "NSUTF8StringEncoding"]
+- ["PSs11CVarArgType", "SUSPENDER_RESOLUCION_METHOD"]
+- ["PSs11CVarArgType", "SUSPENDER_RESOLUCION_URI"]
+- !private ["PSs11CVarArgType", "dataUsingEncoding"]
+- ["PSs11CVarArgType", "finalizarResolucion"]
+- !private ["PSs11CVarArgType", "fromJSON"]
+- ["PSs11CVarArgType", "getAllLegajos"]
+- ["PSs11CVarArgType", "getLegajo"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "objectForKey"]
+- !private ["PSs11CVarArgType", "setValue"]
+- ["PSs11CVarArgType", "suspenderResolucion"]
+- !private ["PSs11CVarArgType", "toJSONString"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "append"]
+- !private ["PSs14CollectionType", "init"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["C17ResolucionLegajos9Constants", "BASE_URL"]
+- !private ["PSs28CustomDebugStringConvertible", "Failure"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "Success"]
+- !private ["PSs28CustomDebugStringConvertible", "_Element"]
+- !private ["PSs28CustomDebugStringConvertible", "append"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "responseJSON"]
+- !private ["PSs28CustomDebugStringConvertible", "result"]
+- !private ["PSs23CustomStringConvertible", "ActaService"]
+- !private ["PSs23CustomStringConvertible", "Alamofire"]
+- !private ["PSs23CustomStringConvertible", "BASE_URL"]
+- !private ["PSs23CustomStringConvertible", "Constants"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- ["PSs23CustomStringConvertible", "FINALIZAR_RESOLUCION_METHOD"]
+- ["PSs23CustomStringConvertible", "FINALIZAR_RESOLUCION_URI"]
+- !private ["PSs23CustomStringConvertible", "Failure"]
+- ["PSs23CustomStringConvertible", "GET_ALL_LEGAJOS_METHOD"]
+- ["PSs23CustomStringConvertible", "GET_ALL_LEGAJOS_URI"]
+- ["PSs23CustomStringConvertible", "GET_LEGAJO_METHOD"]
+- ["PSs23CustomStringConvertible", "GET_LEGAJO_URI"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "HTTPBody"]
+- !private ["PSs23CustomStringConvertible", "HTTPMethod"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "Legajo"]
+- !private ["PSs23CustomStringConvertible", "NSMutableURLRequest"]
+- !private ["PSs23CustomStringConvertible", "NSURL"]
+- !private ["PSs23CustomStringConvertible", "NSUTF8StringEncoding"]
+- ["PSs23CustomStringConvertible", "SUSPENDER_RESOLUCION_METHOD"]
+- ["PSs23CustomStringConvertible", "SUSPENDER_RESOLUCION_URI"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "Success"]
+- !private ["PSs23CustomStringConvertible", "_Element"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "append"]
+- !private ["PSs23CustomStringConvertible", "dataUsingEncoding"]
+- ["PSs23CustomStringConvertible", "finalizarResolucion"]
+- !private ["PSs23CustomStringConvertible", "fromJSON"]
+- ["PSs23CustomStringConvertible", "getAllLegajos"]
+- ["PSs23CustomStringConvertible", "getLegajo"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "objectForKey"]
+- !private ["PSs23CustomStringConvertible", "responseJSON"]
+- !private ["PSs23CustomStringConvertible", "result"]
+- !private ["PSs23CustomStringConvertible", "setValue"]
+- ["PSs23CustomStringConvertible", "suspenderResolucion"]
+- !private ["PSs23CustomStringConvertible", "toJSONString"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs28DictionaryLiteralConvertible", "objectForKey"]
+- !private ["PSs9Equatable", "ActaService"]
+- !private ["PSs9Equatable", "Alamofire"]
+- !private ["PSs9Equatable", "BASE_URL"]
+- !private ["PSs9Equatable", "Constants"]
+- !private ["PSs9Equatable", "Distance"]
+- ["PSs9Equatable", "FINALIZAR_RESOLUCION_METHOD"]
+- ["PSs9Equatable", "FINALIZAR_RESOLUCION_URI"]
+- ["PSs9Equatable", "GET_ALL_LEGAJOS_METHOD"]
+- ["PSs9Equatable", "GET_ALL_LEGAJOS_URI"]
+- ["PSs9Equatable", "GET_LEGAJO_METHOD"]
+- ["PSs9Equatable", "GET_LEGAJO_URI"]
+- !private ["PSs9Equatable", "Generator"]
+- !private ["PSs9Equatable", "HTTPBody"]
+- !private ["PSs9Equatable", "HTTPMethod"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "Legajo"]
+- !private ["PSs9Equatable", "NSMutableURLRequest"]
+- !private ["PSs9Equatable", "NSURL"]
+- !private ["PSs9Equatable", "NSUTF8StringEncoding"]
+- ["PSs9Equatable", "SUSPENDER_RESOLUCION_METHOD"]
+- ["PSs9Equatable", "SUSPENDER_RESOLUCION_URI"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "dataUsingEncoding"]
+- ["PSs9Equatable", "finalizarResolucion"]
+- !private ["PSs9Equatable", "fromJSON"]
+- ["PSs9Equatable", "getAllLegajos"]
+- ["PSs9Equatable", "getLegajo"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "objectForKey"]
+- !private ["PSs9Equatable", "setValue"]
+- ["PSs9Equatable", "suspenderResolucion"]
+- !private ["PSs9Equatable", "toJSONString"]
+- ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "ActaService"]
+- !private ["PSs8Hashable", "Alamofire"]
+- !private ["PSs8Hashable", "BASE_URL"]
+- !private ["PSs8Hashable", "Constants"]
+- !private ["PSs8Hashable", "Distance"]
+- ["PSs8Hashable", "FINALIZAR_RESOLUCION_METHOD"]
+- ["PSs8Hashable", "FINALIZAR_RESOLUCION_URI"]
+- ["PSs8Hashable", "GET_ALL_LEGAJOS_METHOD"]
+- ["PSs8Hashable", "GET_ALL_LEGAJOS_URI"]
+- ["PSs8Hashable", "GET_LEGAJO_METHOD"]
+- ["PSs8Hashable", "GET_LEGAJO_URI"]
+- !private ["PSs8Hashable", "Generator"]
+- !private ["PSs8Hashable", "HTTPBody"]
+- !private ["PSs8Hashable", "HTTPMethod"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "Legajo"]
+- !private ["PSs8Hashable", "NSMutableURLRequest"]
+- !private ["PSs8Hashable", "NSURL"]
+- !private ["PSs8Hashable", "NSUTF8StringEncoding"]
+- ["PSs8Hashable", "SUSPENDER_RESOLUCION_METHOD"]
+- ["PSs8Hashable", "SUSPENDER_RESOLUCION_URI"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "dataUsingEncoding"]
+- ["PSs8Hashable", "finalizarResolucion"]
+- !private ["PSs8Hashable", "fromJSON"]
+- ["PSs8Hashable", "getAllLegajos"]
+- ["PSs8Hashable", "getLegajo"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "objectForKey"]
+- !private ["PSs8Hashable", "setValue"]
+- ["PSs8Hashable", "suspenderResolucion"]
+- !private ["PSs8Hashable", "toJSONString"]
+- ["PSs8Hashable", ""]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "append"]
+- !private ["PSs9Indexable", "init"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["C17ResolucionLegajos6Legajo", "fromJSON"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs21MutableCollectionType", "Generator"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "_Element"]
+- !private ["PSs21MutableCollectionType", "append"]
+- !private ["PSs21MutableCollectionType", "init"]
+- !private ["PSs16MutableIndexable", "Generator"]
+- !private ["PSs16MutableIndexable", "Index"]
+- !private ["PSs16MutableIndexable", "SubSequence"]
+- !private ["PSs16MutableIndexable", "_Element"]
+- !private ["PSs16MutableIndexable", "append"]
+- !private ["PSs16MutableIndexable", "init"]
+- !private ["PSs16MutableSliceable", "Generator"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "_Element"]
+- !private ["PSs16MutableSliceable", "append"]
+- !private ["PSs16MutableSliceable", "init"]
+- !private ["CSo7NSArray", "Generator"]
+- !private ["PSo8NSCoding", "Generator"]
+- !private ["PSo8NSCoding", "HTTPBody"]
+- !private ["PSo8NSCoding", "HTTPMethod"]
+- !private ["PSo8NSCoding", "dataUsingEncoding"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "objectForKey"]
+- !private ["PSo8NSCoding", "setValue"]
+- !private ["PSo9NSCopying", "Generator"]
+- !private ["PSo9NSCopying", "HTTPBody"]
+- !private ["PSo9NSCopying", "HTTPMethod"]
+- !private ["PSo9NSCopying", "dataUsingEncoding"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "objectForKey"]
+- !private ["PSo9NSCopying", "setValue"]
+- !private ["CSo12NSDictionary", "objectForKey"]
+- !private ["PSo17NSFastEnumeration", "Generator"]
+- !private ["PSo17NSFastEnumeration", "objectForKey"]
+- !private ["C10Foundation15NSFastGenerator", "Element"]
+- !private ["PSo16NSMutableCopying", "Generator"]
+- !private ["PSo16NSMutableCopying", "HTTPBody"]
+- !private ["PSo16NSMutableCopying", "HTTPMethod"]
+- !private ["PSo16NSMutableCopying", "dataUsingEncoding"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "objectForKey"]
+- !private ["PSo16NSMutableCopying", "setValue"]
+- !private ["CSo19NSMutableURLRequest", "HTTPBody"]
+- !private ["CSo19NSMutableURLRequest", "HTTPMethod"]
+- !private ["CSo19NSMutableURLRequest", "init"]
+- !private ["CSo19NSMutableURLRequest", "setValue"]
+- !private ["CSo8NSObject", "ActaService"]
+- !private ["CSo8NSObject", "Alamofire"]
+- !private ["CSo8NSObject", "BASE_URL"]
+- !private ["CSo8NSObject", "Constants"]
+- ["CSo8NSObject", "FINALIZAR_RESOLUCION_METHOD"]
+- ["CSo8NSObject", "FINALIZAR_RESOLUCION_URI"]
+- ["CSo8NSObject", "GET_ALL_LEGAJOS_METHOD"]
+- ["CSo8NSObject", "GET_ALL_LEGAJOS_URI"]
+- ["CSo8NSObject", "GET_LEGAJO_METHOD"]
+- ["CSo8NSObject", "GET_LEGAJO_URI"]
+- !private ["CSo8NSObject", "Generator"]
+- !private ["CSo8NSObject", "HTTPBody"]
+- !private ["CSo8NSObject", "HTTPMethod"]
+- ["CSo8NSObject", "Legajo"]
+- !private ["CSo8NSObject", "NSArray"]
+- !private ["CSo8NSObject", "NSDictionary"]
+- ["CSo8NSObject", "NSError"]
+- !private ["CSo8NSObject", "NSMutableURLRequest"]
+- !private ["CSo8NSObject", "NSString"]
+- !private ["CSo8NSObject", "NSURL"]
+- !private ["CSo8NSObject", "NSUTF8StringEncoding"]
+- ["CSo8NSObject", "PostLegajoRequest"]
+- ["CSo8NSObject", "SUSPENDER_RESOLUCION_METHOD"]
+- ["CSo8NSObject", "SUSPENDER_RESOLUCION_URI"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "dataUsingEncoding"]
+- ["CSo8NSObject", "finalizarResolucion"]
+- !private ["CSo8NSObject", "fromJSON"]
+- ["CSo8NSObject", "getAllLegajos"]
+- ["CSo8NSObject", "getLegajo"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "objectForKey"]
+- !private ["CSo8NSObject", "setValue"]
+- ["CSo8NSObject", "suspenderResolucion"]
+- !private ["CSo8NSObject", "toJSONString"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "ActaService"]
+- !private ["PSo16NSObjectProtocol", "Alamofire"]
+- !private ["PSo16NSObjectProtocol", "BASE_URL"]
+- !private ["PSo16NSObjectProtocol", "Constants"]
+- ["PSo16NSObjectProtocol", "FINALIZAR_RESOLUCION_METHOD"]
+- ["PSo16NSObjectProtocol", "FINALIZAR_RESOLUCION_URI"]
+- ["PSo16NSObjectProtocol", "GET_ALL_LEGAJOS_METHOD"]
+- ["PSo16NSObjectProtocol", "GET_ALL_LEGAJOS_URI"]
+- ["PSo16NSObjectProtocol", "GET_LEGAJO_METHOD"]
+- ["PSo16NSObjectProtocol", "GET_LEGAJO_URI"]
+- !private ["PSo16NSObjectProtocol", "Generator"]
+- !private ["PSo16NSObjectProtocol", "HTTPBody"]
+- !private ["PSo16NSObjectProtocol", "HTTPMethod"]
+- !private ["PSo16NSObjectProtocol", "Legajo"]
+- !private ["PSo16NSObjectProtocol", "NSMutableURLRequest"]
+- !private ["PSo16NSObjectProtocol", "NSURL"]
+- !private ["PSo16NSObjectProtocol", "NSUTF8StringEncoding"]
+- ["PSo16NSObjectProtocol", "SUSPENDER_RESOLUCION_METHOD"]
+- ["PSo16NSObjectProtocol", "SUSPENDER_RESOLUCION_URI"]
+- !private ["PSo16NSObjectProtocol", "dataUsingEncoding"]
+- ["PSo16NSObjectProtocol", "finalizarResolucion"]
+- !private ["PSo16NSObjectProtocol", "fromJSON"]
+- ["PSo16NSObjectProtocol", "getAllLegajos"]
+- ["PSo16NSObjectProtocol", "getLegajo"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "objectForKey"]
+- !private ["PSo16NSObjectProtocol", "setValue"]
+- ["PSo16NSObjectProtocol", "suspenderResolucion"]
+- !private ["PSo16NSObjectProtocol", "toJSONString"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "Generator"]
+- !private ["PSo14NSSecureCoding", "HTTPBody"]
+- !private ["PSo14NSSecureCoding", "HTTPMethod"]
+- !private ["PSo14NSSecureCoding", "dataUsingEncoding"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "objectForKey"]
+- !private ["PSo14NSSecureCoding", "setValue"]
+- !private ["CSo8NSString", "dataUsingEncoding"]
+- !private ["CSo5NSURL", "init"]
+- !private ["CSo12NSURLRequest", "HTTPBody"]
+- !private ["CSo12NSURLRequest", "HTTPMethod"]
+- !private ["CSo12NSURLRequest", "init"]
+- !private ["CSo12NSURLRequest", "setValue"]
+- !private ["Sq", "deinit"]
+- !private ["C17ResolucionLegajos17PostLegajoRequest", "toJSONString"]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "_Element"]
+- !private ["PSs30RangeReplaceableCollectionType", "append"]
+- !private ["PSs30RangeReplaceableCollectionType", "init"]
+- !private ["C9Alamofire7Request", "responseJSON"]
+- !private ["V9Alamofire8Response", "result"]
+- !private ["O9Alamofire6Result", "Failure"]
+- !private ["O9Alamofire6Result", "Success"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "append"]
+- !private ["PSs12SequenceType", "init"]
+- !private ["PSs12SequenceType", "objectForKey"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["SS", "deinit"]
+- !private ["PSs24StringLiteralConvertible", "dataUsingEncoding"]
+- !private ["P9Alamofire21URLRequestConvertible", "HTTPBody"]
+- !private ["P9Alamofire21URLRequestConvertible", "HTTPMethod"]
+- !private ["P9Alamofire21URLRequestConvertible", "init"]
+- !private ["P9Alamofire21URLRequestConvertible", "setValue"]
+- !private ["P9Alamofire20URLStringConvertible", "HTTPBody"]
+- !private ["P9Alamofire20URLStringConvertible", "HTTPMethod"]
+- !private ["P9Alamofire20URLStringConvertible", "init"]
+- !private ["P9Alamofire20URLStringConvertible", "setValue"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs10_ArrayType", "Generator"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "_Element"]
+- !private ["PSs10_ArrayType", "append"]
+- !private ["PSs10_ArrayType", "init"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs16_CocoaStringType", "dataUsingEncoding"]
+- !private ["PSs24_DestructorSafeContainer", "Generator"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "_Element"]
+- !private ["PSs24_DestructorSafeContainer", "append"]
+- !private ["PSs24_DestructorSafeContainer", "init"]
+- !private ["PSs32_FileReferenceLiteralConvertible", "init"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "_Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "append"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "_Element"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "append"]
+- !private ["PSs12_Reflectable", "dataUsingEncoding"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "objectForKey"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- "C17ResolucionLegajos11ActaService"
+- "PSs9AnyObject"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "VSs10ArraySlice"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- !private "PSs14CollectionType"
+- !private "PSs10Comparable"
+- !private "C17ResolucionLegajos9Constants"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "PSs28DictionaryLiteralConvertible"
+- "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
+- "PSs8Hashable"
+- !private "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "C17ResolucionLegajos6Legajo"
+- !private "PSs14MirrorPathType"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableIndexable"
+- !private "PSs16MutableSliceable"
+- !private "CSo7NSArray"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo12NSDictionary"
+- !private "PSo17NSFastEnumeration"
+- !private "C10Foundation15NSFastGenerator"
+- !private "PSo16NSMutableCopying"
+- !private "CSo19NSMutableURLRequest"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo5NSURL"
+- !private "CSo12NSURLRequest"
+- !private "Sq"
+- !private "C17ResolucionLegajos17PostLegajoRequest"
+- !private "PSs21RandomAccessIndexType"
+- !private "PSs30RangeReplaceableCollectionType"
+- !private "C9Alamofire7Request"
+- !private "V9Alamofire8Response"
+- !private "O9Alamofire6Result"
+- !private "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "PSs10Strideable"
+- !private "SS"
+- !private "PSs24StringLiteralConvertible"
+- !private "P9Alamofire21URLRequestConvertible"
+- !private "P9Alamofire20URLStringConvertible"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs10_ArrayType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs24_DestructorSafeContainer"
+- !private "PSs32_FileReferenceLiteralConvertible"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs22_RandomAccessAmbiguity"
+- !private "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/Alamofire.swiftmodule/i386.swiftmodule"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreData.swiftmodule"
+interface-hash: "83a84882e6bdf2f84bc64392ff81a946"

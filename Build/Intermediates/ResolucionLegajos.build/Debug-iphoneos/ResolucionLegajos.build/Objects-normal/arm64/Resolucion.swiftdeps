@@ -1,0 +1,242 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Resolucion"
+provides-nominal:
+- "C17ResolucionLegajos10Resolucion"
+provides-member:
+- ["C17ResolucionLegajos10Resolucion", ""]
+provides-dynamic-lookup:
+- "toJSONString"
+- "fromJSON"
+- "nota"
+- "codigo"
+depends-top-level:
+- "NSDictionary"
+- !private "StringLiteralType"
+- "NSObject"
+- "Int"
+- !private "!="
+- "Double"
+- !private "Dictionary"
+- !private "=="
+- "Resolucion"
+- !private "JSON"
+- "String"
+- !private "AnyObject"
+depends-member:
+- !private ["PSs9AnyObject", "JSON"]
+- !private ["PSs9AnyObject", "Resolucion"]
+- !private ["PSs9AnyObject", "asDouble"]
+- !private ["PSs9AnyObject", "asInt"]
+- !private ["PSs9AnyObject", "asString"]
+- ["PSs9AnyObject", "codigo"]
+- !private ["PSs9AnyObject", "deinit"]
+- ["PSs9AnyObject", "fromJSON"]
+- ["PSs9AnyObject", "importe"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "nota"]
+- !private ["PSs9AnyObject", "null"]
+- ["PSs9AnyObject", "puntos"]
+- !private ["PSs9AnyObject", "subscript"]
+- ["PSs9AnyObject", "toJSONString"]
+- !private ["PSs9AnyObject", "toString"]
+- ["PSs9AnyObject", "uf"]
+- ["PSs9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "JSON"]
+- !private ["PSs11CVarArgType", "Resolucion"]
+- ["PSs11CVarArgType", "codigo"]
+- ["PSs11CVarArgType", "fromJSON"]
+- ["PSs11CVarArgType", "importe"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "nota"]
+- ["PSs11CVarArgType", "puntos"]
+- !private ["PSs11CVarArgType", "subscript"]
+- ["PSs11CVarArgType", "toJSONString"]
+- ["PSs11CVarArgType", "uf"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs14CollectionType", "Key"]
+- !private ["PSs14CollectionType", "Value"]
+- !private ["PSs28CustomDebugStringConvertible", "Key"]
+- !private ["PSs28CustomDebugStringConvertible", "Value"]
+- !private ["PSs23CustomStringConvertible", "JSON"]
+- !private ["PSs23CustomStringConvertible", "Key"]
+- !private ["PSs23CustomStringConvertible", "Resolucion"]
+- !private ["PSs23CustomStringConvertible", "Value"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "asDouble"]
+- !private ["PSs23CustomStringConvertible", "asInt"]
+- !private ["PSs23CustomStringConvertible", "asString"]
+- ["PSs23CustomStringConvertible", "codigo"]
+- ["PSs23CustomStringConvertible", "fromJSON"]
+- ["PSs23CustomStringConvertible", "importe"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "nota"]
+- !private ["PSs23CustomStringConvertible", "null"]
+- ["PSs23CustomStringConvertible", "puntos"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- ["PSs23CustomStringConvertible", "toJSONString"]
+- !private ["PSs23CustomStringConvertible", "toString"]
+- ["PSs23CustomStringConvertible", "uf"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["VSs10Dictionary", "Key"]
+- !private ["VSs10Dictionary", "Value"]
+- !private ["VSs10Dictionary", "deinit"]
+- !private ["PSs28DictionaryLiteralConvertible", "Key"]
+- !private ["PSs28DictionaryLiteralConvertible", "Value"]
+- !private ["PSs28DictionaryLiteralConvertible", "subscript"]
+- !private ["PSs9Equatable", "JSON"]
+- !private ["PSs9Equatable", "Resolucion"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "codigo"]
+- ["PSs9Equatable", "fromJSON"]
+- ["PSs9Equatable", "importe"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "nota"]
+- ["PSs9Equatable", "puntos"]
+- !private ["PSs9Equatable", "subscript"]
+- ["PSs9Equatable", "toJSONString"]
+- ["PSs9Equatable", "uf"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "JSON"]
+- !private ["PSs8Hashable", "Resolucion"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "codigo"]
+- ["PSs8Hashable", "fromJSON"]
+- ["PSs8Hashable", "importe"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "nota"]
+- ["PSs8Hashable", "puntos"]
+- !private ["PSs8Hashable", "subscript"]
+- ["PSs8Hashable", "toJSONString"]
+- ["PSs8Hashable", "uf"]
+- ["PSs8Hashable", ""]
+- !private ["PSs9Indexable", "Key"]
+- !private ["PSs9Indexable", "Value"]
+- !private ["C17ResolucionLegajos4JSON", "asDouble"]
+- !private ["C17ResolucionLegajos4JSON", "asInt"]
+- !private ["C17ResolucionLegajos4JSON", "asString"]
+- !private ["C17ResolucionLegajos4JSON", "init"]
+- !private ["C17ResolucionLegajos4JSON", "null"]
+- !private ["C17ResolucionLegajos4JSON", "toString"]
+- !private ["PSo8NSCoding", "subscript"]
+- !private ["PSo9NSCopying", "deinit"]
+- !private ["PSo9NSCopying", "subscript"]
+- !private ["CSo12NSDictionary", "subscript"]
+- !private ["PSo17NSFastEnumeration", "subscript"]
+- !private ["PSo16NSMutableCopying", "subscript"]
+- !private ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Double"]
+- ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "JSON"]
+- ["CSo8NSObject", "NSDictionary"]
+- ["CSo8NSObject", "Resolucion"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "codigo"]
+- ["CSo8NSObject", "fromJSON"]
+- ["CSo8NSObject", "importe"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "nota"]
+- ["CSo8NSObject", "puntos"]
+- !private ["CSo8NSObject", "subscript"]
+- ["CSo8NSObject", "toJSONString"]
+- ["CSo8NSObject", "uf"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "JSON"]
+- !private ["PSo16NSObjectProtocol", "Resolucion"]
+- ["PSo16NSObjectProtocol", "codigo"]
+- ["PSo16NSObjectProtocol", "fromJSON"]
+- ["PSo16NSObjectProtocol", "importe"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "nota"]
+- ["PSo16NSObjectProtocol", "puntos"]
+- !private ["PSo16NSObjectProtocol", "subscript"]
+- ["PSo16NSObjectProtocol", "toJSONString"]
+- ["PSo16NSObjectProtocol", "uf"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "subscript"]
+- !private ["Sq", "deinit"]
+- !private ["C17ResolucionLegajos10Resolucion", "AnyObject"]
+- ["C17ResolucionLegajos10Resolucion", "Double"]
+- ["C17ResolucionLegajos10Resolucion", "Int"]
+- !private ["C17ResolucionLegajos10Resolucion", "JSON"]
+- ["C17ResolucionLegajos10Resolucion", "NSDictionary"]
+- ["C17ResolucionLegajos10Resolucion", "Resolucion"]
+- ["C17ResolucionLegajos10Resolucion", "String"]
+- ["C17ResolucionLegajos10Resolucion", "codigo"]
+- ["C17ResolucionLegajos10Resolucion", "deinit"]
+- ["C17ResolucionLegajos10Resolucion", "fromJSON"]
+- ["C17ResolucionLegajos10Resolucion", "importe"]
+- ["C17ResolucionLegajos10Resolucion", "init"]
+- ["C17ResolucionLegajos10Resolucion", "nota"]
+- ["C17ResolucionLegajos10Resolucion", "puntos"]
+- ["C17ResolucionLegajos10Resolucion", "toJSONString"]
+- ["C17ResolucionLegajos10Resolucion", "uf"]
+- !private ["PSs12SequenceType", "Key"]
+- !private ["PSs12SequenceType", "Value"]
+- !private ["PSs12SequenceType", "asDouble"]
+- !private ["PSs12SequenceType", "asInt"]
+- !private ["PSs12SequenceType", "asString"]
+- !private ["PSs12SequenceType", "init"]
+- !private ["PSs12SequenceType", "null"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs12SequenceType", "toString"]
+- !private ["SS", "deinit"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "Key"]
+- !private ["PSs21_ObjectiveCBridgeable", "Value"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs12_Reflectable", "Key"]
+- !private ["PSs12_Reflectable", "Value"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "subscript"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- !private "PSs14CollectionType"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "VSs10Dictionary"
+- !private "PSs28DictionaryLiteralConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- !private "PSs9Indexable"
+- !private "C17ResolucionLegajos4JSON"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo12NSDictionary"
+- !private "PSo17NSFastEnumeration"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "Sq"
+- "C17ResolucionLegajos10Resolucion"
+- !private "PSs12SequenceType"
+- !private "SS"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphoneos/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphoneos/Alamofire.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+interface-hash: "fedfd881e0dc91296a32f6d80e77ae95"

@@ -1,0 +1,278 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LoginService"
+provides-nominal:
+- "C17ResolucionLegajos12LoginService"
+provides-member:
+- ["C17ResolucionLegajos12LoginService", ""]
+provides-dynamic-lookup:
+- "LOGIN_METHOD"
+- "LOGIN_URI"
+- "login"
+depends-top-level:
+- !private "NSURL"
+- !private "NSString"
+- "String"
+- !private "NSMutableURLRequest"
+- "StringLiteralType"
+- "NSObject"
+- "Void"
+- "LoginRequest"
+- "NSError"
+- !private "Constants"
+- "LoginService"
+- !private "+"
+- !private "NSUTF8StringEncoding"
+- !private "Alamofire"
+depends-member:
+- !private ["PSs9AnyObject", "Alamofire"]
+- !private ["PSs9AnyObject", "BASE_URL"]
+- !private ["PSs9AnyObject", "Constants"]
+- !private ["PSs9AnyObject", "HTTPBody"]
+- !private ["PSs9AnyObject", "HTTPMethod"]
+- ["PSs9AnyObject", "LOGIN_METHOD"]
+- ["PSs9AnyObject", "LOGIN_URI"]
+- !private ["PSs9AnyObject", "LoginService"]
+- !private ["PSs9AnyObject", "NSMutableURLRequest"]
+- !private ["PSs9AnyObject", "NSURL"]
+- !private ["PSs9AnyObject", "NSUTF8StringEncoding"]
+- !private ["PSs9AnyObject", "dataUsingEncoding"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "login"]
+- !private ["PSs9AnyObject", "responseJSON"]
+- !private ["PSs9AnyObject", "setValue"]
+- !private ["PSs9AnyObject", "toJSONString"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs11CVarArgType", "Alamofire"]
+- !private ["PSs11CVarArgType", "BASE_URL"]
+- !private ["PSs11CVarArgType", "Constants"]
+- !private ["PSs11CVarArgType", "HTTPBody"]
+- !private ["PSs11CVarArgType", "HTTPMethod"]
+- ["PSs11CVarArgType", "LOGIN_METHOD"]
+- ["PSs11CVarArgType", "LOGIN_URI"]
+- !private ["PSs11CVarArgType", "LoginService"]
+- !private ["PSs11CVarArgType", "NSMutableURLRequest"]
+- !private ["PSs11CVarArgType", "NSURL"]
+- !private ["PSs11CVarArgType", "NSUTF8StringEncoding"]
+- !private ["PSs11CVarArgType", "dataUsingEncoding"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "login"]
+- !private ["PSs11CVarArgType", "setValue"]
+- !private ["PSs11CVarArgType", "toJSONString"]
+- ["PSs11CVarArgType", ""]
+- !private ["C17ResolucionLegajos9Constants", "BASE_URL"]
+- !private ["PSs28CustomDebugStringConvertible", "Failure"]
+- !private ["PSs28CustomDebugStringConvertible", "Success"]
+- !private ["PSs28CustomDebugStringConvertible", "responseJSON"]
+- !private ["PSs28CustomDebugStringConvertible", "result"]
+- !private ["PSs23CustomStringConvertible", "Alamofire"]
+- !private ["PSs23CustomStringConvertible", "BASE_URL"]
+- !private ["PSs23CustomStringConvertible", "Constants"]
+- !private ["PSs23CustomStringConvertible", "Failure"]
+- !private ["PSs23CustomStringConvertible", "HTTPBody"]
+- !private ["PSs23CustomStringConvertible", "HTTPMethod"]
+- ["PSs23CustomStringConvertible", "LOGIN_METHOD"]
+- ["PSs23CustomStringConvertible", "LOGIN_URI"]
+- !private ["PSs23CustomStringConvertible", "LoginService"]
+- !private ["PSs23CustomStringConvertible", "NSMutableURLRequest"]
+- !private ["PSs23CustomStringConvertible", "NSURL"]
+- !private ["PSs23CustomStringConvertible", "NSUTF8StringEncoding"]
+- !private ["PSs23CustomStringConvertible", "Success"]
+- !private ["PSs23CustomStringConvertible", "dataUsingEncoding"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "login"]
+- !private ["PSs23CustomStringConvertible", "responseJSON"]
+- !private ["PSs23CustomStringConvertible", "result"]
+- !private ["PSs23CustomStringConvertible", "setValue"]
+- !private ["PSs23CustomStringConvertible", "toJSONString"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "Alamofire"]
+- !private ["PSs9Equatable", "BASE_URL"]
+- !private ["PSs9Equatable", "Constants"]
+- !private ["PSs9Equatable", "HTTPBody"]
+- !private ["PSs9Equatable", "HTTPMethod"]
+- ["PSs9Equatable", "LOGIN_METHOD"]
+- ["PSs9Equatable", "LOGIN_URI"]
+- !private ["PSs9Equatable", "LoginService"]
+- !private ["PSs9Equatable", "NSMutableURLRequest"]
+- !private ["PSs9Equatable", "NSURL"]
+- !private ["PSs9Equatable", "NSUTF8StringEncoding"]
+- !private ["PSs9Equatable", "dataUsingEncoding"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "login"]
+- !private ["PSs9Equatable", "setValue"]
+- !private ["PSs9Equatable", "toJSONString"]
+- ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs8Hashable", "Alamofire"]
+- !private ["PSs8Hashable", "BASE_URL"]
+- !private ["PSs8Hashable", "Constants"]
+- !private ["PSs8Hashable", "HTTPBody"]
+- !private ["PSs8Hashable", "HTTPMethod"]
+- ["PSs8Hashable", "LOGIN_METHOD"]
+- ["PSs8Hashable", "LOGIN_URI"]
+- !private ["PSs8Hashable", "LoginService"]
+- !private ["PSs8Hashable", "NSMutableURLRequest"]
+- !private ["PSs8Hashable", "NSURL"]
+- !private ["PSs8Hashable", "NSUTF8StringEncoding"]
+- !private ["PSs8Hashable", "dataUsingEncoding"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "login"]
+- !private ["PSs8Hashable", "setValue"]
+- !private ["PSs8Hashable", "toJSONString"]
+- ["PSs8Hashable", ""]
+- !private ["C17ResolucionLegajos12LoginRequest", "toJSONString"]
+- !private ["C17ResolucionLegajos12LoginService", "Alamofire"]
+- !private ["C17ResolucionLegajos12LoginService", "Constants"]
+- ["C17ResolucionLegajos12LoginService", "LOGIN_METHOD"]
+- ["C17ResolucionLegajos12LoginService", "LOGIN_URI"]
+- ["C17ResolucionLegajos12LoginService", "LoginRequest"]
+- !private ["C17ResolucionLegajos12LoginService", "LoginService"]
+- ["C17ResolucionLegajos12LoginService", "NSError"]
+- !private ["C17ResolucionLegajos12LoginService", "NSMutableURLRequest"]
+- !private ["C17ResolucionLegajos12LoginService", "NSString"]
+- !private ["C17ResolucionLegajos12LoginService", "NSURL"]
+- !private ["C17ResolucionLegajos12LoginService", "NSUTF8StringEncoding"]
+- ["C17ResolucionLegajos12LoginService", "String"]
+- ["C17ResolucionLegajos12LoginService", "Void"]
+- ["C17ResolucionLegajos12LoginService", "deinit"]
+- ["C17ResolucionLegajos12LoginService", "init"]
+- ["C17ResolucionLegajos12LoginService", "login"]
+- !private ["PSo8NSCoding", "HTTPBody"]
+- !private ["PSo8NSCoding", "HTTPMethod"]
+- !private ["PSo8NSCoding", "dataUsingEncoding"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "setValue"]
+- !private ["PSo9NSCopying", "HTTPBody"]
+- !private ["PSo9NSCopying", "HTTPMethod"]
+- !private ["PSo9NSCopying", "dataUsingEncoding"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "setValue"]
+- !private ["PSo16NSMutableCopying", "HTTPBody"]
+- !private ["PSo16NSMutableCopying", "HTTPMethod"]
+- !private ["PSo16NSMutableCopying", "dataUsingEncoding"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "setValue"]
+- !private ["CSo19NSMutableURLRequest", "HTTPBody"]
+- !private ["CSo19NSMutableURLRequest", "HTTPMethod"]
+- !private ["CSo19NSMutableURLRequest", "init"]
+- !private ["CSo19NSMutableURLRequest", "setValue"]
+- !private ["CSo8NSObject", "Alamofire"]
+- !private ["CSo8NSObject", "BASE_URL"]
+- !private ["CSo8NSObject", "Constants"]
+- !private ["CSo8NSObject", "HTTPBody"]
+- !private ["CSo8NSObject", "HTTPMethod"]
+- ["CSo8NSObject", "LOGIN_METHOD"]
+- ["CSo8NSObject", "LOGIN_URI"]
+- ["CSo8NSObject", "LoginRequest"]
+- !private ["CSo8NSObject", "LoginService"]
+- ["CSo8NSObject", "NSError"]
+- !private ["CSo8NSObject", "NSMutableURLRequest"]
+- !private ["CSo8NSObject", "NSString"]
+- !private ["CSo8NSObject", "NSURL"]
+- !private ["CSo8NSObject", "NSUTF8StringEncoding"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "dataUsingEncoding"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "login"]
+- !private ["CSo8NSObject", "setValue"]
+- !private ["CSo8NSObject", "toJSONString"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "Alamofire"]
+- !private ["PSo16NSObjectProtocol", "BASE_URL"]
+- !private ["PSo16NSObjectProtocol", "Constants"]
+- !private ["PSo16NSObjectProtocol", "HTTPBody"]
+- !private ["PSo16NSObjectProtocol", "HTTPMethod"]
+- ["PSo16NSObjectProtocol", "LOGIN_METHOD"]
+- ["PSo16NSObjectProtocol", "LOGIN_URI"]
+- !private ["PSo16NSObjectProtocol", "LoginService"]
+- !private ["PSo16NSObjectProtocol", "NSMutableURLRequest"]
+- !private ["PSo16NSObjectProtocol", "NSURL"]
+- !private ["PSo16NSObjectProtocol", "NSUTF8StringEncoding"]
+- !private ["PSo16NSObjectProtocol", "dataUsingEncoding"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "login"]
+- !private ["PSo16NSObjectProtocol", "setValue"]
+- !private ["PSo16NSObjectProtocol", "toJSONString"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "HTTPBody"]
+- !private ["PSo14NSSecureCoding", "HTTPMethod"]
+- !private ["PSo14NSSecureCoding", "dataUsingEncoding"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "setValue"]
+- !private ["CSo8NSString", "dataUsingEncoding"]
+- !private ["CSo5NSURL", "init"]
+- !private ["CSo12NSURLRequest", "HTTPBody"]
+- !private ["CSo12NSURLRequest", "HTTPMethod"]
+- !private ["CSo12NSURLRequest", "init"]
+- !private ["CSo12NSURLRequest", "setValue"]
+- !private ["Sq", "deinit"]
+- !private ["C9Alamofire7Request", "responseJSON"]
+- !private ["V9Alamofire8Response", "result"]
+- !private ["O9Alamofire6Result", "Failure"]
+- !private ["O9Alamofire6Result", "Success"]
+- !private ["SS", "deinit"]
+- !private ["PSs24StringLiteralConvertible", "dataUsingEncoding"]
+- !private ["P9Alamofire21URLRequestConvertible", "HTTPBody"]
+- !private ["P9Alamofire21URLRequestConvertible", "HTTPMethod"]
+- !private ["P9Alamofire21URLRequestConvertible", "init"]
+- !private ["P9Alamofire21URLRequestConvertible", "setValue"]
+- !private ["P9Alamofire20URLStringConvertible", "HTTPBody"]
+- !private ["P9Alamofire20URLStringConvertible", "HTTPMethod"]
+- !private ["P9Alamofire20URLStringConvertible", "init"]
+- !private ["P9Alamofire20URLStringConvertible", "setValue"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs16_CocoaStringType", "dataUsingEncoding"]
+- !private ["PSs32_FileReferenceLiteralConvertible", "init"]
+- !private ["PSs12_Reflectable", "dataUsingEncoding"]
+- !private ["PSs12_Reflectable", "init"]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- !private "C17ResolucionLegajos9Constants"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- "PSs8Hashable"
+- !private "C17ResolucionLegajos12LoginRequest"
+- "C17ResolucionLegajos12LoginService"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- !private "CSo19NSMutableURLRequest"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo5NSURL"
+- !private "CSo12NSURLRequest"
+- !private "Sq"
+- !private "C9Alamofire7Request"
+- !private "V9Alamofire8Response"
+- !private "O9Alamofire6Result"
+- !private "SS"
+- !private "PSs24StringLiteralConvertible"
+- !private "P9Alamofire21URLRequestConvertible"
+- !private "P9Alamofire20URLStringConvertible"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs32_FileReferenceLiteralConvertible"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/Alamofire.swiftmodule/i386.swiftmodule"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreData.swiftmodule"
+interface-hash: "916759f461750ca074c12d699922dfd9"

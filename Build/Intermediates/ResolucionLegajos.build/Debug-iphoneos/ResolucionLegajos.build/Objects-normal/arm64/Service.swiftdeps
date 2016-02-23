@@ -1,0 +1,110 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Service"
+provides-nominal:
+- "C17ResolucionLegajos7Service"
+provides-member:
+- ["C17ResolucionLegajos7Service", ""]
+provides-dynamic-lookup:
+- "baseURL"
+- "isAuthenticated"
+depends-top-level:
+- !private "StringLiteralType"
+- "NSObject"
+- "AnyObject"
+- "Method"
+- "Void"
+- "String"
+- "BooleanLiteralType"
+- "Bool"
+- !private "Alamofire"
+- "Service"
+- "NSError"
+depends-member:
+- !private ["PSs9AnyObject", "Alamofire"]
+- ["PSs9AnyObject", "baseURL"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "isAuthenticated"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs11CVarArgType", "Alamofire"]
+- ["PSs11CVarArgType", "baseURL"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "isAuthenticated"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "Alamofire"]
+- ["PSs23CustomStringConvertible", "baseURL"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "isAuthenticated"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "Alamofire"]
+- !private ["PSs9Equatable", "GET"]
+- ["PSs9Equatable", "baseURL"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "isAuthenticated"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "Alamofire"]
+- !private ["PSs8Hashable", "GET"]
+- ["PSs8Hashable", "baseURL"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "isAuthenticated"]
+- ["PSs8Hashable", ""]
+- !private ["O9Alamofire6Method", "GET"]
+- !private ["CSo8NSObject", "Alamofire"]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "Method"]
+- ["CSo8NSObject", "NSError"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "Void"]
+- ["CSo8NSObject", "baseURL"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "isAuthenticated"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "Alamofire"]
+- ["PSo16NSObjectProtocol", "baseURL"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "isAuthenticated"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSs16RawRepresentable", "GET"]
+- !private ["C17ResolucionLegajos7Service", "Alamofire"]
+- ["C17ResolucionLegajos7Service", "AnyObject"]
+- ["C17ResolucionLegajos7Service", "Bool"]
+- ["C17ResolucionLegajos7Service", "Method"]
+- ["C17ResolucionLegajos7Service", "NSError"]
+- ["C17ResolucionLegajos7Service", "String"]
+- ["C17ResolucionLegajos7Service", "Void"]
+- ["C17ResolucionLegajos7Service", "baseURL"]
+- ["C17ResolucionLegajos7Service", "deinit"]
+- ["C17ResolucionLegajos7Service", "init"]
+- ["C17ResolucionLegajos7Service", "isAuthenticated"]
+- !private ["VSs12StaticString", "deinit"]
+- !private ["P9Alamofire20URLStringConvertible", "deinit"]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- !private "O9Alamofire6Method"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSs16RawRepresentable"
+- "C17ResolucionLegajos7Service"
+- !private "VSs12StaticString"
+- !private "P9Alamofire20URLStringConvertible"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphoneos/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphoneos/Alamofire.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+interface-hash: "50cda3d740f48afacebf40605e8b1022"

@@ -1,0 +1,65 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LoginResponse"
+provides-nominal:
+- "C17ResolucionLegajos13LoginResponse"
+provides-member:
+- ["C17ResolucionLegajos13LoginResponse", ""]
+provides-dynamic-lookup:
+- "accessToken"
+depends-top-level:
+- "String"
+- "NSObject"
+- "LoginResponse"
+depends-member:
+- ["PSs9AnyObject", "accessToken"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", ""]
+- ["PSs11CVarArgType", "accessToken"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", ""]
+- ["PSs23CustomStringConvertible", "accessToken"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", ""]
+- ["PSs9Equatable", "accessToken"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", ""]
+- ["PSs8Hashable", "accessToken"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", ""]
+- ["C17ResolucionLegajos13LoginResponse", "String"]
+- ["C17ResolucionLegajos13LoginResponse", "accessToken"]
+- ["C17ResolucionLegajos13LoginResponse", "deinit"]
+- ["C17ResolucionLegajos13LoginResponse", "init"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "accessToken"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "accessToken"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", ""]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "C17ResolucionLegajos13LoginResponse"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphoneos/Alamofire.framework/Modules/Alamofire.swiftmodule/arm.swiftmodule"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphoneos/Alamofire.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
+interface-hash: "a6430ff7f800c55776715ea1c2807ff7"

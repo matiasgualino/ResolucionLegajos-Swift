@@ -1,0 +1,18 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "38fc6f773f18b49dd8b52250fa051922"
+build_time: [509382377, 980505000]
+inputs:
+  "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/Alamofire/Source/Response.swift": [506873845, 0]
+  "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/Alamofire/Source/ResponseSerialization.swift": [506873845, 0]
+  "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/Alamofire/Source/Request.swift": [506873845, 0]
+  "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/Alamofire/Source/Alamofire.swift": [506873844, 0]
+  "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/Alamofire/Source/Error.swift": [506873845, 0]
+  "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/Alamofire/Source/ServerTrustPolicy.swift": [506873845, 0]
+  "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/Alamofire/Source/Download.swift": [506873844, 0]
+  "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/Alamofire/Source/Manager.swift": [506873845, 0]
+  "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/Alamofire/Source/Result.swift": [506873845, 0]
+  "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/Alamofire/Source/MultipartFormData.swift": [506873845, 0]
+  "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/Alamofire/Source/Validation.swift": [506873845, 0]
+  "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/Alamofire/Source/Stream.swift": [506873845, 0]
+  "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/Alamofire/Source/Upload.swift": [506873845, 0]
+  "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/Alamofire/Source/ParameterEncoding.swift": [506873845, 0]

@@ -1,0 +1,153 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LoginRequest"
+provides-nominal:
+- "C17ResolucionLegajos12LoginRequest"
+provides-member:
+- ["C17ResolucionLegajos12LoginRequest", ""]
+provides-dynamic-lookup:
+- "password"
+- "toJSONString"
+- "username"
+depends-top-level:
+- !private "=="
+- !private "JSON"
+- "LoginRequest"
+- !private "StringLiteralType"
+- "NSObject"
+- !private "AnyObject"
+- "String"
+- !private "Dictionary"
+depends-member:
+- !private ["PSs9AnyObject", "JSON"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "null"]
+- ["PSs9AnyObject", "password"]
+- ["PSs9AnyObject", "toJSONString"]
+- !private ["PSs9AnyObject", "toString"]
+- ["PSs9AnyObject", "username"]
+- ["PSs9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "JSON"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "password"]
+- ["PSs11CVarArgType", "toJSONString"]
+- ["PSs11CVarArgType", "username"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs14CollectionType", "Key"]
+- !private ["PSs14CollectionType", "Value"]
+- !private ["PSs28CustomDebugStringConvertible", "Key"]
+- !private ["PSs28CustomDebugStringConvertible", "Value"]
+- !private ["PSs23CustomStringConvertible", "JSON"]
+- !private ["PSs23CustomStringConvertible", "Key"]
+- !private ["PSs23CustomStringConvertible", "Value"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "null"]
+- ["PSs23CustomStringConvertible", "password"]
+- ["PSs23CustomStringConvertible", "toJSONString"]
+- !private ["PSs23CustomStringConvertible", "toString"]
+- ["PSs23CustomStringConvertible", "username"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["VSs10Dictionary", "Key"]
+- !private ["VSs10Dictionary", "Value"]
+- !private ["VSs10Dictionary", "deinit"]
+- !private ["PSs28DictionaryLiteralConvertible", "Key"]
+- !private ["PSs28DictionaryLiteralConvertible", "Value"]
+- !private ["PSs9Equatable", "JSON"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "password"]
+- ["PSs9Equatable", "toJSONString"]
+- ["PSs9Equatable", "username"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "JSON"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "password"]
+- ["PSs8Hashable", "toJSONString"]
+- ["PSs8Hashable", "username"]
+- ["PSs8Hashable", ""]
+- !private ["PSs9Indexable", "Key"]
+- !private ["PSs9Indexable", "Value"]
+- !private ["C17ResolucionLegajos4JSON", "init"]
+- !private ["C17ResolucionLegajos4JSON", "null"]
+- !private ["C17ResolucionLegajos4JSON", "toString"]
+- !private ["C17ResolucionLegajos12LoginRequest", "AnyObject"]
+- !private ["C17ResolucionLegajos12LoginRequest", "JSON"]
+- ["C17ResolucionLegajos12LoginRequest", "String"]
+- ["C17ResolucionLegajos12LoginRequest", "deinit"]
+- ["C17ResolucionLegajos12LoginRequest", "init"]
+- ["C17ResolucionLegajos12LoginRequest", "password"]
+- ["C17ResolucionLegajos12LoginRequest", "toJSONString"]
+- ["C17ResolucionLegajos12LoginRequest", "username"]
+- !private ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "JSON"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "password"]
+- ["CSo8NSObject", "toJSONString"]
+- ["CSo8NSObject", "username"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "JSON"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "password"]
+- ["PSo16NSObjectProtocol", "toJSONString"]
+- ["PSo16NSObjectProtocol", "username"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Sq", "deinit"]
+- !private ["PSs12SequenceType", "Key"]
+- !private ["PSs12SequenceType", "Value"]
+- !private ["PSs12SequenceType", "init"]
+- !private ["PSs12SequenceType", "null"]
+- !private ["PSs12SequenceType", "toString"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "Key"]
+- !private ["PSs21_ObjectiveCBridgeable", "Value"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs12_Reflectable", "Key"]
+- !private ["PSs12_Reflectable", "Value"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- !private "PSs14CollectionType"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "VSs10Dictionary"
+- !private "PSs28DictionaryLiteralConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- !private "PSs9Indexable"
+- !private "C17ResolucionLegajos4JSON"
+- "C17ResolucionLegajos12LoginRequest"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Sq"
+- !private "PSs12SequenceType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphoneos/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphoneos/Alamofire.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+interface-hash: "8a133a46db0ca3d0c4a72e5009997f50"
