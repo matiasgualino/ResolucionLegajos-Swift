@@ -15,6 +15,7 @@ class MasterViewController : UIViewController {
 	var loadingView : UILoadingView!
 	
 	var accessToken : String? = Constants.getAccessToken()
+	var username : String? = Constants.getUsername()
 	
 	required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)

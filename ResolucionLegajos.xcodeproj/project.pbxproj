@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F0A79C11C8B207F00152656 /* CaratulaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0A79C01C8B207F00152656 /* CaratulaView.swift */; };
+		0F0A79C31C8B209800152656 /* CaratulaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0A79C21C8B209800152656 /* CaratulaView.xib */; };
+		0F0A79C51C8B5B1E00152656 /* LegajoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0A79C41C8B5B1E00152656 /* LegajoView.swift */; };
+		0F0A79C71C8B5B2D00152656 /* LegajoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0A79C61C8B5B2D00152656 /* LegajoView.xib */; };
+		0F0A79CA1C8CF84B00152656 /* ResolucionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0A79C81C8CF84B00152656 /* ResolucionView.swift */; };
+		0F0A79CB1C8CF84B00152656 /* ResolucionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0A79C91C8CF84B00152656 /* ResolucionView.xib */; };
+		0F0F3D3C1CD9753100DF6B66 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0F3D3B1CD9753100DF6B66 /* CustomAlertView.swift */; };
 		0F4AE7141C7A4A9900AE058A /* InfraccionesHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4AE7121C7A4A9900AE058A /* InfraccionesHeaderTableViewCell.swift */; };
 		0F4AE7151C7A4A9900AE058A /* InfraccionesHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4AE7131C7A4A9900AE058A /* InfraccionesHeaderTableViewCell.xib */; };
 		0F4AE7181C7A4B2900AE058A /* InfraccionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4AE7161C7A4B2900AE058A /* InfraccionTableViewCell.swift */; };
@@ -58,6 +65,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F0A79C01C8B207F00152656 /* CaratulaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaratulaView.swift; sourceTree = "<group>"; };
+		0F0A79C21C8B209800152656 /* CaratulaView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaratulaView.xib; sourceTree = "<group>"; };
+		0F0A79C41C8B5B1E00152656 /* LegajoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegajoView.swift; sourceTree = "<group>"; };
+		0F0A79C61C8B5B2D00152656 /* LegajoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LegajoView.xib; sourceTree = "<group>"; };
+		0F0A79C81C8CF84B00152656 /* ResolucionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolucionView.swift; sourceTree = "<group>"; };
+		0F0A79C91C8CF84B00152656 /* ResolucionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResolucionView.xib; sourceTree = "<group>"; };
+		0F0F3D3B1CD9753100DF6B66 /* CustomAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		0F4AE7121C7A4A9900AE058A /* InfraccionesHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfraccionesHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		0F4AE7131C7A4A9900AE058A /* InfraccionesHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfraccionesHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		0F4AE7161C7A4B2900AE058A /* InfraccionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfraccionTableViewCell.swift; sourceTree = "<group>"; };
@@ -233,6 +247,13 @@
 			children = (
 				0F79EDF71C53F79A007AA2D3 /* UILoadingView.swift */,
 				0F79EDFC1C540175007AA2D3 /* CardView.swift */,
+				0F0A79C01C8B207F00152656 /* CaratulaView.swift */,
+				0F0A79C21C8B209800152656 /* CaratulaView.xib */,
+				0F0A79C41C8B5B1E00152656 /* LegajoView.swift */,
+				0F0A79C61C8B5B2D00152656 /* LegajoView.xib */,
+				0F0A79C81C8CF84B00152656 /* ResolucionView.swift */,
+				0F0A79C91C8CF84B00152656 /* ResolucionView.xib */,
+				0F0F3D3B1CD9753100DF6B66 /* CustomAlertView.swift */,
 			);
 			name = UIUtils;
 			sourceTree = "<group>";
@@ -333,6 +354,8 @@
 			files = (
 				0F79EDDA1C53F475007AA2D3 /* LoginViewController.xib in Resources */,
 				0FC699A21C5F249500DA11B4 /* LegajosHeaderTableViewCell.xib in Resources */,
+				0F0A79CB1C8CF84B00152656 /* ResolucionView.xib in Resources */,
+				0F0A79C31C8B209800152656 /* CaratulaView.xib in Resources */,
 				0F79EDE61C53F4F8007AA2D3 /* FinishViewController.xib in Resources */,
 				0F79EDDE1C53F4DC007AA2D3 /* ActaViewController.xib in Resources */,
 				0F4AE7151C7A4A9900AE058A /* InfraccionesHeaderTableViewCell.xib in Resources */,
@@ -342,6 +365,7 @@
 				0FC699981C5EB3FE00DA11B4 /* LegajoTableViewCell.xib in Resources */,
 				0F4AE7191C7A4B2900AE058A /* InfraccionTableViewCell.xib in Resources */,
 				0F79EDAB1C531CFC007AA2D3 /* Assets.xcassets in Resources */,
+				0F0A79C71C8B5B2D00152656 /* LegajoView.xib in Resources */,
 				0F79EDEA1C53F508007AA2D3 /* LegajoViewController.xib in Resources */,
 				0F79EDE21C53F4EB007AA2D3 /* CaratulaViewController.xib in Resources */,
 				0F79EDF61C53F566007AA2D3 /* NoInternetViewController.xib in Resources */,
@@ -417,13 +441,17 @@
 				0FC699A11C5F249500DA11B4 /* LegajosHeaderTableViewCell.swift in Sources */,
 				0F79EDDD1C53F4DC007AA2D3 /* ActaViewController.swift in Sources */,
 				0F79EDB71C53BF4B007AA2D3 /* Acta.swift in Sources */,
+				0F0A79C51C8B5B1E00152656 /* LegajoView.swift in Sources */,
+				0F0A79CA1C8CF84B00152656 /* ResolucionView.swift in Sources */,
 				0F4AE7141C7A4A9900AE058A /* InfraccionesHeaderTableViewCell.swift in Sources */,
 				0FC699971C5EB3FE00DA11B4 /* LegajoTableViewCell.swift in Sources */,
 				0F79EDCA1C53C3B6007AA2D3 /* LoginService.swift in Sources */,
 				0F79EDE11C53F4EB007AA2D3 /* CaratulaViewController.swift in Sources */,
 				0F79EDE91C53F508007AA2D3 /* LegajoViewController.swift in Sources */,
+				0F0F3D3C1CD9753100DF6B66 /* CustomAlertView.swift in Sources */,
 				0F4AE7201C7D0C5500AE058A /* InfraccionTableViewCellDelegate.swift in Sources */,
 				0F79EDFD1C540175007AA2D3 /* CardView.swift in Sources */,
+				0F0A79C11C8B207F00152656 /* CaratulaView.swift in Sources */,
 				0FC6999D1C5ED6F300DA11B4 /* ReminderViewController.swift in Sources */,
 				0F79EDCC1C53C3C1007AA2D3 /* ActaService.swift in Sources */,
 				0F79EDC71C53BFBE007AA2D3 /* Infraccion.swift in Sources */,

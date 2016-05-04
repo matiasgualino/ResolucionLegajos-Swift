@@ -6,27 +6,27 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos10Infraccion", ""]
 provides-dynamic-lookup:
-- "toJSONString"
-- "sanciones"
-- "descripcion"
-- "codigo"
 - "resolucion"
 - "fromJSON"
+- "toJSONString"
+- "sanciones"
+- "codigo"
+- "descripcion"
 depends-top-level:
+- "NSDictionary"
+- "NSObject"
+- "Sancion"
+- !private "StringLiteralType"
+- !private "Dictionary"
 - !private "!="
-- "String"
 - !private "..<"
+- !private "=="
+- !private "JSON"
 - "Resolucion"
 - !private "AnyObject"
-- "NSObject"
-- !private "Dictionary"
-- !private "StringLiteralType"
-- "Sancion"
-- "Infraccion"
-- "NSDictionary"
-- !private "JSON"
+- "String"
 - !private "NSArray"
-- !private "=="
+- "Infraccion"
 depends-member:
 - !private ["PSs9AnyObject", "Infraccion"]
 - !private ["PSs9AnyObject", "JSON"]

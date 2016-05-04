@@ -6,21 +6,21 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos17CardTableViewCell", ""]
 provides-dynamic-lookup:
-- "layoutSubviews"
-- "cornerRadius"
 - "shadowOffsetHeight"
 - "shadowOpacity"
-- "shadowColor"
+- "cornerRadius"
+- "layoutSubviews"
 - "shadowOffsetWidth"
+- "shadowColor"
 depends-top-level:
+- "Float"
+- !private "CGSize"
+- "Int"
 - "CardTableViewCell"
 - "UITableViewCell"
-- "Int"
-- "Float"
 - "UIColor"
 - !private "UIBezierPath"
 - "CGFloat"
-- !private "CGSize"
 - !private "BooleanLiteralType"
 depends-member:
 - !private ["PSs9AnyObject", "CGColor"]

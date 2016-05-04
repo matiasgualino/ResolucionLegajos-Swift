@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos10Resolucion", ""]
 provides-dynamic-lookup:
-- "codigo"
-- "nota"
 - "fromJSON"
 - "toJSONString"
+- "nota"
+- "codigo"
 depends-top-level:
+- "Double"
 - !private "=="
 - !private "JSON"
 - "NSDictionary"
-- !private "!="
-- !private "Dictionary"
-- "NSObject"
-- "Resolucion"
 - !private "StringLiteralType"
-- "String"
 - !private "AnyObject"
-- "Double"
+- "NSObject"
+- !private "Dictionary"
+- !private "!="
+- "Resolucion"
+- "String"
 - "Int"
 depends-member:
 - !private ["PSs9AnyObject", "JSON"]

@@ -27,8 +27,6 @@ class LoginService: NSObject {
 			response in switch response.result {
 				case .Success(let JSON):
 					let response = JSON as! String
-					// TODO: Change
-					//					let accessToken = response.objectForKey("access_token") as? String
 					success(accessToken: response)
 				case .Failure(let error):
 					failure(error: error)

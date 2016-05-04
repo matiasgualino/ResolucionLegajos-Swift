@@ -6,29 +6,37 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos9Constants", ""]
 provides-dynamic-lookup:
+- "BASE_URL"
+- "PRODUCTION_BASE_URL"
+- "getDateStringFromDate"
 - "YELLOW_COLOR"
+- "getAccessToken"
+- "showResolucionDialog"
 - "setAccessToken"
 - "TEST_BASE_URL"
-- "getDateStringFromDate"
-- "DARK_COLOR"
-- "getAccessToken"
 - "getDateAndHourFromString"
-- "PRODUCTION_BASE_URL"
-- "BASE_URL"
 - "CLEAR_COLOR"
+- "DARK_COLOR"
 depends-top-level:
-- !private "=="
-- "ExtendedGraphemeClusterType"
-- !private "!="
-- "UIColor"
+- !private "ResolucionViewController"
 - "NSDate"
-- "String"
-- "StringLiteralType"
+- !private "=="
 - "NSObject"
-- "Constants"
+- "UIAlertController"
+- "StringLiteralType"
+- !private "!="
+- !private "UIAlertAction"
 - !private "NSUserDefaults"
-- !private "UnicodeScalarType"
+- "ExtendedGraphemeClusterType"
+- "String"
+- "UIColor"
+- "UINavigationController"
+- "InfraccionInfo"
 - !private "NSDateFormatter"
+- !private "UnicodeScalarType"
+- !private "Void"
+- !private "BooleanLiteralType"
+- "Constants"
 depends-member:
 - !private ["CSs12AnyGenerator", "Element"]
 - ["PSs9AnyObject", "ACCESS_TOKEN_KEY"]
@@ -40,10 +48,14 @@ depends-member:
 - !private ["PSs9AnyObject", "NSDateFormatter"]
 - !private ["PSs9AnyObject", "NSUserDefaults"]
 - ["PSs9AnyObject", "PRODUCTION_BASE_URL"]
+- !private ["PSs9AnyObject", "ResolucionViewController"]
 - !private ["PSs9AnyObject", "String"]
 - ["PSs9AnyObject", "TEST_BASE_URL"]
+- !private ["PSs9AnyObject", "UIAlertAction"]
+- !private ["PSs9AnyObject", "UIAlertController"]
 - ["PSs9AnyObject", "UIColor"]
 - ["PSs9AnyObject", "YELLOW_COLOR"]
+- !private ["PSs9AnyObject", "addAction"]
 - !private ["PSs9AnyObject", "characters"]
 - !private ["PSs9AnyObject", "dateFormat"]
 - !private ["PSs9AnyObject", "dateFromString"]
@@ -51,8 +63,10 @@ depends-member:
 - ["PSs9AnyObject", "getDateAndHourFromString"]
 - ["PSs9AnyObject", "getDateStringFromDate"]
 - ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "presentViewController"]
 - ["PSs9AnyObject", "setAccessToken"]
 - !private ["PSs9AnyObject", "setValue"]
+- ["PSs9AnyObject", "showResolucionDialog"]
 - !private ["PSs9AnyObject", "standardUserDefaults"]
 - !private ["PSs9AnyObject", "stringFromDate"]
 - !private ["PSs9AnyObject", "synchronize"]
@@ -92,10 +106,14 @@ depends-member:
 - !private ["PSs11CVarArgType", "NSDateFormatter"]
 - !private ["PSs11CVarArgType", "NSUserDefaults"]
 - ["PSs11CVarArgType", "PRODUCTION_BASE_URL"]
+- !private ["PSs11CVarArgType", "ResolucionViewController"]
 - !private ["PSs11CVarArgType", "String"]
 - ["PSs11CVarArgType", "TEST_BASE_URL"]
+- !private ["PSs11CVarArgType", "UIAlertAction"]
+- !private ["PSs11CVarArgType", "UIAlertController"]
 - ["PSs11CVarArgType", "UIColor"]
 - ["PSs11CVarArgType", "YELLOW_COLOR"]
+- !private ["PSs11CVarArgType", "addAction"]
 - !private ["PSs11CVarArgType", "characters"]
 - !private ["PSs11CVarArgType", "dateFormat"]
 - !private ["PSs11CVarArgType", "dateFromString"]
@@ -103,8 +121,10 @@ depends-member:
 - ["PSs11CVarArgType", "getDateAndHourFromString"]
 - ["PSs11CVarArgType", "getDateStringFromDate"]
 - ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "presentViewController"]
 - ["PSs11CVarArgType", "setAccessToken"]
 - !private ["PSs11CVarArgType", "setValue"]
+- ["PSs11CVarArgType", "showResolucionDialog"]
 - !private ["PSs11CVarArgType", "standardUserDefaults"]
 - !private ["PSs11CVarArgType", "stringFromDate"]
 - !private ["PSs11CVarArgType", "synchronize"]
@@ -133,13 +153,19 @@ depends-member:
 - ["C17ResolucionLegajos9Constants", "CLEAR_COLOR"]
 - ["C17ResolucionLegajos9Constants", "Constants"]
 - ["C17ResolucionLegajos9Constants", "DARK_COLOR"]
+- ["C17ResolucionLegajos9Constants", "InfraccionInfo"]
 - ["C17ResolucionLegajos9Constants", "NSDate"]
 - !private ["C17ResolucionLegajos9Constants", "NSDateFormatter"]
 - !private ["C17ResolucionLegajos9Constants", "NSUserDefaults"]
 - ["C17ResolucionLegajos9Constants", "PRODUCTION_BASE_URL"]
+- !private ["C17ResolucionLegajos9Constants", "ResolucionViewController"]
 - ["C17ResolucionLegajos9Constants", "String"]
 - ["C17ResolucionLegajos9Constants", "TEST_BASE_URL"]
+- !private ["C17ResolucionLegajos9Constants", "UIAlertAction"]
+- ["C17ResolucionLegajos9Constants", "UIAlertController"]
 - ["C17ResolucionLegajos9Constants", "UIColor"]
+- ["C17ResolucionLegajos9Constants", "UINavigationController"]
+- !private ["C17ResolucionLegajos9Constants", "Void"]
 - ["C17ResolucionLegajos9Constants", "YELLOW_COLOR"]
 - ["C17ResolucionLegajos9Constants", "deinit"]
 - ["C17ResolucionLegajos9Constants", "getAccessToken"]
@@ -147,6 +173,7 @@ depends-member:
 - ["C17ResolucionLegajos9Constants", "getDateStringFromDate"]
 - ["C17ResolucionLegajos9Constants", "init"]
 - ["C17ResolucionLegajos9Constants", "setAccessToken"]
+- ["C17ResolucionLegajos9Constants", "showResolucionDialog"]
 - !private ["PSs28CustomDebugStringConvertible", "Generator"]
 - !private ["PSs28CustomDebugStringConvertible", "Index"]
 - !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
@@ -167,13 +194,17 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "NSDateFormatter"]
 - !private ["PSs23CustomStringConvertible", "NSUserDefaults"]
 - ["PSs23CustomStringConvertible", "PRODUCTION_BASE_URL"]
+- !private ["PSs23CustomStringConvertible", "ResolucionViewController"]
 - !private ["PSs23CustomStringConvertible", "String"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - ["PSs23CustomStringConvertible", "TEST_BASE_URL"]
+- !private ["PSs23CustomStringConvertible", "UIAlertAction"]
+- !private ["PSs23CustomStringConvertible", "UIAlertController"]
 - ["PSs23CustomStringConvertible", "UIColor"]
 - ["PSs23CustomStringConvertible", "YELLOW_COLOR"]
 - !private ["PSs23CustomStringConvertible", "_Element"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "addAction"]
 - !private ["PSs23CustomStringConvertible", "characters"]
 - !private ["PSs23CustomStringConvertible", "dateFormat"]
 - !private ["PSs23CustomStringConvertible", "dateFromString"]
@@ -182,8 +213,10 @@ depends-member:
 - ["PSs23CustomStringConvertible", "getDateStringFromDate"]
 - ["PSs23CustomStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "map"]
+- !private ["PSs23CustomStringConvertible", "presentViewController"]
 - ["PSs23CustomStringConvertible", "setAccessToken"]
 - !private ["PSs23CustomStringConvertible", "setValue"]
+- ["PSs23CustomStringConvertible", "showResolucionDialog"]
 - !private ["PSs23CustomStringConvertible", "standardUserDefaults"]
 - !private ["PSs23CustomStringConvertible", "stringFromDate"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
@@ -191,20 +224,27 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "valueForKey"]
 - ["PSs23CustomStringConvertible", ""]
 - ["PSs9Equatable", "ACCESS_TOKEN_KEY"]
+- !private ["PSs9Equatable", "Alert"]
 - ["PSs9Equatable", "BASE_URL"]
 - ["PSs9Equatable", "CLEAR_COLOR"]
+- !private ["PSs9Equatable", "Cancel"]
 - ["PSs9Equatable", "Constants"]
 - ["PSs9Equatable", "DARK_COLOR"]
+- !private ["PSs9Equatable", "Default"]
 - !private ["PSs9Equatable", "Distance"]
 - !private ["PSs9Equatable", "IntegerLiteralType"]
 - !private ["PSs9Equatable", "NSDateFormatter"]
 - !private ["PSs9Equatable", "NSUserDefaults"]
 - ["PSs9Equatable", "PRODUCTION_BASE_URL"]
+- !private ["PSs9Equatable", "ResolucionViewController"]
 - !private ["PSs9Equatable", "String"]
 - ["PSs9Equatable", "TEST_BASE_URL"]
+- !private ["PSs9Equatable", "UIAlertAction"]
+- !private ["PSs9Equatable", "UIAlertController"]
 - ["PSs9Equatable", "UIColor"]
 - ["PSs9Equatable", "YELLOW_COLOR"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "addAction"]
 - !private ["PSs9Equatable", "characters"]
 - !private ["PSs9Equatable", "dateFormat"]
 - !private ["PSs9Equatable", "dateFromString"]
@@ -212,8 +252,10 @@ depends-member:
 - ["PSs9Equatable", "getDateAndHourFromString"]
 - ["PSs9Equatable", "getDateStringFromDate"]
 - ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "presentViewController"]
 - ["PSs9Equatable", "setAccessToken"]
 - !private ["PSs9Equatable", "setValue"]
+- ["PSs9Equatable", "showResolucionDialog"]
 - !private ["PSs9Equatable", "standardUserDefaults"]
 - !private ["PSs9Equatable", "stringFromDate"]
 - !private ["PSs9Equatable", "synchronize"]
@@ -225,20 +267,27 @@ depends-member:
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
 - !private ["PSs13GeneratorType", "Element"]
 - ["PSs8Hashable", "ACCESS_TOKEN_KEY"]
+- !private ["PSs8Hashable", "Alert"]
 - ["PSs8Hashable", "BASE_URL"]
 - ["PSs8Hashable", "CLEAR_COLOR"]
+- !private ["PSs8Hashable", "Cancel"]
 - ["PSs8Hashable", "Constants"]
 - ["PSs8Hashable", "DARK_COLOR"]
+- !private ["PSs8Hashable", "Default"]
 - !private ["PSs8Hashable", "Distance"]
 - !private ["PSs8Hashable", "IntegerLiteralType"]
 - !private ["PSs8Hashable", "NSDateFormatter"]
 - !private ["PSs8Hashable", "NSUserDefaults"]
 - ["PSs8Hashable", "PRODUCTION_BASE_URL"]
+- !private ["PSs8Hashable", "ResolucionViewController"]
 - !private ["PSs8Hashable", "String"]
 - ["PSs8Hashable", "TEST_BASE_URL"]
+- !private ["PSs8Hashable", "UIAlertAction"]
+- !private ["PSs8Hashable", "UIAlertController"]
 - ["PSs8Hashable", "UIColor"]
 - ["PSs8Hashable", "YELLOW_COLOR"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "addAction"]
 - !private ["PSs8Hashable", "characters"]
 - !private ["PSs8Hashable", "dateFormat"]
 - !private ["PSs8Hashable", "dateFromString"]
@@ -246,8 +295,10 @@ depends-member:
 - ["PSs8Hashable", "getDateAndHourFromString"]
 - ["PSs8Hashable", "getDateStringFromDate"]
 - ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "presentViewController"]
 - ["PSs8Hashable", "setAccessToken"]
 - !private ["PSs8Hashable", "setValue"]
+- ["PSs8Hashable", "showResolucionDialog"]
 - !private ["PSs8Hashable", "standardUserDefaults"]
 - !private ["PSs8Hashable", "stringFromDate"]
 - !private ["PSs8Hashable", "synchronize"]
@@ -293,10 +344,12 @@ depends-member:
 - !private ["PSs16MutableSliceable", "_Element"]
 - !private ["PSs16MutableSliceable", "map"]
 - !private ["PSs16MutableSliceable", "subscript"]
+- !private ["PSo8NSCoding", "addAction"]
 - !private ["PSo8NSCoding", "characters"]
 - !private ["PSo8NSCoding", "dateFormat"]
 - !private ["PSo8NSCoding", "dateFromString"]
 - ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "presentViewController"]
 - !private ["PSo8NSCoding", "stringFromDate"]
 - !private ["PSo9NSCopying", "characters"]
 - !private ["PSo9NSCopying", "dateFormat"]
@@ -307,6 +360,9 @@ depends-member:
 - !private ["CSo15NSDateFormatter", "dateFromString"]
 - !private ["CSo15NSDateFormatter", "init"]
 - !private ["CSo15NSDateFormatter", "stringFromDate"]
+- !private ["PSo26NSExtensionRequestHandling", "addAction"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
 - !private ["CSo11NSFormatter", "dateFormat"]
 - !private ["CSo11NSFormatter", "dateFromString"]
 - !private ["CSo11NSFormatter", "init"]
@@ -317,14 +373,21 @@ depends-member:
 - ["CSo8NSObject", "CLEAR_COLOR"]
 - ["CSo8NSObject", "Constants"]
 - ["CSo8NSObject", "DARK_COLOR"]
+- ["CSo8NSObject", "InfraccionInfo"]
 - ["CSo8NSObject", "NSDate"]
 - !private ["CSo8NSObject", "NSDateFormatter"]
 - !private ["CSo8NSObject", "NSUserDefaults"]
 - ["CSo8NSObject", "PRODUCTION_BASE_URL"]
+- !private ["CSo8NSObject", "ResolucionViewController"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "TEST_BASE_URL"]
+- !private ["CSo8NSObject", "UIAlertAction"]
+- ["CSo8NSObject", "UIAlertController"]
 - ["CSo8NSObject", "UIColor"]
+- ["CSo8NSObject", "UINavigationController"]
+- !private ["CSo8NSObject", "Void"]
 - ["CSo8NSObject", "YELLOW_COLOR"]
+- !private ["CSo8NSObject", "addAction"]
 - !private ["CSo8NSObject", "characters"]
 - !private ["CSo8NSObject", "dateFormat"]
 - !private ["CSo8NSObject", "dateFromString"]
@@ -332,8 +395,10 @@ depends-member:
 - ["CSo8NSObject", "getDateAndHourFromString"]
 - ["CSo8NSObject", "getDateStringFromDate"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "presentViewController"]
 - ["CSo8NSObject", "setAccessToken"]
 - !private ["CSo8NSObject", "setValue"]
+- ["CSo8NSObject", "showResolucionDialog"]
 - !private ["CSo8NSObject", "standardUserDefaults"]
 - !private ["CSo8NSObject", "stringFromDate"]
 - !private ["CSo8NSObject", "synchronize"]
@@ -347,10 +412,14 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSDateFormatter"]
 - !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
 - ["PSo16NSObjectProtocol", "PRODUCTION_BASE_URL"]
+- !private ["PSo16NSObjectProtocol", "ResolucionViewController"]
 - !private ["PSo16NSObjectProtocol", "String"]
 - ["PSo16NSObjectProtocol", "TEST_BASE_URL"]
+- !private ["PSo16NSObjectProtocol", "UIAlertAction"]
+- !private ["PSo16NSObjectProtocol", "UIAlertController"]
 - ["PSo16NSObjectProtocol", "UIColor"]
 - ["PSo16NSObjectProtocol", "YELLOW_COLOR"]
+- !private ["PSo16NSObjectProtocol", "addAction"]
 - !private ["PSo16NSObjectProtocol", "characters"]
 - !private ["PSo16NSObjectProtocol", "dateFormat"]
 - !private ["PSo16NSObjectProtocol", "dateFromString"]
@@ -358,8 +427,10 @@ depends-member:
 - ["PSo16NSObjectProtocol", "getDateAndHourFromString"]
 - ["PSo16NSObjectProtocol", "getDateStringFromDate"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "presentViewController"]
 - ["PSo16NSObjectProtocol", "setAccessToken"]
 - !private ["PSo16NSObjectProtocol", "setValue"]
+- ["PSo16NSObjectProtocol", "showResolucionDialog"]
 - !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
 - !private ["PSo16NSObjectProtocol", "stringFromDate"]
 - !private ["PSo16NSObjectProtocol", "synchronize"]
@@ -384,6 +455,10 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "map"]
 - !private ["PSs30RangeReplaceableCollectionType", "split"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- !private ["PSs16RawRepresentable", "Alert"]
+- !private ["PSs16RawRepresentable", "Cancel"]
+- !private ["PSs16RawRepresentable", "Default"]
+- !private ["C17ResolucionLegajos24ResolucionViewController", "init"]
 - !private ["PSs12SequenceType", "Element"]
 - !private ["PSs12SequenceType", "Generator"]
 - !private ["PSs12SequenceType", "Index"]
@@ -411,7 +486,35 @@ depends-member:
 - !private ["PSs30StringInterpolationConvertible", "init"]
 - !private ["PSs24StringLiteralConvertible", "characters"]
 - !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["CSo13UIAlertAction", "init"]
+- !private ["OSC18UIAlertActionStyle", "Cancel"]
+- !private ["OSC18UIAlertActionStyle", "Default"]
+- !private ["CSo17UIAlertController", "addAction"]
+- !private ["CSo17UIAlertController", "init"]
+- !private ["OSC22UIAlertControllerStyle", "Alert"]
+- !private ["PSo21UIAppearanceContainer", "addAction"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "presentViewController"]
 - ["CSo7UIColor", "init"]
+- !private ["PSo18UIContentContainer", "addAction"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "presentViewController"]
+- !private ["PSo18UIFocusEnvironment", "addAction"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "presentViewController"]
+- !private ["CSo22UINavigationController", "presentViewController"]
+- !private ["CSo11UIResponder", "addAction"]
+- !private ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "presentViewController"]
+- !private ["PSo16UIStateRestoring", "addAction"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "presentViewController"]
+- !private ["PSo18UITraitEnvironment", "addAction"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "presentViewController"]
+- !private ["CSo16UIViewController", "addAction"]
+- !private ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "presentViewController"]
 - !private ["P9Alamofire20URLStringConvertible", "characters"]
 - !private ["P9Alamofire20URLStringConvertible", "init"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "characters"]
@@ -517,6 +620,7 @@ depends-nominal:
 - "PSo8NSCoding"
 - "PSo9NSCopying"
 - !private "CSo15NSDateFormatter"
+- !private "PSo26NSExtensionRequestHandling"
 - !private "CSo11NSFormatter"
 - !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
@@ -528,6 +632,8 @@ depends-nominal:
 - !private "PSs16OutputStreamType"
 - !private "PSs21RandomAccessIndexType"
 - !private "PSs30RangeReplaceableCollectionType"
+- !private "PSs16RawRepresentable"
+- !private "C17ResolucionLegajos24ResolucionViewController"
 - !private "PSs12SequenceType"
 - !private "PSs17SignedIntegerType"
 - !private "PSs16SignedNumberType"
@@ -537,7 +643,19 @@ depends-nominal:
 - !private "SS"
 - !private "PSs30StringInterpolationConvertible"
 - !private "PSs24StringLiteralConvertible"
+- !private "CSo13UIAlertAction"
+- !private "OSC18UIAlertActionStyle"
+- !private "CSo17UIAlertController"
+- !private "OSC22UIAlertControllerStyle"
+- !private "PSo21UIAppearanceContainer"
 - "CSo7UIColor"
+- !private "PSo18UIContentContainer"
+- !private "PSo18UIFocusEnvironment"
+- !private "CSo22UINavigationController"
+- !private "CSo11UIResponder"
+- !private "PSo16UIStateRestoring"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo16UIViewController"
 - !private "P9Alamofire20URLStringConvertible"
 - !private "PSs31UnicodeScalarLiteralConvertible"
 - !private "CSs17_AnyGeneratorBase"
@@ -575,4 +693,4 @@ depends-external:
 - "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreData.swiftmodule"
-interface-hash: "359d71d41a329238fb2a8bb09b46519a"
+interface-hash: "bf06d5402581c652df742671790ce4c9"

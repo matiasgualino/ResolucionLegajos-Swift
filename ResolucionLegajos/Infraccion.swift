@@ -8,13 +8,24 @@
 
 import UIKit
 
-class Infraccion: NSObject {
+class Infraccion: NSObject, NSCopying {
 
 	var codigo : String?
 	var descripcion : String?
 	var sanciones : [Sancion]?
 	var resolucion : Resolucion?
 
+	init(codigo: String?, descripcion: String?, sanciones: [Sancion]?, resolucion: Resolucion?) {
+		self.codigo = codigo
+		self.descripcion = descripcion
+		self.sanciones = sanciones
+		self.resolucion = resolucion
+	}
+	
+	override init() {
+		
+	}
+	
 	class func fromJSON(json : NSDictionary) -> Infraccion {
 		let infraccion : Infraccion = Infraccion()
 		if json["codigo"] != nil {
@@ -53,4 +64,10 @@ class Infraccion: NSObject {
 		]
 		return JSON(obj).toString()
 	}
+	
+	func copyWithZone(zone: NSZone) -> AnyObject {
+		let copy = Infraccion(codigo: codigo, descripcion: descripcion, sanciones: sanciones, resolucion: resolucion)
+		return copy
+	}
+	
 }

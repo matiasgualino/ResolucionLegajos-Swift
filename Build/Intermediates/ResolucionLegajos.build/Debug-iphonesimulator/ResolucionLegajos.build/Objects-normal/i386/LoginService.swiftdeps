@@ -6,24 +6,24 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos12LoginService", ""]
 provides-dynamic-lookup:
-- "LOGIN_METHOD"
 - "LOGIN_URI"
+- "LOGIN_METHOD"
 - "login"
 depends-top-level:
-- !private "NSURL"
-- !private "NSString"
-- "String"
 - !private "NSMutableURLRequest"
+- !private "NSURL"
+- "NSError"
+- "Void"
+- !private "NSUTF8StringEncoding"
+- "LoginRequest"
+- !private "NSString"
+- !private "+"
+- "String"
+- "LoginService"
+- !private "Alamofire"
 - "StringLiteralType"
 - "NSObject"
-- "Void"
-- "LoginRequest"
-- "NSError"
 - !private "Constants"
-- "LoginService"
-- !private "+"
-- !private "NSUTF8StringEncoding"
-- !private "Alamofire"
 depends-member:
 - !private ["PSs9AnyObject", "Alamofire"]
 - !private ["PSs9AnyObject", "BASE_URL"]

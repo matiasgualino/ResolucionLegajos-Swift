@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResolucionView" customModule="ResolucionLegajos" customModuleProvider="target">
+            <connections>
+                <outlet property="importeLabel" destination="JUx-hu-lbI" id="mWY-Ny-dgr"/>
+                <outlet property="importeTextField" destination="4NO-e0-9Ig" id="Cko-of-mLb"/>
+                <outlet property="notaTextView" destination="jqf-7P-asK" id="6v5-98-8QE"/>
+                <outlet property="puntosTextField" destination="H6W-UD-FFM" id="9Sh-Dx-VTc"/>
+                <outlet property="segmentedControl" destination="rjH-R1-lBV" id="U6F-Qd-UbN"/>
+                <outlet property="tituloLabel" destination="bYo-TU-Zig" id="Ard-gT-29M"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="BpG-MQ-ZRH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jqf-7P-asK">
+                    <rect key="frame" x="8" y="77" width="584" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="NTU-hv-2P9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="light" returnKeyType="done"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nota:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1I-Bw-VWe">
+                    <rect key="frame" x="8" y="48" width="584" height="19"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55A-3j-W0J">
+                    <rect key="frame" x="8" y="192" width="120" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="n57-Af-GiI"/>
+                        <constraint firstAttribute="width" constant="120" id="n9m-dj-mtN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Importe ($):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUx-hu-lbI">
+                    <rect key="frame" x="8" y="275" width="120" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="MiG-ee-Ore"/>
+                        <constraint firstAttribute="height" constant="25" id="MxT-cw-O2q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Haz clic para agregar los puntos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H6W-UD-FFM">
+                    <rect key="frame" x="136" y="192" width="456" height="25"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" returnKeyType="done"/>
+                </textField>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rjH-R1-lBV">
+                    <rect key="frame" x="8" y="232" width="584" height="29"/>
+                    <segments>
+                        <segment title="Importe ($)"/>
+                        <segment title="Unidades fijas"/>
+                    </segments>
+                    <color key="tintColor" red="0.1529411765" green="0.12549019610000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </segmentedControl>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Haz clic para agregar el importe en pesos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4NO-e0-9Ig">
+                    <rect key="frame" x="138" y="275" width="454" height="25"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="done"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resolución - Ingreso Manual (99)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYo-TU-Zig">
+                    <rect key="frame" x="8" y="8" width="584" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="1Ut-87-pEd"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="cxq-zM-EYv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="N1I-Bw-VWe" firstAttribute="top" secondItem="bYo-TU-Zig" secondAttribute="bottom" constant="15" id="2OK-DI-tGd"/>
+                <constraint firstAttribute="trailing" secondItem="H6W-UD-FFM" secondAttribute="trailing" constant="8" id="2iP-Tz-xf4"/>
+                <constraint firstItem="55A-3j-W0J" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="3NI-Rz-yjp"/>
+                <constraint firstItem="jqf-7P-asK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="3zH-OC-gBt"/>
+                <constraint firstItem="bYo-TU-Zig" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="5N3-Qv-hDQ"/>
+                <constraint firstItem="N1I-Bw-VWe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="J6S-g7-IHs"/>
+                <constraint firstItem="JUx-hu-lbI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="JSq-MT-EDk"/>
+                <constraint firstItem="H6W-UD-FFM" firstAttribute="height" secondItem="55A-3j-W0J" secondAttribute="height" id="S0f-Mq-dJe"/>
+                <constraint firstItem="H6W-UD-FFM" firstAttribute="top" secondItem="jqf-7P-asK" secondAttribute="bottom" constant="15" id="ViJ-3k-smR"/>
+                <constraint firstItem="rjH-R1-lBV" firstAttribute="top" secondItem="H6W-UD-FFM" secondAttribute="bottom" constant="15" id="X6B-Mr-obq"/>
+                <constraint firstItem="bYo-TU-Zig" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="bJ3-MT-Cgt"/>
+                <constraint firstAttribute="trailing" secondItem="jqf-7P-asK" secondAttribute="trailing" constant="8" id="brE-Yy-Y4H"/>
+                <constraint firstItem="jqf-7P-asK" firstAttribute="top" secondItem="N1I-Bw-VWe" secondAttribute="bottom" constant="10" id="eBf-IG-TL0"/>
+                <constraint firstAttribute="trailing" secondItem="4NO-e0-9Ig" secondAttribute="trailing" constant="8" id="eSn-hf-Fkd"/>
+                <constraint firstItem="4NO-e0-9Ig" firstAttribute="top" secondItem="rjH-R1-lBV" secondAttribute="bottom" constant="15" id="gEa-4z-ZQo"/>
+                <constraint firstAttribute="trailing" secondItem="bYo-TU-Zig" secondAttribute="trailing" constant="8" id="iae-lv-3s0"/>
+                <constraint firstItem="H6W-UD-FFM" firstAttribute="leading" secondItem="55A-3j-W0J" secondAttribute="trailing" constant="8" id="jL2-1V-MTk"/>
+                <constraint firstAttribute="trailing" secondItem="N1I-Bw-VWe" secondAttribute="trailing" constant="8" id="jYh-rc-PtL"/>
+                <constraint firstItem="55A-3j-W0J" firstAttribute="top" secondItem="jqf-7P-asK" secondAttribute="bottom" constant="15" id="kRb-YA-pwM"/>
+                <constraint firstItem="rjH-R1-lBV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="n3r-WB-bo9"/>
+                <constraint firstAttribute="trailing" secondItem="rjH-R1-lBV" secondAttribute="trailing" constant="8" id="oEk-GS-Oro"/>
+                <constraint firstItem="4NO-e0-9Ig" firstAttribute="height" secondItem="JUx-hu-lbI" secondAttribute="height" id="qRB-7q-YAr"/>
+                <constraint firstItem="JUx-hu-lbI" firstAttribute="top" secondItem="rjH-R1-lBV" secondAttribute="bottom" constant="15" id="wlb-HW-kVl"/>
+                <constraint firstItem="4NO-e0-9Ig" firstAttribute="leading" secondItem="JUx-hu-lbI" secondAttribute="trailing" constant="10" id="yYH-ac-aov"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

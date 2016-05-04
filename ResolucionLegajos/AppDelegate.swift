@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		UINavigationBar.appearance().barTintColor = Constants.YELLOW_COLOR
 		UIBarButtonItem.appearance().tintColor = UIColor.blackColor()
 		
-		let controller = Constants.getAccessToken() != nil ? MainViewController() : LoginViewController()
+		let controller = Constants.isUserLogged() ? MainViewController() : LoginViewController()
 		
 		self.nav = UINavigationController(rootViewController: controller)
 		

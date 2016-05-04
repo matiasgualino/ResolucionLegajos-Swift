@@ -122,21 +122,48 @@ SWIFT_CLASS("_TtC17ResolucionLegajos11ActaService")
 + (NSString * __nonnull)GET_ALL_LEGAJOS_URI;
 + (NSString * __nonnull)GET_ALL_LEGAJOS_METHOD;
 + (void)finalizarResolucion:(PostLegajoRequest * __nonnull)postLegajoRequest success:(void (^ __nonnull)(NSString * __nullable))success failure:(void (^ __nonnull)(NSError * __nonnull))failure;
-+ (void)suspenderResolucion:(PostLegajoRequest * __nonnull)postLegajoRequest success:(void (^ __nonnull)(NSString * __nullable))success failure:(void (^ __nonnull)(NSError * __nonnull))failure;
++ (void)suspenderResolucion:(PostLegajoRequest * __nonnull)postLegajoRequest success:(void (^ __nonnull)(void))success failure:(void (^ __nonnull)(NSError * __nonnull))failure;
 + (void)getLegajo:(NSString * __nonnull)accessToken legajoId:(NSString * __nonnull)legajoId success:(void (^ __nonnull)(Legajo * __nullable))success failure:(void (^ __nonnull)(NSError * __nonnull))failure;
 + (void)getAllLegajos:(NSString * __nonnull)accessToken success:(void (^ __nonnull)(NSArray<Legajo *> * __nullable))success failure:(void (^ __nonnull)(NSError * __nonnull))failure;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSBundle;
+@class UILoadingView;
 @class NSCoder;
+@class NSBundle;
+
+SWIFT_CLASS("_TtC17ResolucionLegajos20MasterViewController")
+@interface MasterViewController : UIViewController
+@property (nonatomic) BOOL isLoadingMessageShowing;
+@property (nonatomic, strong) UILoadingView * __null_unspecified loadingView;
+@property (nonatomic, copy) NSString * __nullable accessToken;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (void)showLoadingMessage;
+- (void)hideLoadingMessage;
+- (void)showLoadingMessage:(NSString * __nonnull)message;
+@end
+
+@class InfraccionInfo;
+@class UIBarButtonItem;
+@class CaratulaView;
+@class LegajoView;
 
 SWIFT_CLASS("_TtC17ResolucionLegajos18ActaViewController")
-@interface ActaViewController : UIViewController
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+@interface ActaViewController : MasterViewController
+@property (nonatomic, strong) Legajo * __nullable legajo;
+@property (nonatomic, strong) InfraccionInfo * __nullable infraccion;
+@property (nonatomic, strong) UIBarButtonItem * __nullable btnInfo;
+@property (nonatomic, strong) UIBarButtonItem * __nullable btnCaratula;
+@property (nonatomic, strong) CaratulaView * __nullable caratulaView;
+@property (nonatomic, strong) LegajoView * __nullable legajoView;
+- (nonnull instancetype)initWithLegajo:(Legajo * __nonnull)legajo infraccion:(InfraccionInfo * __nonnull)infraccion OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)viewDidLoad;
+- (void)infoLegajo;
+- (void)caratulaLegajo;
 @end
 
 @class UIWindow;
@@ -165,30 +192,13 @@ SWIFT_CLASS("_TtC17ResolucionLegajos11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILoadingView;
-
-SWIFT_CLASS("_TtC17ResolucionLegajos20MasterViewController")
-@interface MasterViewController : UIViewController
-@property (nonatomic) BOOL isLoadingMessageShowing;
-@property (nonatomic, strong) UILoadingView * __null_unspecified loadingView;
-@property (nonatomic, copy) NSString * __nullable accessToken;
-- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (void)showLoadingMessage;
-- (void)hideLoadingMessage;
-- (void)showLoadingMessage:(NSString * __nonnull)message;
-@end
-
-@protocol UIViewControllerTransitionCoordinator;
 @class UIScrollView;
-@class UIView;
 @class UIImageView;
 @class NSLayoutConstraint;
 
-SWIFT_CLASS("_TtC17ResolucionLegajos22CaratulaViewController")
-@interface CaratulaViewController : MasterViewController <UIScrollViewDelegate>
+SWIFT_CLASS("_TtC17ResolucionLegajos12CaratulaView")
+@interface CaratulaView : UIView <UIScrollViewDelegate>
+@property (nonatomic, strong) IBOutlet UIView * __null_unspecified view;
 @property (nonatomic, weak) IBOutlet UIScrollView * __null_unspecified scrollView;
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified imageView;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * __null_unspecified imageConstraintTop;
@@ -197,13 +207,26 @@ SWIFT_CLASS("_TtC17ResolucionLegajos22CaratulaViewController")
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * __null_unspecified imageConstraintBottom;
 @property (nonatomic) CGFloat lastZoomScale;
 @property (nonatomic, copy) NSString * __nullable legajoId;
+@property (nonatomic, copy) void (^ __nullable finishLoadingDelegate)(void);
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)loadLegajo:(NSString * __nullable)legajoId;
+- (void)updateConstraints;
+- (void)updateZoom;
+- (void)scrollViewDidZoom:(UIScrollView * __nonnull)scrollView;
+- (UIView * __nullable)viewForZoomingInScrollView:(UIScrollView * __nonnull)scrollView;
+@end
+
+@protocol UIViewControllerTransitionCoordinator;
+
+SWIFT_CLASS("_TtC17ResolucionLegajos22CaratulaViewController")
+@interface CaratulaViewController : MasterViewController <UIScrollViewDelegate>
+@property (nonatomic, strong) CaratulaView * __null_unspecified caratulaView;
+@property (nonatomic, copy) NSString * __nullable legajoId;
 - (nonnull instancetype)initWithLegajoId:(NSString * __nullable)legajoId OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)viewDidLoad;
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> __nonnull)coordinator;
-- (void)updateConstraints;
-- (void)scrollViewDidZoom:(UIScrollView * __nonnull)scrollView;
-- (UIView * __nullable)viewForZoomingInScrollView:(UIScrollView * __nonnull)scrollView;
 @end
 
 @class UIColor;
@@ -234,6 +257,7 @@ SWIFT_CLASS("_TtC17ResolucionLegajos8CardView")
 @end
 
 @class NSDate;
+@class UIAlertController;
 
 SWIFT_CLASS("_TtC17ResolucionLegajos9Constants")
 @interface Constants : NSObject
@@ -247,16 +271,18 @@ SWIFT_CLASS("_TtC17ResolucionLegajos9Constants")
 + (void)setAccessToken:(NSString * __nonnull)accessToken;
 + (NSDate * __null_unspecified)getDateAndHourFromString:(NSString * __null_unspecified)string;
 + (NSString * __null_unspecified)getDateStringFromDate:(NSDate * __nonnull)date;
++ (UIAlertController * __nonnull)showResolucionDialog:(InfraccionInfo * __nonnull)ii navigationController:(UINavigationController * __nonnull)navigationController;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC17ResolucionLegajos20FinishViewController")
-@interface FinishViewController : UIViewController
+@interface FinishViewController : MasterViewController
+@property (nonatomic, strong) Legajo * __nullable legajo;
+- (nonnull instancetype)initWithLegajo:(Legajo * __nonnull)legajo OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
-- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class Sancion;
@@ -273,6 +299,14 @@ SWIFT_CLASS("_TtC17ResolucionLegajos10Infraccion")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC17ResolucionLegajos14InfraccionInfo")
+@interface InfraccionInfo : NSObject
+@property (nonatomic, strong) Acta * __nullable acta;
+@property (nonatomic, strong) Infraccion * __nullable infraccion;
+- (nonnull instancetype)initWithInfraccion:(Infraccion * __nonnull)infraccion acta:(Acta * __nonnull)acta OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UILabel;
 
 SWIFT_CLASS("_TtC17ResolucionLegajos23InfraccionTableViewCell")
@@ -285,6 +319,10 @@ SWIFT_CLASS("_TtC17ResolucionLegajos23InfraccionTableViewCell")
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblVisualizar;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblResolver;
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified imgState;
+@property (nonatomic, strong) InfraccionInfo * __nullable infraccionInfo;
+- (void)_setInfraccionInfo:(InfraccionInfo * __nonnull)ii;
+- (void)visualizar;
+- (void)resolver;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __null_unspecified)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (void)awakeFromNib;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -328,11 +366,37 @@ SWIFT_CLASS("_TtC17ResolucionLegajos19LegajoTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
+
+SWIFT_CLASS("_TtC17ResolucionLegajos10LegajoView")
+@interface LegajoView : UIView
+@property (nonatomic, strong) IBOutlet UIView * __null_unspecified view;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblNombreCompleto;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblFecha;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblDU;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblDominio;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblNumero;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblActaNumero;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblImporteMinimo;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblActaDescripcion;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblInfraccionDescripcion;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblInfraccionCodigo;
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified btnResolver;
+@property (nonatomic, strong) Legajo * __nullable legajo;
+@property (nonatomic, strong) InfraccionInfo * __nullable infraccionInfo;
+@property (nonatomic, copy) void (^ __nullable resolverDelegate)(void);
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)resolver;
+- (void)loadData:(Legajo * __nonnull)legajo ii:(InfraccionInfo * __nonnull)ii;
+@end
+
 @class UITableView;
 @class NSIndexPath;
 
 SWIFT_CLASS("_TtC17ResolucionLegajos20LegajoViewController")
 @interface LegajoViewController : MasterViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, copy) NSArray<InfraccionInfo *> * __null_unspecified infracciones;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblTitle;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblDominio;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblFecha;
@@ -358,6 +422,8 @@ SWIFT_CLASS("_TtC17ResolucionLegajos20LegajoViewController")
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)resolverClicked:(InfraccionInfo * __nonnull)ii;
+- (void)visualizarClicked:(InfraccionInfo * __nonnull)ii;
 @end
 
 
@@ -395,7 +461,6 @@ SWIFT_CLASS("_TtC17ResolucionLegajos12LoginService")
 @end
 
 @class UITextField;
-@class UIButton;
 
 SWIFT_CLASS("_TtC17ResolucionLegajos19LoginViewController")
 @interface LoginViewController : UIViewController
@@ -462,6 +527,15 @@ SWIFT_CLASS("_TtC17ResolucionLegajos10Resolucion")
 + (Resolucion * __nonnull)fromJSON:(NSDictionary * __nonnull)json;
 - (NSString * __nonnull)toJSONString;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC17ResolucionLegajos24ResolucionViewController")
+@interface ResolucionViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 

@@ -8,20 +8,20 @@ provides-member:
 provides-dynamic-lookup:
 - "id"
 - "lblTitle"
-- "lblDominio"
-- "setLegajo"
 - "awakeFromNib"
+- "lblDominio"
 - "lblFecha"
+- "setLegajo"
 depends-top-level:
-- "LegajoTableViewCell"
-- "String"
 - "UILabel"
-- !private "StringLiteralType"
-- "NSCoder"
-- "UITableViewCellStyle"
-- "Legajo"
+- "String"
 - "CardTableViewCell"
 - !private "+"
+- !private "StringLiteralType"
+- "LegajoTableViewCell"
+- "Legajo"
+- "NSCoder"
+- "UITableViewCellStyle"
 depends-member:
 - ["PSs9AnyObject", "awakeFromNib"]
 - !private ["PSs9AnyObject", "dominio"]

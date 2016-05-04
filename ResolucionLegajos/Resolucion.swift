@@ -8,13 +8,25 @@
 
 import UIKit
 
-class Resolucion: NSObject {
+class Resolucion: NSObject, NSCopying {
 
 	var codigo : String?
 	var uf : Double?
 	var importe : Double?
 	var nota : String?
 	var puntos : Int?
+	
+	init(codigo: String?, uf: Double?, importe: Double?, nota: String?, puntos: Int?) {
+		self.codigo = codigo
+		self.uf = uf
+		self.importe = importe
+		self.nota = nota
+		self.puntos = puntos
+	}
+	
+	override init() {
+		
+	}
 	
 	class func fromJSON(json : NSDictionary) -> Resolucion {
 		let resolucion : Resolucion = Resolucion()
@@ -45,5 +57,10 @@ class Resolucion: NSObject {
 			"puntos" : self.puntos == nil ? JSON.null : self.puntos!
 		]
 		return JSON(obj).toString()
+	}
+	
+	func copyWithZone(zone: NSZone) -> AnyObject {
+		let copy = Resolucion(codigo: codigo, uf: uf, importe: importe, nota: nota, puntos: puntos)
+		return copy
 	}
 }

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CaratulaView" customModule="ResolucionLegajos" customModuleProvider="target">
+            <connections>
+                <outlet property="imageConstraintBottom" destination="PNe-Xg-E5G" id="agQ-FG-z26"/>
+                <outlet property="imageConstraintLeft" destination="7Ud-L0-66N" id="7vH-Ll-GyQ"/>
+                <outlet property="imageConstraintRight" destination="Wj0-DM-Iv2" id="UfX-Cq-uNw"/>
+                <outlet property="imageConstraintTop" destination="uw3-6V-ryV" id="iy9-pc-xXh"/>
+                <outlet property="imageView" destination="hpc-4e-BlG" id="F4N-Mo-Rcg"/>
+                <outlet property="scrollView" destination="WnR-Bg-f46" id="OAf-pd-V6x"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Fkq-LV-t6K"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WnR-Bg-f46">
+                    <rect key="frame" x="0.0" y="0.0" width="605" height="606"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hpc-4e-BlG">
+                            <rect key="frame" x="250" y="250" width="104" height="106"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hpc-4e-BlG" firstAttribute="centerY" secondItem="WnR-Bg-f46" secondAttribute="centerY" id="6mJ-ff-q8R"/>
+                        <constraint firstItem="hpc-4e-BlG" firstAttribute="leading" secondItem="WnR-Bg-f46" secondAttribute="leading" constant="250" id="7Ud-L0-66N"/>
+                        <constraint firstAttribute="bottom" secondItem="hpc-4e-BlG" secondAttribute="bottom" constant="250" id="PNe-Xg-E5G"/>
+                        <constraint firstAttribute="trailing" secondItem="hpc-4e-BlG" secondAttribute="trailing" constant="250" id="Wj0-DM-Iv2"/>
+                        <constraint firstItem="hpc-4e-BlG" firstAttribute="centerX" secondItem="WnR-Bg-f46" secondAttribute="centerX" id="hdQ-xL-dvo"/>
+                        <constraint firstItem="hpc-4e-BlG" firstAttribute="top" secondItem="WnR-Bg-f46" secondAttribute="top" constant="250" id="uw3-6V-ryV"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="WnR-Bg-f46" secondAttribute="trailing" constant="-5" id="Wcg-BH-PiC"/>
+                <constraint firstItem="WnR-Bg-f46" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cGG-Ej-Vzq"/>
+                <constraint firstItem="WnR-Bg-f46" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dhQ-oh-gpi"/>
+                <constraint firstAttribute="bottom" secondItem="WnR-Bg-f46" secondAttribute="bottom" constant="-6" id="ixm-jP-mfW"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

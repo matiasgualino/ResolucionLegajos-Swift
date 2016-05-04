@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Legajo: NSObject {
+class Legajo: NSObject, NSCopying {
 
 	var numero : String?
 	var fecha : String?
@@ -18,6 +18,21 @@ class Legajo: NSObject {
 	var observaciones : String?
 	var id : String?
 	var actas : [Acta]?
+	
+	init(numero: String?, fecha: String?, dominio: String?, nombrecompleto: String?, du: String?, observaciones: String?, id: String?, actas: [Acta]?) {
+		self.numero = numero
+		self.fecha = fecha
+		self.dominio = dominio
+		self.nombrecompleto = nombrecompleto
+		self.du = du
+		self.observaciones = observaciones
+		self.id = id
+		self.actas = actas
+	}
+	
+	override init() {
+		
+	}
 
 	class func fromJSON(json : NSDictionary) -> Legajo {
 		let legajo : Legajo = Legajo()
@@ -79,6 +94,11 @@ class Legajo: NSObject {
 			"actas" : actasArray == nil ? JSON.null : actasArray!
 		]
 		return JSON(obj).toString()
+	}
+	
+	func copyWithZone(zone: NSZone) -> AnyObject {
+		let copy = Legajo(numero: numero, fecha: fecha, dominio: dominio, nombrecompleto: nombrecompleto, du: du, observaciones: observaciones, id: id, actas: actas)
+		return copy
 	}
 	
 }

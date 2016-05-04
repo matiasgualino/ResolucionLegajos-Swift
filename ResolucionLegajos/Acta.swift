@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Acta: NSObject {
+class Acta: NSObject, NSCopying {
 
 	var numero : String?
 	var descripcion : String?
@@ -16,6 +16,19 @@ class Acta: NSObject {
 	var importeminimo : Double?
 	var imagen : String?
 	var infracciones : [Infraccion]?
+	
+	init(numero: String?, descripcion: String?, ufcosto: Double?, importeminimo: Double?, imagen: String?, infracciones: [Infraccion]?) {
+		self.numero = numero
+		self.descripcion = descripcion
+		self.ufcosto = ufcosto
+		self.importeminimo = importeminimo
+		self.imagen = imagen
+		self.infracciones = infracciones
+	}
+	
+	override init() {
+		
+	}
 	
 	class func fromJSON(json : NSDictionary) -> Acta {
 		let acta : Acta = Acta()
@@ -62,6 +75,11 @@ class Acta: NSObject {
 			"infracciones" : infraccionesArray == nil ? JSON.null : infraccionesArray!
 		]
 		return JSON(obj).toString()
+	}
+	
+	func copyWithZone(zone: NSZone) -> AnyObject {
+		let copy = Acta(numero: numero, descripcion: descripcion, ufcosto: ufcosto, importeminimo: importeminimo, imagen: imagen, infracciones: infracciones)
+		return copy
 	}
 	
 }

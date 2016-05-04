@@ -21,7 +21,11 @@ class InfraccionTableViewCell: CardTableViewCell {
 	
 	@IBOutlet weak var imgState: UIImageView!
 	
-	func setInfraccionInfo(ii: InfraccionInfo) {
+	var delegate : InfraccionTableViewCellDelegate?
+	var infraccionInfo : InfraccionInfo?
+	
+	func _setInfraccionInfo(ii: InfraccionInfo) {
+		self.infraccionInfo = ii
 		if ii.infraccion != nil {
 			self.lblTitle.text = ii.infraccion?.descripcion
 			self.lblCodigo.text = ii.infraccion?.codigo
@@ -33,6 +37,19 @@ class InfraccionTableViewCell: CardTableViewCell {
 			self.lblCostoUF.text = String(format: "%.2f", ii.acta!.ufcosto!)
 			self.lblImporteMinimo.text = String(format: "%.2f", ii.acta!.importeminimo!)
 		}
+		
+		self.lblVisualizar.userInteractionEnabled = true
+		self.lblVisualizar.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(InfraccionTableViewCell.visualizar)))
+		self.lblResolver.userInteractionEnabled = true
+		self.lblResolver.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(InfraccionTableViewCell.resolver)))
+	}
+	
+	func visualizar() {
+		self.delegate?.visualizarClicked(self.infraccionInfo!)
+	}
+
+	func resolver() {
+		self.delegate?.resolverClicked(self.infraccionInfo!)
 	}
 	
 	override init(style: UITableViewCellStyle, reuseIdentifier: String!) {

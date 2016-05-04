@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos7Sancion", ""]
 provides-dynamic-lookup:
-- "codigo"
-- "fromJSON"
 - "toJSONString"
 - "descripcion"
+- "fromJSON"
+- "codigo"
 depends-top-level:
-- !private "AnyObject"
-- "Int"
-- !private "=="
 - !private "Dictionary"
-- "NSDictionary"
-- !private "JSON"
-- "Sancion"
-- !private "StringLiteralType"
-- "NSObject"
-- "Double"
 - !private "!="
+- "Int"
+- "Sancion"
 - "String"
+- "Double"
+- !private "AnyObject"
+- !private "=="
+- !private "JSON"
+- "NSObject"
+- "NSDictionary"
+- !private "StringLiteralType"
 depends-member:
 - !private ["PSs9AnyObject", "JSON"]
 - !private ["PSs9AnyObject", "Sancion"]

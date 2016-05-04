@@ -6,13 +6,13 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos24NoInternetViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
 - !private "StringLiteralType"
 - "UIViewController"
-- "NSCoder"
 - "NoInternetViewController"
+- "NSCoder"
 - !private "fatalError"
 depends-member:
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]

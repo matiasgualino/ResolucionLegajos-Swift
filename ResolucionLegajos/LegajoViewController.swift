@@ -8,9 +8,9 @@
 
 import UIKit
 
-class LegajoViewController: MasterViewController, UITableViewDataSource, UITableViewDelegate {
+class LegajoViewController: MasterViewController, UITableViewDataSource, UITableViewDelegate, InfraccionTableViewCellDelegate {
 	
-	var infracciones : [InfraccionInfo]!
+	var infracciones : Array<InfraccionInfo>!
 	@IBOutlet weak private var infraccionesTableView : UITableView!
 
 	@IBOutlet weak var lblTitle: UILabel!
@@ -39,12 +39,10 @@ class LegajoViewController: MasterViewController, UITableViewDataSource, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
 
-		self.showLoadingMessage()
-		
-		self.lblFinalizar.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("finalizarLegajo")))
+		self.lblFinalizar.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(LegajoViewController.finalizarLegajo)))
 		self.lblFinalizar.userInteractionEnabled = true
 
-		self.lblCaratula.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("caratula")))
+		self.lblCaratula.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(LegajoViewController.caratula)))
 		self.lblCaratula.userInteractionEnabled = true
 		
 		let infraccionNib = UINib(nibName: "InfraccionTableViewCell", bundle: nil)
@@ -60,6 +58,7 @@ class LegajoViewController: MasterViewController, UITableViewDataSource, UITable
 		
 		self.infraccionesTableView.backgroundColor = Constants.CLEAR_COLOR
 		
+		self.showLoadingMessage()
 		let accessToken = Constants.getAccessToken()
 		if legajoId != nil && accessToken != nil {
 			ActaService.getLegajo(accessToken!, legajoId: legajoId!, success: { (legajo) -> Void in
@@ -90,16 +89,12 @@ class LegajoViewController: MasterViewController, UITableViewDataSource, UITable
 			}
 			if legajo!.actas != nil {
 				self.lblCantidadActas.text = String(format: "%d", legajo!.actas!.count)
+				infracciones = [InfraccionInfo]()
 				for acta in legajo!.actas! {
 					if acta.infracciones != nil {
-						infracciones = [InfraccionInfo]()
 						cantidadInfracciones += acta.infracciones!.count
 						for infraccion in acta.infracciones! {
-
-							let infraccionInfo = InfraccionInfo()
-							infraccionInfo.acta = acta
-							infraccionInfo.infraccion = infraccion
-							infracciones.append(infraccionInfo)
+							infracciones!.append(InfraccionInfo(infraccion: infraccion, acta: acta))
 							
 							if infraccion.resolucion != nil {
 								if infraccion.resolucion!.puntos != nil {
@@ -108,7 +103,7 @@ class LegajoViewController: MasterViewController, UITableViewDataSource, UITable
 								if infraccion.resolucion!.importe != nil {
 									importeResuelto += infraccion.resolucion!.importe!
 								}
-								infraccionesResueltas++
+								infraccionesResueltas += 1
 							}
 						}
 					}
@@ -137,18 +132,23 @@ class LegajoViewController: MasterViewController, UITableViewDataSource, UITable
 	
 	func finalizarLegajo() {
 		if self.lblFinalizar.text == "FINALIZAR" {
-			self.navigationController?.pushViewController(FinishViewController(), animated: true)
+			self.navigationController?.pushViewController(FinishViewController(legajo: legajo!), animated: true)
 		} else {
 			let postLegajoRequest = PostLegajoRequest()
 			postLegajoRequest.legajo = self.legajo
 			postLegajoRequest.token = Constants.getAccessToken()
-			ActaService.suspenderResolucion(postLegajoRequest, success: { (legajo) -> Void in
-				
+			ActaService.suspenderResolucion(postLegajoRequest, success: { () -> Void in
+				let suspensionAlertView = UIAlertController(title: "INFORMACION", message: "Se ha suspendido el legajo exitosamente! Será redireccionado al inicio.", preferredStyle: .Alert)
+				suspensionAlertView.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+					
+				}))
+				self.presentViewController(suspensionAlertView, animated: true, completion: nil)
 				}, failure: { (error) -> Void in
 					
 			})
 		}
 	}
+	
 	
 	func caratula() {
 		self.navigationController?.pushViewController(CaratulaViewController(legajoId: self.legajoId), animated: true)
@@ -189,7 +189,8 @@ class LegajoViewController: MasterViewController, UITableViewDataSource, UITable
 			let infraccionCell : InfraccionTableViewCell = self.infraccionesTableView.dequeueReusableCellWithIdentifier("infraccionCell") as! InfraccionTableViewCell
 			
 			let infraccionInfo : InfraccionInfo = infracciones[indexPath.section - 1]
-			infraccionCell.setInfraccionInfo(infraccionInfo)
+			infraccionCell._setInfraccionInfo(infraccionInfo)
+			infraccionCell.delegate = self
 			infraccionCell.backgroundColor = UIColor.whiteColor()
 			return infraccionCell
 		}
@@ -205,8 +206,28 @@ class LegajoViewController: MasterViewController, UITableViewDataSource, UITable
 	
 	func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 		let infraccionSelected : InfraccionInfo = self.infracciones![indexPath.row]
-		self.navigationController?.pushViewController(ActaViewController(), animated: true)
+		self.navigationController?.pushViewController(ActaViewController(legajo: legajo!, infraccion: infraccionSelected), animated: true)
 	}
-
- 
+	
+	func resolverClicked(ii: InfraccionInfo) {
+		let vc = Constants.showResolucionDialog(ii, navigationController: self.navigationController!, callback: {(acta) -> Void in
+			
+			if self.legajo != nil && self.legajo!.actas != nil && ii.acta != nil {
+				let index = self.legajo!.actas!.indexOf(ii.acta!)
+				if index != nil {
+					self.legajo!.actas!.removeAtIndex(index!)
+					self.legajo!.actas!.insert(acta, atIndex: index!)
+					self.cargarLegajo()
+				}
+			}
+			
+		})
+		self.presentViewController(vc, animated: true, completion: nil)
+	}
+	
+	
+	func visualizarClicked(ii: InfraccionInfo) {
+		self.navigationController?.pushViewController(ActaViewController(legajo: legajo!, infraccion: ii), animated: true)
+	}
+	
 }

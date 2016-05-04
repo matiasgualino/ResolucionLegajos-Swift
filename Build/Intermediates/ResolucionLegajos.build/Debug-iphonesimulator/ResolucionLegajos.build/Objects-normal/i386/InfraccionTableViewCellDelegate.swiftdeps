@@ -1,11 +1,24 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "InfraccionTableViewCellDelegate"
 provides-nominal:
+- "P17ResolucionLegajos31InfraccionTableViewCellDelegate"
 provides-member:
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "NSObjectProtocol"
+- "InfraccionTableViewCellDelegate"
+- "InfraccionInfo"
 depends-member:
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "InfraccionInfo"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "resolverClicked"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "visualizarClicked"]
+- ["PSo16NSObjectProtocol", "InfraccionInfo"]
+- ["PSo16NSObjectProtocol", ""]
 depends-nominal:
+- "P17ResolucionLegajos31InfraccionTableViewCellDelegate"
+- "PSo16NSObjectProtocol"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
@@ -21,4 +34,4 @@ depends-external:
 - "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreData.swiftmodule"
-interface-hash: "5bf39d8b5f0094ca83c744a0da4fb204"
+interface-hash: "d17346c32ab0a4866d04b6f7e72cb289"

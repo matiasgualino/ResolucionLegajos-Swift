@@ -12,6 +12,9 @@ class MainViewController: MasterViewController, UITableViewDataSource, UITableVi
 
 	var legajos : [Legajo]!
 	@IBOutlet weak private var legajosTableView : UITableView!
+	@IBOutlet weak private var lblBienvenido : UILabel!
+	
+	@IBOutlet weak private var lblSalir : UILabel!
 	
 	override init() {
 		super.init(nibName: "MainViewController", bundle: nil)
@@ -26,7 +29,7 @@ class MainViewController: MasterViewController, UITableViewDataSource, UITableVi
 
 		self.title = "Inicio"
 		
-		if self.accessToken != nil {
+		if Constants.isUserLogged() {
 			self.showLoadingMessage()
 			let legajosNib = UINib(nibName: "LegajoTableViewCell", bundle: nil)
 			self.legajosTableView.registerNib(legajosNib, forCellReuseIdentifier: "legajoCell")
@@ -41,16 +44,29 @@ class MainViewController: MasterViewController, UITableViewDataSource, UITableVi
 			
 			self.legajosTableView.backgroundColor = Constants.CLEAR_COLOR
 			
+			self.lblSalir.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(MainViewController.salir)))
+			self.lblSalir.userInteractionEnabled = true
+			
+			self.lblBienvenido.text = "Bienvenido " + self.username!
+			
 			ActaService.getAllLegajos(self.accessToken!, success: { (legajos) -> Void in
 				self.legajos = legajos
 				self.legajosTableView.reloadData()
 				self.hideLoadingMessage()
+				
+				//self.navigationController?.presentViewController(ReminderViewController(), animated: true, completion: nil)
+				
 				}) { (error) -> Void in
 					// TODO: ERROR
 			}
 		} else {
 			// TODO: ERROR
 		}
+	}
+	
+	func salir() {
+		Constants.logout()
+		self.navigationController?.presentViewController(LoginViewController(), animated: true, completion: nil)
 	}
 	
 	func numberOfSectionsInTableView(tableView: UITableView) -> Int {

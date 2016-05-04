@@ -6,14 +6,14 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos22ReminderViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
+- "UIViewController"
+- "ReminderViewController"
 - !private "StringLiteralType"
 - "NSCoder"
 - !private "fatalError"
-- "UIViewController"
-- "ReminderViewController"
 depends-member:
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
 - !private ["PSs9AnyObject", "fatalError"]

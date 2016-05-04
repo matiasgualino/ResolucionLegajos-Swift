@@ -9,9 +9,9 @@ provides-dynamic-lookup:
 - "awakeFromNib"
 - "setSelected"
 depends-top-level:
+- "Bool"
 - "InfraccionesHeaderTableViewCell"
 - "UITableViewCell"
-- "Bool"
 depends-member:
 - ["PSs9AnyObject", "awakeFromNib"]
 - ["PSs9AnyObject", "init"]

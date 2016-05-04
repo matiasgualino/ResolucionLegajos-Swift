@@ -6,78 +6,134 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos20FinishViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
+- "legajo"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- "UIViewController"
+- "Legajo"
+- "MasterViewController"
 - "FinishViewController"
+- "NSCoder"
+- !private "fatalError"
+- !private "StringLiteralType"
 depends-member:
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- !private ["PSs9AnyObject", "fatalError"]
 - ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "legajo"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", ""]
 - ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["PSs11CVarArgType", "fatalError"]
 - ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "legajo"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", ""]
 - ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["PSs23CustomStringConvertible", "fatalError"]
 - ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "legajo"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", ""]
 - ["PSs9Equatable", "didReceiveMemoryWarning"]
+- !private ["PSs9Equatable", "fatalError"]
 - ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "legajo"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", ""]
+- ["C17ResolucionLegajos20FinishViewController", "Legajo"]
+- ["C17ResolucionLegajos20FinishViewController", "NSCoder"]
 - ["C17ResolucionLegajos20FinishViewController", "deinit"]
 - ["C17ResolucionLegajos20FinishViewController", "didReceiveMemoryWarning"]
+- !private ["C17ResolucionLegajos20FinishViewController", "fatalError"]
 - ["C17ResolucionLegajos20FinishViewController", "init"]
+- ["C17ResolucionLegajos20FinishViewController", "legajo"]
 - ["C17ResolucionLegajos20FinishViewController", "viewDidLoad"]
 - ["PSs8Hashable", "didReceiveMemoryWarning"]
+- !private ["PSs8Hashable", "fatalError"]
 - ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "legajo"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", ""]
+- ["C17ResolucionLegajos20MasterViewController", "Legajo"]
+- ["C17ResolucionLegajos20MasterViewController", "NSCoder"]
+- ["C17ResolucionLegajos20MasterViewController", "didReceiveMemoryWarning"]
+- !private ["C17ResolucionLegajos20MasterViewController", "fatalError"]
+- ["C17ResolucionLegajos20MasterViewController", "init"]
+- ["C17ResolucionLegajos20MasterViewController", "legajo"]
+- ["C17ResolucionLegajos20MasterViewController", "viewDidLoad"]
+- ["C17ResolucionLegajos20MasterViewController", ""]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "fatalError"]
 - ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "legajo"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "fatalError"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "legajo"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "Legajo"]
+- ["CSo8NSObject", "NSCoder"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "fatalError"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "legajo"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "fatalError"]
 - ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "legajo"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["Sq", "deinit"]
+- !private ["VSs12StaticString", "deinit"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "fatalError"]
 - ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "legajo"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "fatalError"]
 - ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "legajo"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "fatalError"]
 - ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "legajo"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "Legajo"]
+- ["CSo11UIResponder", "NSCoder"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "fatalError"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "legajo"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "fatalError"]
 - ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "legajo"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "fatalError"]
 - ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "legajo"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "Legajo"]
+- ["CSo16UIViewController", "NSCoder"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- !private ["CSo16UIViewController", "fatalError"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "legajo"]
 - ["CSo16UIViewController", "viewDidLoad"]
-- ["CSo16UIViewController", ""]
 depends-nominal:
 - "PSs9AnyObject"
 - "PSs11CVarArgType"
@@ -85,10 +141,13 @@ depends-nominal:
 - "PSs9Equatable"
 - "C17ResolucionLegajos20FinishViewController"
 - "PSs8Hashable"
+- "C17ResolucionLegajos20MasterViewController"
 - "PSo8NSCoding"
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "Sq"
+- !private "VSs12StaticString"
 - "PSo21UIAppearanceContainer"
 - "PSo18UIContentContainer"
 - "PSo18UIFocusEnvironment"
@@ -111,4 +170,4 @@ depends-external:
 - "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreData.swiftmodule"
-interface-hash: "7f223bf628642331a590dd6c8e66dd82"
+interface-hash: "ffc6f6406673ae3c7810a24ccf6c5905"

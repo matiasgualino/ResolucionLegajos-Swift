@@ -6,21 +6,62 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos14InfraccionInfo", ""]
 provides-dynamic-lookup:
+- "infraccion"
+- "acta"
 depends-top-level:
-- "InfraccionInfo"
 - "Acta"
 - "Infraccion"
+- "InfraccionInfo"
+- !private "StringLiteralType"
+- "NSObject"
 depends-member:
+- ["PSs9AnyObject", "acta"]
+- ["PSs9AnyObject", "infraccion"]
+- ["PSs9AnyObject", "init"]
 - ["PSs9AnyObject", ""]
+- ["PSs11CVarArgType", "acta"]
+- ["PSs11CVarArgType", "infraccion"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", ""]
+- ["PSs23CustomStringConvertible", "acta"]
+- ["PSs23CustomStringConvertible", "infraccion"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", ""]
+- ["PSs9Equatable", "acta"]
+- ["PSs9Equatable", "infraccion"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", ""]
+- ["PSs8Hashable", "acta"]
+- ["PSs8Hashable", "infraccion"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", ""]
 - ["C17ResolucionLegajos14InfraccionInfo", "Acta"]
 - ["C17ResolucionLegajos14InfraccionInfo", "Infraccion"]
 - ["C17ResolucionLegajos14InfraccionInfo", "acta"]
 - ["C17ResolucionLegajos14InfraccionInfo", "deinit"]
 - ["C17ResolucionLegajos14InfraccionInfo", "infraccion"]
 - ["C17ResolucionLegajos14InfraccionInfo", "init"]
+- ["CSo8NSObject", "Acta"]
+- ["CSo8NSObject", "Infraccion"]
+- ["CSo8NSObject", "acta"]
+- ["CSo8NSObject", "infraccion"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "acta"]
+- ["PSo16NSObjectProtocol", "infraccion"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["VSs12StaticString", "deinit"]
 depends-nominal:
 - "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
 - "C17ResolucionLegajos14InfraccionInfo"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "VSs12StaticString"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
@@ -36,4 +77,4 @@ depends-external:
 - "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreData.swiftmodule"
-interface-hash: "5d3894d46867837d332908813188d974"
+interface-hash: "e3b88873bb6795602933b8fe19fae9a8"

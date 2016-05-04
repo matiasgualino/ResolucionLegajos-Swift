@@ -8,7 +8,12 @@
 
 import Foundation
 
-class InfraccionInfo {
+class InfraccionInfo : NSObject {
 	var acta : Acta?
 	var infraccion : Infraccion?
+	
+	init(infraccion: Infraccion, acta: Acta) {
+		self.acta = acta
+		self.infraccion = infraccion
+	}
 }

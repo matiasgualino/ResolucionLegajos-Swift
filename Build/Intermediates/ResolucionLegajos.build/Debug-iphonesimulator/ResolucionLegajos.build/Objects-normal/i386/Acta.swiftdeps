@@ -6,27 +6,27 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos4Acta", ""]
 provides-dynamic-lookup:
-- "infracciones"
-- "toJSONString"
-- "numero"
-- "imagen"
 - "descripcion"
+- "imagen"
+- "numero"
+- "toJSONString"
 - "fromJSON"
+- "infracciones"
 depends-top-level:
-- !private "NSArray"
-- "Infraccion"
+- !private "=="
 - !private "!="
-- "String"
-- !private "..<"
-- "Acta"
-- "NSObject"
-- !private "JSON"
-- "NSDictionary"
-- "Double"
 - !private "Dictionary"
 - !private "StringLiteralType"
-- !private "=="
+- "NSObject"
+- !private "..<"
+- "Double"
+- "Acta"
+- "String"
+- !private "JSON"
 - !private "AnyObject"
+- !private "NSArray"
+- "Infraccion"
+- "NSDictionary"
 depends-member:
 - ["C17ResolucionLegajos4Acta", "Acta"]
 - !private ["C17ResolucionLegajos4Acta", "AnyObject"]

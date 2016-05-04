@@ -64,7 +64,7 @@ class LoginViewController: UIViewController {
 		self.usernameTextField.text = "admin"
 		self.passwordTextField.text = "admin"
 		
-		self.btnLogin.addTarget(self, action: "login", forControlEvents: UIControlEvents.TouchUpInside)
+		self.btnLogin.addTarget(self, action: #selector(LoginViewController.login), forControlEvents: UIControlEvents.TouchUpInside)
 		
     }
 	
@@ -89,16 +89,25 @@ class LoginViewController: UIViewController {
 			loginRequest.username = self.usernameTextField.text
 			loginRequest.password = self.passwordTextField.text
 			LoginService.login(loginRequest, success: { (accessToken) -> Void in
+				if accessToken != nil && accessToken != "" {
+					Constants.setAccessToken(accessToken!)
+					Constants.setUsername(loginRequest.username!)
 					self.loadingView.removeFromSuperview()
-					// TODO: change
-					Constants.setAccessToken("P1Q2R3S4T5U5V6W7X8Y9")
-				//self.navigationController?.presentViewController(ReminderViewController(), animated: true, completion: nil)
-				self.navigationController?.pushViewController(MainViewController(), animated: true)
+					self.dismissViewControllerAnimated(false, completion: nil)
+					self.navigationController?.pushViewController(MainViewController(), animated: true)
+				} else {
+					self.loginError()
+				}
+				
 				}, failure: { (error) -> Void in
-					self.loadingView.removeFromSuperview()
-					self.showErrorLoginAlert("Ocurrió un error al ingresar. Intenta nuevamente o verifica tus credenciales.")
+					self.loginError()
 			})
 		}
+	}
+	
+	func loginError() {
+		self.loadingView.removeFromSuperview()
+		self.showErrorLoginAlert("Ocurrió un error al ingresar. Intenta nuevamente o verifica tus credenciales.")
 	}
 	
 	func heightForView() -> CGFloat {

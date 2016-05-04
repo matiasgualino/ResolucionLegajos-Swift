@@ -44,7 +44,7 @@ class ActaService: NSObject {
 		}
 	}
 	
-	class func suspenderResolucion(postLegajoRequest : PostLegajoRequest, success: (accessToken: String?) -> Void, failure: ((error: NSError) -> Void)) {
+	class func suspenderResolucion(postLegajoRequest : PostLegajoRequest, success: () -> Void, failure: ((error: NSError) -> Void)) {
 		
 		let url = Constants.BASE_URL + ActaService.SUSPENDER_RESOLUCION_URI
 		
@@ -55,10 +55,8 @@ class ActaService: NSObject {
 		
 		Alamofire.request(request).responseJSON {
 			response in switch response.result {
-			case .Success(let JSON):
-				let response = JSON as! NSDictionary
-				let accessToken = response.objectForKey("access_token") as? String
-				success(accessToken: accessToken)
+			case .Success( _):
+				success()
 			case .Failure(let error):
 				failure(error: error)
 			}

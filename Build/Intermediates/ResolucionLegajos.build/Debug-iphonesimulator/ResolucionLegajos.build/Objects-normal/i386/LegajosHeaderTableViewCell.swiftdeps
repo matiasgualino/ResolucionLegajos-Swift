@@ -10,8 +10,8 @@ provides-dynamic-lookup:
 - "setSelected"
 depends-top-level:
 - "LegajosHeaderTableViewCell"
-- "Bool"
 - "UITableViewCell"
+- "Bool"
 depends-member:
 - ["PSs9AnyObject", "awakeFromNib"]
 - ["PSs9AnyObject", "init"]

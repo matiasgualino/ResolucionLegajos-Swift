@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Sancion: NSObject {
+class Sancion: NSObject, NSCopying {
 
 	var codigo : String?
 	var descripcion : String?
@@ -16,6 +16,19 @@ class Sancion: NSObject {
 	var ufmax : Double?
 	var puntosmin : Int?
 	var puntosmax : Int?
+	
+	init(codigo: String?, descripcion: String?, ufmin: Double?, ufmax: Double?, puntosmin: Int?, puntosmax: Int?) {
+		self.codigo = codigo
+		self.descripcion = descripcion
+		self.ufmin = ufmin
+		self.ufmax = ufmax
+		self.puntosmin = puntosmin
+		self.puntosmax = puntosmax
+	}
+	
+	override init() {
+		
+	}
 	
 	class func fromJSON(json : NSDictionary) -> Sancion {
 		let sancion : Sancion = Sancion()
@@ -50,5 +63,10 @@ class Sancion: NSObject {
 			"puntosmax" : self.puntosmax == nil ? JSON.null : self.puntosmax!
 		]
 		return JSON(obj).toString()
+	}
+	
+	func copyWithZone(zone: NSZone) -> AnyObject {
+		let copy = Sancion(codigo: codigo, descripcion: descripcion, ufmin: ufmin, ufmax: ufmax, puntosmin: puntosmin, puntosmax: puntosmax)
+		return copy
 	}
 }

@@ -6,71 +6,79 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos20LegajoViewController", ""]
 provides-dynamic-lookup:
-- "lblCantidadInfracciones"
-- "caratula"
-- "lblFinalizar"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "lblDominio"
 - "lblInfraccionesResueltas"
+- "cargarLegajo"
+- "caratula"
+- "infraccionesTableView"
+- "legajoId"
+- "lblCantidadInfracciones"
+- "infracciones"
+- "legajo"
+- "lblFecha"
+- "finalizarLegajo"
+- "lblImporteResuelto"
+- "lblFinalizar"
 - "viewDidLoad"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "lblCaratula"
+- "lblDominio"
+- "lblTitle"
 - "lblCantidadActas"
+- "resolverClicked"
+- "visualizarClicked"
 - "lblPuntosResueltos"
 - "numberOfSectionsInTableView"
-- "lblTitle"
-- "legajo"
-- "lblCaratula"
-- "cargarLegajo"
-- "lblFecha"
-- "legajoId"
-- "lblImporteResuelto"
-- "finalizarLegajo"
-- "infraccionesTableView"
 depends-top-level:
-- !private "ActaService"
-- !private "!="
-- !private "ActaViewController"
-- !private "&&"
-- !private "Constants"
-- "NSCoder"
-- "NSIndexPath"
 - "String"
-- !private "+"
-- !private "-"
-- !private "UnicodeScalarType"
-- !private "BooleanLiteralType"
-- !private "Selector"
-- "UITableViewCell"
-- !private "+="
 - !private "UIColor"
-- !private "CaratulaViewController"
-- "UILabel"
-- "Int"
-- !private "Void"
-- !private "InfraccionTableViewCell"
-- "UITableViewDelegate"
-- "Legajo"
-- !private "++"
-- "InfraccionInfo"
-- "UITableViewDataSource"
-- "UITableView"
-- "MasterViewController"
-- !private "UINib"
-- "UIView"
 - !private "=="
-- !private ">="
-- "LegajoViewController"
-- !private "PostLegajoRequest"
-- !private "InfraccionesHeaderTableViewCell"
-- "CGFloat"
-- !private "StringLiteralType"
-- !private "UITapGestureRecognizer"
+- !private "UINib"
+- "UITableView"
+- !private "Constants"
+- "InfraccionTableViewCellDelegate"
+- "NSCoder"
+- "UIView"
+- "Int"
 - !private "fatalError"
+- "NSIndexPath"
+- !private "Void"
+- !private "print"
+- !private "ActaService"
+- "LegajoViewController"
+- !private "InfraccionesHeaderTableViewCell"
+- !private "+="
+- "InfraccionInfo"
+- !private "StringLiteralType"
+- !private "ActaViewController"
+- !private "UIAlertAction"
+- !private "InfraccionTableViewCell"
+- !private "Selector"
+- "UILabel"
+- !private "UIAlertController"
+- !private "UnicodeScalarType"
+- "CGFloat"
+- !private "PostLegajoRequest"
+- !private "+"
 - !private "FinishViewController"
+- "Legajo"
+- !private "BooleanLiteralType"
+- "UITableViewDelegate"
+- !private "UITapGestureRecognizer"
+- "UITableViewCell"
+- !private "++"
+- "UITableViewDataSource"
+- "Array"
+- !private "!="
+- "MasterViewController"
+- !private "&&"
+- !private "-"
+- !private ">="
+- !private "CaratulaViewController"
 depends-member:
 - !private ["C17ResolucionLegajos4Acta", "infracciones"]
 - !private ["C17ResolucionLegajos11ActaService", "getLegajo"]
@@ -86,12 +94,15 @@ depends-member:
 - !private ["PSs9AnyObject", "PostLegajoRequest"]
 - !private ["PSs9AnyObject", "Selector"]
 - !private ["PSs9AnyObject", "String"]
+- !private ["PSs9AnyObject", "UIAlertAction"]
+- !private ["PSs9AnyObject", "UIAlertController"]
 - !private ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "UINib"]
 - !private ["PSs9AnyObject", "UITapGestureRecognizer"]
 - !private ["PSs9AnyObject", "UIView"]
-- !private ["PSs9AnyObject", "acta"]
+- !private ["PSs9AnyObject", "_setInfraccionInfo"]
 - !private ["PSs9AnyObject", "actas"]
+- !private ["PSs9AnyObject", "addAction"]
 - !private ["PSs9AnyObject", "addGestureRecognizer"]
 - !private ["PSs9AnyObject", "backgroundColor"]
 - !private ["PSs9AnyObject", "backgroundView"]
@@ -111,7 +122,6 @@ depends-member:
 - !private ["PSs9AnyObject", "hideLoadingMessage"]
 - !private ["PSs9AnyObject", "importe"]
 - ["PSs9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["PSs9AnyObject", "infraccion"]
 - ["PSs9AnyObject", "infracciones"]
 - ["PSs9AnyObject", "infraccionesTableView"]
 - ["PSs9AnyObject", "init"]
@@ -131,12 +141,15 @@ depends-member:
 - !private ["PSs9AnyObject", "nombrecompleto"]
 - ["PSs9AnyObject", "numberOfSectionsInTableView"]
 - !private ["PSs9AnyObject", "numero"]
+- !private ["PSs9AnyObject", "presentViewController"]
+- !private ["PSs9AnyObject", "print"]
 - !private ["PSs9AnyObject", "puntos"]
 - !private ["PSs9AnyObject", "pushViewController"]
 - !private ["PSs9AnyObject", "redColor"]
 - !private ["PSs9AnyObject", "registerNib"]
 - !private ["PSs9AnyObject", "reloadData"]
 - !private ["PSs9AnyObject", "resolucion"]
+- ["PSs9AnyObject", "resolverClicked"]
 - !private ["PSs9AnyObject", "row"]
 - ["PSs9AnyObject", "scrollViewDidEndDecelerating"]
 - ["PSs9AnyObject", "scrollViewDidEndDragging"]
@@ -152,8 +165,8 @@ depends-member:
 - ["PSs9AnyObject", "scrollViewWillEndDragging"]
 - !private ["PSs9AnyObject", "section"]
 - ["PSs9AnyObject", "sectionIndexTitlesForTableView"]
-- !private ["PSs9AnyObject", "setInfraccionInfo"]
 - !private ["PSs9AnyObject", "showLoadingMessage"]
+- !private ["PSs9AnyObject", "showResolucionDialog"]
 - !private ["PSs9AnyObject", "suspenderResolucion"]
 - ["PSs9AnyObject", "tableView"]
 - !private ["PSs9AnyObject", "text"]
@@ -162,6 +175,7 @@ depends-member:
 - !private ["PSs9AnyObject", "userInteractionEnabled"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", "viewForZoomingInScrollView"]
+- ["PSs9AnyObject", "visualizarClicked"]
 - !private ["PSs9AnyObject", "whiteColor"]
 - ["PSs9AnyObject", ""]
 - !private ["Sa", "Generator"]
@@ -203,11 +217,15 @@ depends-member:
 - !private ["PSs11CVarArgType", "PostLegajoRequest"]
 - !private ["PSs11CVarArgType", "Selector"]
 - !private ["PSs11CVarArgType", "String"]
+- !private ["PSs11CVarArgType", "UIAlertAction"]
+- !private ["PSs11CVarArgType", "UIAlertController"]
 - !private ["PSs11CVarArgType", "UIColor"]
 - !private ["PSs11CVarArgType", "UINib"]
 - !private ["PSs11CVarArgType", "UITapGestureRecognizer"]
 - !private ["PSs11CVarArgType", "UIView"]
+- !private ["PSs11CVarArgType", "_setInfraccionInfo"]
 - !private ["PSs11CVarArgType", "actas"]
+- !private ["PSs11CVarArgType", "addAction"]
 - !private ["PSs11CVarArgType", "addGestureRecognizer"]
 - !private ["PSs11CVarArgType", "backgroundColor"]
 - !private ["PSs11CVarArgType", "backgroundView"]
@@ -246,12 +264,15 @@ depends-member:
 - !private ["PSs11CVarArgType", "nombrecompleto"]
 - ["PSs11CVarArgType", "numberOfSectionsInTableView"]
 - !private ["PSs11CVarArgType", "numero"]
+- !private ["PSs11CVarArgType", "presentViewController"]
+- !private ["PSs11CVarArgType", "print"]
 - !private ["PSs11CVarArgType", "puntos"]
 - !private ["PSs11CVarArgType", "pushViewController"]
 - !private ["PSs11CVarArgType", "redColor"]
 - !private ["PSs11CVarArgType", "registerNib"]
 - !private ["PSs11CVarArgType", "reloadData"]
 - !private ["PSs11CVarArgType", "resolucion"]
+- ["PSs11CVarArgType", "resolverClicked"]
 - !private ["PSs11CVarArgType", "row"]
 - ["PSs11CVarArgType", "scrollViewDidEndDecelerating"]
 - ["PSs11CVarArgType", "scrollViewDidEndDragging"]
@@ -267,8 +288,8 @@ depends-member:
 - ["PSs11CVarArgType", "scrollViewWillEndDragging"]
 - !private ["PSs11CVarArgType", "section"]
 - ["PSs11CVarArgType", "sectionIndexTitlesForTableView"]
-- !private ["PSs11CVarArgType", "setInfraccionInfo"]
 - !private ["PSs11CVarArgType", "showLoadingMessage"]
+- !private ["PSs11CVarArgType", "showResolucionDialog"]
 - !private ["PSs11CVarArgType", "suspenderResolucion"]
 - ["PSs11CVarArgType", "tableView"]
 - !private ["PSs11CVarArgType", "text"]
@@ -277,11 +298,13 @@ depends-member:
 - !private ["PSs11CVarArgType", "userInteractionEnabled"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "viewForZoomingInScrollView"]
+- ["PSs11CVarArgType", "visualizarClicked"]
 - !private ["PSs11CVarArgType", "whiteColor"]
 - ["PSs11CVarArgType", ""]
 - !private ["C17ResolucionLegajos22CaratulaViewController", "init"]
+- !private ["C17ResolucionLegajos17CardTableViewCell", "_setInfraccionInfo"]
 - !private ["C17ResolucionLegajos17CardTableViewCell", "backgroundColor"]
-- !private ["C17ResolucionLegajos17CardTableViewCell", "setInfraccionInfo"]
+- !private ["C17ResolucionLegajos17CardTableViewCell", "delegate"]
 - !private ["PSs14CollectionType", "Generator"]
 - !private ["PSs14CollectionType", "Index"]
 - !private ["PSs14CollectionType", "SubSequence"]
@@ -295,6 +318,7 @@ depends-member:
 - !private ["PSs10Comparable", "init"]
 - !private ["C17ResolucionLegajos9Constants", "CLEAR_COLOR"]
 - !private ["C17ResolucionLegajos9Constants", "getAccessToken"]
+- !private ["C17ResolucionLegajos9Constants", "showResolucionDialog"]
 - !private ["PSs28CustomDebugStringConvertible", "Generator"]
 - !private ["PSs28CustomDebugStringConvertible", "Index"]
 - !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
@@ -318,13 +342,17 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "Selector"]
 - !private ["PSs23CustomStringConvertible", "String"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "UIAlertAction"]
+- !private ["PSs23CustomStringConvertible", "UIAlertController"]
 - !private ["PSs23CustomStringConvertible", "UIColor"]
 - !private ["PSs23CustomStringConvertible", "UINib"]
 - !private ["PSs23CustomStringConvertible", "UITapGestureRecognizer"]
 - !private ["PSs23CustomStringConvertible", "UIView"]
 - !private ["PSs23CustomStringConvertible", "_Element"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "_setInfraccionInfo"]
 - !private ["PSs23CustomStringConvertible", "actas"]
+- !private ["PSs23CustomStringConvertible", "addAction"]
 - !private ["PSs23CustomStringConvertible", "addGestureRecognizer"]
 - !private ["PSs23CustomStringConvertible", "append"]
 - !private ["PSs23CustomStringConvertible", "backgroundColor"]
@@ -365,12 +393,15 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "nombrecompleto"]
 - ["PSs23CustomStringConvertible", "numberOfSectionsInTableView"]
 - !private ["PSs23CustomStringConvertible", "numero"]
+- !private ["PSs23CustomStringConvertible", "presentViewController"]
+- !private ["PSs23CustomStringConvertible", "print"]
 - !private ["PSs23CustomStringConvertible", "puntos"]
 - !private ["PSs23CustomStringConvertible", "pushViewController"]
 - !private ["PSs23CustomStringConvertible", "redColor"]
 - !private ["PSs23CustomStringConvertible", "registerNib"]
 - !private ["PSs23CustomStringConvertible", "reloadData"]
 - !private ["PSs23CustomStringConvertible", "resolucion"]
+- ["PSs23CustomStringConvertible", "resolverClicked"]
 - !private ["PSs23CustomStringConvertible", "row"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDecelerating"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDragging"]
@@ -386,8 +417,8 @@ depends-member:
 - ["PSs23CustomStringConvertible", "scrollViewWillEndDragging"]
 - !private ["PSs23CustomStringConvertible", "section"]
 - ["PSs23CustomStringConvertible", "sectionIndexTitlesForTableView"]
-- !private ["PSs23CustomStringConvertible", "setInfraccionInfo"]
 - !private ["PSs23CustomStringConvertible", "showLoadingMessage"]
+- !private ["PSs23CustomStringConvertible", "showResolucionDialog"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "suspenderResolucion"]
 - ["PSs23CustomStringConvertible", "tableView"]
@@ -397,13 +428,16 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "userInteractionEnabled"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
+- ["PSs23CustomStringConvertible", "visualizarClicked"]
 - !private ["PSs23CustomStringConvertible", "whiteColor"]
 - ["PSs23CustomStringConvertible", ""]
 - !private ["PSs9Equatable", "ActaService"]
 - !private ["PSs9Equatable", "ActaViewController"]
+- !private ["PSs9Equatable", "Alert"]
 - !private ["PSs9Equatable", "CLEAR_COLOR"]
 - !private ["PSs9Equatable", "CaratulaViewController"]
 - !private ["PSs9Equatable", "Constants"]
+- !private ["PSs9Equatable", "Default"]
 - !private ["PSs9Equatable", "Distance"]
 - !private ["PSs9Equatable", "FinishViewController"]
 - !private ["PSs9Equatable", "InfraccionInfo"]
@@ -411,12 +445,16 @@ depends-member:
 - !private ["PSs9Equatable", "PostLegajoRequest"]
 - !private ["PSs9Equatable", "Selector"]
 - !private ["PSs9Equatable", "String"]
+- !private ["PSs9Equatable", "UIAlertAction"]
+- !private ["PSs9Equatable", "UIAlertController"]
 - !private ["PSs9Equatable", "UIColor"]
 - !private ["PSs9Equatable", "UINib"]
 - !private ["PSs9Equatable", "UITapGestureRecognizer"]
 - !private ["PSs9Equatable", "UIView"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "_setInfraccionInfo"]
 - !private ["PSs9Equatable", "actas"]
+- !private ["PSs9Equatable", "addAction"]
 - !private ["PSs9Equatable", "addGestureRecognizer"]
 - !private ["PSs9Equatable", "backgroundColor"]
 - !private ["PSs9Equatable", "backgroundView"]
@@ -455,12 +493,15 @@ depends-member:
 - !private ["PSs9Equatable", "nombrecompleto"]
 - ["PSs9Equatable", "numberOfSectionsInTableView"]
 - !private ["PSs9Equatable", "numero"]
+- !private ["PSs9Equatable", "presentViewController"]
+- !private ["PSs9Equatable", "print"]
 - !private ["PSs9Equatable", "puntos"]
 - !private ["PSs9Equatable", "pushViewController"]
 - !private ["PSs9Equatable", "redColor"]
 - !private ["PSs9Equatable", "registerNib"]
 - !private ["PSs9Equatable", "reloadData"]
 - !private ["PSs9Equatable", "resolucion"]
+- ["PSs9Equatable", "resolverClicked"]
 - !private ["PSs9Equatable", "row"]
 - ["PSs9Equatable", "scrollViewDidEndDecelerating"]
 - ["PSs9Equatable", "scrollViewDidEndDragging"]
@@ -476,8 +517,8 @@ depends-member:
 - ["PSs9Equatable", "scrollViewWillEndDragging"]
 - !private ["PSs9Equatable", "section"]
 - ["PSs9Equatable", "sectionIndexTitlesForTableView"]
-- !private ["PSs9Equatable", "setInfraccionInfo"]
 - !private ["PSs9Equatable", "showLoadingMessage"]
+- !private ["PSs9Equatable", "showResolucionDialog"]
 - !private ["PSs9Equatable", "suspenderResolucion"]
 - ["PSs9Equatable", "tableView"]
 - !private ["PSs9Equatable", "text"]
@@ -486,6 +527,7 @@ depends-member:
 - !private ["PSs9Equatable", "userInteractionEnabled"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
+- ["PSs9Equatable", "visualizarClicked"]
 - !private ["PSs9Equatable", "whiteColor"]
 - ["PSs9Equatable", ""]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
@@ -495,9 +537,11 @@ depends-member:
 - !private ["PSs13GeneratorType", "Element"]
 - !private ["PSs8Hashable", "ActaService"]
 - !private ["PSs8Hashable", "ActaViewController"]
+- !private ["PSs8Hashable", "Alert"]
 - !private ["PSs8Hashable", "CLEAR_COLOR"]
 - !private ["PSs8Hashable", "CaratulaViewController"]
 - !private ["PSs8Hashable", "Constants"]
+- !private ["PSs8Hashable", "Default"]
 - !private ["PSs8Hashable", "Distance"]
 - !private ["PSs8Hashable", "FinishViewController"]
 - !private ["PSs8Hashable", "InfraccionInfo"]
@@ -505,12 +549,16 @@ depends-member:
 - !private ["PSs8Hashable", "PostLegajoRequest"]
 - !private ["PSs8Hashable", "Selector"]
 - !private ["PSs8Hashable", "String"]
+- !private ["PSs8Hashable", "UIAlertAction"]
+- !private ["PSs8Hashable", "UIAlertController"]
 - !private ["PSs8Hashable", "UIColor"]
 - !private ["PSs8Hashable", "UINib"]
 - !private ["PSs8Hashable", "UITapGestureRecognizer"]
 - !private ["PSs8Hashable", "UIView"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "_setInfraccionInfo"]
 - !private ["PSs8Hashable", "actas"]
+- !private ["PSs8Hashable", "addAction"]
 - !private ["PSs8Hashable", "addGestureRecognizer"]
 - !private ["PSs8Hashable", "backgroundColor"]
 - !private ["PSs8Hashable", "backgroundView"]
@@ -549,12 +597,15 @@ depends-member:
 - !private ["PSs8Hashable", "nombrecompleto"]
 - ["PSs8Hashable", "numberOfSectionsInTableView"]
 - !private ["PSs8Hashable", "numero"]
+- !private ["PSs8Hashable", "presentViewController"]
+- !private ["PSs8Hashable", "print"]
 - !private ["PSs8Hashable", "puntos"]
 - !private ["PSs8Hashable", "pushViewController"]
 - !private ["PSs8Hashable", "redColor"]
 - !private ["PSs8Hashable", "registerNib"]
 - !private ["PSs8Hashable", "reloadData"]
 - !private ["PSs8Hashable", "resolucion"]
+- ["PSs8Hashable", "resolverClicked"]
 - !private ["PSs8Hashable", "row"]
 - ["PSs8Hashable", "scrollViewDidEndDecelerating"]
 - ["PSs8Hashable", "scrollViewDidEndDragging"]
@@ -570,8 +621,8 @@ depends-member:
 - ["PSs8Hashable", "scrollViewWillEndDragging"]
 - !private ["PSs8Hashable", "section"]
 - ["PSs8Hashable", "sectionIndexTitlesForTableView"]
-- !private ["PSs8Hashable", "setInfraccionInfo"]
 - !private ["PSs8Hashable", "showLoadingMessage"]
+- !private ["PSs8Hashable", "showResolucionDialog"]
 - !private ["PSs8Hashable", "suspenderResolucion"]
 - ["PSs8Hashable", "tableView"]
 - !private ["PSs8Hashable", "text"]
@@ -580,6 +631,7 @@ depends-member:
 - !private ["PSs8Hashable", "userInteractionEnabled"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
+- ["PSs8Hashable", "visualizarClicked"]
 - !private ["PSs8Hashable", "whiteColor"]
 - ["PSs8Hashable", ""]
 - !private ["SQ", "deinit"]
@@ -593,12 +645,66 @@ depends-member:
 - !private ["PSs9Indexable", "subscript"]
 - !private ["VSs17IndexingGenerator", "Element"]
 - !private ["C17ResolucionLegajos10Infraccion", "resolucion"]
-- !private ["C17ResolucionLegajos14InfraccionInfo", "acta"]
-- ["C17ResolucionLegajos14InfraccionInfo", "deinit"]
-- !private ["C17ResolucionLegajos14InfraccionInfo", "infraccion"]
 - !private ["C17ResolucionLegajos14InfraccionInfo", "init"]
+- !private ["C17ResolucionLegajos23InfraccionTableViewCell", "_setInfraccionInfo"]
 - !private ["C17ResolucionLegajos23InfraccionTableViewCell", "backgroundColor"]
-- !private ["C17ResolucionLegajos23InfraccionTableViewCell", "setInfraccionInfo"]
+- !private ["C17ResolucionLegajos23InfraccionTableViewCell", "delegate"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "ActaService"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "ActaViewController"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "CaratulaViewController"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "Constants"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "FinishViewController"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "InfraccionInfo"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "PostLegajoRequest"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "Selector"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "String"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "UIAlertAction"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "UIAlertController"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "UIColor"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "UINib"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "UITapGestureRecognizer"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "UIView"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "cargarLegajo"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "fatalError"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "hideLoadingMessage"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "infracciones"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "infraccionesTableView"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "lblCantidadActas"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "lblCantidadInfracciones"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "lblCaratula"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "lblDominio"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "lblFecha"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "lblFinalizar"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "lblImporteResuelto"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "lblInfraccionesResueltas"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "lblPuntosResueltos"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "lblTitle"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "legajo"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "legajoId"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "navigationController"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "numberOfSectionsInTableView"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "presentViewController"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "print"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "resolverClicked"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "scrollViewDidEndDecelerating"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "scrollViewDidEndDragging"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "scrollViewDidEndScrollingAnimation"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "scrollViewDidEndZooming"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "scrollViewDidScroll"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "scrollViewDidScrollToTop"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "scrollViewDidZoom"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "scrollViewShouldScrollToTop"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "scrollViewWillBeginDecelerating"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "scrollViewWillBeginDragging"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "scrollViewWillBeginZooming"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "scrollViewWillEndDragging"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "sectionIndexTitlesForTableView"]
+- !private ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "showLoadingMessage"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "tableView"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "viewForZoomingInScrollView"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "visualizarClicked"]
+- ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", ""]
 - !private ["C17ResolucionLegajos31InfraccionesHeaderTableViewCell", "backgroundColor"]
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
@@ -615,6 +721,7 @@ depends-member:
 - !private ["C17ResolucionLegajos6Legajo", "numero"]
 - !private ["C17ResolucionLegajos20LegajoViewController", "ActaService"]
 - !private ["C17ResolucionLegajos20LegajoViewController", "ActaViewController"]
+- ["C17ResolucionLegajos20LegajoViewController", "Array"]
 - ["C17ResolucionLegajos20LegajoViewController", "CGFloat"]
 - !private ["C17ResolucionLegajos20LegajoViewController", "CaratulaViewController"]
 - !private ["C17ResolucionLegajos20LegajoViewController", "Constants"]
@@ -629,6 +736,8 @@ depends-member:
 - !private ["C17ResolucionLegajos20LegajoViewController", "PostLegajoRequest"]
 - !private ["C17ResolucionLegajos20LegajoViewController", "Selector"]
 - ["C17ResolucionLegajos20LegajoViewController", "String"]
+- !private ["C17ResolucionLegajos20LegajoViewController", "UIAlertAction"]
+- !private ["C17ResolucionLegajos20LegajoViewController", "UIAlertController"]
 - !private ["C17ResolucionLegajos20LegajoViewController", "UIColor"]
 - ["C17ResolucionLegajos20LegajoViewController", "UILabel"]
 - !private ["C17ResolucionLegajos20LegajoViewController", "UINib"]
@@ -661,6 +770,9 @@ depends-member:
 - ["C17ResolucionLegajos20LegajoViewController", "legajoId"]
 - !private ["C17ResolucionLegajos20LegajoViewController", "navigationController"]
 - ["C17ResolucionLegajos20LegajoViewController", "numberOfSectionsInTableView"]
+- !private ["C17ResolucionLegajos20LegajoViewController", "presentViewController"]
+- !private ["C17ResolucionLegajos20LegajoViewController", "print"]
+- ["C17ResolucionLegajos20LegajoViewController", "resolverClicked"]
 - ["C17ResolucionLegajos20LegajoViewController", "scrollViewDidEndDecelerating"]
 - ["C17ResolucionLegajos20LegajoViewController", "scrollViewDidEndDragging"]
 - ["C17ResolucionLegajos20LegajoViewController", "scrollViewDidEndScrollingAnimation"]
@@ -678,8 +790,10 @@ depends-member:
 - ["C17ResolucionLegajos20LegajoViewController", "tableView"]
 - ["C17ResolucionLegajos20LegajoViewController", "viewDidLoad"]
 - ["C17ResolucionLegajos20LegajoViewController", "viewForZoomingInScrollView"]
+- ["C17ResolucionLegajos20LegajoViewController", "visualizarClicked"]
 - !private ["C17ResolucionLegajos20MasterViewController", "ActaService"]
 - !private ["C17ResolucionLegajos20MasterViewController", "ActaViewController"]
+- ["C17ResolucionLegajos20MasterViewController", "Array"]
 - ["C17ResolucionLegajos20MasterViewController", "CGFloat"]
 - !private ["C17ResolucionLegajos20MasterViewController", "CaratulaViewController"]
 - !private ["C17ResolucionLegajos20MasterViewController", "Constants"]
@@ -694,6 +808,8 @@ depends-member:
 - !private ["C17ResolucionLegajos20MasterViewController", "PostLegajoRequest"]
 - !private ["C17ResolucionLegajos20MasterViewController", "Selector"]
 - ["C17ResolucionLegajos20MasterViewController", "String"]
+- !private ["C17ResolucionLegajos20MasterViewController", "UIAlertAction"]
+- !private ["C17ResolucionLegajos20MasterViewController", "UIAlertController"]
 - !private ["C17ResolucionLegajos20MasterViewController", "UIColor"]
 - ["C17ResolucionLegajos20MasterViewController", "UILabel"]
 - !private ["C17ResolucionLegajos20MasterViewController", "UINib"]
@@ -725,6 +841,9 @@ depends-member:
 - ["C17ResolucionLegajos20MasterViewController", "legajoId"]
 - !private ["C17ResolucionLegajos20MasterViewController", "navigationController"]
 - ["C17ResolucionLegajos20MasterViewController", "numberOfSectionsInTableView"]
+- !private ["C17ResolucionLegajos20MasterViewController", "presentViewController"]
+- !private ["C17ResolucionLegajos20MasterViewController", "print"]
+- ["C17ResolucionLegajos20MasterViewController", "resolverClicked"]
 - ["C17ResolucionLegajos20MasterViewController", "scrollViewDidEndDecelerating"]
 - ["C17ResolucionLegajos20MasterViewController", "scrollViewDidEndDragging"]
 - ["C17ResolucionLegajos20MasterViewController", "scrollViewDidEndScrollingAnimation"]
@@ -742,6 +861,7 @@ depends-member:
 - ["C17ResolucionLegajos20MasterViewController", "tableView"]
 - ["C17ResolucionLegajos20MasterViewController", "viewDidLoad"]
 - ["C17ResolucionLegajos20MasterViewController", "viewForZoomingInScrollView"]
+- ["C17ResolucionLegajos20MasterViewController", "visualizarClicked"]
 - ["C17ResolucionLegajos20MasterViewController", ""]
 - !private ["PSs14MirrorPathType", "Distance"]
 - !private ["PSs14MirrorPathType", "IntegerLiteralType"]
@@ -779,10 +899,14 @@ depends-member:
 - !private ["PSo8NSCoding", "PostLegajoRequest"]
 - !private ["PSo8NSCoding", "Selector"]
 - !private ["PSo8NSCoding", "String"]
+- !private ["PSo8NSCoding", "UIAlertAction"]
+- !private ["PSo8NSCoding", "UIAlertController"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UINib"]
 - !private ["PSo8NSCoding", "UITapGestureRecognizer"]
 - !private ["PSo8NSCoding", "UIView"]
+- !private ["PSo8NSCoding", "_setInfraccionInfo"]
+- !private ["PSo8NSCoding", "addAction"]
 - !private ["PSo8NSCoding", "addGestureRecognizer"]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "backgroundView"]
@@ -814,10 +938,13 @@ depends-member:
 - ["PSo8NSCoding", "legajoId"]
 - !private ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
+- !private ["PSo8NSCoding", "presentViewController"]
+- !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "pushViewController"]
 - !private ["PSo8NSCoding", "redColor"]
 - !private ["PSo8NSCoding", "registerNib"]
 - !private ["PSo8NSCoding", "reloadData"]
+- ["PSo8NSCoding", "resolverClicked"]
 - !private ["PSo8NSCoding", "row"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
@@ -833,7 +960,6 @@ depends-member:
 - ["PSo8NSCoding", "scrollViewWillEndDragging"]
 - !private ["PSo8NSCoding", "section"]
 - ["PSo8NSCoding", "sectionIndexTitlesForTableView"]
-- !private ["PSo8NSCoding", "setInfraccionInfo"]
 - !private ["PSo8NSCoding", "showLoadingMessage"]
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
@@ -841,10 +967,12 @@ depends-member:
 - !private ["PSo8NSCoding", "userInteractionEnabled"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
+- ["PSo8NSCoding", "visualizarClicked"]
 - !private ["PSo8NSCoding", "whiteColor"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "clearColor"]
 - !private ["PSo9NSCopying", "greenColor"]
+- !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "redColor"]
 - !private ["PSo9NSCopying", "row"]
 - !private ["PSo9NSCopying", "section"]
@@ -858,10 +986,13 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "PostLegajoRequest"]
 - !private ["PSo26NSExtensionRequestHandling", "Selector"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertAction"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UINib"]
 - !private ["PSo26NSExtensionRequestHandling", "UITapGestureRecognizer"]
 - !private ["PSo26NSExtensionRequestHandling", "UIView"]
+- !private ["PSo26NSExtensionRequestHandling", "addAction"]
 - ["PSo26NSExtensionRequestHandling", "caratula"]
 - ["PSo26NSExtensionRequestHandling", "cargarLegajo"]
 - !private ["PSo26NSExtensionRequestHandling", "fatalError"]
@@ -885,7 +1016,10 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "legajoId"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
+- !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
 - !private ["PSo26NSExtensionRequestHandling", "pushViewController"]
+- ["PSo26NSExtensionRequestHandling", "resolverClicked"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDragging"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndScrollingAnimation"]
@@ -903,11 +1037,13 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "tableView"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
+- ["PSo26NSExtensionRequestHandling", "visualizarClicked"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo11NSIndexPath", "row"]
 - !private ["CSo11NSIndexPath", "section"]
 - !private ["CSo8NSObject", "ActaService"]
 - !private ["CSo8NSObject", "ActaViewController"]
+- ["CSo8NSObject", "Array"]
 - ["CSo8NSObject", "CGFloat"]
 - !private ["CSo8NSObject", "CLEAR_COLOR"]
 - !private ["CSo8NSObject", "CaratulaViewController"]
@@ -923,6 +1059,8 @@ depends-member:
 - !private ["CSo8NSObject", "PostLegajoRequest"]
 - !private ["CSo8NSObject", "Selector"]
 - ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIAlertAction"]
+- !private ["CSo8NSObject", "UIAlertController"]
 - !private ["CSo8NSObject", "UIColor"]
 - ["CSo8NSObject", "UILabel"]
 - !private ["CSo8NSObject", "UINib"]
@@ -931,7 +1069,9 @@ depends-member:
 - !private ["CSo8NSObject", "UITapGestureRecognizer"]
 - ["CSo8NSObject", "UIView"]
 - !private ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "_setInfraccionInfo"]
 - !private ["CSo8NSObject", "actas"]
+- !private ["CSo8NSObject", "addAction"]
 - !private ["CSo8NSObject", "addGestureRecognizer"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "backgroundView"]
@@ -970,12 +1110,15 @@ depends-member:
 - !private ["CSo8NSObject", "nombrecompleto"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
 - !private ["CSo8NSObject", "numero"]
+- !private ["CSo8NSObject", "presentViewController"]
+- !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "puntos"]
 - !private ["CSo8NSObject", "pushViewController"]
 - !private ["CSo8NSObject", "redColor"]
 - !private ["CSo8NSObject", "registerNib"]
 - !private ["CSo8NSObject", "reloadData"]
 - !private ["CSo8NSObject", "resolucion"]
+- ["CSo8NSObject", "resolverClicked"]
 - !private ["CSo8NSObject", "row"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
@@ -991,8 +1134,8 @@ depends-member:
 - ["CSo8NSObject", "scrollViewWillEndDragging"]
 - !private ["CSo8NSObject", "section"]
 - ["CSo8NSObject", "sectionIndexTitlesForTableView"]
-- !private ["CSo8NSObject", "setInfraccionInfo"]
 - !private ["CSo8NSObject", "showLoadingMessage"]
+- !private ["CSo8NSObject", "showResolucionDialog"]
 - !private ["CSo8NSObject", "suspenderResolucion"]
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
@@ -1001,6 +1144,7 @@ depends-member:
 - !private ["CSo8NSObject", "userInteractionEnabled"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
+- ["CSo8NSObject", "visualizarClicked"]
 - !private ["CSo8NSObject", "whiteColor"]
 - !private ["PSo16NSObjectProtocol", "ActaService"]
 - !private ["PSo16NSObjectProtocol", "ActaViewController"]
@@ -1012,11 +1156,15 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "PostLegajoRequest"]
 - !private ["PSo16NSObjectProtocol", "Selector"]
 - !private ["PSo16NSObjectProtocol", "String"]
+- !private ["PSo16NSObjectProtocol", "UIAlertAction"]
+- !private ["PSo16NSObjectProtocol", "UIAlertController"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UINib"]
 - !private ["PSo16NSObjectProtocol", "UITapGestureRecognizer"]
 - !private ["PSo16NSObjectProtocol", "UIView"]
+- !private ["PSo16NSObjectProtocol", "_setInfraccionInfo"]
 - !private ["PSo16NSObjectProtocol", "actas"]
+- !private ["PSo16NSObjectProtocol", "addAction"]
 - !private ["PSo16NSObjectProtocol", "addGestureRecognizer"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "backgroundView"]
@@ -1055,12 +1203,15 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "nombrecompleto"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
 - !private ["PSo16NSObjectProtocol", "numero"]
+- !private ["PSo16NSObjectProtocol", "presentViewController"]
+- !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "puntos"]
 - !private ["PSo16NSObjectProtocol", "pushViewController"]
 - !private ["PSo16NSObjectProtocol", "redColor"]
 - !private ["PSo16NSObjectProtocol", "registerNib"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
 - !private ["PSo16NSObjectProtocol", "resolucion"]
+- ["PSo16NSObjectProtocol", "resolverClicked"]
 - !private ["PSo16NSObjectProtocol", "row"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
@@ -1076,8 +1227,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "scrollViewWillEndDragging"]
 - !private ["PSo16NSObjectProtocol", "section"]
 - ["PSo16NSObjectProtocol", "sectionIndexTitlesForTableView"]
-- !private ["PSo16NSObjectProtocol", "setInfraccionInfo"]
 - !private ["PSo16NSObjectProtocol", "showLoadingMessage"]
+- !private ["PSo16NSObjectProtocol", "showResolucionDialog"]
 - !private ["PSo16NSObjectProtocol", "suspenderResolucion"]
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
@@ -1086,6 +1237,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "userInteractionEnabled"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
+- ["PSo16NSObjectProtocol", "visualizarClicked"]
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "clearColor"]
@@ -1110,6 +1262,8 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "count"]
 - !private ["PSs30RangeReplaceableCollectionType", "init"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- !private ["PSs16RawRepresentable", "Alert"]
+- !private ["PSs16RawRepresentable", "Default"]
 - !private ["C17ResolucionLegajos10Resolucion", "importe"]
 - !private ["C17ResolucionLegajos10Resolucion", "puntos"]
 - !private ["V10ObjectiveC8Selector", "init"]
@@ -1138,6 +1292,7 @@ depends-member:
 - !private ["SS", "init"]
 - !private ["PSs30StringInterpolationConvertible", "init"]
 - !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "_setInfraccionInfo"]
 - !private ["PSo29UIAccessibilityIdentification", "addGestureRecognizer"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundView"]
@@ -1147,10 +1302,15 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "registerNib"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
-- !private ["PSo29UIAccessibilityIdentification", "setInfraccionInfo"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textColor"]
 - !private ["PSo29UIAccessibilityIdentification", "userInteractionEnabled"]
+- !private ["CSo13UIAlertAction", "init"]
+- !private ["OSC18UIAlertActionStyle", "Default"]
+- !private ["CSo17UIAlertController", "addAction"]
+- !private ["CSo17UIAlertController", "init"]
+- !private ["OSC22UIAlertControllerStyle", "Alert"]
+- !private ["PSo12UIAppearance", "_setInfraccionInfo"]
 - !private ["PSo12UIAppearance", "addGestureRecognizer"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "backgroundView"]
@@ -1160,7 +1320,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "registerNib"]
 - !private ["PSo12UIAppearance", "reloadData"]
-- !private ["PSo12UIAppearance", "setInfraccionInfo"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textColor"]
 - !private ["PSo12UIAppearance", "userInteractionEnabled"]
@@ -1173,10 +1332,14 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "PostLegajoRequest"]
 - !private ["PSo21UIAppearanceContainer", "Selector"]
 - !private ["PSo21UIAppearanceContainer", "String"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertController"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UINib"]
 - !private ["PSo21UIAppearanceContainer", "UITapGestureRecognizer"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
+- !private ["PSo21UIAppearanceContainer", "_setInfraccionInfo"]
+- !private ["PSo21UIAppearanceContainer", "addAction"]
 - !private ["PSo21UIAppearanceContainer", "addGestureRecognizer"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - !private ["PSo21UIAppearanceContainer", "backgroundView"]
@@ -1206,9 +1369,12 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "legajoId"]
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
+- !private ["PSo21UIAppearanceContainer", "presentViewController"]
+- !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "pushViewController"]
 - !private ["PSo21UIAppearanceContainer", "registerNib"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
+- ["PSo21UIAppearanceContainer", "resolverClicked"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDragging"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndScrollingAnimation"]
@@ -1222,7 +1388,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "scrollViewWillBeginZooming"]
 - ["PSo21UIAppearanceContainer", "scrollViewWillEndDragging"]
 - ["PSo21UIAppearanceContainer", "sectionIndexTitlesForTableView"]
-- !private ["PSo21UIAppearanceContainer", "setInfraccionInfo"]
 - !private ["PSo21UIAppearanceContainer", "showLoadingMessage"]
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
@@ -1230,6 +1395,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "userInteractionEnabled"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
+- ["PSo21UIAppearanceContainer", "visualizarClicked"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo7UIColor", "clearColor"]
 - !private ["CSo7UIColor", "greenColor"]
@@ -1244,10 +1410,13 @@ depends-member:
 - !private ["PSo18UIContentContainer", "PostLegajoRequest"]
 - !private ["PSo18UIContentContainer", "Selector"]
 - !private ["PSo18UIContentContainer", "String"]
+- !private ["PSo18UIContentContainer", "UIAlertAction"]
+- !private ["PSo18UIContentContainer", "UIAlertController"]
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UINib"]
 - !private ["PSo18UIContentContainer", "UITapGestureRecognizer"]
 - !private ["PSo18UIContentContainer", "UIView"]
+- !private ["PSo18UIContentContainer", "addAction"]
 - ["PSo18UIContentContainer", "caratula"]
 - ["PSo18UIContentContainer", "cargarLegajo"]
 - !private ["PSo18UIContentContainer", "fatalError"]
@@ -1271,7 +1440,10 @@ depends-member:
 - ["PSo18UIContentContainer", "legajoId"]
 - !private ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
+- !private ["PSo18UIContentContainer", "presentViewController"]
+- !private ["PSo18UIContentContainer", "print"]
 - !private ["PSo18UIContentContainer", "pushViewController"]
+- ["PSo18UIContentContainer", "resolverClicked"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDragging"]
 - ["PSo18UIContentContainer", "scrollViewDidEndScrollingAnimation"]
@@ -1289,7 +1461,9 @@ depends-member:
 - ["PSo18UIContentContainer", "tableView"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
+- ["PSo18UIContentContainer", "visualizarClicked"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "_setInfraccionInfo"]
 - !private ["PSo17UICoordinateSpace", "addGestureRecognizer"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "backgroundView"]
@@ -1299,10 +1473,10 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "registerNib"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
-- !private ["PSo17UICoordinateSpace", "setInfraccionInfo"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textColor"]
 - !private ["PSo17UICoordinateSpace", "userInteractionEnabled"]
+- !private ["PSo13UIDynamicItem", "_setInfraccionInfo"]
 - !private ["PSo13UIDynamicItem", "addGestureRecognizer"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "backgroundView"]
@@ -1312,7 +1486,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "registerNib"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
-- !private ["PSo13UIDynamicItem", "setInfraccionInfo"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textColor"]
 - !private ["PSo13UIDynamicItem", "userInteractionEnabled"]
@@ -1325,10 +1498,14 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "PostLegajoRequest"]
 - !private ["PSo18UIFocusEnvironment", "Selector"]
 - !private ["PSo18UIFocusEnvironment", "String"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertController"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UINib"]
 - !private ["PSo18UIFocusEnvironment", "UITapGestureRecognizer"]
 - !private ["PSo18UIFocusEnvironment", "UIView"]
+- !private ["PSo18UIFocusEnvironment", "_setInfraccionInfo"]
+- !private ["PSo18UIFocusEnvironment", "addAction"]
 - !private ["PSo18UIFocusEnvironment", "addGestureRecognizer"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - !private ["PSo18UIFocusEnvironment", "backgroundView"]
@@ -1358,9 +1535,12 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "legajoId"]
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
+- !private ["PSo18UIFocusEnvironment", "presentViewController"]
+- !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "pushViewController"]
 - !private ["PSo18UIFocusEnvironment", "registerNib"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
+- ["PSo18UIFocusEnvironment", "resolverClicked"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -1374,7 +1554,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "scrollViewWillBeginZooming"]
 - ["PSo18UIFocusEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UIFocusEnvironment", "sectionIndexTitlesForTableView"]
-- !private ["PSo18UIFocusEnvironment", "setInfraccionInfo"]
 - !private ["PSo18UIFocusEnvironment", "showLoadingMessage"]
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
@@ -1382,10 +1561,12 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "userInteractionEnabled"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
+- ["PSo18UIFocusEnvironment", "visualizarClicked"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo19UIGestureRecognizer", "init"]
+- !private ["PSo27UIGestureRecognizerDelegate", "_setInfraccionInfo"]
 - !private ["PSo27UIGestureRecognizerDelegate", "backgroundColor"]
-- !private ["PSo27UIGestureRecognizerDelegate", "setInfraccionInfo"]
+- !private ["PSo27UIGestureRecognizerDelegate", "delegate"]
 - !private ["CSo7UILabel", "addGestureRecognizer"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo7UILabel", "textColor"]
@@ -1394,6 +1575,7 @@ depends-member:
 - !private ["CSo5UINib", "init"]
 - !private ["CSo11UIResponder", "ActaService"]
 - !private ["CSo11UIResponder", "ActaViewController"]
+- ["CSo11UIResponder", "Array"]
 - ["CSo11UIResponder", "CGFloat"]
 - !private ["CSo11UIResponder", "CaratulaViewController"]
 - !private ["CSo11UIResponder", "Constants"]
@@ -1408,6 +1590,8 @@ depends-member:
 - !private ["CSo11UIResponder", "PostLegajoRequest"]
 - !private ["CSo11UIResponder", "Selector"]
 - ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIAlertAction"]
+- !private ["CSo11UIResponder", "UIAlertController"]
 - !private ["CSo11UIResponder", "UIColor"]
 - ["CSo11UIResponder", "UILabel"]
 - !private ["CSo11UIResponder", "UINib"]
@@ -1416,6 +1600,8 @@ depends-member:
 - !private ["CSo11UIResponder", "UITapGestureRecognizer"]
 - ["CSo11UIResponder", "UIView"]
 - !private ["CSo11UIResponder", "Void"]
+- !private ["CSo11UIResponder", "_setInfraccionInfo"]
+- !private ["CSo11UIResponder", "addAction"]
 - !private ["CSo11UIResponder", "addGestureRecognizer"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - !private ["CSo11UIResponder", "backgroundView"]
@@ -1445,9 +1631,12 @@ depends-member:
 - ["CSo11UIResponder", "legajoId"]
 - !private ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
+- !private ["CSo11UIResponder", "presentViewController"]
+- !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "pushViewController"]
 - !private ["CSo11UIResponder", "registerNib"]
 - !private ["CSo11UIResponder", "reloadData"]
+- ["CSo11UIResponder", "resolverClicked"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
 - ["CSo11UIResponder", "scrollViewDidEndDragging"]
 - ["CSo11UIResponder", "scrollViewDidEndScrollingAnimation"]
@@ -1461,7 +1650,6 @@ depends-member:
 - ["CSo11UIResponder", "scrollViewWillBeginZooming"]
 - ["CSo11UIResponder", "scrollViewWillEndDragging"]
 - ["CSo11UIResponder", "sectionIndexTitlesForTableView"]
-- !private ["CSo11UIResponder", "setInfraccionInfo"]
 - !private ["CSo11UIResponder", "showLoadingMessage"]
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
@@ -1469,6 +1657,7 @@ depends-member:
 - !private ["CSo11UIResponder", "userInteractionEnabled"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
+- ["CSo11UIResponder", "visualizarClicked"]
 - !private ["CSo12UIScrollView", "backgroundColor"]
 - !private ["CSo12UIScrollView", "backgroundView"]
 - !private ["CSo12UIScrollView", "dataSource"]
@@ -1485,6 +1674,8 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "PostLegajoRequest"]
 - !private ["PSo20UIScrollViewDelegate", "Selector"]
 - !private ["PSo20UIScrollViewDelegate", "String"]
+- !private ["PSo20UIScrollViewDelegate", "UIAlertAction"]
+- !private ["PSo20UIScrollViewDelegate", "UIAlertController"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "UINib"]
 - !private ["PSo20UIScrollViewDelegate", "UITapGestureRecognizer"]
@@ -1510,6 +1701,9 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "legajoId"]
 - !private ["PSo20UIScrollViewDelegate", "navigationController"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
+- !private ["PSo20UIScrollViewDelegate", "presentViewController"]
+- !private ["PSo20UIScrollViewDelegate", "print"]
+- ["PSo20UIScrollViewDelegate", "resolverClicked"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDragging"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -1526,6 +1720,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "showLoadingMessage"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
+- ["PSo20UIScrollViewDelegate", "visualizarClicked"]
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["PSo16UIStateRestoring", "ActaService"]
 - !private ["PSo16UIStateRestoring", "ActaViewController"]
@@ -1536,10 +1731,13 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "PostLegajoRequest"]
 - !private ["PSo16UIStateRestoring", "Selector"]
 - !private ["PSo16UIStateRestoring", "String"]
+- !private ["PSo16UIStateRestoring", "UIAlertAction"]
+- !private ["PSo16UIStateRestoring", "UIAlertController"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UINib"]
 - !private ["PSo16UIStateRestoring", "UITapGestureRecognizer"]
 - !private ["PSo16UIStateRestoring", "UIView"]
+- !private ["PSo16UIStateRestoring", "addAction"]
 - ["PSo16UIStateRestoring", "caratula"]
 - ["PSo16UIStateRestoring", "cargarLegajo"]
 - !private ["PSo16UIStateRestoring", "fatalError"]
@@ -1563,7 +1761,10 @@ depends-member:
 - ["PSo16UIStateRestoring", "legajoId"]
 - !private ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
+- !private ["PSo16UIStateRestoring", "presentViewController"]
+- !private ["PSo16UIStateRestoring", "print"]
 - !private ["PSo16UIStateRestoring", "pushViewController"]
+- ["PSo16UIStateRestoring", "resolverClicked"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDragging"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndScrollingAnimation"]
@@ -1581,6 +1782,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "tableView"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
+- ["PSo16UIStateRestoring", "visualizarClicked"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo11UITableView", "backgroundColor"]
 - !private ["CSo11UITableView", "backgroundView"]
@@ -1589,8 +1791,9 @@ depends-member:
 - !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo11UITableView", "registerNib"]
 - !private ["CSo11UITableView", "reloadData"]
+- !private ["CSo15UITableViewCell", "_setInfraccionInfo"]
 - !private ["CSo15UITableViewCell", "backgroundColor"]
-- !private ["CSo15UITableViewCell", "setInfraccionInfo"]
+- !private ["CSo15UITableViewCell", "delegate"]
 - !private ["PSo21UITableViewDataSource", "ActaService"]
 - !private ["PSo21UITableViewDataSource", "ActaViewController"]
 - !private ["PSo21UITableViewDataSource", "CaratulaViewController"]
@@ -1600,6 +1803,8 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "PostLegajoRequest"]
 - !private ["PSo21UITableViewDataSource", "Selector"]
 - !private ["PSo21UITableViewDataSource", "String"]
+- !private ["PSo21UITableViewDataSource", "UIAlertAction"]
+- !private ["PSo21UITableViewDataSource", "UIAlertController"]
 - !private ["PSo21UITableViewDataSource", "UIColor"]
 - !private ["PSo21UITableViewDataSource", "UINib"]
 - !private ["PSo21UITableViewDataSource", "UITapGestureRecognizer"]
@@ -1624,6 +1829,9 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "legajoId"]
 - !private ["PSo21UITableViewDataSource", "navigationController"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
+- !private ["PSo21UITableViewDataSource", "presentViewController"]
+- !private ["PSo21UITableViewDataSource", "print"]
+- ["PSo21UITableViewDataSource", "resolverClicked"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDecelerating"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDragging"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndScrollingAnimation"]
@@ -1640,6 +1848,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "showLoadingMessage"]
 - ["PSo21UITableViewDataSource", "tableView"]
 - ["PSo21UITableViewDataSource", "viewForZoomingInScrollView"]
+- ["PSo21UITableViewDataSource", "visualizarClicked"]
 - ["PSo21UITableViewDataSource", ""]
 - !private ["PSo19UITableViewDelegate", "ActaService"]
 - !private ["PSo19UITableViewDelegate", "ActaViewController"]
@@ -1650,6 +1859,8 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "PostLegajoRequest"]
 - !private ["PSo19UITableViewDelegate", "Selector"]
 - !private ["PSo19UITableViewDelegate", "String"]
+- !private ["PSo19UITableViewDelegate", "UIAlertAction"]
+- !private ["PSo19UITableViewDelegate", "UIAlertController"]
 - !private ["PSo19UITableViewDelegate", "UIColor"]
 - !private ["PSo19UITableViewDelegate", "UINib"]
 - !private ["PSo19UITableViewDelegate", "UITapGestureRecognizer"]
@@ -1674,6 +1885,9 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "legajoId"]
 - !private ["PSo19UITableViewDelegate", "navigationController"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
+- !private ["PSo19UITableViewDelegate", "presentViewController"]
+- !private ["PSo19UITableViewDelegate", "print"]
+- ["PSo19UITableViewDelegate", "resolverClicked"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDragging"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -1690,6 +1904,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "showLoadingMessage"]
 - ["PSo19UITableViewDelegate", "tableView"]
 - ["PSo19UITableViewDelegate", "viewForZoomingInScrollView"]
+- ["PSo19UITableViewDelegate", "visualizarClicked"]
 - ["PSo19UITableViewDelegate", ""]
 - !private ["CSo22UITapGestureRecognizer", "init"]
 - !private ["PSo18UITraitEnvironment", "ActaService"]
@@ -1701,10 +1916,14 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "PostLegajoRequest"]
 - !private ["PSo18UITraitEnvironment", "Selector"]
 - !private ["PSo18UITraitEnvironment", "String"]
+- !private ["PSo18UITraitEnvironment", "UIAlertAction"]
+- !private ["PSo18UITraitEnvironment", "UIAlertController"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UINib"]
 - !private ["PSo18UITraitEnvironment", "UITapGestureRecognizer"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
+- !private ["PSo18UITraitEnvironment", "_setInfraccionInfo"]
+- !private ["PSo18UITraitEnvironment", "addAction"]
 - !private ["PSo18UITraitEnvironment", "addGestureRecognizer"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "backgroundView"]
@@ -1734,9 +1953,12 @@ depends-member:
 - ["PSo18UITraitEnvironment", "legajoId"]
 - !private ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
+- !private ["PSo18UITraitEnvironment", "presentViewController"]
+- !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "pushViewController"]
 - !private ["PSo18UITraitEnvironment", "registerNib"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
+- ["PSo18UITraitEnvironment", "resolverClicked"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -1750,7 +1972,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "scrollViewWillBeginZooming"]
 - ["PSo18UITraitEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UITraitEnvironment", "sectionIndexTitlesForTableView"]
-- !private ["PSo18UITraitEnvironment", "setInfraccionInfo"]
 - !private ["PSo18UITraitEnvironment", "showLoadingMessage"]
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
@@ -1758,7 +1979,9 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "userInteractionEnabled"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
+- ["PSo18UITraitEnvironment", "visualizarClicked"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "_setInfraccionInfo"]
 - !private ["CSo6UIView", "addGestureRecognizer"]
 - !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "backgroundView"]
@@ -1768,12 +1991,12 @@ depends-member:
 - !private ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "registerNib"]
 - !private ["CSo6UIView", "reloadData"]
-- !private ["CSo6UIView", "setInfraccionInfo"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textColor"]
 - !private ["CSo6UIView", "userInteractionEnabled"]
 - !private ["CSo16UIViewController", "ActaService"]
 - !private ["CSo16UIViewController", "ActaViewController"]
+- ["CSo16UIViewController", "Array"]
 - ["CSo16UIViewController", "CGFloat"]
 - !private ["CSo16UIViewController", "CaratulaViewController"]
 - !private ["CSo16UIViewController", "Constants"]
@@ -1788,6 +2011,8 @@ depends-member:
 - !private ["CSo16UIViewController", "PostLegajoRequest"]
 - !private ["CSo16UIViewController", "Selector"]
 - ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIAlertAction"]
+- !private ["CSo16UIViewController", "UIAlertController"]
 - !private ["CSo16UIViewController", "UIColor"]
 - ["CSo16UIViewController", "UILabel"]
 - !private ["CSo16UIViewController", "UINib"]
@@ -1796,6 +2021,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UITapGestureRecognizer"]
 - ["CSo16UIViewController", "UIView"]
 - !private ["CSo16UIViewController", "Void"]
+- !private ["CSo16UIViewController", "addAction"]
 - ["CSo16UIViewController", "caratula"]
 - ["CSo16UIViewController", "cargarLegajo"]
 - !private ["CSo16UIViewController", "fatalError"]
@@ -1819,7 +2045,10 @@ depends-member:
 - ["CSo16UIViewController", "legajoId"]
 - !private ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
+- !private ["CSo16UIViewController", "presentViewController"]
+- !private ["CSo16UIViewController", "print"]
 - !private ["CSo16UIViewController", "pushViewController"]
+- ["CSo16UIViewController", "resolverClicked"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
 - ["CSo16UIViewController", "scrollViewDidEndDragging"]
 - ["CSo16UIViewController", "scrollViewDidEndScrollingAnimation"]
@@ -1837,6 +2066,7 @@ depends-member:
 - ["CSo16UIViewController", "tableView"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
+- ["CSo16UIViewController", "visualizarClicked"]
 - !private ["P9Alamofire20URLStringConvertible", "init"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs10_ArrayType", "Generator"]
@@ -1893,6 +2123,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "SubSequence"]
 - !private ["PSs12_Reflectable", "_Element"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "_setInfraccionInfo"]
 - !private ["PSs12_Reflectable", "addGestureRecognizer"]
 - !private ["PSs12_Reflectable", "append"]
 - !private ["PSs12_Reflectable", "backgroundColor"]
@@ -1904,7 +2135,6 @@ depends-member:
 - !private ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "registerNib"]
 - !private ["PSs12_Reflectable", "reloadData"]
-- !private ["PSs12_Reflectable", "setInfraccionInfo"]
 - !private ["PSs12_Reflectable", "subscript"]
 - !private ["PSs12_Reflectable", "text"]
 - !private ["PSs12_Reflectable", "textColor"]
@@ -1945,8 +2175,9 @@ depends-nominal:
 - !private "PSs9Indexable"
 - !private "VSs17IndexingGenerator"
 - !private "C17ResolucionLegajos10Infraccion"
-- "C17ResolucionLegajos14InfraccionInfo"
+- !private "C17ResolucionLegajos14InfraccionInfo"
 - !private "C17ResolucionLegajos23InfraccionTableViewCell"
+- "P17ResolucionLegajos31InfraccionTableViewCellDelegate"
 - !private "C17ResolucionLegajos31InfraccionesHeaderTableViewCell"
 - !private "Si"
 - !private "PSs21IntegerArithmeticType"
@@ -1972,6 +2203,7 @@ depends-nominal:
 - !private "C17ResolucionLegajos17PostLegajoRequest"
 - !private "PSs21RandomAccessIndexType"
 - !private "PSs30RangeReplaceableCollectionType"
+- !private "PSs16RawRepresentable"
 - !private "C17ResolucionLegajos10Resolucion"
 - !private "V10ObjectiveC8Selector"
 - !private "PSs12SequenceType"
@@ -1985,6 +2217,10 @@ depends-nominal:
 - !private "PSs30StringInterpolationConvertible"
 - !private "PSs24StringLiteralConvertible"
 - !private "PSo29UIAccessibilityIdentification"
+- !private "CSo13UIAlertAction"
+- !private "OSC18UIAlertActionStyle"
+- !private "CSo17UIAlertController"
+- !private "OSC22UIAlertControllerStyle"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - !private "CSo7UIColor"
@@ -2044,4 +2280,4 @@ depends-external:
 - "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreData.swiftmodule"
-interface-hash: "dd2c00aeadfea0adfb60bd2bbb9dad29"
+interface-hash: "475597d0ebbdf62742370def6f90d371"

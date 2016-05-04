@@ -8,8 +8,19 @@
 
 import UIKit
 
-class FinishViewController: UIViewController {
+class FinishViewController: MasterViewController {
 
+	var legajo : Legajo?
+
+	init(legajo: Legajo) {
+		super.init(nibName: "FinishViewController", bundle: nil)
+		self.legajo = legajo
+	}
+
+	required init?(coder aDecoder: NSCoder) {
+	    fatalError("init(coder:) has not been implemented")
+	}
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
