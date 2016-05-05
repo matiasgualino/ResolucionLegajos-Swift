@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos19LegajoTableViewCell", ""]
 provides-dynamic-lookup:
-- "setLegajo"
 - "lblTitle"
+- "lblFecha"
 - "id"
 - "lblDominio"
 - "awakeFromNib"
-- "lblFecha"
+- "setLegajo"
 depends-top-level:
-- "CardTableViewCell"
-- !private "+"
-- "String"
+- "Legajo"
 - "LegajoTableViewCell"
 - "UITableViewCellStyle"
-- "UILabel"
-- "Legajo"
-- !private "StringLiteralType"
+- !private "+"
 - "NSCoder"
+- "UILabel"
+- "String"
+- !private "StringLiteralType"
+- "CardTableViewCell"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - !private ["Ps9AnyObject", "dominio"]

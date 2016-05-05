@@ -32,6 +32,12 @@ class LegajoViewController: MasterViewController, UITableViewDataSource, UITable
 		self.legajoId = legajoId
 	}
 	
+	init(legajo: Legajo) {
+		super.init(nibName: "LegajoViewController", bundle: nil)
+		self.legajoId = legajo.id
+		self.legajo = legajo
+	}
+	
 	required init(coder aDecoder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
@@ -60,13 +66,17 @@ class LegajoViewController: MasterViewController, UITableViewDataSource, UITable
 		
 		self.showLoadingMessage()
 		let accessToken = Constants.getAccessToken()
-		if legajoId != nil && accessToken != nil {
-			ActaService.getLegajo(accessToken!, legajoId: legajoId!, success: { (legajo) -> Void in
-				self.legajo = legajo
-				self.cargarLegajo()
-				self.hideLoadingMessage()
+		
+		if legajo != nil {
+			self.cargarLegajo()
+		} else {
+			if legajoId != nil && accessToken != nil {
+				ActaService.getLegajo(accessToken!, legajoId: legajoId!, success: { (legajo) -> Void in
+					self.legajo = legajo
+					self.cargarLegajo()
 				}) { (error) -> Void in
 					
+				}
 			}
 		}
     }
@@ -126,7 +136,10 @@ class LegajoViewController: MasterViewController, UITableViewDataSource, UITable
 				self.lblPuntosResueltos.text = "10"
 				self.lblPuntosResueltos.textColor = UIColor.redColor()
 			}
+			
+			Constants.setLegajoGuardado(self.legajo!)
 		}
+		self.hideLoadingMessage()
 		self.infraccionesTableView.reloadData()
 	}
 	
@@ -140,7 +153,8 @@ class LegajoViewController: MasterViewController, UITableViewDataSource, UITable
 			ActaService.suspenderResolucion(postLegajoRequest, success: { () -> Void in
 				let suspensionAlertView = UIAlertController(title: "INFORMACION", message: "Se ha suspendido el legajo exitosamente! Será redireccionado al inicio.", preferredStyle: .Alert)
 				suspensionAlertView.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
-					
+					Constants.removeLegajoGuardado()
+					self.navigationController?.pushViewController(MainViewController(), animated: true)
 				}))
 				self.presentViewController(suspensionAlertView, animated: true, completion: nil)
 				}, failure: { (error) -> Void in

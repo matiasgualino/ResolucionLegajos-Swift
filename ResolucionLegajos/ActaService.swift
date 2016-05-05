@@ -23,7 +23,7 @@ class ActaService: NSObject {
 	static let GET_ALL_LEGAJOS_URI : String = "/Legajos"
 	static let GET_ALL_LEGAJOS_METHOD : String = "GET"
 	
-	class func finalizarResolucion(postLegajoRequest : PostLegajoRequest, success: (accessToken: String?) -> Void, failure: ((error: NSError) -> Void)) {
+	class func finalizarResolucion(postLegajoRequest : PostLegajoRequest, success: () -> Void, failure: ((error: NSError) -> Void)) {
 		
 		let url = Constants.BASE_URL + ActaService.FINALIZAR_RESOLUCION_URI
 		
@@ -34,10 +34,8 @@ class ActaService: NSObject {
 		
 		Alamofire.request(request).responseJSON {
 			response in switch response.result {
-			case .Success(let JSON):
-				let response = JSON as! NSDictionary
-				let accessToken = response.objectForKey("access_token") as? String
-				success(accessToken: accessToken)
+			case .Success( _):
+				success()
 			case .Failure(let error):
 				failure(error: error)
 			}

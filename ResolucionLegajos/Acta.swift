@@ -30,6 +30,59 @@ class Acta: NSObject, NSCopying {
 		
 	}
 	
+	required init(coder aDecoder: NSCoder) {
+		if let numero = aDecoder.decodeObjectForKey("ActaNumero") as? String {
+			self.numero = numero
+		}
+		if let descripcion = aDecoder.decodeObjectForKey("ActaDescripcion") as? String {
+			self.descripcion = descripcion
+		}
+		if let ufcosto = aDecoder.decodeObjectForKey("ActaUfcosto") as? Double {
+			self.ufcosto = ufcosto
+		}
+		if let importeminimo = aDecoder.decodeObjectForKey("ActaImporteminimo") as? Double {
+			self.importeminimo = importeminimo
+		}
+		if let imagen = aDecoder.decodeObjectForKey("ActaImagen") as? String {
+			self.imagen = imagen
+		}
+		if let cantidadInfracciones = aDecoder.decodeObjectForKey("ActaInfraccionesCantidad") as? Int {
+			self.infracciones = [Infraccion]()
+			for i in 0...cantidadInfracciones {
+				let infraccion = aDecoder.decodeObjectForKey("ActaInfraccion" + String(format: "%d", i)) as? Infraccion
+				if infraccion != nil {
+					self.infracciones!.append(infraccion!)
+				}
+			}
+		}
+	}
+	
+	func encodeWithCoder(aCoder: NSCoder) {
+		if let numero = self.numero {
+			aCoder.encodeObject(numero, forKey: "ActaNumero")
+		}
+		if let descripcion = self.descripcion {
+			aCoder.encodeObject(descripcion, forKey: "ActaDescripcion")
+		}
+		if let ufcosto = self.ufcosto {
+			aCoder.encodeObject(ufcosto, forKey: "ActaUfcosto")
+		}
+		if let importeminimo = self.importeminimo {
+			aCoder.encodeObject(importeminimo, forKey: "ActaImporteminimo")
+		}
+		if let imagen = self.imagen {
+			aCoder.encodeObject(imagen, forKey: "ActaImagen")
+		}
+		if let infracciones = self.infracciones {
+			var i = 0
+			aCoder.encodeObject(infracciones.count, forKey: "ActaInfraccionesCantidad")
+			for infraccion in infracciones {
+				aCoder.encodeObject(infraccion, forKey: "ActaInfraccion" + String(format: "%d", i))
+				i = i + 1
+			}
+		}
+	}
+	
 	class func fromJSON(json : NSDictionary) -> Acta {
 		let acta : Acta = Acta()
 		if json["numero"] != nil {
@@ -62,6 +115,7 @@ class Acta: NSObject, NSCopying {
 	func toJSONString() -> String {
 		var infraccionesArray : [AnyObject]? = nil
 		if infracciones != nil {
+			infraccionesArray = [AnyObject]()
 			for infraccion in infracciones! {
 				infraccionesArray?.append(JSON.parse(infraccion.toJSONString()).mutableCopyOfTheObject())
 			}

@@ -28,6 +28,42 @@ class Resolucion: NSObject, NSCopying {
 		
 	}
 	
+	required init(coder aDecoder: NSCoder) {
+		if let codigo = aDecoder.decodeObjectForKey("ResolucionCodigo") as? String {
+			self.codigo = codigo
+		}
+		if let nota = aDecoder.decodeObjectForKey("ResolucionNota") as? String {
+			self.nota = nota
+		}
+		if let uf = aDecoder.decodeObjectForKey("ResolucionUf") as? Double {
+			self.uf = uf
+		}
+		if let importe = aDecoder.decodeObjectForKey("ResolucionImporte") as? Double {
+			self.importe = importe
+		}
+		if let puntos = aDecoder.decodeObjectForKey("ResolucionPuntos") as? Int {
+			self.puntos = puntos
+		}
+	}
+	
+	func encodeWithCoder(aCoder: NSCoder) {
+		if let codigo = self.codigo {
+			aCoder.encodeObject(codigo, forKey: "ResolucionCodigo")
+		}
+		if let nota = self.nota {
+			aCoder.encodeObject(nota, forKey: "ResolucionNota")
+		}
+		if let uf = self.uf {
+			aCoder.encodeObject(uf, forKey: "ResolucionUf")
+		}
+		if let importe = self.importe {
+			aCoder.encodeObject(importe, forKey: "ResolucionImporte")
+		}
+		if let puntos = self.puntos {
+			aCoder.encodeObject(puntos, forKey: "ResolucionPuntos")
+		}
+	}
+	
 	class func fromJSON(json : NSDictionary) -> Resolucion {
 		let resolucion : Resolucion = Resolucion()
 		if json["codigo"] != nil {

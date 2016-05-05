@@ -10,10 +10,10 @@ provides-dynamic-lookup:
 - "infraccion"
 depends-top-level:
 - "Acta"
-- "NSObject"
 - "InfraccionInfo"
-- !private "StringLiteralType"
 - "Infraccion"
+- "NSObject"
+- !private "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "acta"]
 - ["Ps9AnyObject", "infraccion"]

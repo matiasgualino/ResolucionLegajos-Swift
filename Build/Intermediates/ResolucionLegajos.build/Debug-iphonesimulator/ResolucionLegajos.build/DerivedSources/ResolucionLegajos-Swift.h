@@ -101,6 +101,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class Infraccion;
+@class NSCoder;
 @class NSDictionary;
 
 SWIFT_CLASS("_TtC17ResolucionLegajos4Acta")
@@ -110,6 +111,8 @@ SWIFT_CLASS("_TtC17ResolucionLegajos4Acta")
 @property (nonatomic, copy) NSString * _Nullable imagen;
 @property (nonatomic, copy) NSArray<Infraccion *> * _Nullable infracciones;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
 + (Acta * _Nonnull)fromJSON:(NSDictionary * _Nonnull)json;
 - (NSString * _Nonnull)toJSONString;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Null_unspecified)zone;
@@ -129,7 +132,7 @@ SWIFT_CLASS("_TtC17ResolucionLegajos11ActaService")
 + (NSString * _Nonnull)GET_LEGAJO_METHOD;
 + (NSString * _Nonnull)GET_ALL_LEGAJOS_URI;
 + (NSString * _Nonnull)GET_ALL_LEGAJOS_METHOD;
-+ (void)finalizarResolucion:(PostLegajoRequest * _Nonnull)postLegajoRequest success:(void (^ _Nonnull)(NSString * _Nullable))success failure:(void (^ _Nonnull)(NSError * _Nonnull))failure;
++ (void)finalizarResolucion:(PostLegajoRequest * _Nonnull)postLegajoRequest success:(void (^ _Nonnull)(void))success failure:(void (^ _Nonnull)(NSError * _Nonnull))failure;
 + (void)suspenderResolucion:(PostLegajoRequest * _Nonnull)postLegajoRequest success:(void (^ _Nonnull)(void))success failure:(void (^ _Nonnull)(NSError * _Nonnull))failure;
 + (void)getLegajo:(NSString * _Nonnull)accessToken legajoId:(NSString * _Nonnull)legajoId success:(void (^ _Nonnull)(Legajo * _Nullable))success failure:(void (^ _Nonnull)(NSError * _Nonnull))failure;
 + (void)getAllLegajos:(NSString * _Nonnull)accessToken success:(void (^ _Nonnull)(NSArray<Legajo *> * _Nullable))success failure:(void (^ _Nonnull)(NSError * _Nonnull))failure;
@@ -137,7 +140,6 @@ SWIFT_CLASS("_TtC17ResolucionLegajos11ActaService")
 @end
 
 @class UILoadingView;
-@class NSCoder;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC17ResolucionLegajos20MasterViewController")
@@ -278,12 +280,16 @@ SWIFT_CLASS("_TtC17ResolucionLegajos9Constants")
 + (UIColor * _Nonnull)YELLOW_COLOR;
 + (UIColor * _Nonnull)DARK_COLOR;
 + (UIColor * _Nonnull)CLEAR_COLOR;
++ (UIColor * _Nonnull)UNSOLVE_COLOR;
 + (NSString * _Nullable)getAccessToken;
 + (void)setAccessToken:(NSString * _Nonnull)accessToken;
 + (NSString * _Nullable)getUsername;
 + (void)setUsername:(NSString * _Nonnull)username;
 + (BOOL)isUserLogged;
 + (void)logout;
++ (void)setLegajoGuardado:(Legajo * _Nonnull)legajo;
++ (Legajo * _Nullable)getLegajoGuardado;
++ (void)removeLegajoGuardado;
 + (NSDate * _Null_unspecified)getDateAndHourFromString:(NSString * _Null_unspecified)string;
 + (NSString * _Null_unspecified)getDateStringFromDate:(NSDate * _Nonnull)date;
 + (UIAlertController * _Nonnull)showResolucionDialog:(InfraccionInfo * _Nonnull)ii navigationController:(UINavigationController * _Nonnull)navigationController callback:(void (^ _Nonnull)(Acta * _Nonnull))callback;
@@ -319,14 +325,32 @@ SWIFT_CLASS("_TtC17ResolucionLegajos19CustomIOS8AlertView")
 - (void)keyboardWillHide:(NSNotification * _Nonnull)notification;
 @end
 
+@class UITableView;
+@class NSIndexPath;
+@class UILabel;
 
 SWIFT_CLASS("_TtC17ResolucionLegajos20FinishViewController")
-@interface FinishViewController : MasterViewController
-@property (nonatomic, strong) Legajo * _Nullable legajo;
+@interface FinishViewController : MasterViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, strong) Legajo * _Nonnull legajo;
+@property (nonatomic, copy) NSArray<InfraccionInfo *> * _Nullable infraccionInfoList;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblLegajoTitle;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblPuntosResueltos;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblImporteResuelto;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblUFResueltas;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblConfirmar;
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified resumenTableView;
 - (nonnull instancetype)initWithLegajo:(Legajo * _Nonnull)legajo OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (void)loadResumen;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UIView * _Nullable)tableView:(UITableView * _Nonnull)tableView viewForHeaderInSection:(NSInteger)section;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForHeaderInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)modificarResolucion:(InfraccionInfo * _Nonnull)ii;
+- (void)finish;
 @end
 
 @class Resolucion;
@@ -339,6 +363,8 @@ SWIFT_CLASS("_TtC17ResolucionLegajos10Infraccion")
 @property (nonatomic, strong) Resolucion * _Nullable resolucion;
 - (nonnull instancetype)initWithCodigo:(NSString * _Nullable)codigo descripcion:(NSString * _Nullable)descripcion sanciones:(NSArray<Sancion *> * _Nullable)sanciones resolucion:(Resolucion * _Nullable)resolucion OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
 + (Infraccion * _Nonnull)fromJSON:(NSDictionary * _Nonnull)json;
 - (NSString * _Nonnull)toJSONString;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Null_unspecified)zone;
@@ -352,7 +378,6 @@ SWIFT_CLASS("_TtC17ResolucionLegajos14InfraccionInfo")
 - (nonnull instancetype)initWithInfraccion:(Infraccion * _Nonnull)infraccion acta:(Acta * _Nonnull)acta OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
 
 SWIFT_CLASS("_TtC17ResolucionLegajos23InfraccionTableViewCell")
 @interface InfraccionTableViewCell : CardTableViewCell
@@ -395,6 +420,8 @@ SWIFT_CLASS("_TtC17ResolucionLegajos6Legajo")
 @property (nonatomic, copy) NSArray<Acta *> * _Nullable actas;
 - (nonnull instancetype)initWithNumero:(NSString * _Nullable)numero fecha:(NSString * _Nullable)fecha dominio:(NSString * _Nullable)dominio nombrecompleto:(NSString * _Nullable)nombrecompleto du:(NSString * _Nullable)du observaciones:(NSString * _Nullable)observaciones id:(NSString * _Nullable)id actas:(NSArray<Acta *> * _Nullable)actas OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
 + (Legajo * _Nonnull)fromJSON:(NSDictionary * _Nonnull)json;
 - (NSString * _Nonnull)toJSONString;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Null_unspecified)zone;
@@ -437,8 +464,6 @@ SWIFT_CLASS("_TtC17ResolucionLegajos10LegajoView")
 - (void)loadData:(Legajo * _Nonnull)legajo ii:(InfraccionInfo * _Nonnull)ii;
 @end
 
-@class UITableView;
-@class NSIndexPath;
 
 SWIFT_CLASS("_TtC17ResolucionLegajos20LegajoViewController")
 @interface LegajoViewController : MasterViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
@@ -456,6 +481,7 @@ SWIFT_CLASS("_TtC17ResolucionLegajos20LegajoViewController")
 @property (nonatomic, strong) Legajo * _Nullable legajo;
 @property (nonatomic, copy) NSString * _Nullable legajoId;
 - (nonnull instancetype)initWithLegajoId:(NSString * _Nullable)legajoId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithLegajo:(Legajo * _Nonnull)legajo OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)viewDidLoad;
 - (void)cargarLegajo;
@@ -529,6 +555,7 @@ SWIFT_CLASS("_TtC17ResolucionLegajos18MainViewController")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)viewDidLoad;
+- (void)getAllLegajos;
 - (void)salir;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
@@ -561,10 +588,14 @@ SWIFT_CLASS("_TtC17ResolucionLegajos17PostLegajoRequest")
 
 SWIFT_CLASS("_TtC17ResolucionLegajos22ReminderViewController")
 @interface ReminderViewController : UIViewController
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, strong) Legajo * _Nonnull legajo;
+@property (nonatomic, copy) void (^ _Nonnull cancelCallback)(void);
+@property (nonatomic, copy) void (^ _Nonnull resolverCallback)(void);
+- (nonnull instancetype)initWithLegajo:(Legajo * _Nonnull)legajo cancelCallback:(void (^ _Nonnull)(void))cancelCallback resolverCallback:(void (^ _Nonnull)(void))resolverCallback OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (void)olvidar;
+- (void)resolver;
 @end
 
 
@@ -573,6 +604,8 @@ SWIFT_CLASS("_TtC17ResolucionLegajos10Resolucion")
 @property (nonatomic, copy) NSString * _Nullable codigo;
 @property (nonatomic, copy) NSString * _Nullable nota;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
 + (Resolucion * _Nonnull)fromJSON:(NSDictionary * _Nonnull)json;
 - (NSString * _Nonnull)toJSONString;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Null_unspecified)zone;
@@ -611,11 +644,41 @@ SWIFT_CLASS("_TtC17ResolucionLegajos14ResolucionView")
 @end
 
 
+SWIFT_CLASS("_TtC17ResolucionLegajos26ResumenHeaderTableViewCell")
+@interface ResumenHeaderTableViewCell : UITableViewCell
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC17ResolucionLegajos20ResumenTableViewCell")
+@interface ResumenTableViewCell : CardTableViewCell
+@property (nonatomic, strong) InfraccionInfo * _Nullable infraccionInfo;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblTitle;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblActa;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblResolucion;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblNota;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblPuntos;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblImporte;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblUnidadesFijas;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblModificar;
+- (void)_setInfraccionInfo:(InfraccionInfo * _Nonnull)ii;
+- (void)modificarResolucion;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Null_unspecified)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (void)awakeFromNib;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC17ResolucionLegajos7Sancion")
 @interface Sancion : NSObject <NSCopying>
 @property (nonatomic, copy) NSString * _Nullable codigo;
 @property (nonatomic, copy) NSString * _Nullable descripcion;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
 + (Sancion * _Nonnull)fromJSON:(NSDictionary * _Nonnull)json;
 - (NSString * _Nonnull)toJSONString;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Null_unspecified)zone;

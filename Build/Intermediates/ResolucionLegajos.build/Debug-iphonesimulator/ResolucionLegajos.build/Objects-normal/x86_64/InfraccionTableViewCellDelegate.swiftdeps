@@ -8,8 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "InfraccionTableViewCellDelegate"
-- "InfraccionInfo"
 - "NSObjectProtocol"
+- "InfraccionInfo"
 depends-member:
 - ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "InfraccionInfo"]
 - ["P17ResolucionLegajos31InfraccionTableViewCellDelegate", "resolverClicked"]

@@ -17,6 +17,7 @@ class Constants: NSObject {
 	static let YELLOW_COLOR = UIColor(rgba: "#FFD300")
 	static let DARK_COLOR = UIColor(rgba: "#272000")
 	static let CLEAR_COLOR = UIColor(rgba: "#EBEBF0")
+	static let UNSOLVE_COLOR = UIColor(rgba: "#E41C1C")
 	
 	private static let ACCESS_TOKEN_KEY : String = "ACCESS_TOKEN"
 	private static let USERNAME_KEY : String = "USERNAME"
@@ -44,8 +45,28 @@ class Constants: NSObject {
 	}
 	
 	class func logout() {
+		self.removeLegajoGuardado()
 		NSUserDefaults.standardUserDefaults().removeObjectForKey(self.USERNAME_KEY)
 		NSUserDefaults.standardUserDefaults().removeObjectForKey(self.ACCESS_TOKEN_KEY)
+		NSUserDefaults.standardUserDefaults().synchronize()
+	}
+	
+	class func setLegajoGuardado(legajo: Legajo) {
+		NSUserDefaults.standardUserDefaults().setObject(NSKeyedArchiver.archivedDataWithRootObject(legajo), forKey: "LegajoGuardado")
+		NSUserDefaults.standardUserDefaults().synchronize()
+	}
+	
+	class func getLegajoGuardado() -> Legajo? {
+		if let data = NSUserDefaults.standardUserDefaults().objectForKey("LegajoGuardado") as? NSData {
+			let unarc = NSKeyedUnarchiver(forReadingWithData: data)
+			return unarc.decodeObjectForKey("root") as? Legajo
+		} else {
+			return nil
+		}
+	}
+	
+	class func removeLegajoGuardado() {
+		NSUserDefaults.standardUserDefaults().removeObjectForKey("LegajoGuardado")
 		NSUserDefaults.standardUserDefaults().synchronize()
 	}
 	

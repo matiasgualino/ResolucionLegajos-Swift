@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos22CaratulaViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "legajoId"
 - "viewWillTransitionToSize"
+- "legajoId"
+- "viewDidLoad"
 - "caratulaView"
 depends-top-level:
+- "String"
+- "CaratulaView"
+- "CGSize"
 - "UIScrollViewDelegate"
 - "MasterViewController"
-- "UIViewControllerTransitionCoordinator"
-- "NSCoder"
-- "String"
-- !private "StringLiteralType"
-- !private "fatalError"
-- "CGSize"
 - !private "Void"
-- "CaratulaView"
+- !private "fatalError"
+- "NSCoder"
 - "CaratulaViewController"
+- !private "StringLiteralType"
+- "UIViewControllerTransitionCoordinator"
 depends-member:
 - !private ["Ps9AnyObject", "CaratulaView"]
 - ["Ps9AnyObject", "caratulaView"]

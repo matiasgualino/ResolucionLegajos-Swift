@@ -30,6 +30,48 @@ class Sancion: NSObject, NSCopying {
 		
 	}
 	
+	required init(coder aDecoder: NSCoder) {
+		if let codigo = aDecoder.decodeObjectForKey("SancionCodigo") as? String {
+			self.codigo = codigo
+		}
+		if let descripcion = aDecoder.decodeObjectForKey("SancionDescripcion") as? String {
+			self.descripcion = descripcion
+		}
+		if let ufmin = aDecoder.decodeObjectForKey("SancionUfmin") as? Double {
+			self.ufmin = ufmin
+		}
+		if let ufmax = aDecoder.decodeObjectForKey("SancionUfmax") as? Double {
+			self.ufmax = ufmax
+		}
+		if let puntosmin = aDecoder.decodeObjectForKey("SancionPuntosmin") as? Int {
+			self.puntosmin = puntosmin
+		}
+		if let puntosmax = aDecoder.decodeObjectForKey("SancionPuntosmax") as? Int {
+			self.puntosmax = puntosmax
+		}
+	}
+	
+	func encodeWithCoder(aCoder: NSCoder) {
+		if let codigo = self.codigo {
+			aCoder.encodeObject(codigo, forKey: "SancionCodigo")
+		}
+		if let descripcion = self.descripcion {
+			aCoder.encodeObject(descripcion, forKey: "SancionDescripcion")
+		}
+		if let ufmin = self.ufmin {
+			aCoder.encodeObject(ufmin, forKey: "SancionUfmin")
+		}
+		if let ufmax = self.ufmax {
+			aCoder.encodeObject(ufmax, forKey: "SancionUfmax")
+		}
+		if let puntosmin = self.puntosmin {
+			aCoder.encodeObject(puntosmin, forKey: "SancionPuntosmin")
+		}
+		if let puntosmax = self.puntosmax {
+			aCoder.encodeObject(puntosmax, forKey: "SancionPuntosmax")
+		}
+	}
+	
 	class func fromJSON(json : NSDictionary) -> Sancion {
 		let sancion : Sancion = Sancion()
 		if json["codigo"] != nil {

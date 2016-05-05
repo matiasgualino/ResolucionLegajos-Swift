@@ -7,18 +7,18 @@ provides-member:
 - ["C17ResolucionLegajos17PostLegajoRequest", ""]
 provides-dynamic-lookup:
 - "token"
-- "toJSONString"
 - "legajo"
+- "toJSONString"
 depends-top-level:
-- !private "StringLiteralType"
-- "Legajo"
-- !private "JSON"
-- "PostLegajoRequest"
-- "NSObject"
-- !private "=="
 - !private "Dictionary"
 - "String"
 - !private "AnyObject"
+- !private "=="
+- !private "JSON"
+- "Legajo"
+- "PostLegajoRequest"
+- "NSObject"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "JSON"]
 - ["Ps9AnyObject", "init"]

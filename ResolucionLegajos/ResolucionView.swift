@@ -119,7 +119,9 @@ class ResolucionView: UIView, UITextViewDelegate {
 					if infraccionResuelta != nil {
 						let resolucion = Resolucion()
 						resolucion.codigo = self.sancion!.codigo
-						resolucion.nota = self.notaTextView.text
+						if self.notaTextView.text != self.notaPlaceholder {
+							resolucion.nota = self.notaTextView.text
+						}
 						
 						if (self.puntosTextField.text == nil) || (self.sancion?.puntosmax == 0 && self.sancion?.puntosmin == 0) {
 							resolucion.puntos = 0

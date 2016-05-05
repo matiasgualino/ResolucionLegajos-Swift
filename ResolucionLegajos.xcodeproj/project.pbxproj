@@ -14,6 +14,11 @@
 		0F0A79CA1C8CF84B00152656 /* ResolucionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0A79C81C8CF84B00152656 /* ResolucionView.swift */; };
 		0F0A79CB1C8CF84B00152656 /* ResolucionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0A79C91C8CF84B00152656 /* ResolucionView.xib */; };
 		0F0F3D3C1CD9753100DF6B66 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0F3D3B1CD9753100DF6B66 /* CustomAlertView.swift */; };
+		0F0F3D3F1CDAC50B00DF6B66 /* ResumenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0F3D3D1CDAC50B00DF6B66 /* ResumenTableViewCell.swift */; };
+		0F0F3D401CDAC50B00DF6B66 /* ResumenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0F3D3E1CDAC50B00DF6B66 /* ResumenTableViewCell.xib */; };
+		0F0F3D441CDB178B00DF6B66 /* ResumenHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0F3D421CDB178B00DF6B66 /* ResumenHeaderTableViewCell.swift */; };
+		0F0F3D451CDB178B00DF6B66 /* ResumenHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0F3D431CDB178B00DF6B66 /* ResumenHeaderTableViewCell.xib */; };
+		0F0F3D471CDB189F00DF6B66 /* ResolucionTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0F3D461CDB189F00DF6B66 /* ResolucionTableViewCellDelegate.swift */; };
 		0F4AE7141C7A4A9900AE058A /* InfraccionesHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4AE7121C7A4A9900AE058A /* InfraccionesHeaderTableViewCell.swift */; };
 		0F4AE7151C7A4A9900AE058A /* InfraccionesHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4AE7131C7A4A9900AE058A /* InfraccionesHeaderTableViewCell.xib */; };
 		0F4AE7181C7A4B2900AE058A /* InfraccionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4AE7161C7A4B2900AE058A /* InfraccionTableViewCell.swift */; };
@@ -72,6 +77,11 @@
 		0F0A79C81C8CF84B00152656 /* ResolucionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolucionView.swift; sourceTree = "<group>"; };
 		0F0A79C91C8CF84B00152656 /* ResolucionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResolucionView.xib; sourceTree = "<group>"; };
 		0F0F3D3B1CD9753100DF6B66 /* CustomAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		0F0F3D3D1CDAC50B00DF6B66 /* ResumenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumenTableViewCell.swift; sourceTree = "<group>"; };
+		0F0F3D3E1CDAC50B00DF6B66 /* ResumenTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResumenTableViewCell.xib; sourceTree = "<group>"; };
+		0F0F3D421CDB178B00DF6B66 /* ResumenHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumenHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		0F0F3D431CDB178B00DF6B66 /* ResumenHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResumenHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		0F0F3D461CDB189F00DF6B66 /* ResolucionTableViewCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolucionTableViewCellDelegate.swift; sourceTree = "<group>"; };
 		0F4AE7121C7A4A9900AE058A /* InfraccionesHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfraccionesHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		0F4AE7131C7A4A9900AE058A /* InfraccionesHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfraccionesHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		0F4AE7161C7A4B2900AE058A /* InfraccionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfraccionTableViewCell.swift; sourceTree = "<group>"; };
@@ -138,10 +148,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F0F3D411CDB176900DF6B66 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				0FC6999F1C5F249500DA11B4 /* LegajosHeaderTableViewCell.swift */,
+				0FC699A01C5F249500DA11B4 /* LegajosHeaderTableViewCell.xib */,
+				0F4AE7121C7A4A9900AE058A /* InfraccionesHeaderTableViewCell.swift */,
+				0F4AE7131C7A4A9900AE058A /* InfraccionesHeaderTableViewCell.xib */,
+				0F0F3D421CDB178B00DF6B66 /* ResumenHeaderTableViewCell.swift */,
+				0F0F3D431CDB178B00DF6B66 /* ResumenHeaderTableViewCell.xib */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
 		0F4AE71E1C7D0C3700AE058A /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
 				0F4AE71F1C7D0C5500AE058A /* InfraccionTableViewCellDelegate.swift */,
+				0F0F3D461CDB189F00DF6B66 /* ResolucionTableViewCellDelegate.swift */,
 			);
 			name = Delegates;
 			sourceTree = "<group>";
@@ -261,15 +285,14 @@
 		0FC699941C5EB3DA00DA11B4 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				0F0F3D411CDB176900DF6B66 /* Headers */,
 				0FC699951C5EB3FE00DA11B4 /* LegajoTableViewCell.swift */,
 				0FC699961C5EB3FE00DA11B4 /* LegajoTableViewCell.xib */,
-				0FC6999F1C5F249500DA11B4 /* LegajosHeaderTableViewCell.swift */,
-				0FC699A01C5F249500DA11B4 /* LegajosHeaderTableViewCell.xib */,
-				0F4AE7121C7A4A9900AE058A /* InfraccionesHeaderTableViewCell.swift */,
-				0F4AE7131C7A4A9900AE058A /* InfraccionesHeaderTableViewCell.xib */,
 				0F4AE7161C7A4B2900AE058A /* InfraccionTableViewCell.swift */,
 				0F4AE7171C7A4B2900AE058A /* InfraccionTableViewCell.xib */,
 				0F4AE71C1C7A5C5B00AE058A /* CardTableViewCell.swift */,
+				0F0F3D3D1CDAC50B00DF6B66 /* ResumenTableViewCell.swift */,
+				0F0F3D3E1CDAC50B00DF6B66 /* ResumenTableViewCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -357,12 +380,14 @@
 				0F0A79CB1C8CF84B00152656 /* ResolucionView.xib in Resources */,
 				0F0A79C31C8B209800152656 /* CaratulaView.xib in Resources */,
 				0F79EDE61C53F4F8007AA2D3 /* FinishViewController.xib in Resources */,
+				0F0F3D451CDB178B00DF6B66 /* ResumenHeaderTableViewCell.xib in Resources */,
 				0F79EDDE1C53F4DC007AA2D3 /* ActaViewController.xib in Resources */,
 				0F4AE7151C7A4A9900AE058A /* InfraccionesHeaderTableViewCell.xib in Resources */,
 				0F79EDFA1C53F7D3007AA2D3 /* Default-568h@2x.png in Resources */,
 				0FC6999E1C5ED6F300DA11B4 /* ReminderViewController.xib in Resources */,
 				0F79EDF21C53F553007AA2D3 /* MainViewController.xib in Resources */,
 				0FC699981C5EB3FE00DA11B4 /* LegajoTableViewCell.xib in Resources */,
+				0F0F3D401CDAC50B00DF6B66 /* ResumenTableViewCell.xib in Resources */,
 				0F4AE7191C7A4B2900AE058A /* InfraccionTableViewCell.xib in Resources */,
 				0F79EDAB1C531CFC007AA2D3 /* Assets.xcassets in Resources */,
 				0F0A79C71C8B5B2D00152656 /* LegajoView.xib in Resources */,
@@ -430,12 +455,14 @@
 				0F79EDB91C53BF57007AA2D3 /* Legajo.swift in Sources */,
 				0F4AE71D1C7A5C5B00AE058A /* CardTableViewCell.swift in Sources */,
 				0F79EDF11C53F553007AA2D3 /* MainViewController.swift in Sources */,
+				0F0F3D3F1CDAC50B00DF6B66 /* ResumenTableViewCell.swift in Sources */,
 				0F79EDC51C53BFAB007AA2D3 /* Resolucion.swift in Sources */,
 				0F79EDC31C53BFA2007AA2D3 /* Sancion.swift in Sources */,
 				0F79EDA91C531CFC007AA2D3 /* ResolucionLegajos.xcdatamodeld in Sources */,
 				0F4AE7181C7A4B2900AE058A /* InfraccionTableViewCell.swift in Sources */,
 				0F79EDF81C53F79A007AA2D3 /* UILoadingView.swift in Sources */,
 				0F79EDC11C53BF93007AA2D3 /* PostLegajoRequest.swift in Sources */,
+				0F0F3D441CDB178B00DF6B66 /* ResumenHeaderTableViewCell.swift in Sources */,
 				0F79EDD31C53CFED007AA2D3 /* JSON.swift in Sources */,
 				0F79EDF51C53F566007AA2D3 /* NoInternetViewController.swift in Sources */,
 				0FC699A11C5F249500DA11B4 /* LegajosHeaderTableViewCell.swift in Sources */,
@@ -450,6 +477,7 @@
 				0F79EDE91C53F508007AA2D3 /* LegajoViewController.swift in Sources */,
 				0F0F3D3C1CD9753100DF6B66 /* CustomAlertView.swift in Sources */,
 				0F4AE7201C7D0C5500AE058A /* InfraccionTableViewCellDelegate.swift in Sources */,
+				0F0F3D471CDB189F00DF6B66 /* ResolucionTableViewCellDelegate.swift in Sources */,
 				0F79EDFD1C540175007AA2D3 /* CardView.swift in Sources */,
 				0F0A79C11C8B207F00152656 /* CaratulaView.swift in Sources */,
 				0FC6999D1C5ED6F300DA11B4 /* ReminderViewController.swift in Sources */,

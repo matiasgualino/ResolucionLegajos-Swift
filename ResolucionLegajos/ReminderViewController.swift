@@ -10,7 +10,18 @@ import UIKit
 
 class ReminderViewController: UIViewController {
 
-	init() {
+	@IBOutlet weak private var lblInfo : UILabel!
+	@IBOutlet weak private var btnResolver : UIButton!
+	@IBOutlet weak private var btnOlvidar : UIButton!
+	
+	var legajo : Legajo
+	var cancelCallback : (() -> Void)
+	var resolverCallback : (() -> Void)
+	
+	init(legajo: Legajo, cancelCallback: (() -> Void), resolverCallback: (() -> Void)) {
+		self.legajo = legajo
+		self.cancelCallback = cancelCallback
+		self.resolverCallback = resolverCallback
 		super.init(nibName: "ReminderViewController", bundle: nil)
 	}
 	
@@ -21,22 +32,25 @@ class ReminderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+		self.lblInfo.text = "Nro: " + self.legajo.numero! + " - " + self.legajo.nombrecompleto!
+		self.btnOlvidar.addTarget(self, action: #selector(ReminderViewController.olvidar), forControlEvents: .TouchUpInside)
+		self.btnResolver.addTarget(self, action: #selector(ReminderViewController.resolver), forControlEvents: .TouchUpInside)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+	func olvidar() {
+		
+		let olvidarAlertView = UIAlertController(title: "ATENCIÓN", message: "Se va a eliminar el legajo actual y todas las resoluciones hechas en él hasta el momento. Desea continuar?", preferredStyle: .Alert)
+		olvidarAlertView.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+			Constants.removeLegajoGuardado()
+			self.dismissViewControllerAnimated(true, completion: nil)
+			self.cancelCallback()
+		}))
+		self.showViewController(olvidarAlertView, sender: self)
+	}
+	
+	func resolver() {
+		self.dismissViewControllerAnimated(true, completion: nil)
+		self.resolverCallback()
+	}
+	
 }

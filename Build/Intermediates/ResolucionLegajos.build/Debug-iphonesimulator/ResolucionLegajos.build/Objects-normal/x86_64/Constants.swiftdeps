@@ -6,47 +6,55 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos9Constants", ""]
 provides-dynamic-lookup:
-- "setAccessToken"
-- "YELLOW_COLOR"
-- "getUsername"
+- "setUsername"
 - "BASE_URL"
+- "UNSOLVE_COLOR"
+- "logout"
+- "setLegajoGuardado"
+- "getDateStringFromDate"
+- "PRODUCTION_BASE_URL"
+- "setAccessToken"
+- "getLegajoGuardado"
+- "removeLegajoGuardado"
 - "TEST_BASE_URL"
 - "DARK_COLOR"
-- "getDateStringFromDate"
-- "getAccessToken"
-- "logout"
-- "CLEAR_COLOR"
-- "PRODUCTION_BASE_URL"
-- "setUsername"
-- "isUserLogged"
-- "getDateAndHourFromString"
-- "showResolucionDialog"
 - "showResolucion"
+- "showResolucionDialog"
+- "getDateAndHourFromString"
+- "YELLOW_COLOR"
+- "getAccessToken"
+- "getUsername"
+- "CLEAR_COLOR"
+- "isUserLogged"
 depends-top-level:
-- !private "!="
-- "Bool"
-- "Void"
-- "InfraccionInfo"
-- "UIColor"
-- "UIAlertController"
-- !private "NSUserDefaults"
-- !private "NSDateFormatter"
-- "NSObject"
-- !private "UIAlertAction"
-- !private "&&"
-- "UINavigationController"
+- !private "NSKeyedArchiver"
 - !private "CGRect"
-- "NSDate"
-- !private "ResolucionView"
-- "String"
-- "StringLiteralType"
-- "Sancion"
+- !private "NSKeyedUnarchiver"
+- "NSObject"
 - "Acta"
-- "Constants"
+- "InfraccionInfo"
+- "StringLiteralType"
+- "Void"
+- !private "&&"
+- "Legajo"
 - !private "=="
-- "ExtendedGraphemeClusterType"
+- !private "!="
 - !private "CustomIOS8AlertView"
+- "UINavigationController"
+- !private "NSData"
+- "UIColor"
+- !private "NSUserDefaults"
 - !private "UnicodeScalarType"
+- !private "NSDateFormatter"
+- "Constants"
+- "UIAlertController"
+- "Bool"
+- "ExtendedGraphemeClusterType"
+- "NSDate"
+- !private "UIAlertAction"
+- "String"
+- "Sancion"
+- !private "ResolucionView"
 depends-member:
 - !private ["Vs12AnyGenerator", "Element"]
 - ["Ps9AnyObject", "ACCESS_TOKEN_KEY"]
@@ -57,6 +65,8 @@ depends-member:
 - !private ["Ps9AnyObject", "CustomIOS8AlertView"]
 - ["Ps9AnyObject", "DARK_COLOR"]
 - !private ["Ps9AnyObject", "NSDateFormatter"]
+- !private ["Ps9AnyObject", "NSKeyedArchiver"]
+- !private ["Ps9AnyObject", "NSKeyedUnarchiver"]
 - !private ["Ps9AnyObject", "NSUserDefaults"]
 - ["Ps9AnyObject", "PRODUCTION_BASE_URL"]
 - !private ["Ps9AnyObject", "ResolucionView"]
@@ -65,9 +75,11 @@ depends-member:
 - !private ["Ps9AnyObject", "UIAlertAction"]
 - !private ["Ps9AnyObject", "UIAlertController"]
 - ["Ps9AnyObject", "UIColor"]
+- ["Ps9AnyObject", "UNSOLVE_COLOR"]
 - ["Ps9AnyObject", "USERNAME_KEY"]
 - ["Ps9AnyObject", "YELLOW_COLOR"]
 - !private ["Ps9AnyObject", "addAction"]
+- !private ["Ps9AnyObject", "archivedDataWithRootObject"]
 - !private ["Ps9AnyObject", "buttonColor"]
 - !private ["Ps9AnyObject", "characters"]
 - !private ["Ps9AnyObject", "close"]
@@ -75,21 +87,27 @@ depends-member:
 - !private ["Ps9AnyObject", "containerView"]
 - !private ["Ps9AnyObject", "dateFormat"]
 - !private ["Ps9AnyObject", "dateFromString"]
+- !private ["Ps9AnyObject", "decodeObjectForKey"]
 - !private ["Ps9AnyObject", "descripcion"]
 - ["Ps9AnyObject", "getAccessToken"]
 - ["Ps9AnyObject", "getDateAndHourFromString"]
 - ["Ps9AnyObject", "getDateStringFromDate"]
+- ["Ps9AnyObject", "getLegajoGuardado"]
 - ["Ps9AnyObject", "getUsername"]
 - !private ["Ps9AnyObject", "infraccion"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "isUserLogged"]
 - ["Ps9AnyObject", "logout"]
+- !private ["Ps9AnyObject", "objectForKey"]
 - !private ["Ps9AnyObject", "onButtonTouchUpInside"]
+- ["Ps9AnyObject", "removeLegajoGuardado"]
 - !private ["Ps9AnyObject", "removeObjectForKey"]
 - !private ["Ps9AnyObject", "resolucion"]
 - !private ["Ps9AnyObject", "sanciones"]
 - ["Ps9AnyObject", "setAccessToken"]
 - !private ["Ps9AnyObject", "setInfraccionInfo"]
+- ["Ps9AnyObject", "setLegajoGuardado"]
+- !private ["Ps9AnyObject", "setObject"]
 - ["Ps9AnyObject", "setUsername"]
 - !private ["Ps9AnyObject", "setValue"]
 - !private ["Ps9AnyObject", "show"]
@@ -135,6 +153,8 @@ depends-member:
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "NSDateFormatter"]
+- !private ["Ps11CVarArgType", "NSKeyedArchiver"]
+- !private ["Ps11CVarArgType", "NSKeyedUnarchiver"]
 - !private ["Ps11CVarArgType", "NSUserDefaults"]
 - ["Ps11CVarArgType", "PRODUCTION_BASE_URL"]
 - !private ["Ps11CVarArgType", "ResolucionView"]
@@ -143,9 +163,11 @@ depends-member:
 - !private ["Ps11CVarArgType", "UIAlertAction"]
 - !private ["Ps11CVarArgType", "UIAlertController"]
 - ["Ps11CVarArgType", "UIColor"]
+- ["Ps11CVarArgType", "UNSOLVE_COLOR"]
 - ["Ps11CVarArgType", "USERNAME_KEY"]
 - ["Ps11CVarArgType", "YELLOW_COLOR"]
 - !private ["Ps11CVarArgType", "addAction"]
+- !private ["Ps11CVarArgType", "archivedDataWithRootObject"]
 - !private ["Ps11CVarArgType", "buttonColor"]
 - !private ["Ps11CVarArgType", "characters"]
 - !private ["Ps11CVarArgType", "close"]
@@ -153,21 +175,27 @@ depends-member:
 - !private ["Ps11CVarArgType", "containerView"]
 - !private ["Ps11CVarArgType", "dateFormat"]
 - !private ["Ps11CVarArgType", "dateFromString"]
+- !private ["Ps11CVarArgType", "decodeObjectForKey"]
 - !private ["Ps11CVarArgType", "descripcion"]
 - ["Ps11CVarArgType", "getAccessToken"]
 - ["Ps11CVarArgType", "getDateAndHourFromString"]
 - ["Ps11CVarArgType", "getDateStringFromDate"]
+- ["Ps11CVarArgType", "getLegajoGuardado"]
 - ["Ps11CVarArgType", "getUsername"]
 - !private ["Ps11CVarArgType", "infraccion"]
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "isUserLogged"]
 - ["Ps11CVarArgType", "logout"]
+- !private ["Ps11CVarArgType", "objectForKey"]
 - !private ["Ps11CVarArgType", "onButtonTouchUpInside"]
+- ["Ps11CVarArgType", "removeLegajoGuardado"]
 - !private ["Ps11CVarArgType", "removeObjectForKey"]
 - !private ["Ps11CVarArgType", "resolucion"]
 - !private ["Ps11CVarArgType", "sanciones"]
 - ["Ps11CVarArgType", "setAccessToken"]
 - !private ["Ps11CVarArgType", "setInfraccionInfo"]
+- ["Ps11CVarArgType", "setLegajoGuardado"]
+- !private ["Ps11CVarArgType", "setObject"]
 - ["Ps11CVarArgType", "setUsername"]
 - !private ["Ps11CVarArgType", "setValue"]
 - !private ["Ps11CVarArgType", "show"]
@@ -206,8 +234,12 @@ depends-member:
 - !private ["C17ResolucionLegajos9Constants", "CustomIOS8AlertView"]
 - ["C17ResolucionLegajos9Constants", "DARK_COLOR"]
 - ["C17ResolucionLegajos9Constants", "InfraccionInfo"]
+- ["C17ResolucionLegajos9Constants", "Legajo"]
+- !private ["C17ResolucionLegajos9Constants", "NSData"]
 - ["C17ResolucionLegajos9Constants", "NSDate"]
 - !private ["C17ResolucionLegajos9Constants", "NSDateFormatter"]
+- !private ["C17ResolucionLegajos9Constants", "NSKeyedArchiver"]
+- !private ["C17ResolucionLegajos9Constants", "NSKeyedUnarchiver"]
 - !private ["C17ResolucionLegajos9Constants", "NSUserDefaults"]
 - ["C17ResolucionLegajos9Constants", "PRODUCTION_BASE_URL"]
 - !private ["C17ResolucionLegajos9Constants", "ResolucionView"]
@@ -218,6 +250,7 @@ depends-member:
 - ["C17ResolucionLegajos9Constants", "UIAlertController"]
 - ["C17ResolucionLegajos9Constants", "UIColor"]
 - ["C17ResolucionLegajos9Constants", "UINavigationController"]
+- ["C17ResolucionLegajos9Constants", "UNSOLVE_COLOR"]
 - !private ["C17ResolucionLegajos9Constants", "USERNAME_KEY"]
 - ["C17ResolucionLegajos9Constants", "Void"]
 - ["C17ResolucionLegajos9Constants", "YELLOW_COLOR"]
@@ -225,11 +258,14 @@ depends-member:
 - ["C17ResolucionLegajos9Constants", "getAccessToken"]
 - ["C17ResolucionLegajos9Constants", "getDateAndHourFromString"]
 - ["C17ResolucionLegajos9Constants", "getDateStringFromDate"]
+- ["C17ResolucionLegajos9Constants", "getLegajoGuardado"]
 - ["C17ResolucionLegajos9Constants", "getUsername"]
 - ["C17ResolucionLegajos9Constants", "init"]
 - ["C17ResolucionLegajos9Constants", "isUserLogged"]
 - ["C17ResolucionLegajos9Constants", "logout"]
+- ["C17ResolucionLegajos9Constants", "removeLegajoGuardado"]
 - ["C17ResolucionLegajos9Constants", "setAccessToken"]
+- ["C17ResolucionLegajos9Constants", "setLegajoGuardado"]
 - ["C17ResolucionLegajos9Constants", "setUsername"]
 - ["C17ResolucionLegajos9Constants", "showResolucion"]
 - ["C17ResolucionLegajos9Constants", "showResolucionDialog"]
@@ -243,19 +279,24 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "NSDateFormatter"]
+- !private ["Ps28CustomDebugStringConvertible", "NSKeyedArchiver"]
+- !private ["Ps28CustomDebugStringConvertible", "NSKeyedUnarchiver"]
 - !private ["Ps28CustomDebugStringConvertible", "NSUserDefaults"]
 - ["Ps28CustomDebugStringConvertible", "PRODUCTION_BASE_URL"]
 - !private ["Ps28CustomDebugStringConvertible", "ResolucionView"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "String"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - ["Ps28CustomDebugStringConvertible", "TEST_BASE_URL"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
 - ["Ps28CustomDebugStringConvertible", "UIColor"]
+- ["Ps28CustomDebugStringConvertible", "UNSOLVE_COLOR"]
 - ["Ps28CustomDebugStringConvertible", "USERNAME_KEY"]
 - ["Ps28CustomDebugStringConvertible", "YELLOW_COLOR"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "addAction"]
+- !private ["Ps28CustomDebugStringConvertible", "archivedDataWithRootObject"]
 - !private ["Ps28CustomDebugStringConvertible", "buttonColor"]
 - !private ["Ps28CustomDebugStringConvertible", "characters"]
 - !private ["Ps28CustomDebugStringConvertible", "close"]
@@ -263,22 +304,28 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "containerView"]
 - !private ["Ps28CustomDebugStringConvertible", "dateFormat"]
 - !private ["Ps28CustomDebugStringConvertible", "dateFromString"]
+- !private ["Ps28CustomDebugStringConvertible", "decodeObjectForKey"]
 - !private ["Ps28CustomDebugStringConvertible", "descripcion"]
 - ["Ps28CustomDebugStringConvertible", "getAccessToken"]
 - ["Ps28CustomDebugStringConvertible", "getDateAndHourFromString"]
 - ["Ps28CustomDebugStringConvertible", "getDateStringFromDate"]
+- ["Ps28CustomDebugStringConvertible", "getLegajoGuardado"]
 - ["Ps28CustomDebugStringConvertible", "getUsername"]
 - !private ["Ps28CustomDebugStringConvertible", "infraccion"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "isUserLogged"]
 - ["Ps28CustomDebugStringConvertible", "logout"]
 - !private ["Ps28CustomDebugStringConvertible", "map"]
+- !private ["Ps28CustomDebugStringConvertible", "objectForKey"]
 - !private ["Ps28CustomDebugStringConvertible", "onButtonTouchUpInside"]
+- ["Ps28CustomDebugStringConvertible", "removeLegajoGuardado"]
 - !private ["Ps28CustomDebugStringConvertible", "removeObjectForKey"]
 - !private ["Ps28CustomDebugStringConvertible", "resolucion"]
 - !private ["Ps28CustomDebugStringConvertible", "sanciones"]
 - ["Ps28CustomDebugStringConvertible", "setAccessToken"]
 - !private ["Ps28CustomDebugStringConvertible", "setInfraccionInfo"]
+- ["Ps28CustomDebugStringConvertible", "setLegajoGuardado"]
+- !private ["Ps28CustomDebugStringConvertible", "setObject"]
 - ["Ps28CustomDebugStringConvertible", "setUsername"]
 - !private ["Ps28CustomDebugStringConvertible", "setValue"]
 - !private ["Ps28CustomDebugStringConvertible", "show"]
@@ -308,6 +355,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "NSDateFormatter"]
+- !private ["Ps23CustomStringConvertible", "NSKeyedArchiver"]
+- !private ["Ps23CustomStringConvertible", "NSKeyedUnarchiver"]
 - !private ["Ps23CustomStringConvertible", "NSUserDefaults"]
 - ["Ps23CustomStringConvertible", "PRODUCTION_BASE_URL"]
 - !private ["Ps23CustomStringConvertible", "ResolucionView"]
@@ -317,11 +366,13 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIAlertAction"]
 - !private ["Ps23CustomStringConvertible", "UIAlertController"]
 - ["Ps23CustomStringConvertible", "UIColor"]
+- ["Ps23CustomStringConvertible", "UNSOLVE_COLOR"]
 - ["Ps23CustomStringConvertible", "USERNAME_KEY"]
 - ["Ps23CustomStringConvertible", "YELLOW_COLOR"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addAction"]
+- !private ["Ps23CustomStringConvertible", "archivedDataWithRootObject"]
 - !private ["Ps23CustomStringConvertible", "buttonColor"]
 - !private ["Ps23CustomStringConvertible", "characters"]
 - !private ["Ps23CustomStringConvertible", "close"]
@@ -329,22 +380,28 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "containerView"]
 - !private ["Ps23CustomStringConvertible", "dateFormat"]
 - !private ["Ps23CustomStringConvertible", "dateFromString"]
+- !private ["Ps23CustomStringConvertible", "decodeObjectForKey"]
 - !private ["Ps23CustomStringConvertible", "descripcion"]
 - ["Ps23CustomStringConvertible", "getAccessToken"]
 - ["Ps23CustomStringConvertible", "getDateAndHourFromString"]
 - ["Ps23CustomStringConvertible", "getDateStringFromDate"]
+- ["Ps23CustomStringConvertible", "getLegajoGuardado"]
 - ["Ps23CustomStringConvertible", "getUsername"]
 - !private ["Ps23CustomStringConvertible", "infraccion"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "isUserLogged"]
 - ["Ps23CustomStringConvertible", "logout"]
 - !private ["Ps23CustomStringConvertible", "map"]
+- !private ["Ps23CustomStringConvertible", "objectForKey"]
 - !private ["Ps23CustomStringConvertible", "onButtonTouchUpInside"]
+- ["Ps23CustomStringConvertible", "removeLegajoGuardado"]
 - !private ["Ps23CustomStringConvertible", "removeObjectForKey"]
 - !private ["Ps23CustomStringConvertible", "resolucion"]
 - !private ["Ps23CustomStringConvertible", "sanciones"]
 - ["Ps23CustomStringConvertible", "setAccessToken"]
 - !private ["Ps23CustomStringConvertible", "setInfraccionInfo"]
+- ["Ps23CustomStringConvertible", "setLegajoGuardado"]
+- !private ["Ps23CustomStringConvertible", "setObject"]
 - ["Ps23CustomStringConvertible", "setUsername"]
 - !private ["Ps23CustomStringConvertible", "setValue"]
 - !private ["Ps23CustomStringConvertible", "show"]
@@ -369,6 +426,8 @@ depends-member:
 - !private ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "NSDateFormatter"]
+- !private ["Ps9Equatable", "NSKeyedArchiver"]
+- !private ["Ps9Equatable", "NSKeyedUnarchiver"]
 - !private ["Ps9Equatable", "NSUserDefaults"]
 - ["Ps9Equatable", "PRODUCTION_BASE_URL"]
 - !private ["Ps9Equatable", "ResolucionView"]
@@ -377,10 +436,12 @@ depends-member:
 - !private ["Ps9Equatable", "UIAlertAction"]
 - !private ["Ps9Equatable", "UIAlertController"]
 - ["Ps9Equatable", "UIColor"]
+- ["Ps9Equatable", "UNSOLVE_COLOR"]
 - ["Ps9Equatable", "USERNAME_KEY"]
 - ["Ps9Equatable", "YELLOW_COLOR"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addAction"]
+- !private ["Ps9Equatable", "archivedDataWithRootObject"]
 - !private ["Ps9Equatable", "buttonColor"]
 - !private ["Ps9Equatable", "characters"]
 - !private ["Ps9Equatable", "close"]
@@ -388,21 +449,27 @@ depends-member:
 - !private ["Ps9Equatable", "containerView"]
 - !private ["Ps9Equatable", "dateFormat"]
 - !private ["Ps9Equatable", "dateFromString"]
+- !private ["Ps9Equatable", "decodeObjectForKey"]
 - !private ["Ps9Equatable", "descripcion"]
 - ["Ps9Equatable", "getAccessToken"]
 - ["Ps9Equatable", "getDateAndHourFromString"]
 - ["Ps9Equatable", "getDateStringFromDate"]
+- ["Ps9Equatable", "getLegajoGuardado"]
 - ["Ps9Equatable", "getUsername"]
 - !private ["Ps9Equatable", "infraccion"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "isUserLogged"]
 - ["Ps9Equatable", "logout"]
+- !private ["Ps9Equatable", "objectForKey"]
 - !private ["Ps9Equatable", "onButtonTouchUpInside"]
+- ["Ps9Equatable", "removeLegajoGuardado"]
 - !private ["Ps9Equatable", "removeObjectForKey"]
 - !private ["Ps9Equatable", "resolucion"]
 - !private ["Ps9Equatable", "sanciones"]
 - ["Ps9Equatable", "setAccessToken"]
 - !private ["Ps9Equatable", "setInfraccionInfo"]
+- ["Ps9Equatable", "setLegajoGuardado"]
+- !private ["Ps9Equatable", "setObject"]
 - ["Ps9Equatable", "setUsername"]
 - !private ["Ps9Equatable", "setValue"]
 - !private ["Ps9Equatable", "show"]
@@ -431,6 +498,8 @@ depends-member:
 - !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "NSDateFormatter"]
+- !private ["Ps8Hashable", "NSKeyedArchiver"]
+- !private ["Ps8Hashable", "NSKeyedUnarchiver"]
 - !private ["Ps8Hashable", "NSUserDefaults"]
 - ["Ps8Hashable", "PRODUCTION_BASE_URL"]
 - !private ["Ps8Hashable", "ResolucionView"]
@@ -439,10 +508,12 @@ depends-member:
 - !private ["Ps8Hashable", "UIAlertAction"]
 - !private ["Ps8Hashable", "UIAlertController"]
 - ["Ps8Hashable", "UIColor"]
+- ["Ps8Hashable", "UNSOLVE_COLOR"]
 - ["Ps8Hashable", "USERNAME_KEY"]
 - ["Ps8Hashable", "YELLOW_COLOR"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addAction"]
+- !private ["Ps8Hashable", "archivedDataWithRootObject"]
 - !private ["Ps8Hashable", "buttonColor"]
 - !private ["Ps8Hashable", "characters"]
 - !private ["Ps8Hashable", "close"]
@@ -450,21 +521,27 @@ depends-member:
 - !private ["Ps8Hashable", "containerView"]
 - !private ["Ps8Hashable", "dateFormat"]
 - !private ["Ps8Hashable", "dateFromString"]
+- !private ["Ps8Hashable", "decodeObjectForKey"]
 - !private ["Ps8Hashable", "descripcion"]
 - ["Ps8Hashable", "getAccessToken"]
 - ["Ps8Hashable", "getDateAndHourFromString"]
 - ["Ps8Hashable", "getDateStringFromDate"]
+- ["Ps8Hashable", "getLegajoGuardado"]
 - ["Ps8Hashable", "getUsername"]
 - !private ["Ps8Hashable", "infraccion"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "isUserLogged"]
 - ["Ps8Hashable", "logout"]
+- !private ["Ps8Hashable", "objectForKey"]
 - !private ["Ps8Hashable", "onButtonTouchUpInside"]
+- ["Ps8Hashable", "removeLegajoGuardado"]
 - !private ["Ps8Hashable", "removeObjectForKey"]
 - !private ["Ps8Hashable", "resolucion"]
 - !private ["Ps8Hashable", "sanciones"]
 - ["Ps8Hashable", "setAccessToken"]
 - !private ["Ps8Hashable", "setInfraccionInfo"]
+- ["Ps8Hashable", "setLegajoGuardado"]
+- !private ["Ps8Hashable", "setObject"]
 - ["Ps8Hashable", "setUsername"]
 - !private ["Ps8Hashable", "setValue"]
 - !private ["Ps8Hashable", "show"]
@@ -518,6 +595,9 @@ depends-member:
 - !private ["Ps16MutableSliceable", "_Element"]
 - !private ["Ps16MutableSliceable", "map"]
 - !private ["Ps16MutableSliceable", "subscript"]
+- !private ["CSo7NSCoder", "archivedDataWithRootObject"]
+- !private ["CSo7NSCoder", "decodeObjectForKey"]
+- !private ["CSo7NSCoder", "init"]
 - !private ["PSo8NSCoding", "addAction"]
 - !private ["PSo8NSCoding", "buttonColor"]
 - !private ["PSo8NSCoding", "characters"]
@@ -549,6 +629,9 @@ depends-member:
 - !private ["CSo11NSFormatter", "dateFromString"]
 - !private ["CSo11NSFormatter", "init"]
 - !private ["CSo11NSFormatter", "stringFromDate"]
+- !private ["CSo15NSKeyedArchiver", "archivedDataWithRootObject"]
+- !private ["CSo17NSKeyedUnarchiver", "decodeObjectForKey"]
+- !private ["CSo17NSKeyedUnarchiver", "init"]
 - !private ["PSo16NSMutableCopying", "characters"]
 - ["CSo8NSObject", "ACCESS_TOKEN_KEY"]
 - ["CSo8NSObject", "Acta"]
@@ -560,8 +643,12 @@ depends-member:
 - !private ["CSo8NSObject", "CustomIOS8AlertView"]
 - ["CSo8NSObject", "DARK_COLOR"]
 - ["CSo8NSObject", "InfraccionInfo"]
+- ["CSo8NSObject", "Legajo"]
+- !private ["CSo8NSObject", "NSData"]
 - ["CSo8NSObject", "NSDate"]
 - !private ["CSo8NSObject", "NSDateFormatter"]
+- !private ["CSo8NSObject", "NSKeyedArchiver"]
+- !private ["CSo8NSObject", "NSKeyedUnarchiver"]
 - !private ["CSo8NSObject", "NSUserDefaults"]
 - ["CSo8NSObject", "PRODUCTION_BASE_URL"]
 - !private ["CSo8NSObject", "ResolucionView"]
@@ -572,10 +659,12 @@ depends-member:
 - ["CSo8NSObject", "UIAlertController"]
 - ["CSo8NSObject", "UIColor"]
 - ["CSo8NSObject", "UINavigationController"]
+- ["CSo8NSObject", "UNSOLVE_COLOR"]
 - ["CSo8NSObject", "USERNAME_KEY"]
 - ["CSo8NSObject", "Void"]
 - ["CSo8NSObject", "YELLOW_COLOR"]
 - !private ["CSo8NSObject", "addAction"]
+- !private ["CSo8NSObject", "archivedDataWithRootObject"]
 - !private ["CSo8NSObject", "buttonColor"]
 - !private ["CSo8NSObject", "characters"]
 - !private ["CSo8NSObject", "close"]
@@ -583,21 +672,27 @@ depends-member:
 - !private ["CSo8NSObject", "containerView"]
 - !private ["CSo8NSObject", "dateFormat"]
 - !private ["CSo8NSObject", "dateFromString"]
+- !private ["CSo8NSObject", "decodeObjectForKey"]
 - !private ["CSo8NSObject", "descripcion"]
 - ["CSo8NSObject", "getAccessToken"]
 - ["CSo8NSObject", "getDateAndHourFromString"]
 - ["CSo8NSObject", "getDateStringFromDate"]
+- ["CSo8NSObject", "getLegajoGuardado"]
 - ["CSo8NSObject", "getUsername"]
 - !private ["CSo8NSObject", "infraccion"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "isUserLogged"]
 - ["CSo8NSObject", "logout"]
+- !private ["CSo8NSObject", "objectForKey"]
 - !private ["CSo8NSObject", "onButtonTouchUpInside"]
+- ["CSo8NSObject", "removeLegajoGuardado"]
 - !private ["CSo8NSObject", "removeObjectForKey"]
 - !private ["CSo8NSObject", "resolucion"]
 - !private ["CSo8NSObject", "sanciones"]
 - ["CSo8NSObject", "setAccessToken"]
 - !private ["CSo8NSObject", "setInfraccionInfo"]
+- ["CSo8NSObject", "setLegajoGuardado"]
+- !private ["CSo8NSObject", "setObject"]
 - ["CSo8NSObject", "setUsername"]
 - !private ["CSo8NSObject", "setValue"]
 - !private ["CSo8NSObject", "show"]
@@ -616,6 +711,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "CustomIOS8AlertView"]
 - ["PSo16NSObjectProtocol", "DARK_COLOR"]
 - !private ["PSo16NSObjectProtocol", "NSDateFormatter"]
+- !private ["PSo16NSObjectProtocol", "NSKeyedArchiver"]
+- !private ["PSo16NSObjectProtocol", "NSKeyedUnarchiver"]
 - !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
 - ["PSo16NSObjectProtocol", "PRODUCTION_BASE_URL"]
 - !private ["PSo16NSObjectProtocol", "ResolucionView"]
@@ -624,9 +721,11 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIAlertAction"]
 - !private ["PSo16NSObjectProtocol", "UIAlertController"]
 - ["PSo16NSObjectProtocol", "UIColor"]
+- ["PSo16NSObjectProtocol", "UNSOLVE_COLOR"]
 - ["PSo16NSObjectProtocol", "USERNAME_KEY"]
 - ["PSo16NSObjectProtocol", "YELLOW_COLOR"]
 - !private ["PSo16NSObjectProtocol", "addAction"]
+- !private ["PSo16NSObjectProtocol", "archivedDataWithRootObject"]
 - !private ["PSo16NSObjectProtocol", "buttonColor"]
 - !private ["PSo16NSObjectProtocol", "characters"]
 - !private ["PSo16NSObjectProtocol", "close"]
@@ -634,21 +733,27 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "containerView"]
 - !private ["PSo16NSObjectProtocol", "dateFormat"]
 - !private ["PSo16NSObjectProtocol", "dateFromString"]
+- !private ["PSo16NSObjectProtocol", "decodeObjectForKey"]
 - !private ["PSo16NSObjectProtocol", "descripcion"]
 - ["PSo16NSObjectProtocol", "getAccessToken"]
 - ["PSo16NSObjectProtocol", "getDateAndHourFromString"]
 - ["PSo16NSObjectProtocol", "getDateStringFromDate"]
+- ["PSo16NSObjectProtocol", "getLegajoGuardado"]
 - ["PSo16NSObjectProtocol", "getUsername"]
 - !private ["PSo16NSObjectProtocol", "infraccion"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "isUserLogged"]
 - ["PSo16NSObjectProtocol", "logout"]
+- !private ["PSo16NSObjectProtocol", "objectForKey"]
 - !private ["PSo16NSObjectProtocol", "onButtonTouchUpInside"]
+- ["PSo16NSObjectProtocol", "removeLegajoGuardado"]
 - !private ["PSo16NSObjectProtocol", "removeObjectForKey"]
 - !private ["PSo16NSObjectProtocol", "resolucion"]
 - !private ["PSo16NSObjectProtocol", "sanciones"]
 - ["PSo16NSObjectProtocol", "setAccessToken"]
 - !private ["PSo16NSObjectProtocol", "setInfraccionInfo"]
+- ["PSo16NSObjectProtocol", "setLegajoGuardado"]
+- !private ["PSo16NSObjectProtocol", "setObject"]
 - ["PSo16NSObjectProtocol", "setUsername"]
 - !private ["PSo16NSObjectProtocol", "setValue"]
 - !private ["PSo16NSObjectProtocol", "show"]
@@ -662,11 +767,15 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "characters"]
 - ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "characters"]
+- !private ["CSo14NSUserDefaults", "objectForKey"]
 - !private ["CSo14NSUserDefaults", "removeObjectForKey"]
+- !private ["CSo14NSUserDefaults", "setObject"]
 - !private ["CSo14NSUserDefaults", "setValue"]
 - !private ["CSo14NSUserDefaults", "standardUserDefaults"]
 - !private ["CSo14NSUserDefaults", "synchronize"]
 - !private ["CSo14NSUserDefaults", "valueForKey"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "characters"]
 - !private ["Ps16OutputStreamType", "init"]
@@ -853,6 +962,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "Generator"]
 - !private ["Ps12_Reflectable", "Index"]
 - !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- ["Ps12_Reflectable", "Some"]
 - !private ["Ps12_Reflectable", "SubSequence"]
 - !private ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
@@ -909,18 +1019,22 @@ depends-nominal:
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"
 - !private "Ps16MutableSliceable"
+- !private "CSo7NSCoder"
 - "PSo8NSCoding"
 - "PSo9NSCopying"
 - !private "CSo15NSDateFormatter"
 - !private "PSo26NSExtensionRequestHandling"
 - !private "CSo11NSFormatter"
+- !private "CSo15NSKeyedArchiver"
+- !private "CSo17NSKeyedUnarchiver"
 - !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - "PSo14NSSecureCoding"
 - !private "CSo8NSString"
 - !private "CSo14NSUserDefaults"
-- !private "Sq"
+- "Ps21NilLiteralConvertible"
+- "Sq"
 - !private "Ps16OutputStreamType"
 - !private "Ps21RandomAccessIndexType"
 - !private "Ps30RangeReplaceableCollectionType"
@@ -973,7 +1087,7 @@ depends-nominal:
 - !private "Ps21_ObjectiveCBridgeable"
 - !private "Vs26_OptionalNilComparisonType"
 - !private "Ps22_RandomAccessAmbiguity"
-- !private "Ps12_Reflectable"
+- "Ps12_Reflectable"
 - !private "Ps18_SignedIntegerType"
 depends-dynamic-lookup:
 depends-external:
@@ -990,4 +1104,4 @@ depends-external:
 - "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
-interface-hash: "7678e558a41e8365d74145941fde5e2a"
+interface-hash: "be2eca799d20fae02f6943f747363c05"

@@ -49,17 +49,30 @@ class MainViewController: MasterViewController, UITableViewDataSource, UITableVi
 			
 			self.lblBienvenido.text = "Bienvenido " + self.username!
 			
-			ActaService.getAllLegajos(self.accessToken!, success: { (legajos) -> Void in
-				self.legajos = legajos
-				self.legajosTableView.reloadData()
-				self.hideLoadingMessage()
-				
-				//self.navigationController?.presentViewController(ReminderViewController(), animated: true, completion: nil)
-				
-				}) { (error) -> Void in
-					// TODO: ERROR
+			let legajoGuardado : Legajo? = Constants.getLegajoGuardado()
+			
+			if legajoGuardado != nil {
+				self.navigationController?.presentViewController(ReminderViewController(legajo: legajoGuardado!, cancelCallback: {
+					() -> Void in
+					self.getAllLegajos()
+					}, resolverCallback: {
+						self.hideLoadingMessage()
+						self.showViewController(LegajoViewController(legajo: legajoGuardado!), sender: self)
+				}), animated: true, completion: nil)
+			} else {
+				self.getAllLegajos()
 			}
 		} else {
+			// TODO: ERROR
+		}
+	}
+	
+	func getAllLegajos() {
+		ActaService.getAllLegajos(self.accessToken!, success: { (legajos) -> Void in
+			self.legajos = legajos
+			self.legajosTableView.reloadData()
+			self.hideLoadingMessage()
+		}) { (error) -> Void in
 			// TODO: ERROR
 		}
 	}

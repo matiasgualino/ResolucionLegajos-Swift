@@ -6,39 +6,45 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos6Legajo", ""]
 provides-dynamic-lookup:
-- "nombrecompleto"
-- "copyWithZone"
-- "id"
 - "numero"
-- "toJSONString"
-- "fromJSON"
+- "nombrecompleto"
+- "id"
+- "copyWithZone"
+- "encodeWithCoder"
 - "dominio"
 - "observaciones"
 - "fecha"
 - "du"
+- "toJSONString"
+- "fromJSON"
 - "actas"
 depends-top-level:
-- !private "Dictionary"
-- "NSObject"
-- !private "JSON"
-- !private "Constants"
-- !private "..<"
-- !private "=="
 - "NSZone"
-- !private "NSDate"
 - "NSCopying"
-- "Legajo"
-- !private "StringLiteralType"
-- "AnyObject"
 - "NSDictionary"
-- !private "NSArray"
+- !private "+"
+- "NSObject"
+- !private "..<"
+- "Legajo"
+- "AnyObject"
+- !private "..."
+- !private "StringLiteralType"
+- !private "NSDate"
+- !private "Constants"
+- "NSCoder"
+- !private "JSON"
 - "Acta"
+- !private "Int"
+- !private "NSArray"
 - !private "!="
 - "String"
+- !private "=="
+- !private "Dictionary"
 depends-member:
 - !private ["C17ResolucionLegajos4Acta", "fromJSON"]
 - !private ["C17ResolucionLegajos4Acta", "toJSONString"]
 - !private ["Ps9AnyObject", "Acta"]
+- !private ["Ps9AnyObject", "AnyObject"]
 - !private ["Ps9AnyObject", "Constants"]
 - !private ["Ps9AnyObject", "JSON"]
 - !private ["Ps9AnyObject", "Legajo"]
@@ -48,9 +54,12 @@ depends-member:
 - !private ["Ps9AnyObject", "asString"]
 - ["Ps9AnyObject", "copyWithZone"]
 - !private ["Ps9AnyObject", "count"]
+- !private ["Ps9AnyObject", "decodeObjectForKey"]
 - !private ["Ps9AnyObject", "deinit"]
 - ["Ps9AnyObject", "dominio"]
 - ["Ps9AnyObject", "du"]
+- !private ["Ps9AnyObject", "encodeObject"]
+- ["Ps9AnyObject", "encodeWithCoder"]
 - ["Ps9AnyObject", "fecha"]
 - ["Ps9AnyObject", "fromJSON"]
 - !private ["Ps9AnyObject", "getDateAndHourFromString"]
@@ -72,6 +81,7 @@ depends-member:
 - !private ["Sa", "SubSequence"]
 - !private ["Sa", "_Element"]
 - !private ["Sa", "append"]
+- !private ["Sa", "count"]
 - !private ["Sa", "deinit"]
 - !private ["Sa", "init"]
 - !private ["Ps23ArrayLiteralConvertible", "Generator"]
@@ -94,6 +104,7 @@ depends-member:
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - !private ["Ps11CVarArgType", "Acta"]
+- !private ["Ps11CVarArgType", "AnyObject"]
 - !private ["Ps11CVarArgType", "Constants"]
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
@@ -104,8 +115,11 @@ depends-member:
 - ["Ps11CVarArgType", "actas"]
 - ["Ps11CVarArgType", "copyWithZone"]
 - !private ["Ps11CVarArgType", "count"]
+- !private ["Ps11CVarArgType", "decodeObjectForKey"]
 - ["Ps11CVarArgType", "dominio"]
 - ["Ps11CVarArgType", "du"]
+- !private ["Ps11CVarArgType", "encodeObject"]
+- ["Ps11CVarArgType", "encodeWithCoder"]
 - ["Ps11CVarArgType", "fecha"]
 - ["Ps11CVarArgType", "fromJSON"]
 - !private ["Ps11CVarArgType", "getDateAndHourFromString"]
@@ -118,6 +132,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "subscript"]
 - ["Ps11CVarArgType", "toJSONString"]
 - ["Ps11CVarArgType", ""]
+- !private ["Vs14ClosedInterval", "deinit"]
 - !private ["Ps14CollectionType", "Generator"]
 - !private ["Ps14CollectionType", "Index"]
 - !private ["Ps14CollectionType", "Key"]
@@ -125,6 +140,7 @@ depends-member:
 - !private ["Ps14CollectionType", "Value"]
 - !private ["Ps14CollectionType", "_Element"]
 - !private ["Ps14CollectionType", "append"]
+- !private ["Ps14CollectionType", "count"]
 - !private ["Ps14CollectionType", "init"]
 - !private ["Ps10Comparable", "Distance"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
@@ -133,6 +149,7 @@ depends-member:
 - !private ["C17ResolucionLegajos9Constants", "getDateAndHourFromString"]
 - !private ["C17ResolucionLegajos9Constants", "getDateStringFromDate"]
 - !private ["Ps28CustomDebugStringConvertible", "Acta"]
+- !private ["Ps28CustomDebugStringConvertible", "AnyObject"]
 - !private ["Ps28CustomDebugStringConvertible", "Constants"]
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
@@ -148,8 +165,11 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - ["Ps28CustomDebugStringConvertible", "copyWithZone"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "decodeObjectForKey"]
 - ["Ps28CustomDebugStringConvertible", "dominio"]
 - ["Ps28CustomDebugStringConvertible", "du"]
+- !private ["Ps28CustomDebugStringConvertible", "encodeObject"]
+- ["Ps28CustomDebugStringConvertible", "encodeWithCoder"]
 - ["Ps28CustomDebugStringConvertible", "fecha"]
 - ["Ps28CustomDebugStringConvertible", "fromJSON"]
 - !private ["Ps28CustomDebugStringConvertible", "getDateAndHourFromString"]
@@ -163,6 +183,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "toJSONString"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "Acta"]
+- !private ["Ps23CustomStringConvertible", "AnyObject"]
 - !private ["Ps23CustomStringConvertible", "Constants"]
 - !private ["Ps23CustomStringConvertible", "Distance"]
 - !private ["Ps23CustomStringConvertible", "Generator"]
@@ -183,8 +204,11 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "asString"]
 - ["Ps23CustomStringConvertible", "copyWithZone"]
 - !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "decodeObjectForKey"]
 - ["Ps23CustomStringConvertible", "dominio"]
 - ["Ps23CustomStringConvertible", "du"]
+- !private ["Ps23CustomStringConvertible", "encodeObject"]
+- ["Ps23CustomStringConvertible", "encodeWithCoder"]
 - ["Ps23CustomStringConvertible", "fecha"]
 - ["Ps23CustomStringConvertible", "fromJSON"]
 - !private ["Ps23CustomStringConvertible", "getDateAndHourFromString"]
@@ -208,6 +232,7 @@ depends-member:
 - !private ["Ps28DictionaryLiteralConvertible", "Value"]
 - !private ["Ps28DictionaryLiteralConvertible", "subscript"]
 - !private ["Ps9Equatable", "Acta"]
+- !private ["Ps9Equatable", "AnyObject"]
 - !private ["Ps9Equatable", "Constants"]
 - !private ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "Generator"]
@@ -220,8 +245,11 @@ depends-member:
 - ["Ps9Equatable", "actas"]
 - ["Ps9Equatable", "copyWithZone"]
 - !private ["Ps9Equatable", "count"]
+- !private ["Ps9Equatable", "decodeObjectForKey"]
 - ["Ps9Equatable", "dominio"]
 - ["Ps9Equatable", "du"]
+- !private ["Ps9Equatable", "encodeObject"]
+- ["Ps9Equatable", "encodeWithCoder"]
 - ["Ps9Equatable", "fecha"]
 - ["Ps9Equatable", "fromJSON"]
 - !private ["Ps9Equatable", "getDateAndHourFromString"]
@@ -241,6 +269,7 @@ depends-member:
 - !private ["Ps13GeneratorType", "Element"]
 - !private ["Vs16HalfOpenInterval", "deinit"]
 - !private ["Ps8Hashable", "Acta"]
+- !private ["Ps8Hashable", "AnyObject"]
 - !private ["Ps8Hashable", "Constants"]
 - !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
@@ -252,8 +281,11 @@ depends-member:
 - ["Ps8Hashable", "actas"]
 - ["Ps8Hashable", "copyWithZone"]
 - !private ["Ps8Hashable", "count"]
+- !private ["Ps8Hashable", "decodeObjectForKey"]
 - ["Ps8Hashable", "dominio"]
 - ["Ps8Hashable", "du"]
+- !private ["Ps8Hashable", "encodeObject"]
+- ["Ps8Hashable", "encodeWithCoder"]
 - ["Ps8Hashable", "fecha"]
 - ["Ps8Hashable", "fromJSON"]
 - !private ["Ps8Hashable", "getDateAndHourFromString"]
@@ -273,11 +305,13 @@ depends-member:
 - !private ["Ps9Indexable", "Value"]
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "append"]
+- !private ["Ps9Indexable", "count"]
 - !private ["Ps9Indexable", "init"]
 - !private ["Vs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
 - !private ["Si", "_DisabledRangeIndex"]
+- !private ["Si", "deinit"]
 - !private ["Ps21IntegerArithmeticType", "Distance"]
 - !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
 - !private ["Ps21IntegerArithmeticType", "_DisabledRangeIndex"]
@@ -297,9 +331,11 @@ depends-member:
 - ["C17ResolucionLegajos6Legajo", "Acta"]
 - ["C17ResolucionLegajos6Legajo", "AnyObject"]
 - !private ["C17ResolucionLegajos6Legajo", "Constants"]
+- !private ["C17ResolucionLegajos6Legajo", "Int"]
 - !private ["C17ResolucionLegajos6Legajo", "JSON"]
 - ["C17ResolucionLegajos6Legajo", "Legajo"]
 - !private ["C17ResolucionLegajos6Legajo", "NSArray"]
+- ["C17ResolucionLegajos6Legajo", "NSCoder"]
 - !private ["C17ResolucionLegajos6Legajo", "NSDate"]
 - ["C17ResolucionLegajos6Legajo", "NSDictionary"]
 - ["C17ResolucionLegajos6Legajo", "NSZone"]
@@ -309,6 +345,7 @@ depends-member:
 - ["C17ResolucionLegajos6Legajo", "deinit"]
 - ["C17ResolucionLegajos6Legajo", "dominio"]
 - ["C17ResolucionLegajos6Legajo", "du"]
+- ["C17ResolucionLegajos6Legajo", "encodeWithCoder"]
 - ["C17ResolucionLegajos6Legajo", "fecha"]
 - ["C17ResolucionLegajos6Legajo", "fromJSON"]
 - ["C17ResolucionLegajos6Legajo", "id"]
@@ -326,24 +363,30 @@ depends-member:
 - !private ["Ps21MutableCollectionType", "SubSequence"]
 - !private ["Ps21MutableCollectionType", "_Element"]
 - !private ["Ps21MutableCollectionType", "append"]
+- !private ["Ps21MutableCollectionType", "count"]
 - !private ["Ps21MutableCollectionType", "init"]
 - !private ["Ps16MutableIndexable", "Generator"]
 - !private ["Ps16MutableIndexable", "Index"]
 - !private ["Ps16MutableIndexable", "SubSequence"]
 - !private ["Ps16MutableIndexable", "_Element"]
 - !private ["Ps16MutableIndexable", "append"]
+- !private ["Ps16MutableIndexable", "count"]
 - !private ["Ps16MutableIndexable", "init"]
 - !private ["Ps16MutableSliceable", "Generator"]
 - !private ["Ps16MutableSliceable", "Index"]
 - !private ["Ps16MutableSliceable", "SubSequence"]
 - !private ["Ps16MutableSliceable", "_Element"]
 - !private ["Ps16MutableSliceable", "append"]
+- !private ["Ps16MutableSliceable", "count"]
 - !private ["Ps16MutableSliceable", "init"]
 - !private ["CSo7NSArray", "count"]
 - !private ["CSo7NSArray", "subscript"]
+- !private ["CSo7NSCoder", "decodeObjectForKey"]
+- !private ["CSo7NSCoder", "encodeObject"]
 - !private ["PSo8NSCoding", "count"]
 - !private ["PSo8NSCoding", "subscript"]
 - !private ["PSo9NSCopying", "Acta"]
+- !private ["PSo9NSCopying", "AnyObject"]
 - !private ["PSo9NSCopying", "Constants"]
 - !private ["PSo9NSCopying", "JSON"]
 - !private ["PSo9NSCopying", "Legajo"]
@@ -372,9 +415,11 @@ depends-member:
 - ["CSo8NSObject", "Acta"]
 - ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "Constants"]
+- !private ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "JSON"]
 - ["CSo8NSObject", "Legajo"]
 - !private ["CSo8NSObject", "NSArray"]
+- ["CSo8NSObject", "NSCoder"]
 - !private ["CSo8NSObject", "NSDate"]
 - ["CSo8NSObject", "NSDictionary"]
 - ["CSo8NSObject", "NSZone"]
@@ -382,8 +427,11 @@ depends-member:
 - ["CSo8NSObject", "actas"]
 - ["CSo8NSObject", "copyWithZone"]
 - !private ["CSo8NSObject", "count"]
+- !private ["CSo8NSObject", "decodeObjectForKey"]
 - ["CSo8NSObject", "dominio"]
 - ["CSo8NSObject", "du"]
+- !private ["CSo8NSObject", "encodeObject"]
+- ["CSo8NSObject", "encodeWithCoder"]
 - ["CSo8NSObject", "fecha"]
 - ["CSo8NSObject", "fromJSON"]
 - !private ["CSo8NSObject", "getDateAndHourFromString"]
@@ -397,6 +445,7 @@ depends-member:
 - ["CSo8NSObject", "toJSONString"]
 - ["CSo8NSObject", ""]
 - !private ["PSo16NSObjectProtocol", "Acta"]
+- !private ["PSo16NSObjectProtocol", "AnyObject"]
 - !private ["PSo16NSObjectProtocol", "Constants"]
 - !private ["PSo16NSObjectProtocol", "JSON"]
 - !private ["PSo16NSObjectProtocol", "Legajo"]
@@ -404,8 +453,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "actas"]
 - ["PSo16NSObjectProtocol", "copyWithZone"]
 - !private ["PSo16NSObjectProtocol", "count"]
+- !private ["PSo16NSObjectProtocol", "decodeObjectForKey"]
 - ["PSo16NSObjectProtocol", "dominio"]
 - ["PSo16NSObjectProtocol", "du"]
+- !private ["PSo16NSObjectProtocol", "encodeObject"]
+- ["PSo16NSObjectProtocol", "encodeWithCoder"]
 - ["PSo16NSObjectProtocol", "fecha"]
 - ["PSo16NSObjectProtocol", "fromJSON"]
 - !private ["PSo16NSObjectProtocol", "getDateAndHourFromString"]
@@ -434,6 +486,7 @@ depends-member:
 - !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
 - !private ["Ps30RangeReplaceableCollectionType", "_Element"]
 - !private ["Ps30RangeReplaceableCollectionType", "append"]
+- !private ["Ps30RangeReplaceableCollectionType", "count"]
 - !private ["Ps30RangeReplaceableCollectionType", "init"]
 - !private ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Generator"]
@@ -473,6 +526,7 @@ depends-member:
 - !private ["Ps10_ArrayType", "SubSequence"]
 - !private ["Ps10_ArrayType", "_Element"]
 - !private ["Ps10_ArrayType", "append"]
+- !private ["Ps10_ArrayType", "count"]
 - !private ["Ps10_ArrayType", "init"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
@@ -487,6 +541,7 @@ depends-member:
 - !private ["Ps24_DestructorSafeContainer", "SubSequence"]
 - !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "count"]
 - !private ["Ps24_DestructorSafeContainer", "init"]
 - !private ["Ps14_Incrementable", "Distance"]
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
@@ -508,6 +563,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "count"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps22_RandomAccessAmbiguity", "Distance"]
@@ -543,6 +599,7 @@ depends-nominal:
 - !private "Ps25BooleanLiteralConvertible"
 - !private "Ps11BooleanType"
 - "Ps11CVarArgType"
+- !private "Vs14ClosedInterval"
 - !private "Ps14CollectionType"
 - !private "Ps10Comparable"
 - !private "C17ResolucionLegajos9Constants"
@@ -569,6 +626,7 @@ depends-nominal:
 - !private "Ps16MutableIndexable"
 - !private "Ps16MutableSliceable"
 - !private "CSo7NSArray"
+- !private "CSo7NSCoder"
 - !private "PSo8NSCoding"
 - "PSo9NSCopying"
 - !private "CSo12NSDictionary"
@@ -625,4 +683,4 @@ depends-external:
 - "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
-interface-hash: "1f587158ea8b35fcf1861a56b390a42b"
+interface-hash: "0779996681e88e59b7a73982fc4b732f"

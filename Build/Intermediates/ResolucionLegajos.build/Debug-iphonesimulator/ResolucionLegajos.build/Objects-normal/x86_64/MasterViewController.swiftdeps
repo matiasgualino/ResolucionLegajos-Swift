@@ -7,23 +7,23 @@ provides-member:
 - ["C17ResolucionLegajos20MasterViewController", ""]
 provides-dynamic-lookup:
 - "username"
-- "showLoadingMessage"
-- "showLoadingMessage"
-- "loadingView"
-- "viewDidLoad"
-- "isLoadingMessageShowing"
-- "hideLoadingMessage"
 - "accessToken"
+- "viewDidLoad"
+- "showLoadingMessage"
+- "showLoadingMessage"
+- "hideLoadingMessage"
+- "loadingView"
+- "isLoadingMessageShowing"
 depends-top-level:
-- "String"
 - "MasterViewController"
-- "UILoadingView"
-- "UIViewController"
-- "BooleanLiteralType"
-- "NSCoder"
-- "NSBundle"
 - "Bool"
+- "UIViewController"
+- "NSCoder"
 - "Constants"
+- "String"
+- "NSBundle"
+- "UILoadingView"
+- "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "CLEAR_COLOR"]
 - ["Ps9AnyObject", "Constants"]

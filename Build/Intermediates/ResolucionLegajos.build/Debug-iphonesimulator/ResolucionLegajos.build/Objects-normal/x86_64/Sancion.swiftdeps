@@ -6,26 +6,28 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos7Sancion", ""]
 provides-dynamic-lookup:
-- "descripcion"
 - "copyWithZone"
-- "toJSONString"
-- "fromJSON"
+- "encodeWithCoder"
 - "codigo"
+- "fromJSON"
+- "descripcion"
+- "toJSONString"
 depends-top-level:
-- !private "JSON"
-- !private "!="
-- !private "StringLiteralType"
+- "NSObject"
 - "NSZone"
-- "Int"
+- "NSDictionary"
 - !private "Dictionary"
 - "NSCopying"
-- "AnyObject"
-- "Double"
-- "NSDictionary"
-- !private "=="
-- "NSObject"
+- !private "StringLiteralType"
+- !private "JSON"
+- "Int"
+- "NSCoder"
 - "String"
+- !private "!="
 - "Sancion"
+- "Double"
+- "AnyObject"
+- !private "=="
 depends-member:
 - !private ["Ps9AnyObject", "JSON"]
 - !private ["Ps9AnyObject", "Sancion"]
@@ -34,8 +36,11 @@ depends-member:
 - !private ["Ps9AnyObject", "asString"]
 - ["Ps9AnyObject", "codigo"]
 - ["Ps9AnyObject", "copyWithZone"]
+- !private ["Ps9AnyObject", "decodeObjectForKey"]
 - !private ["Ps9AnyObject", "deinit"]
 - ["Ps9AnyObject", "descripcion"]
+- !private ["Ps9AnyObject", "encodeObject"]
+- ["Ps9AnyObject", "encodeWithCoder"]
 - ["Ps9AnyObject", "fromJSON"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "null"]
@@ -54,7 +59,10 @@ depends-member:
 - !private ["Ps11CVarArgType", "Sancion"]
 - ["Ps11CVarArgType", "codigo"]
 - ["Ps11CVarArgType", "copyWithZone"]
+- !private ["Ps11CVarArgType", "decodeObjectForKey"]
 - ["Ps11CVarArgType", "descripcion"]
+- !private ["Ps11CVarArgType", "encodeObject"]
+- ["Ps11CVarArgType", "encodeWithCoder"]
 - ["Ps11CVarArgType", "fromJSON"]
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "puntosmax"]
@@ -69,10 +77,14 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "JSON"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "Sancion"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
 - ["Ps28CustomDebugStringConvertible", "codigo"]
 - ["Ps28CustomDebugStringConvertible", "copyWithZone"]
+- !private ["Ps28CustomDebugStringConvertible", "decodeObjectForKey"]
 - ["Ps28CustomDebugStringConvertible", "descripcion"]
+- !private ["Ps28CustomDebugStringConvertible", "encodeObject"]
+- ["Ps28CustomDebugStringConvertible", "encodeWithCoder"]
 - ["Ps28CustomDebugStringConvertible", "fromJSON"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "puntosmax"]
@@ -92,7 +104,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "asString"]
 - ["Ps23CustomStringConvertible", "codigo"]
 - ["Ps23CustomStringConvertible", "copyWithZone"]
+- !private ["Ps23CustomStringConvertible", "decodeObjectForKey"]
 - ["Ps23CustomStringConvertible", "descripcion"]
+- !private ["Ps23CustomStringConvertible", "encodeObject"]
+- ["Ps23CustomStringConvertible", "encodeWithCoder"]
 - ["Ps23CustomStringConvertible", "fromJSON"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "null"]
@@ -110,12 +125,16 @@ depends-member:
 - !private ["Ps28DictionaryLiteralConvertible", "Key"]
 - !private ["Ps28DictionaryLiteralConvertible", "Value"]
 - !private ["Ps28DictionaryLiteralConvertible", "subscript"]
+- !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "JSON"]
 - !private ["Ps9Equatable", "Sancion"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "codigo"]
 - ["Ps9Equatable", "copyWithZone"]
+- !private ["Ps9Equatable", "decodeObjectForKey"]
 - ["Ps9Equatable", "descripcion"]
+- !private ["Ps9Equatable", "encodeObject"]
+- ["Ps9Equatable", "encodeWithCoder"]
 - ["Ps9Equatable", "fromJSON"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "puntosmax"]
@@ -130,7 +149,10 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "codigo"]
 - ["Ps8Hashable", "copyWithZone"]
+- !private ["Ps8Hashable", "decodeObjectForKey"]
 - ["Ps8Hashable", "descripcion"]
+- !private ["Ps8Hashable", "encodeObject"]
+- ["Ps8Hashable", "encodeWithCoder"]
 - ["Ps8Hashable", "fromJSON"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "puntosmax"]
@@ -142,12 +164,15 @@ depends-member:
 - ["Ps8Hashable", ""]
 - !private ["Ps9Indexable", "Key"]
 - !private ["Ps9Indexable", "Value"]
+- !private ["Si", "deinit"]
 - !private ["C17ResolucionLegajos4JSON", "asDouble"]
 - !private ["C17ResolucionLegajos4JSON", "asInt"]
 - !private ["C17ResolucionLegajos4JSON", "asString"]
 - !private ["C17ResolucionLegajos4JSON", "init"]
 - !private ["C17ResolucionLegajos4JSON", "null"]
 - !private ["C17ResolucionLegajos4JSON", "toString"]
+- !private ["CSo7NSCoder", "decodeObjectForKey"]
+- !private ["CSo7NSCoder", "encodeObject"]
 - !private ["PSo8NSCoding", "subscript"]
 - !private ["PSo9NSCopying", "JSON"]
 - !private ["PSo9NSCopying", "Sancion"]
@@ -169,13 +194,17 @@ depends-member:
 - ["CSo8NSObject", "Double"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "JSON"]
+- ["CSo8NSObject", "NSCoder"]
 - ["CSo8NSObject", "NSDictionary"]
 - ["CSo8NSObject", "NSZone"]
 - ["CSo8NSObject", "Sancion"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "codigo"]
 - ["CSo8NSObject", "copyWithZone"]
+- !private ["CSo8NSObject", "decodeObjectForKey"]
 - ["CSo8NSObject", "descripcion"]
+- !private ["CSo8NSObject", "encodeObject"]
+- ["CSo8NSObject", "encodeWithCoder"]
 - ["CSo8NSObject", "fromJSON"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "puntosmax"]
@@ -189,7 +218,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "Sancion"]
 - ["PSo16NSObjectProtocol", "codigo"]
 - ["PSo16NSObjectProtocol", "copyWithZone"]
+- !private ["PSo16NSObjectProtocol", "decodeObjectForKey"]
 - ["PSo16NSObjectProtocol", "descripcion"]
+- !private ["PSo16NSObjectProtocol", "encodeObject"]
+- ["PSo16NSObjectProtocol", "encodeWithCoder"]
 - ["PSo16NSObjectProtocol", "fromJSON"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "puntosmax"]
@@ -200,11 +232,14 @@ depends-member:
 - ["PSo16NSObjectProtocol", "ufmin"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "subscript"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - ["C17ResolucionLegajos7Sancion", "AnyObject"]
 - ["C17ResolucionLegajos7Sancion", "Double"]
 - ["C17ResolucionLegajos7Sancion", "Int"]
 - !private ["C17ResolucionLegajos7Sancion", "JSON"]
+- ["C17ResolucionLegajos7Sancion", "NSCoder"]
 - ["C17ResolucionLegajos7Sancion", "NSDictionary"]
 - ["C17ResolucionLegajos7Sancion", "NSZone"]
 - ["C17ResolucionLegajos7Sancion", "Sancion"]
@@ -213,6 +248,7 @@ depends-member:
 - ["C17ResolucionLegajos7Sancion", "copyWithZone"]
 - ["C17ResolucionLegajos7Sancion", "deinit"]
 - ["C17ResolucionLegajos7Sancion", "descripcion"]
+- ["C17ResolucionLegajos7Sancion", "encodeWithCoder"]
 - ["C17ResolucionLegajos7Sancion", "fromJSON"]
 - ["C17ResolucionLegajos7Sancion", "init"]
 - ["C17ResolucionLegajos7Sancion", "puntosmax"]
@@ -236,6 +272,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps12_Reflectable", "Key"]
+- ["Ps12_Reflectable", "Some"]
 - !private ["Ps12_Reflectable", "Value"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "subscript"]
@@ -250,10 +287,13 @@ depends-nominal:
 - "Ps23CustomStringConvertible"
 - !private "Vs10Dictionary"
 - !private "Ps28DictionaryLiteralConvertible"
+- !private "Sd"
 - "Ps9Equatable"
 - "Ps8Hashable"
 - !private "Ps9Indexable"
+- !private "Si"
 - !private "C17ResolucionLegajos4JSON"
+- !private "CSo7NSCoder"
 - !private "PSo8NSCoding"
 - "PSo9NSCopying"
 - !private "CSo12NSDictionary"
@@ -262,14 +302,15 @@ depends-nominal:
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
-- !private "Sq"
+- "Ps21NilLiteralConvertible"
+- "Sq"
 - "C17ResolucionLegajos7Sancion"
 - !private "Ps12SequenceType"
 - !private "SS"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps21_ObjectiveCBridgeable"
 - !private "Vs26_OptionalNilComparisonType"
-- !private "Ps12_Reflectable"
+- "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -285,4 +326,4 @@ depends-external:
 - "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
-interface-hash: "bfa3df39a37c555b6ee3478d0a298502"
+interface-hash: "24cfef35601692b7d920a7b7f16b5187"

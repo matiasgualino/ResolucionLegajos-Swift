@@ -26,6 +26,47 @@ class Infraccion: NSObject, NSCopying {
 		
 	}
 	
+	required init(coder aDecoder: NSCoder) {
+		if let codigo = aDecoder.decodeObjectForKey("InfraccionCodigo") as? String {
+			self.codigo = codigo
+		}
+		if let descripcion = aDecoder.decodeObjectForKey("InfraccionDescripcion") as? String {
+			self.descripcion = descripcion
+		}
+		if let resolucion = aDecoder.decodeObjectForKey("InfraccionResolucion") as? Resolucion {
+			self.resolucion = resolucion
+		}
+		if let cantidadSanciones = aDecoder.decodeObjectForKey("InfraccionSancionesCantidad") as? Int {
+			self.sanciones = [Sancion]()
+			for i in 0...cantidadSanciones {
+				let sancion = aDecoder.decodeObjectForKey("InfraccionSancion" + String(format: "%d", i)) as? Sancion
+				if sancion != nil {
+					self.sanciones!.append(sancion!)
+				}
+			}
+		}
+	}
+	
+	func encodeWithCoder(aCoder: NSCoder) {
+		if let codigo = self.codigo {
+			aCoder.encodeObject(codigo, forKey: "InfraccionCodigo")
+		}
+		if let descripcion = self.descripcion {
+			aCoder.encodeObject(descripcion, forKey: "InfraccionDescripcion")
+		}
+		if let resolucion = self.resolucion {
+			aCoder.encodeObject(resolucion, forKey: "InfraccionResolucion")
+		}
+		if let sanciones = self.sanciones {
+			var i = 0
+			aCoder.encodeObject(sanciones.count, forKey: "InfraccionSancionesCantidad")
+			for sancion in sanciones {
+				aCoder.encodeObject(sancion, forKey: "InfraccionSancion" + String(format: "%d", i))
+				i = i + 1
+			}
+		}
+	}
+	
 	class func fromJSON(json : NSDictionary) -> Infraccion {
 		let infraccion : Infraccion = Infraccion()
 		if json["codigo"] != nil {
@@ -52,6 +93,7 @@ class Infraccion: NSObject, NSCopying {
 	func toJSONString() -> String {
 		var sancionesArray : [AnyObject]? = nil
 		if sanciones != nil {
+			sancionesArray = [AnyObject]()
 			for sancion in sanciones! {
 				sancionesArray?.append(JSON.parse(sancion.toJSONString()).mutableCopyOfTheObject())
 			}

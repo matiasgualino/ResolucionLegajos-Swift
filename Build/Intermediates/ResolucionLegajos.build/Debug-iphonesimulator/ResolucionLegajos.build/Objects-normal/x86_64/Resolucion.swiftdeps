@@ -6,26 +6,28 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos10Resolucion", ""]
 provides-dynamic-lookup:
-- "codigo"
 - "nota"
-- "copyWithZone"
-- "toJSONString"
 - "fromJSON"
+- "toJSONString"
+- "copyWithZone"
+- "encodeWithCoder"
+- "codigo"
 depends-top-level:
-- "NSZone"
+- !private "Dictionary"
+- !private "JSON"
+- "NSObject"
+- "NSCopying"
 - !private "StringLiteralType"
 - !private "!="
+- "AnyObject"
+- !private "=="
+- "Resolucion"
+- "NSCoder"
+- "Double"
+- "NSZone"
 - "NSDictionary"
 - "Int"
-- "Resolucion"
 - "String"
-- !private "JSON"
-- !private "=="
-- "NSCopying"
-- "NSObject"
-- !private "Dictionary"
-- "AnyObject"
-- "Double"
 depends-member:
 - !private ["Ps9AnyObject", "JSON"]
 - !private ["Ps9AnyObject", "Resolucion"]
@@ -34,7 +36,10 @@ depends-member:
 - !private ["Ps9AnyObject", "asString"]
 - ["Ps9AnyObject", "codigo"]
 - ["Ps9AnyObject", "copyWithZone"]
+- !private ["Ps9AnyObject", "decodeObjectForKey"]
 - !private ["Ps9AnyObject", "deinit"]
+- !private ["Ps9AnyObject", "encodeObject"]
+- ["Ps9AnyObject", "encodeWithCoder"]
 - ["Ps9AnyObject", "fromJSON"]
 - ["Ps9AnyObject", "importe"]
 - ["Ps9AnyObject", "init"]
@@ -53,6 +58,9 @@ depends-member:
 - !private ["Ps11CVarArgType", "Resolucion"]
 - ["Ps11CVarArgType", "codigo"]
 - ["Ps11CVarArgType", "copyWithZone"]
+- !private ["Ps11CVarArgType", "decodeObjectForKey"]
+- !private ["Ps11CVarArgType", "encodeObject"]
+- ["Ps11CVarArgType", "encodeWithCoder"]
 - ["Ps11CVarArgType", "fromJSON"]
 - ["Ps11CVarArgType", "importe"]
 - ["Ps11CVarArgType", "init"]
@@ -67,9 +75,13 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "JSON"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "Resolucion"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
 - ["Ps28CustomDebugStringConvertible", "codigo"]
 - ["Ps28CustomDebugStringConvertible", "copyWithZone"]
+- !private ["Ps28CustomDebugStringConvertible", "decodeObjectForKey"]
+- !private ["Ps28CustomDebugStringConvertible", "encodeObject"]
+- ["Ps28CustomDebugStringConvertible", "encodeWithCoder"]
 - ["Ps28CustomDebugStringConvertible", "fromJSON"]
 - ["Ps28CustomDebugStringConvertible", "importe"]
 - ["Ps28CustomDebugStringConvertible", "init"]
@@ -89,6 +101,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "asString"]
 - ["Ps23CustomStringConvertible", "codigo"]
 - ["Ps23CustomStringConvertible", "copyWithZone"]
+- !private ["Ps23CustomStringConvertible", "decodeObjectForKey"]
+- !private ["Ps23CustomStringConvertible", "encodeObject"]
+- ["Ps23CustomStringConvertible", "encodeWithCoder"]
 - ["Ps23CustomStringConvertible", "fromJSON"]
 - ["Ps23CustomStringConvertible", "importe"]
 - ["Ps23CustomStringConvertible", "init"]
@@ -106,11 +121,15 @@ depends-member:
 - !private ["Ps28DictionaryLiteralConvertible", "Key"]
 - !private ["Ps28DictionaryLiteralConvertible", "Value"]
 - !private ["Ps28DictionaryLiteralConvertible", "subscript"]
+- !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "JSON"]
 - !private ["Ps9Equatable", "Resolucion"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "codigo"]
 - ["Ps9Equatable", "copyWithZone"]
+- !private ["Ps9Equatable", "decodeObjectForKey"]
+- !private ["Ps9Equatable", "encodeObject"]
+- ["Ps9Equatable", "encodeWithCoder"]
 - ["Ps9Equatable", "fromJSON"]
 - ["Ps9Equatable", "importe"]
 - ["Ps9Equatable", "init"]
@@ -125,6 +144,9 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "codigo"]
 - ["Ps8Hashable", "copyWithZone"]
+- !private ["Ps8Hashable", "decodeObjectForKey"]
+- !private ["Ps8Hashable", "encodeObject"]
+- ["Ps8Hashable", "encodeWithCoder"]
 - ["Ps8Hashable", "fromJSON"]
 - ["Ps8Hashable", "importe"]
 - ["Ps8Hashable", "init"]
@@ -136,12 +158,15 @@ depends-member:
 - ["Ps8Hashable", ""]
 - !private ["Ps9Indexable", "Key"]
 - !private ["Ps9Indexable", "Value"]
+- !private ["Si", "deinit"]
 - !private ["C17ResolucionLegajos4JSON", "asDouble"]
 - !private ["C17ResolucionLegajos4JSON", "asInt"]
 - !private ["C17ResolucionLegajos4JSON", "asString"]
 - !private ["C17ResolucionLegajos4JSON", "init"]
 - !private ["C17ResolucionLegajos4JSON", "null"]
 - !private ["C17ResolucionLegajos4JSON", "toString"]
+- !private ["CSo7NSCoder", "decodeObjectForKey"]
+- !private ["CSo7NSCoder", "encodeObject"]
 - !private ["PSo8NSCoding", "subscript"]
 - !private ["PSo9NSCopying", "JSON"]
 - !private ["PSo9NSCopying", "Resolucion"]
@@ -162,12 +187,16 @@ depends-member:
 - ["CSo8NSObject", "Double"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "JSON"]
+- ["CSo8NSObject", "NSCoder"]
 - ["CSo8NSObject", "NSDictionary"]
 - ["CSo8NSObject", "NSZone"]
 - ["CSo8NSObject", "Resolucion"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "codigo"]
 - ["CSo8NSObject", "copyWithZone"]
+- !private ["CSo8NSObject", "decodeObjectForKey"]
+- !private ["CSo8NSObject", "encodeObject"]
+- ["CSo8NSObject", "encodeWithCoder"]
 - ["CSo8NSObject", "fromJSON"]
 - ["CSo8NSObject", "importe"]
 - ["CSo8NSObject", "init"]
@@ -181,6 +210,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "Resolucion"]
 - ["PSo16NSObjectProtocol", "codigo"]
 - ["PSo16NSObjectProtocol", "copyWithZone"]
+- !private ["PSo16NSObjectProtocol", "decodeObjectForKey"]
+- !private ["PSo16NSObjectProtocol", "encodeObject"]
+- ["PSo16NSObjectProtocol", "encodeWithCoder"]
 - ["PSo16NSObjectProtocol", "fromJSON"]
 - ["PSo16NSObjectProtocol", "importe"]
 - ["PSo16NSObjectProtocol", "init"]
@@ -191,11 +223,14 @@ depends-member:
 - ["PSo16NSObjectProtocol", "uf"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "subscript"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - ["C17ResolucionLegajos10Resolucion", "AnyObject"]
 - ["C17ResolucionLegajos10Resolucion", "Double"]
 - ["C17ResolucionLegajos10Resolucion", "Int"]
 - !private ["C17ResolucionLegajos10Resolucion", "JSON"]
+- ["C17ResolucionLegajos10Resolucion", "NSCoder"]
 - ["C17ResolucionLegajos10Resolucion", "NSDictionary"]
 - ["C17ResolucionLegajos10Resolucion", "NSZone"]
 - ["C17ResolucionLegajos10Resolucion", "Resolucion"]
@@ -203,6 +238,7 @@ depends-member:
 - ["C17ResolucionLegajos10Resolucion", "codigo"]
 - ["C17ResolucionLegajos10Resolucion", "copyWithZone"]
 - ["C17ResolucionLegajos10Resolucion", "deinit"]
+- ["C17ResolucionLegajos10Resolucion", "encodeWithCoder"]
 - ["C17ResolucionLegajos10Resolucion", "fromJSON"]
 - ["C17ResolucionLegajos10Resolucion", "importe"]
 - ["C17ResolucionLegajos10Resolucion", "init"]
@@ -226,6 +262,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps12_Reflectable", "Key"]
+- ["Ps12_Reflectable", "Some"]
 - !private ["Ps12_Reflectable", "Value"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "subscript"]
@@ -240,10 +277,13 @@ depends-nominal:
 - "Ps23CustomStringConvertible"
 - !private "Vs10Dictionary"
 - !private "Ps28DictionaryLiteralConvertible"
+- !private "Sd"
 - "Ps9Equatable"
 - "Ps8Hashable"
 - !private "Ps9Indexable"
+- !private "Si"
 - !private "C17ResolucionLegajos4JSON"
+- !private "CSo7NSCoder"
 - !private "PSo8NSCoding"
 - "PSo9NSCopying"
 - !private "CSo12NSDictionary"
@@ -252,14 +292,15 @@ depends-nominal:
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
-- !private "Sq"
+- "Ps21NilLiteralConvertible"
+- "Sq"
 - "C17ResolucionLegajos10Resolucion"
 - !private "Ps12SequenceType"
 - !private "SS"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps21_ObjectiveCBridgeable"
 - !private "Vs26_OptionalNilComparisonType"
-- !private "Ps12_Reflectable"
+- "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -275,4 +316,4 @@ depends-external:
 - "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
-interface-hash: "5dc5d906040b282587e355f18e8f3be6"
+interface-hash: "b14603be1a4be66a628b659355be475e"
