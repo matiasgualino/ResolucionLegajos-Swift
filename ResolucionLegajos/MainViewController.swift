@@ -132,7 +132,7 @@ class MainViewController: MasterViewController, UITableViewDataSource, UITableVi
 	}
 	
 	func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-		let legajoSelected : Legajo = self.legajos![indexPath.row]
+		let legajoSelected : Legajo = self.legajos![indexPath.section-1]
 		self.navigationController?.pushViewController(LegajoViewController(legajoId: legajoSelected.id), animated: true)
 	}
 

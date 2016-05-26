@@ -26,8 +26,10 @@ class LoginService: NSObject {
 		Alamofire.request(request).responseJSON {
 			response in switch response.result {
 				case .Success(let JSON):
-					let response = JSON as! String
-					success(accessToken: response)
+					let response = JSON as? NSDictionary
+					if response != nil {
+						success(accessToken: response!["Token"] as? String)
+					}
 				case .Failure(let error):
 					failure(error: error)
 			}

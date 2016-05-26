@@ -1,0 +1,1 @@
+ const unsigned char Pods_ResolucionLegajosVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:Pods_ResolucionLegajos  PROJECT:Pods-1" "\n"; const double Pods_ResolucionLegajosVersionNumber __attribute__ ((used)) = (double)1.;

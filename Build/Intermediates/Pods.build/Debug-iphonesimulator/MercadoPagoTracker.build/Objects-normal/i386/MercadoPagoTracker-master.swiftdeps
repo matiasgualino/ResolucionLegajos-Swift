@@ -1,0 +1,8 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "63580132f7180b41e074240f2496bf8d"
+build_time: [516469069, 214083000]
+inputs:
+  "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MercadoPagoTracker/MPTracker/FlowTrackInfo.swift": [516469045, 0]
+  "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MercadoPagoTracker/MPTracker/GATracker.swift": [516469045, 0]
+  "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MercadoPagoTracker/MPTracker/MPTracker.swift": [516469045, 0]
+  "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MercadoPagoTracker/MPTracker/PaymentTrackInfo.swift": [516469045, 0]

@@ -36,25 +36,25 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55A-3j-W0J">
-                    <rect key="frame" x="8" y="192" width="120" height="25"/>
+                    <rect key="frame" x="8" y="192" width="150" height="25"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="25" id="n57-Af-GiI"/>
-                        <constraint firstAttribute="width" constant="120" id="n9m-dj-mtN"/>
+                        <constraint firstAttribute="width" constant="150" id="n9m-dj-mtN"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Importe ($):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUx-hu-lbI">
-                    <rect key="frame" x="8" y="275" width="120" height="25"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UF (100.00 - 100.00):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUx-hu-lbI">
+                    <rect key="frame" x="8" y="275" width="150" height="25"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="120" id="MiG-ee-Ore"/>
+                        <constraint firstAttribute="width" constant="150" id="MiG-ee-Ore"/>
                         <constraint firstAttribute="height" constant="25" id="MxT-cw-O2q"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Haz clic para agregar los puntos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H6W-UD-FFM">
-                    <rect key="frame" x="136" y="192" width="456" height="25"/>
+                    <rect key="frame" x="166" y="192" width="426" height="25"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" returnKeyType="done"/>
                 </textField>
@@ -67,7 +67,7 @@
                     <color key="tintColor" red="0.1529411765" green="0.12549019610000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </segmentedControl>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Haz clic para agregar el importe en pesos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4NO-e0-9Ig">
-                    <rect key="frame" x="138" y="275" width="454" height="25"/>
+                    <rect key="frame" x="168" y="275" width="424" height="25"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="done"/>
                 </textField>

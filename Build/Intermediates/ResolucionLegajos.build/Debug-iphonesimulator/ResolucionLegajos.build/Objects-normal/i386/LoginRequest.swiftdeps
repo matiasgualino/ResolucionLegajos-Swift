@@ -6,72 +6,78 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos12LoginRequest", ""]
 provides-dynamic-lookup:
+- "username"
 - "password"
 - "toJSONString"
-- "username"
 depends-top-level:
-- "String"
-- !private "AnyObject"
-- "LoginRequest"
-- !private "=="
-- !private "Dictionary"
 - "NSObject"
+- "LoginRequest"
+- !private "AnyObject"
+- !private "Dictionary"
 - !private "JSON"
+- !private "=="
+- "String"
 - !private "StringLiteralType"
 depends-member:
-- !private ["PSs9AnyObject", "JSON"]
-- ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "null"]
-- ["PSs9AnyObject", "password"]
-- ["PSs9AnyObject", "toJSONString"]
-- !private ["PSs9AnyObject", "toString"]
-- ["PSs9AnyObject", "username"]
-- ["PSs9AnyObject", ""]
+- !private ["Ps9AnyObject", "JSON"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "null"]
+- ["Ps9AnyObject", "password"]
+- ["Ps9AnyObject", "toJSONString"]
+- !private ["Ps9AnyObject", "toString"]
+- ["Ps9AnyObject", "username"]
+- ["Ps9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
-- !private ["PSs11CVarArgType", "JSON"]
-- ["PSs11CVarArgType", "init"]
-- ["PSs11CVarArgType", "password"]
-- ["PSs11CVarArgType", "toJSONString"]
-- ["PSs11CVarArgType", "username"]
-- ["PSs11CVarArgType", ""]
-- !private ["PSs14CollectionType", "Key"]
-- !private ["PSs14CollectionType", "Value"]
-- !private ["PSs28CustomDebugStringConvertible", "Key"]
-- !private ["PSs28CustomDebugStringConvertible", "Value"]
-- !private ["PSs23CustomStringConvertible", "JSON"]
-- !private ["PSs23CustomStringConvertible", "Key"]
-- !private ["PSs23CustomStringConvertible", "Value"]
-- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
-- ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "null"]
-- ["PSs23CustomStringConvertible", "password"]
-- ["PSs23CustomStringConvertible", "toJSONString"]
-- !private ["PSs23CustomStringConvertible", "toString"]
-- ["PSs23CustomStringConvertible", "username"]
-- ["PSs23CustomStringConvertible", ""]
-- !private ["VSs10Dictionary", "Key"]
-- !private ["VSs10Dictionary", "Value"]
-- !private ["VSs10Dictionary", "deinit"]
-- !private ["PSs28DictionaryLiteralConvertible", "Key"]
-- !private ["PSs28DictionaryLiteralConvertible", "Value"]
-- !private ["PSs9Equatable", "JSON"]
-- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
-- ["PSs9Equatable", "init"]
-- ["PSs9Equatable", "password"]
-- ["PSs9Equatable", "toJSONString"]
-- ["PSs9Equatable", "username"]
-- ["PSs9Equatable", ""]
-- !private ["PSs8Hashable", "JSON"]
-- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
-- ["PSs8Hashable", "init"]
-- ["PSs8Hashable", "password"]
-- ["PSs8Hashable", "toJSONString"]
-- ["PSs8Hashable", "username"]
-- ["PSs8Hashable", ""]
-- !private ["PSs9Indexable", "Key"]
-- !private ["PSs9Indexable", "Value"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "JSON"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "password"]
+- ["Ps11CVarArgType", "toJSONString"]
+- ["Ps11CVarArgType", "username"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps14CollectionType", "Key"]
+- !private ["Ps14CollectionType", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "JSON"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "password"]
+- ["Ps28CustomDebugStringConvertible", "toJSONString"]
+- ["Ps28CustomDebugStringConvertible", "username"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "JSON"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "null"]
+- ["Ps23CustomStringConvertible", "password"]
+- ["Ps23CustomStringConvertible", "toJSONString"]
+- !private ["Ps23CustomStringConvertible", "toString"]
+- ["Ps23CustomStringConvertible", "username"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- !private ["Vs10Dictionary", "deinit"]
+- !private ["Ps28DictionaryLiteralConvertible", "Key"]
+- !private ["Ps28DictionaryLiteralConvertible", "Value"]
+- !private ["Ps9Equatable", "JSON"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "password"]
+- ["Ps9Equatable", "toJSONString"]
+- ["Ps9Equatable", "username"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "JSON"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "password"]
+- ["Ps8Hashable", "toJSONString"]
+- ["Ps8Hashable", "username"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "Value"]
 - !private ["C17ResolucionLegajos4JSON", "init"]
 - !private ["C17ResolucionLegajos4JSON", "null"]
 - !private ["C17ResolucionLegajos4JSON", "toString"]
@@ -98,43 +104,43 @@ depends-member:
 - ["PSo16NSObjectProtocol", "username"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["Sq", "deinit"]
-- !private ["PSs12SequenceType", "Key"]
-- !private ["PSs12SequenceType", "Value"]
-- !private ["PSs12SequenceType", "init"]
-- !private ["PSs12SequenceType", "null"]
-- !private ["PSs12SequenceType", "toString"]
-- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs21_ObjectiveCBridgeable", "Key"]
-- !private ["PSs21_ObjectiveCBridgeable", "Value"]
-- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["VSs26_OptionalNilComparisonType", "deinit"]
-- !private ["PSs12_Reflectable", "Key"]
-- !private ["PSs12_Reflectable", "Value"]
-- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12SequenceType", "Key"]
+- !private ["Ps12SequenceType", "Value"]
+- !private ["Ps12SequenceType", "init"]
+- !private ["Ps12SequenceType", "null"]
+- !private ["Ps12SequenceType", "toString"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps12_Reflectable", "Key"]
+- !private ["Ps12_Reflectable", "Value"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 depends-nominal:
-- "PSs9AnyObject"
+- "Ps9AnyObject"
 - !private "Sb"
-- !private "PSs25BooleanLiteralConvertible"
-- !private "PSs11BooleanType"
-- "PSs11CVarArgType"
-- !private "PSs14CollectionType"
-- !private "PSs28CustomDebugStringConvertible"
-- "PSs23CustomStringConvertible"
-- !private "VSs10Dictionary"
-- !private "PSs28DictionaryLiteralConvertible"
-- "PSs9Equatable"
-- "PSs8Hashable"
-- !private "PSs9Indexable"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Ps28DictionaryLiteralConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
 - !private "C17ResolucionLegajos4JSON"
 - "C17ResolucionLegajos12LoginRequest"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "Sq"
-- !private "PSs12SequenceType"
-- !private "PSs33_BuiltinBooleanLiteralConvertible"
-- !private "PSs21_ObjectiveCBridgeable"
-- !private "VSs26_OptionalNilComparisonType"
-- !private "PSs12_Reflectable"
+- !private "Ps12SequenceType"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"

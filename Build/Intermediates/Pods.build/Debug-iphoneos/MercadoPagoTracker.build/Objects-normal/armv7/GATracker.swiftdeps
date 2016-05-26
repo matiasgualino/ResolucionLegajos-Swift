@@ -1,0 +1,555 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "GATracker"
+provides-nominal:
+- "C18MercadoPagoTracker9GATracker"
+provides-member:
+- ["C18MercadoPagoTracker9GATracker", ""]
+provides-dynamic-lookup:
+- "trackScreen"
+- "trackEvent"
+- "sharedInstance"
+- "initialized"
+depends-top-level:
+- !private "AnyObject"
+- "NSNumber"
+- !private "GAIDictionaryBuilder"
+- "NSObject"
+- "String"
+- !private "StringLiteralType"
+- !private "GAI"
+- "GATracker"
+- !private "kGAIScreenName"
+- !private "GAIFields"
+- "MPPaymentTrackInformer"
+- "FlowTrackInfo"
+- !private "PaymentTrackInfo"
+- !private "BooleanLiteralType"
+- !private "GAILogLevel"
+depends-member:
+- !private ["Ps9AnyObject", "FLOW_FLAVOR"]
+- !private ["Ps9AnyObject", "FLOW_FRAMEWORK"]
+- !private ["Ps9AnyObject", "FLOW_PUBLIC_KEY"]
+- !private ["Ps9AnyObject", "FLOW_SDK_VERSION"]
+- !private ["Ps9AnyObject", "FLOW_SITE"]
+- !private ["Ps9AnyObject", "FlowTrackInfo"]
+- !private ["Ps9AnyObject", "GAI"]
+- !private ["Ps9AnyObject", "GAIDictionaryBuilder"]
+- !private ["Ps9AnyObject", "GAIFields"]
+- !private ["Ps9AnyObject", "GAILogLevel"]
+- ["Ps9AnyObject", "GATracker"]
+- !private ["Ps9AnyObject", "PAYMENT_INSTALLMENTS"]
+- !private ["Ps9AnyObject", "PAYMENT_ISSUER_ID"]
+- !private ["Ps9AnyObject", "PAYMENT_METHOD_ID"]
+- !private ["Ps9AnyObject", "PAYMENT_STATUS"]
+- !private ["Ps9AnyObject", "PAYMENT_STATUS_DETAIL"]
+- !private ["Ps9AnyObject", "PAYMENT_TYPE_ID"]
+- !private ["Ps9AnyObject", "PaymentTrackInfo"]
+- !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "build"]
+- !private ["Ps9AnyObject", "createEventWithCategory"]
+- !private ["Ps9AnyObject", "createScreenView"]
+- !private ["Ps9AnyObject", "customDimensionForIndex"]
+- !private ["Ps9AnyObject", "defaultTracker"]
+- !private ["Ps9AnyObject", "flavor"]
+- !private ["Ps9AnyObject", "framework"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "initialized"]
+- !private ["Ps9AnyObject", "kGAIScreenName"]
+- !private ["Ps9AnyObject", "logger"]
+- !private ["Ps9AnyObject", "publicKey"]
+- !private ["Ps9AnyObject", "sdkVersion"]
+- !private ["Ps9AnyObject", "setValue"]
+- ["Ps9AnyObject", "sharedInstance"]
+- !private ["Ps9AnyObject", "site"]
+- ["Ps9AnyObject", "trackEvent"]
+- ["Ps9AnyObject", "trackPaymentEvent"]
+- ["Ps9AnyObject", "trackScreen"]
+- !private ["Ps9AnyObject", "trackUncaughtExceptions"]
+- !private ["Ps9AnyObject", "trackerWithTrackingId"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "FLOW_FLAVOR"]
+- !private ["Ps11CVarArgType", "FLOW_FRAMEWORK"]
+- !private ["Ps11CVarArgType", "FLOW_PUBLIC_KEY"]
+- !private ["Ps11CVarArgType", "FLOW_SDK_VERSION"]
+- !private ["Ps11CVarArgType", "FLOW_SITE"]
+- !private ["Ps11CVarArgType", "FlowTrackInfo"]
+- !private ["Ps11CVarArgType", "GAI"]
+- !private ["Ps11CVarArgType", "GAIDictionaryBuilder"]
+- !private ["Ps11CVarArgType", "GAIFields"]
+- !private ["Ps11CVarArgType", "GAILogLevel"]
+- ["Ps11CVarArgType", "GATracker"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "PAYMENT_INSTALLMENTS"]
+- !private ["Ps11CVarArgType", "PAYMENT_ISSUER_ID"]
+- !private ["Ps11CVarArgType", "PAYMENT_METHOD_ID"]
+- !private ["Ps11CVarArgType", "PAYMENT_STATUS"]
+- !private ["Ps11CVarArgType", "PAYMENT_STATUS_DETAIL"]
+- !private ["Ps11CVarArgType", "PAYMENT_TYPE_ID"]
+- !private ["Ps11CVarArgType", "PaymentTrackInfo"]
+- !private ["Ps11CVarArgType", "String"]
+- !private ["Ps11CVarArgType", "build"]
+- !private ["Ps11CVarArgType", "createEventWithCategory"]
+- !private ["Ps11CVarArgType", "createScreenView"]
+- !private ["Ps11CVarArgType", "customDimensionForIndex"]
+- !private ["Ps11CVarArgType", "defaultTracker"]
+- !private ["Ps11CVarArgType", "flavor"]
+- !private ["Ps11CVarArgType", "framework"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "initialized"]
+- !private ["Ps11CVarArgType", "kGAIScreenName"]
+- !private ["Ps11CVarArgType", "logger"]
+- !private ["Ps11CVarArgType", "publicKey"]
+- !private ["Ps11CVarArgType", "sdkVersion"]
+- !private ["Ps11CVarArgType", "setValue"]
+- ["Ps11CVarArgType", "sharedInstance"]
+- !private ["Ps11CVarArgType", "site"]
+- ["Ps11CVarArgType", "trackEvent"]
+- ["Ps11CVarArgType", "trackPaymentEvent"]
+- ["Ps11CVarArgType", "trackScreen"]
+- !private ["Ps11CVarArgType", "trackUncaughtExceptions"]
+- !private ["Ps11CVarArgType", "trackerWithTrackingId"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "FLOW_FLAVOR"]
+- !private ["Ps28CustomDebugStringConvertible", "FLOW_FRAMEWORK"]
+- !private ["Ps28CustomDebugStringConvertible", "FLOW_PUBLIC_KEY"]
+- !private ["Ps28CustomDebugStringConvertible", "FLOW_SDK_VERSION"]
+- !private ["Ps28CustomDebugStringConvertible", "FLOW_SITE"]
+- !private ["Ps28CustomDebugStringConvertible", "FlowTrackInfo"]
+- !private ["Ps28CustomDebugStringConvertible", "GAI"]
+- !private ["Ps28CustomDebugStringConvertible", "GAIDictionaryBuilder"]
+- !private ["Ps28CustomDebugStringConvertible", "GAIFields"]
+- !private ["Ps28CustomDebugStringConvertible", "GAILogLevel"]
+- ["Ps28CustomDebugStringConvertible", "GATracker"]
+- !private ["Ps28CustomDebugStringConvertible", "PAYMENT_INSTALLMENTS"]
+- !private ["Ps28CustomDebugStringConvertible", "PAYMENT_ISSUER_ID"]
+- !private ["Ps28CustomDebugStringConvertible", "PAYMENT_METHOD_ID"]
+- !private ["Ps28CustomDebugStringConvertible", "PAYMENT_STATUS"]
+- !private ["Ps28CustomDebugStringConvertible", "PAYMENT_STATUS_DETAIL"]
+- !private ["Ps28CustomDebugStringConvertible", "PAYMENT_TYPE_ID"]
+- !private ["Ps28CustomDebugStringConvertible", "PaymentTrackInfo"]
+- !private ["Ps28CustomDebugStringConvertible", "String"]
+- !private ["Ps28CustomDebugStringConvertible", "build"]
+- !private ["Ps28CustomDebugStringConvertible", "createEventWithCategory"]
+- !private ["Ps28CustomDebugStringConvertible", "createScreenView"]
+- !private ["Ps28CustomDebugStringConvertible", "customDimensionForIndex"]
+- !private ["Ps28CustomDebugStringConvertible", "defaultTracker"]
+- !private ["Ps28CustomDebugStringConvertible", "flavor"]
+- !private ["Ps28CustomDebugStringConvertible", "framework"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "initialized"]
+- !private ["Ps28CustomDebugStringConvertible", "kGAIScreenName"]
+- !private ["Ps28CustomDebugStringConvertible", "logger"]
+- !private ["Ps28CustomDebugStringConvertible", "publicKey"]
+- !private ["Ps28CustomDebugStringConvertible", "sdkVersion"]
+- !private ["Ps28CustomDebugStringConvertible", "setValue"]
+- ["Ps28CustomDebugStringConvertible", "sharedInstance"]
+- !private ["Ps28CustomDebugStringConvertible", "site"]
+- ["Ps28CustomDebugStringConvertible", "trackEvent"]
+- ["Ps28CustomDebugStringConvertible", "trackPaymentEvent"]
+- ["Ps28CustomDebugStringConvertible", "trackScreen"]
+- !private ["Ps28CustomDebugStringConvertible", "trackUncaughtExceptions"]
+- !private ["Ps28CustomDebugStringConvertible", "trackerWithTrackingId"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "FLOW_FLAVOR"]
+- !private ["Ps23CustomStringConvertible", "FLOW_FRAMEWORK"]
+- !private ["Ps23CustomStringConvertible", "FLOW_PUBLIC_KEY"]
+- !private ["Ps23CustomStringConvertible", "FLOW_SDK_VERSION"]
+- !private ["Ps23CustomStringConvertible", "FLOW_SITE"]
+- !private ["Ps23CustomStringConvertible", "FlowTrackInfo"]
+- !private ["Ps23CustomStringConvertible", "GAI"]
+- !private ["Ps23CustomStringConvertible", "GAIDictionaryBuilder"]
+- !private ["Ps23CustomStringConvertible", "GAIFields"]
+- !private ["Ps23CustomStringConvertible", "GAILogLevel"]
+- ["Ps23CustomStringConvertible", "GATracker"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "PAYMENT_INSTALLMENTS"]
+- !private ["Ps23CustomStringConvertible", "PAYMENT_ISSUER_ID"]
+- !private ["Ps23CustomStringConvertible", "PAYMENT_METHOD_ID"]
+- !private ["Ps23CustomStringConvertible", "PAYMENT_STATUS"]
+- !private ["Ps23CustomStringConvertible", "PAYMENT_STATUS_DETAIL"]
+- !private ["Ps23CustomStringConvertible", "PAYMENT_TYPE_ID"]
+- !private ["Ps23CustomStringConvertible", "PaymentTrackInfo"]
+- !private ["Ps23CustomStringConvertible", "String"]
+- !private ["Ps23CustomStringConvertible", "build"]
+- !private ["Ps23CustomStringConvertible", "createEventWithCategory"]
+- !private ["Ps23CustomStringConvertible", "createScreenView"]
+- !private ["Ps23CustomStringConvertible", "customDimensionForIndex"]
+- !private ["Ps23CustomStringConvertible", "defaultTracker"]
+- !private ["Ps23CustomStringConvertible", "flavor"]
+- !private ["Ps23CustomStringConvertible", "framework"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "initialized"]
+- !private ["Ps23CustomStringConvertible", "kGAIScreenName"]
+- !private ["Ps23CustomStringConvertible", "logger"]
+- !private ["Ps23CustomStringConvertible", "publicKey"]
+- !private ["Ps23CustomStringConvertible", "sdkVersion"]
+- !private ["Ps23CustomStringConvertible", "setValue"]
+- ["Ps23CustomStringConvertible", "sharedInstance"]
+- !private ["Ps23CustomStringConvertible", "site"]
+- ["Ps23CustomStringConvertible", "trackEvent"]
+- ["Ps23CustomStringConvertible", "trackPaymentEvent"]
+- ["Ps23CustomStringConvertible", "trackScreen"]
+- !private ["Ps23CustomStringConvertible", "trackUncaughtExceptions"]
+- !private ["Ps23CustomStringConvertible", "trackerWithTrackingId"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "FLOW_FLAVOR"]
+- !private ["Ps9Equatable", "FLOW_FRAMEWORK"]
+- !private ["Ps9Equatable", "FLOW_PUBLIC_KEY"]
+- !private ["Ps9Equatable", "FLOW_SDK_VERSION"]
+- !private ["Ps9Equatable", "FLOW_SITE"]
+- !private ["Ps9Equatable", "FlowTrackInfo"]
+- !private ["Ps9Equatable", "GAI"]
+- !private ["Ps9Equatable", "GAIDictionaryBuilder"]
+- !private ["Ps9Equatable", "GAIFields"]
+- !private ["Ps9Equatable", "GAILogLevel"]
+- ["Ps9Equatable", "GATracker"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "PAYMENT_INSTALLMENTS"]
+- !private ["Ps9Equatable", "PAYMENT_ISSUER_ID"]
+- !private ["Ps9Equatable", "PAYMENT_METHOD_ID"]
+- !private ["Ps9Equatable", "PAYMENT_STATUS"]
+- !private ["Ps9Equatable", "PAYMENT_STATUS_DETAIL"]
+- !private ["Ps9Equatable", "PAYMENT_TYPE_ID"]
+- !private ["Ps9Equatable", "PaymentTrackInfo"]
+- !private ["Ps9Equatable", "String"]
+- !private ["Ps9Equatable", "Verbose"]
+- !private ["Ps9Equatable", "build"]
+- !private ["Ps9Equatable", "createEventWithCategory"]
+- !private ["Ps9Equatable", "createScreenView"]
+- !private ["Ps9Equatable", "customDimensionForIndex"]
+- !private ["Ps9Equatable", "defaultTracker"]
+- !private ["Ps9Equatable", "flavor"]
+- !private ["Ps9Equatable", "framework"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "initialized"]
+- !private ["Ps9Equatable", "kGAIScreenName"]
+- !private ["Ps9Equatable", "logger"]
+- !private ["Ps9Equatable", "publicKey"]
+- !private ["Ps9Equatable", "rawValue"]
+- !private ["Ps9Equatable", "sdkVersion"]
+- !private ["Ps9Equatable", "setValue"]
+- ["Ps9Equatable", "sharedInstance"]
+- !private ["Ps9Equatable", "site"]
+- ["Ps9Equatable", "trackEvent"]
+- ["Ps9Equatable", "trackPaymentEvent"]
+- ["Ps9Equatable", "trackScreen"]
+- !private ["Ps9Equatable", "trackUncaughtExceptions"]
+- !private ["Ps9Equatable", "trackerWithTrackingId"]
+- ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["O18MercadoPagoTracker6Flavor", "deinit"]
+- !private ["O18MercadoPagoTracker6Flavor", "rawValue"]
+- !private ["C18MercadoPagoTracker13FlowTrackInfo", "FLOW_FLAVOR"]
+- !private ["C18MercadoPagoTracker13FlowTrackInfo", "FLOW_FRAMEWORK"]
+- !private ["C18MercadoPagoTracker13FlowTrackInfo", "FLOW_PUBLIC_KEY"]
+- !private ["C18MercadoPagoTracker13FlowTrackInfo", "FLOW_SDK_VERSION"]
+- !private ["C18MercadoPagoTracker13FlowTrackInfo", "FLOW_SITE"]
+- !private ["C18MercadoPagoTracker13FlowTrackInfo", "flavor"]
+- !private ["C18MercadoPagoTracker13FlowTrackInfo", "framework"]
+- !private ["C18MercadoPagoTracker13FlowTrackInfo", "publicKey"]
+- !private ["C18MercadoPagoTracker13FlowTrackInfo", "sdkVersion"]
+- !private ["C18MercadoPagoTracker13FlowTrackInfo", "site"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["CSo3GAI", "defaultTracker"]
+- !private ["CSo3GAI", "logger"]
+- !private ["CSo3GAI", "sharedInstance"]
+- !private ["CSo3GAI", "trackUncaughtExceptions"]
+- !private ["CSo3GAI", "trackerWithTrackingId"]
+- !private ["CSo20GAIDictionaryBuilder", "build"]
+- !private ["CSo20GAIDictionaryBuilder", "createEventWithCategory"]
+- !private ["CSo20GAIDictionaryBuilder", "createScreenView"]
+- !private ["CSo9GAIFields", "customDimensionForIndex"]
+- !private ["OSC11GAILogLevel", "Verbose"]
+- !private ["PSo9GAILogger", "logLevel"]
+- !private ["PSo10GAITracker", "send"]
+- !private ["PSo10GAITracker", "set"]
+- !private ["C18MercadoPagoTracker9GATracker", "AnyObject"]
+- ["C18MercadoPagoTracker9GATracker", "FlowTrackInfo"]
+- !private ["C18MercadoPagoTracker9GATracker", "GAI"]
+- !private ["C18MercadoPagoTracker9GATracker", "GAIDictionaryBuilder"]
+- !private ["C18MercadoPagoTracker9GATracker", "GAIFields"]
+- !private ["C18MercadoPagoTracker9GATracker", "GAILogLevel"]
+- ["C18MercadoPagoTracker9GATracker", "GATracker"]
+- ["C18MercadoPagoTracker9GATracker", "MPPaymentTrackInformer"]
+- ["C18MercadoPagoTracker9GATracker", "NSNumber"]
+- !private ["C18MercadoPagoTracker9GATracker", "NSObject"]
+- !private ["C18MercadoPagoTracker9GATracker", "PaymentTrackInfo"]
+- ["C18MercadoPagoTracker9GATracker", "String"]
+- ["C18MercadoPagoTracker9GATracker", "deinit"]
+- ["C18MercadoPagoTracker9GATracker", "init"]
+- ["C18MercadoPagoTracker9GATracker", "initialized"]
+- !private ["C18MercadoPagoTracker9GATracker", "kGAIScreenName"]
+- ["C18MercadoPagoTracker9GATracker", "sharedInstance"]
+- ["C18MercadoPagoTracker9GATracker", "trackEvent"]
+- ["C18MercadoPagoTracker9GATracker", "trackPaymentEvent"]
+- ["C18MercadoPagoTracker9GATracker", "trackScreen"]
+- !private ["Ps8Hashable", "FLOW_FLAVOR"]
+- !private ["Ps8Hashable", "FLOW_FRAMEWORK"]
+- !private ["Ps8Hashable", "FLOW_PUBLIC_KEY"]
+- !private ["Ps8Hashable", "FLOW_SDK_VERSION"]
+- !private ["Ps8Hashable", "FLOW_SITE"]
+- !private ["Ps8Hashable", "FlowTrackInfo"]
+- !private ["Ps8Hashable", "GAI"]
+- !private ["Ps8Hashable", "GAIDictionaryBuilder"]
+- !private ["Ps8Hashable", "GAIFields"]
+- !private ["Ps8Hashable", "GAILogLevel"]
+- ["Ps8Hashable", "GATracker"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "PAYMENT_INSTALLMENTS"]
+- !private ["Ps8Hashable", "PAYMENT_ISSUER_ID"]
+- !private ["Ps8Hashable", "PAYMENT_METHOD_ID"]
+- !private ["Ps8Hashable", "PAYMENT_STATUS"]
+- !private ["Ps8Hashable", "PAYMENT_STATUS_DETAIL"]
+- !private ["Ps8Hashable", "PAYMENT_TYPE_ID"]
+- !private ["Ps8Hashable", "PaymentTrackInfo"]
+- !private ["Ps8Hashable", "String"]
+- !private ["Ps8Hashable", "Verbose"]
+- !private ["Ps8Hashable", "build"]
+- !private ["Ps8Hashable", "createEventWithCategory"]
+- !private ["Ps8Hashable", "createScreenView"]
+- !private ["Ps8Hashable", "customDimensionForIndex"]
+- !private ["Ps8Hashable", "defaultTracker"]
+- !private ["Ps8Hashable", "flavor"]
+- !private ["Ps8Hashable", "framework"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "initialized"]
+- !private ["Ps8Hashable", "kGAIScreenName"]
+- !private ["Ps8Hashable", "logger"]
+- !private ["Ps8Hashable", "publicKey"]
+- !private ["Ps8Hashable", "rawValue"]
+- !private ["Ps8Hashable", "sdkVersion"]
+- !private ["Ps8Hashable", "setValue"]
+- ["Ps8Hashable", "sharedInstance"]
+- !private ["Ps8Hashable", "site"]
+- ["Ps8Hashable", "trackEvent"]
+- ["Ps8Hashable", "trackPaymentEvent"]
+- ["Ps8Hashable", "trackScreen"]
+- !private ["Ps8Hashable", "trackUncaughtExceptions"]
+- !private ["Ps8Hashable", "trackerWithTrackingId"]
+- ["Ps8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["P18MercadoPagoTracker22MPPaymentTrackInformer", "installments"]
+- !private ["P18MercadoPagoTracker22MPPaymentTrackInformer", "issuerId"]
+- !private ["P18MercadoPagoTracker22MPPaymentTrackInformer", "methodId"]
+- !private ["P18MercadoPagoTracker22MPPaymentTrackInformer", "status"]
+- !private ["P18MercadoPagoTracker22MPPaymentTrackInformer", "statusDetail"]
+- !private ["P18MercadoPagoTracker22MPPaymentTrackInformer", "typeId"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["CSo19NSMutableDictionary", "deinit"]
+- !private ["CSo8NSNumber", "deinit"]
+- !private ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "FLOW_FLAVOR"]
+- !private ["CSo8NSObject", "FLOW_FRAMEWORK"]
+- !private ["CSo8NSObject", "FLOW_PUBLIC_KEY"]
+- !private ["CSo8NSObject", "FLOW_SDK_VERSION"]
+- !private ["CSo8NSObject", "FLOW_SITE"]
+- ["CSo8NSObject", "FlowTrackInfo"]
+- !private ["CSo8NSObject", "GAI"]
+- !private ["CSo8NSObject", "GAIDictionaryBuilder"]
+- !private ["CSo8NSObject", "GAIFields"]
+- !private ["CSo8NSObject", "GAILogLevel"]
+- ["CSo8NSObject", "GATracker"]
+- ["CSo8NSObject", "MPPaymentTrackInformer"]
+- ["CSo8NSObject", "NSNumber"]
+- !private ["CSo8NSObject", "NSObject"]
+- !private ["CSo8NSObject", "PAYMENT_INSTALLMENTS"]
+- !private ["CSo8NSObject", "PAYMENT_ISSUER_ID"]
+- !private ["CSo8NSObject", "PAYMENT_METHOD_ID"]
+- !private ["CSo8NSObject", "PAYMENT_STATUS"]
+- !private ["CSo8NSObject", "PAYMENT_STATUS_DETAIL"]
+- !private ["CSo8NSObject", "PAYMENT_TYPE_ID"]
+- !private ["CSo8NSObject", "PaymentTrackInfo"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "build"]
+- !private ["CSo8NSObject", "createEventWithCategory"]
+- !private ["CSo8NSObject", "createScreenView"]
+- !private ["CSo8NSObject", "customDimensionForIndex"]
+- !private ["CSo8NSObject", "defaultTracker"]
+- !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "flavor"]
+- !private ["CSo8NSObject", "framework"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "initialized"]
+- !private ["CSo8NSObject", "kGAIScreenName"]
+- !private ["CSo8NSObject", "logger"]
+- !private ["CSo8NSObject", "publicKey"]
+- !private ["CSo8NSObject", "sdkVersion"]
+- !private ["CSo8NSObject", "setValue"]
+- ["CSo8NSObject", "sharedInstance"]
+- !private ["CSo8NSObject", "site"]
+- ["CSo8NSObject", "trackEvent"]
+- ["CSo8NSObject", "trackPaymentEvent"]
+- ["CSo8NSObject", "trackScreen"]
+- !private ["CSo8NSObject", "trackUncaughtExceptions"]
+- !private ["CSo8NSObject", "trackerWithTrackingId"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "FLOW_FLAVOR"]
+- !private ["PSo16NSObjectProtocol", "FLOW_FRAMEWORK"]
+- !private ["PSo16NSObjectProtocol", "FLOW_PUBLIC_KEY"]
+- !private ["PSo16NSObjectProtocol", "FLOW_SDK_VERSION"]
+- !private ["PSo16NSObjectProtocol", "FLOW_SITE"]
+- !private ["PSo16NSObjectProtocol", "FlowTrackInfo"]
+- !private ["PSo16NSObjectProtocol", "GAI"]
+- !private ["PSo16NSObjectProtocol", "GAIDictionaryBuilder"]
+- !private ["PSo16NSObjectProtocol", "GAIFields"]
+- !private ["PSo16NSObjectProtocol", "GAILogLevel"]
+- ["PSo16NSObjectProtocol", "GATracker"]
+- !private ["PSo16NSObjectProtocol", "PAYMENT_INSTALLMENTS"]
+- !private ["PSo16NSObjectProtocol", "PAYMENT_ISSUER_ID"]
+- !private ["PSo16NSObjectProtocol", "PAYMENT_METHOD_ID"]
+- !private ["PSo16NSObjectProtocol", "PAYMENT_STATUS"]
+- !private ["PSo16NSObjectProtocol", "PAYMENT_STATUS_DETAIL"]
+- !private ["PSo16NSObjectProtocol", "PAYMENT_TYPE_ID"]
+- !private ["PSo16NSObjectProtocol", "PaymentTrackInfo"]
+- !private ["PSo16NSObjectProtocol", "String"]
+- !private ["PSo16NSObjectProtocol", "build"]
+- !private ["PSo16NSObjectProtocol", "createEventWithCategory"]
+- !private ["PSo16NSObjectProtocol", "createScreenView"]
+- !private ["PSo16NSObjectProtocol", "customDimensionForIndex"]
+- !private ["PSo16NSObjectProtocol", "defaultTracker"]
+- !private ["PSo16NSObjectProtocol", "flavor"]
+- !private ["PSo16NSObjectProtocol", "framework"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "initialized"]
+- !private ["PSo16NSObjectProtocol", "kGAIScreenName"]
+- !private ["PSo16NSObjectProtocol", "logLevel"]
+- !private ["PSo16NSObjectProtocol", "logger"]
+- !private ["PSo16NSObjectProtocol", "publicKey"]
+- !private ["PSo16NSObjectProtocol", "sdkVersion"]
+- !private ["PSo16NSObjectProtocol", "send"]
+- !private ["PSo16NSObjectProtocol", "set"]
+- !private ["PSo16NSObjectProtocol", "setValue"]
+- ["PSo16NSObjectProtocol", "sharedInstance"]
+- !private ["PSo16NSObjectProtocol", "site"]
+- ["PSo16NSObjectProtocol", "trackEvent"]
+- ["PSo16NSObjectProtocol", "trackPaymentEvent"]
+- ["PSo16NSObjectProtocol", "trackScreen"]
+- !private ["PSo16NSObjectProtocol", "trackUncaughtExceptions"]
+- !private ["PSo16NSObjectProtocol", "trackerWithTrackingId"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Ps16OutputStreamType", "init"]
+- !private ["C18MercadoPagoTracker16PaymentTrackInfo", "PAYMENT_INSTALLMENTS"]
+- !private ["C18MercadoPagoTracker16PaymentTrackInfo", "PAYMENT_ISSUER_ID"]
+- !private ["C18MercadoPagoTracker16PaymentTrackInfo", "PAYMENT_METHOD_ID"]
+- !private ["C18MercadoPagoTracker16PaymentTrackInfo", "PAYMENT_STATUS"]
+- !private ["C18MercadoPagoTracker16PaymentTrackInfo", "PAYMENT_STATUS_DETAIL"]
+- !private ["C18MercadoPagoTracker16PaymentTrackInfo", "PAYMENT_TYPE_ID"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps16RawRepresentable", "Verbose"]
+- !private ["Ps16RawRepresentable", "rawValue"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps10Streamable", "init"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- "Ps11CVarArgType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "O18MercadoPagoTracker6Flavor"
+- !private "C18MercadoPagoTracker13FlowTrackInfo"
+- !private "Ps16ForwardIndexType"
+- !private "CSo3GAI"
+- !private "CSo20GAIDictionaryBuilder"
+- !private "CSo9GAIFields"
+- !private "OSC11GAILogLevel"
+- !private "PSo9GAILogger"
+- !private "PSo10GAITracker"
+- "C18MercadoPagoTracker9GATracker"
+- "Ps8Hashable"
+- !private "SQ"
+- !private "Si"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "P18MercadoPagoTracker22MPPaymentTrackInformer"
+- !private "Ps14MirrorPathType"
+- !private "CSo19NSMutableDictionary"
+- !private "CSo8NSNumber"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Ps16OutputStreamType"
+- !private "C18MercadoPagoTracker16PaymentTrackInfo"
+- !private "Ps21RandomAccessIndexType"
+- !private "Ps16RawRepresentable"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Streamable"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessAmbiguity"
+- !private "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAIFields.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAIEcommerceFields.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAIEcommercePromotion.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAIEcommerceProductAction.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAIEcommerceProduct.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAIDictionaryBuilder.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAITracker.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAITrackedViewController.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAILogger.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAI.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/Target Support Files/MPGoogleAnalytics/MPGoogleAnalytics-umbrella.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Intermediates/Pods.build/Debug-iphoneos/MPGoogleAnalytics.build/module.modulemap"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MercadoPagoTracker/MPTracker/MPTracker.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/Target Support Files/MercadoPagoTracker/MercadoPagoTracker-umbrella.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Intermediates/Pods.build/Debug-iphoneos/MercadoPagoTracker.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+interface-hash: "45c59fcb8bb15c0cc03e83c548cfd61a"

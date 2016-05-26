@@ -6,53 +6,53 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos19LegajoTableViewCell", ""]
 provides-dynamic-lookup:
+- "setLegajo"
+- "lblFecha"
 - "id"
+- "lblDominio"
 - "lblTitle"
 - "awakeFromNib"
-- "lblDominio"
-- "lblFecha"
-- "setLegajo"
 depends-top-level:
-- "UILabel"
-- "String"
-- "CardTableViewCell"
-- !private "+"
+- "Legajo"
 - !private "StringLiteralType"
 - "LegajoTableViewCell"
-- "Legajo"
-- "NSCoder"
 - "UITableViewCellStyle"
+- "CardTableViewCell"
+- "String"
+- !private "+"
+- "NSCoder"
+- "UILabel"
 depends-member:
-- ["PSs9AnyObject", "awakeFromNib"]
-- !private ["PSs9AnyObject", "dominio"]
-- !private ["PSs9AnyObject", "fecha"]
-- ["PSs9AnyObject", "id"]
-- ["PSs9AnyObject", "init"]
-- ["PSs9AnyObject", "lblDominio"]
-- ["PSs9AnyObject", "lblFecha"]
-- ["PSs9AnyObject", "lblTitle"]
-- !private ["PSs9AnyObject", "nombrecompleto"]
-- !private ["PSs9AnyObject", "numberOfLines"]
-- !private ["PSs9AnyObject", "numero"]
-- ["PSs9AnyObject", "setLegajo"]
-- !private ["PSs9AnyObject", "sizeToFit"]
-- !private ["PSs9AnyObject", "text"]
-- ["PSs9AnyObject", ""]
-- ["PSs11CVarArgType", "awakeFromNib"]
-- !private ["PSs11CVarArgType", "dominio"]
-- !private ["PSs11CVarArgType", "fecha"]
-- ["PSs11CVarArgType", "id"]
-- ["PSs11CVarArgType", "init"]
-- ["PSs11CVarArgType", "lblDominio"]
-- ["PSs11CVarArgType", "lblFecha"]
-- ["PSs11CVarArgType", "lblTitle"]
-- !private ["PSs11CVarArgType", "nombrecompleto"]
-- !private ["PSs11CVarArgType", "numberOfLines"]
-- !private ["PSs11CVarArgType", "numero"]
-- ["PSs11CVarArgType", "setLegajo"]
-- !private ["PSs11CVarArgType", "sizeToFit"]
-- !private ["PSs11CVarArgType", "text"]
-- ["PSs11CVarArgType", ""]
+- ["Ps9AnyObject", "awakeFromNib"]
+- !private ["Ps9AnyObject", "dominio"]
+- !private ["Ps9AnyObject", "fecha"]
+- ["Ps9AnyObject", "id"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "lblDominio"]
+- ["Ps9AnyObject", "lblFecha"]
+- ["Ps9AnyObject", "lblTitle"]
+- !private ["Ps9AnyObject", "nombrecompleto"]
+- !private ["Ps9AnyObject", "numberOfLines"]
+- !private ["Ps9AnyObject", "numero"]
+- ["Ps9AnyObject", "setLegajo"]
+- !private ["Ps9AnyObject", "sizeToFit"]
+- !private ["Ps9AnyObject", "text"]
+- ["Ps9AnyObject", ""]
+- ["Ps11CVarArgType", "awakeFromNib"]
+- !private ["Ps11CVarArgType", "dominio"]
+- !private ["Ps11CVarArgType", "fecha"]
+- ["Ps11CVarArgType", "id"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "lblDominio"]
+- ["Ps11CVarArgType", "lblFecha"]
+- ["Ps11CVarArgType", "lblTitle"]
+- !private ["Ps11CVarArgType", "nombrecompleto"]
+- !private ["Ps11CVarArgType", "numberOfLines"]
+- !private ["Ps11CVarArgType", "numero"]
+- ["Ps11CVarArgType", "setLegajo"]
+- !private ["Ps11CVarArgType", "sizeToFit"]
+- !private ["Ps11CVarArgType", "text"]
+- ["Ps11CVarArgType", ""]
 - ["C17ResolucionLegajos17CardTableViewCell", "Legajo"]
 - ["C17ResolucionLegajos17CardTableViewCell", "NSCoder"]
 - ["C17ResolucionLegajos17CardTableViewCell", "String"]
@@ -66,51 +66,66 @@ depends-member:
 - ["C17ResolucionLegajos17CardTableViewCell", "lblTitle"]
 - ["C17ResolucionLegajos17CardTableViewCell", "setLegajo"]
 - ["C17ResolucionLegajos17CardTableViewCell", ""]
-- ["PSs23CustomStringConvertible", "awakeFromNib"]
-- !private ["PSs23CustomStringConvertible", "dominio"]
-- !private ["PSs23CustomStringConvertible", "fecha"]
-- ["PSs23CustomStringConvertible", "id"]
-- ["PSs23CustomStringConvertible", "init"]
-- ["PSs23CustomStringConvertible", "lblDominio"]
-- ["PSs23CustomStringConvertible", "lblFecha"]
-- ["PSs23CustomStringConvertible", "lblTitle"]
-- !private ["PSs23CustomStringConvertible", "nombrecompleto"]
-- !private ["PSs23CustomStringConvertible", "numberOfLines"]
-- !private ["PSs23CustomStringConvertible", "numero"]
-- ["PSs23CustomStringConvertible", "setLegajo"]
-- !private ["PSs23CustomStringConvertible", "sizeToFit"]
-- !private ["PSs23CustomStringConvertible", "text"]
-- ["PSs23CustomStringConvertible", ""]
-- ["PSs9Equatable", "awakeFromNib"]
-- !private ["PSs9Equatable", "dominio"]
-- !private ["PSs9Equatable", "fecha"]
-- ["PSs9Equatable", "id"]
-- ["PSs9Equatable", "init"]
-- ["PSs9Equatable", "lblDominio"]
-- ["PSs9Equatable", "lblFecha"]
-- ["PSs9Equatable", "lblTitle"]
-- !private ["PSs9Equatable", "nombrecompleto"]
-- !private ["PSs9Equatable", "numberOfLines"]
-- !private ["PSs9Equatable", "numero"]
-- ["PSs9Equatable", "setLegajo"]
-- !private ["PSs9Equatable", "sizeToFit"]
-- !private ["PSs9Equatable", "text"]
-- ["PSs9Equatable", ""]
-- ["PSs8Hashable", "awakeFromNib"]
-- !private ["PSs8Hashable", "dominio"]
-- !private ["PSs8Hashable", "fecha"]
-- ["PSs8Hashable", "id"]
-- ["PSs8Hashable", "init"]
-- ["PSs8Hashable", "lblDominio"]
-- ["PSs8Hashable", "lblFecha"]
-- ["PSs8Hashable", "lblTitle"]
-- !private ["PSs8Hashable", "nombrecompleto"]
-- !private ["PSs8Hashable", "numberOfLines"]
-- !private ["PSs8Hashable", "numero"]
-- ["PSs8Hashable", "setLegajo"]
-- !private ["PSs8Hashable", "sizeToFit"]
-- !private ["PSs8Hashable", "text"]
-- ["PSs8Hashable", ""]
+- ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
+- !private ["Ps28CustomDebugStringConvertible", "dominio"]
+- !private ["Ps28CustomDebugStringConvertible", "fecha"]
+- ["Ps28CustomDebugStringConvertible", "id"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "lblDominio"]
+- ["Ps28CustomDebugStringConvertible", "lblFecha"]
+- ["Ps28CustomDebugStringConvertible", "lblTitle"]
+- !private ["Ps28CustomDebugStringConvertible", "nombrecompleto"]
+- !private ["Ps28CustomDebugStringConvertible", "numberOfLines"]
+- !private ["Ps28CustomDebugStringConvertible", "numero"]
+- ["Ps28CustomDebugStringConvertible", "setLegajo"]
+- !private ["Ps28CustomDebugStringConvertible", "sizeToFit"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "awakeFromNib"]
+- !private ["Ps23CustomStringConvertible", "dominio"]
+- !private ["Ps23CustomStringConvertible", "fecha"]
+- ["Ps23CustomStringConvertible", "id"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "lblDominio"]
+- ["Ps23CustomStringConvertible", "lblFecha"]
+- ["Ps23CustomStringConvertible", "lblTitle"]
+- !private ["Ps23CustomStringConvertible", "nombrecompleto"]
+- !private ["Ps23CustomStringConvertible", "numberOfLines"]
+- !private ["Ps23CustomStringConvertible", "numero"]
+- ["Ps23CustomStringConvertible", "setLegajo"]
+- !private ["Ps23CustomStringConvertible", "sizeToFit"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "awakeFromNib"]
+- !private ["Ps9Equatable", "dominio"]
+- !private ["Ps9Equatable", "fecha"]
+- ["Ps9Equatable", "id"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "lblDominio"]
+- ["Ps9Equatable", "lblFecha"]
+- ["Ps9Equatable", "lblTitle"]
+- !private ["Ps9Equatable", "nombrecompleto"]
+- !private ["Ps9Equatable", "numberOfLines"]
+- !private ["Ps9Equatable", "numero"]
+- ["Ps9Equatable", "setLegajo"]
+- !private ["Ps9Equatable", "sizeToFit"]
+- !private ["Ps9Equatable", "text"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "awakeFromNib"]
+- !private ["Ps8Hashable", "dominio"]
+- !private ["Ps8Hashable", "fecha"]
+- ["Ps8Hashable", "id"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "lblDominio"]
+- ["Ps8Hashable", "lblFecha"]
+- ["Ps8Hashable", "lblTitle"]
+- !private ["Ps8Hashable", "nombrecompleto"]
+- !private ["Ps8Hashable", "numberOfLines"]
+- !private ["Ps8Hashable", "numero"]
+- ["Ps8Hashable", "setLegajo"]
+- !private ["Ps8Hashable", "sizeToFit"]
+- !private ["Ps8Hashable", "text"]
+- ["Ps8Hashable", ""]
 - !private ["C17ResolucionLegajos6Legajo", "dominio"]
 - !private ["C17ResolucionLegajos6Legajo", "fecha"]
 - !private ["C17ResolucionLegajos6Legajo", "id"]
@@ -140,6 +155,11 @@ depends-member:
 - !private ["PSo8NSCoding", "sizeToFit"]
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "dominio"]
+- !private ["PSo9NSCopying", "fecha"]
+- !private ["PSo9NSCopying", "id"]
+- !private ["PSo9NSCopying", "nombrecompleto"]
+- !private ["PSo9NSCopying", "numero"]
 - ["CSo8NSObject", "Legajo"]
 - ["CSo8NSObject", "NSCoder"]
 - ["CSo8NSObject", "String"]
@@ -306,27 +326,29 @@ depends-member:
 - ["CSo6UIView", "setLegajo"]
 - !private ["CSo6UIView", "sizeToFit"]
 - !private ["CSo6UIView", "text"]
-- ["PSs12_Reflectable", "awakeFromNib"]
-- ["PSs12_Reflectable", "id"]
-- ["PSs12_Reflectable", "init"]
-- ["PSs12_Reflectable", "lblDominio"]
-- ["PSs12_Reflectable", "lblFecha"]
-- ["PSs12_Reflectable", "lblTitle"]
-- !private ["PSs12_Reflectable", "numberOfLines"]
-- ["PSs12_Reflectable", "setLegajo"]
-- !private ["PSs12_Reflectable", "sizeToFit"]
-- !private ["PSs12_Reflectable", "text"]
-- ["PSs12_Reflectable", ""]
+- ["Ps12_Reflectable", "awakeFromNib"]
+- ["Ps12_Reflectable", "id"]
+- ["Ps12_Reflectable", "init"]
+- ["Ps12_Reflectable", "lblDominio"]
+- ["Ps12_Reflectable", "lblFecha"]
+- ["Ps12_Reflectable", "lblTitle"]
+- !private ["Ps12_Reflectable", "numberOfLines"]
+- ["Ps12_Reflectable", "setLegajo"]
+- !private ["Ps12_Reflectable", "sizeToFit"]
+- !private ["Ps12_Reflectable", "text"]
+- ["Ps12_Reflectable", ""]
 depends-nominal:
-- "PSs9AnyObject"
-- "PSs11CVarArgType"
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
 - "C17ResolucionLegajos17CardTableViewCell"
-- "PSs23CustomStringConvertible"
-- "PSs9Equatable"
-- "PSs8Hashable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
 - !private "C17ResolucionLegajos6Legajo"
 - "C17ResolucionLegajos19LegajoTableViewCell"
 - "PSo8NSCoding"
+- !private "PSo9NSCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "Sq"
@@ -343,7 +365,7 @@ depends-nominal:
 - "CSo15UITableViewCell"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
-- "PSs12_Reflectable"
+- "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"

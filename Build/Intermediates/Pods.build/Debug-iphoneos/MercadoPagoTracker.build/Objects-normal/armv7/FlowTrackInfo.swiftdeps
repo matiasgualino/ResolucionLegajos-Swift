@@ -1,0 +1,177 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FlowTrackInfo"
+provides-nominal:
+- "C18MercadoPagoTracker13FlowTrackInfo"
+provides-member:
+- ["C18MercadoPagoTracker13FlowTrackInfo", ""]
+provides-dynamic-lookup:
+- "FLOW_FLAVOR"
+- "sdkVersion"
+- "FLOW_SITE"
+- "site"
+- "FLOW_FRAMEWORK"
+- "FLOW_PUBLIC_KEY"
+- "FLOW_SDK_VERSION"
+- "framework"
+- "publicKey"
+depends-top-level:
+- "Flavor"
+- !private "StringLiteralType"
+- "FlowTrackInfo"
+- "NSObject"
+- "String"
+- "UInt"
+depends-member:
+- ["Ps9AnyObject", "FLOW_FLAVOR"]
+- ["Ps9AnyObject", "FLOW_FRAMEWORK"]
+- ["Ps9AnyObject", "FLOW_PUBLIC_KEY"]
+- ["Ps9AnyObject", "FLOW_SDK_VERSION"]
+- ["Ps9AnyObject", "FLOW_SITE"]
+- ["Ps9AnyObject", "flavor"]
+- ["Ps9AnyObject", "framework"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "publicKey"]
+- ["Ps9AnyObject", "sdkVersion"]
+- ["Ps9AnyObject", "site"]
+- ["Ps9AnyObject", ""]
+- ["Ps11CVarArgType", "FLOW_FLAVOR"]
+- ["Ps11CVarArgType", "FLOW_FRAMEWORK"]
+- ["Ps11CVarArgType", "FLOW_PUBLIC_KEY"]
+- ["Ps11CVarArgType", "FLOW_SDK_VERSION"]
+- ["Ps11CVarArgType", "FLOW_SITE"]
+- ["Ps11CVarArgType", "flavor"]
+- ["Ps11CVarArgType", "framework"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "publicKey"]
+- ["Ps11CVarArgType", "sdkVersion"]
+- ["Ps11CVarArgType", "site"]
+- ["Ps11CVarArgType", ""]
+- ["Ps28CustomDebugStringConvertible", "FLOW_FLAVOR"]
+- ["Ps28CustomDebugStringConvertible", "FLOW_FRAMEWORK"]
+- ["Ps28CustomDebugStringConvertible", "FLOW_PUBLIC_KEY"]
+- ["Ps28CustomDebugStringConvertible", "FLOW_SDK_VERSION"]
+- ["Ps28CustomDebugStringConvertible", "FLOW_SITE"]
+- ["Ps28CustomDebugStringConvertible", "flavor"]
+- ["Ps28CustomDebugStringConvertible", "framework"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "publicKey"]
+- ["Ps28CustomDebugStringConvertible", "sdkVersion"]
+- ["Ps28CustomDebugStringConvertible", "site"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "FLOW_FLAVOR"]
+- ["Ps23CustomStringConvertible", "FLOW_FRAMEWORK"]
+- ["Ps23CustomStringConvertible", "FLOW_PUBLIC_KEY"]
+- ["Ps23CustomStringConvertible", "FLOW_SDK_VERSION"]
+- ["Ps23CustomStringConvertible", "FLOW_SITE"]
+- ["Ps23CustomStringConvertible", "flavor"]
+- ["Ps23CustomStringConvertible", "framework"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "publicKey"]
+- ["Ps23CustomStringConvertible", "sdkVersion"]
+- ["Ps23CustomStringConvertible", "site"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "FLOW_FLAVOR"]
+- ["Ps9Equatable", "FLOW_FRAMEWORK"]
+- ["Ps9Equatable", "FLOW_PUBLIC_KEY"]
+- ["Ps9Equatable", "FLOW_SDK_VERSION"]
+- ["Ps9Equatable", "FLOW_SITE"]
+- ["Ps9Equatable", "flavor"]
+- ["Ps9Equatable", "framework"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "publicKey"]
+- ["Ps9Equatable", "sdkVersion"]
+- ["Ps9Equatable", "site"]
+- ["Ps9Equatable", ""]
+- ["C18MercadoPagoTracker13FlowTrackInfo", "FLOW_FLAVOR"]
+- ["C18MercadoPagoTracker13FlowTrackInfo", "FLOW_FRAMEWORK"]
+- ["C18MercadoPagoTracker13FlowTrackInfo", "FLOW_PUBLIC_KEY"]
+- ["C18MercadoPagoTracker13FlowTrackInfo", "FLOW_SDK_VERSION"]
+- ["C18MercadoPagoTracker13FlowTrackInfo", "FLOW_SITE"]
+- ["C18MercadoPagoTracker13FlowTrackInfo", "Flavor"]
+- ["C18MercadoPagoTracker13FlowTrackInfo", "String"]
+- ["C18MercadoPagoTracker13FlowTrackInfo", "UInt"]
+- ["C18MercadoPagoTracker13FlowTrackInfo", "deinit"]
+- ["C18MercadoPagoTracker13FlowTrackInfo", "flavor"]
+- ["C18MercadoPagoTracker13FlowTrackInfo", "framework"]
+- ["C18MercadoPagoTracker13FlowTrackInfo", "init"]
+- ["C18MercadoPagoTracker13FlowTrackInfo", "publicKey"]
+- ["C18MercadoPagoTracker13FlowTrackInfo", "sdkVersion"]
+- ["C18MercadoPagoTracker13FlowTrackInfo", "site"]
+- ["Ps8Hashable", "FLOW_FLAVOR"]
+- ["Ps8Hashable", "FLOW_FRAMEWORK"]
+- ["Ps8Hashable", "FLOW_PUBLIC_KEY"]
+- ["Ps8Hashable", "FLOW_SDK_VERSION"]
+- ["Ps8Hashable", "FLOW_SITE"]
+- ["Ps8Hashable", "flavor"]
+- ["Ps8Hashable", "framework"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "publicKey"]
+- ["Ps8Hashable", "sdkVersion"]
+- ["Ps8Hashable", "site"]
+- ["Ps8Hashable", ""]
+- ["CSo8NSObject", "FLOW_FLAVOR"]
+- ["CSo8NSObject", "FLOW_FRAMEWORK"]
+- ["CSo8NSObject", "FLOW_PUBLIC_KEY"]
+- ["CSo8NSObject", "FLOW_SDK_VERSION"]
+- ["CSo8NSObject", "FLOW_SITE"]
+- ["CSo8NSObject", "Flavor"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UInt"]
+- ["CSo8NSObject", "flavor"]
+- ["CSo8NSObject", "framework"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "publicKey"]
+- ["CSo8NSObject", "sdkVersion"]
+- ["CSo8NSObject", "site"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "FLOW_FLAVOR"]
+- ["PSo16NSObjectProtocol", "FLOW_FRAMEWORK"]
+- ["PSo16NSObjectProtocol", "FLOW_PUBLIC_KEY"]
+- ["PSo16NSObjectProtocol", "FLOW_SDK_VERSION"]
+- ["PSo16NSObjectProtocol", "FLOW_SITE"]
+- ["PSo16NSObjectProtocol", "flavor"]
+- ["PSo16NSObjectProtocol", "framework"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "publicKey"]
+- ["PSo16NSObjectProtocol", "sdkVersion"]
+- ["PSo16NSObjectProtocol", "site"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Vs12StaticString", "deinit"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "C18MercadoPagoTracker13FlowTrackInfo"
+- "Ps8Hashable"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Vs12StaticString"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAIFields.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAIEcommerceFields.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAIEcommercePromotion.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAIEcommerceProductAction.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAIEcommerceProduct.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAIDictionaryBuilder.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAITracker.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAITrackedViewController.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAILogger.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAI.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/Target Support Files/MPGoogleAnalytics/MPGoogleAnalytics-umbrella.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Intermediates/Pods.build/Debug-iphoneos/MPGoogleAnalytics.build/module.modulemap"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MercadoPagoTracker/MPTracker/MPTracker.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/Target Support Files/MercadoPagoTracker/MercadoPagoTracker-umbrella.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Intermediates/Pods.build/Debug-iphoneos/MercadoPagoTracker.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+interface-hash: "ddeec0b41a9ab3f28baea869c6a76f35"

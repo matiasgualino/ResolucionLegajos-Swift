@@ -6,121 +6,153 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos12LoginService", ""]
 provides-dynamic-lookup:
-- "LOGIN_URI"
 - "LOGIN_METHOD"
+- "LOGIN_URI"
 - "login"
 depends-top-level:
-- !private "NSMutableURLRequest"
+- !private "Alamofire"
 - !private "NSURL"
-- "NSError"
-- "Void"
-- !private "NSUTF8StringEncoding"
-- "LoginRequest"
+- "String"
+- !private "Constants"
+- "StringLiteralType"
+- !private "!="
+- !private "NSMutableURLRequest"
+- !private "NSDictionary"
 - !private "NSString"
 - !private "+"
-- "String"
-- "LoginService"
-- !private "Alamofire"
-- "StringLiteralType"
+- !private "NSUTF8StringEncoding"
+- "Void"
+- "NSError"
+- "LoginRequest"
 - "NSObject"
-- !private "Constants"
+- "LoginService"
 depends-member:
-- !private ["PSs9AnyObject", "Alamofire"]
-- !private ["PSs9AnyObject", "BASE_URL"]
-- !private ["PSs9AnyObject", "Constants"]
-- !private ["PSs9AnyObject", "HTTPBody"]
-- !private ["PSs9AnyObject", "HTTPMethod"]
-- ["PSs9AnyObject", "LOGIN_METHOD"]
-- ["PSs9AnyObject", "LOGIN_URI"]
-- !private ["PSs9AnyObject", "LoginService"]
-- !private ["PSs9AnyObject", "NSMutableURLRequest"]
-- !private ["PSs9AnyObject", "NSURL"]
-- !private ["PSs9AnyObject", "NSUTF8StringEncoding"]
-- !private ["PSs9AnyObject", "dataUsingEncoding"]
-- ["PSs9AnyObject", "init"]
-- ["PSs9AnyObject", "login"]
-- !private ["PSs9AnyObject", "responseJSON"]
-- !private ["PSs9AnyObject", "setValue"]
-- !private ["PSs9AnyObject", "toJSONString"]
-- ["PSs9AnyObject", ""]
-- !private ["PSs11CVarArgType", "Alamofire"]
-- !private ["PSs11CVarArgType", "BASE_URL"]
-- !private ["PSs11CVarArgType", "Constants"]
-- !private ["PSs11CVarArgType", "HTTPBody"]
-- !private ["PSs11CVarArgType", "HTTPMethod"]
-- ["PSs11CVarArgType", "LOGIN_METHOD"]
-- ["PSs11CVarArgType", "LOGIN_URI"]
-- !private ["PSs11CVarArgType", "LoginService"]
-- !private ["PSs11CVarArgType", "NSMutableURLRequest"]
-- !private ["PSs11CVarArgType", "NSURL"]
-- !private ["PSs11CVarArgType", "NSUTF8StringEncoding"]
-- !private ["PSs11CVarArgType", "dataUsingEncoding"]
-- ["PSs11CVarArgType", "init"]
-- ["PSs11CVarArgType", "login"]
-- !private ["PSs11CVarArgType", "setValue"]
-- !private ["PSs11CVarArgType", "toJSONString"]
-- ["PSs11CVarArgType", ""]
+- !private ["Ps9AnyObject", "Alamofire"]
+- !private ["Ps9AnyObject", "BASE_URL"]
+- !private ["Ps9AnyObject", "Constants"]
+- !private ["Ps9AnyObject", "HTTPBody"]
+- !private ["Ps9AnyObject", "HTTPMethod"]
+- ["Ps9AnyObject", "LOGIN_METHOD"]
+- ["Ps9AnyObject", "LOGIN_URI"]
+- !private ["Ps9AnyObject", "LoginService"]
+- !private ["Ps9AnyObject", "NSMutableURLRequest"]
+- !private ["Ps9AnyObject", "NSURL"]
+- !private ["Ps9AnyObject", "NSUTF8StringEncoding"]
+- !private ["Ps9AnyObject", "dataUsingEncoding"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "login"]
+- !private ["Ps9AnyObject", "responseJSON"]
+- !private ["Ps9AnyObject", "setValue"]
+- !private ["Ps9AnyObject", "subscript"]
+- !private ["Ps9AnyObject", "toJSONString"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "Alamofire"]
+- !private ["Ps11CVarArgType", "BASE_URL"]
+- !private ["Ps11CVarArgType", "Constants"]
+- !private ["Ps11CVarArgType", "HTTPBody"]
+- !private ["Ps11CVarArgType", "HTTPMethod"]
+- ["Ps11CVarArgType", "LOGIN_METHOD"]
+- ["Ps11CVarArgType", "LOGIN_URI"]
+- !private ["Ps11CVarArgType", "LoginService"]
+- !private ["Ps11CVarArgType", "NSMutableURLRequest"]
+- !private ["Ps11CVarArgType", "NSURL"]
+- !private ["Ps11CVarArgType", "NSUTF8StringEncoding"]
+- !private ["Ps11CVarArgType", "dataUsingEncoding"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "login"]
+- !private ["Ps11CVarArgType", "setValue"]
+- !private ["Ps11CVarArgType", "subscript"]
+- !private ["Ps11CVarArgType", "toJSONString"]
+- ["Ps11CVarArgType", ""]
 - !private ["C17ResolucionLegajos9Constants", "BASE_URL"]
-- !private ["PSs28CustomDebugStringConvertible", "Failure"]
-- !private ["PSs28CustomDebugStringConvertible", "Success"]
-- !private ["PSs28CustomDebugStringConvertible", "responseJSON"]
-- !private ["PSs28CustomDebugStringConvertible", "result"]
-- !private ["PSs23CustomStringConvertible", "Alamofire"]
-- !private ["PSs23CustomStringConvertible", "BASE_URL"]
-- !private ["PSs23CustomStringConvertible", "Constants"]
-- !private ["PSs23CustomStringConvertible", "Failure"]
-- !private ["PSs23CustomStringConvertible", "HTTPBody"]
-- !private ["PSs23CustomStringConvertible", "HTTPMethod"]
-- ["PSs23CustomStringConvertible", "LOGIN_METHOD"]
-- ["PSs23CustomStringConvertible", "LOGIN_URI"]
-- !private ["PSs23CustomStringConvertible", "LoginService"]
-- !private ["PSs23CustomStringConvertible", "NSMutableURLRequest"]
-- !private ["PSs23CustomStringConvertible", "NSURL"]
-- !private ["PSs23CustomStringConvertible", "NSUTF8StringEncoding"]
-- !private ["PSs23CustomStringConvertible", "Success"]
-- !private ["PSs23CustomStringConvertible", "dataUsingEncoding"]
-- ["PSs23CustomStringConvertible", "init"]
-- ["PSs23CustomStringConvertible", "login"]
-- !private ["PSs23CustomStringConvertible", "responseJSON"]
-- !private ["PSs23CustomStringConvertible", "result"]
-- !private ["PSs23CustomStringConvertible", "setValue"]
-- !private ["PSs23CustomStringConvertible", "toJSONString"]
-- ["PSs23CustomStringConvertible", ""]
-- !private ["PSs9Equatable", "Alamofire"]
-- !private ["PSs9Equatable", "BASE_URL"]
-- !private ["PSs9Equatable", "Constants"]
-- !private ["PSs9Equatable", "HTTPBody"]
-- !private ["PSs9Equatable", "HTTPMethod"]
-- ["PSs9Equatable", "LOGIN_METHOD"]
-- ["PSs9Equatable", "LOGIN_URI"]
-- !private ["PSs9Equatable", "LoginService"]
-- !private ["PSs9Equatable", "NSMutableURLRequest"]
-- !private ["PSs9Equatable", "NSURL"]
-- !private ["PSs9Equatable", "NSUTF8StringEncoding"]
-- !private ["PSs9Equatable", "dataUsingEncoding"]
-- ["PSs9Equatable", "init"]
-- ["PSs9Equatable", "login"]
-- !private ["PSs9Equatable", "setValue"]
-- !private ["PSs9Equatable", "toJSONString"]
-- ["PSs9Equatable", ""]
-- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
-- !private ["PSs8Hashable", "Alamofire"]
-- !private ["PSs8Hashable", "BASE_URL"]
-- !private ["PSs8Hashable", "Constants"]
-- !private ["PSs8Hashable", "HTTPBody"]
-- !private ["PSs8Hashable", "HTTPMethod"]
-- ["PSs8Hashable", "LOGIN_METHOD"]
-- ["PSs8Hashable", "LOGIN_URI"]
-- !private ["PSs8Hashable", "LoginService"]
-- !private ["PSs8Hashable", "NSMutableURLRequest"]
-- !private ["PSs8Hashable", "NSURL"]
-- !private ["PSs8Hashable", "NSUTF8StringEncoding"]
-- !private ["PSs8Hashable", "dataUsingEncoding"]
-- ["PSs8Hashable", "init"]
-- ["PSs8Hashable", "login"]
-- !private ["PSs8Hashable", "setValue"]
-- !private ["PSs8Hashable", "toJSONString"]
-- ["PSs8Hashable", ""]
+- !private ["Ps28CustomDebugStringConvertible", "Alamofire"]
+- !private ["Ps28CustomDebugStringConvertible", "BASE_URL"]
+- !private ["Ps28CustomDebugStringConvertible", "Constants"]
+- !private ["Ps28CustomDebugStringConvertible", "Failure"]
+- !private ["Ps28CustomDebugStringConvertible", "HTTPBody"]
+- !private ["Ps28CustomDebugStringConvertible", "HTTPMethod"]
+- ["Ps28CustomDebugStringConvertible", "LOGIN_METHOD"]
+- ["Ps28CustomDebugStringConvertible", "LOGIN_URI"]
+- !private ["Ps28CustomDebugStringConvertible", "LoginService"]
+- !private ["Ps28CustomDebugStringConvertible", "NSMutableURLRequest"]
+- !private ["Ps28CustomDebugStringConvertible", "NSURL"]
+- !private ["Ps28CustomDebugStringConvertible", "NSUTF8StringEncoding"]
+- !private ["Ps28CustomDebugStringConvertible", "Success"]
+- !private ["Ps28CustomDebugStringConvertible", "dataUsingEncoding"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "login"]
+- !private ["Ps28CustomDebugStringConvertible", "responseJSON"]
+- !private ["Ps28CustomDebugStringConvertible", "result"]
+- !private ["Ps28CustomDebugStringConvertible", "setValue"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "toJSONString"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Alamofire"]
+- !private ["Ps23CustomStringConvertible", "BASE_URL"]
+- !private ["Ps23CustomStringConvertible", "Constants"]
+- !private ["Ps23CustomStringConvertible", "Failure"]
+- !private ["Ps23CustomStringConvertible", "HTTPBody"]
+- !private ["Ps23CustomStringConvertible", "HTTPMethod"]
+- ["Ps23CustomStringConvertible", "LOGIN_METHOD"]
+- ["Ps23CustomStringConvertible", "LOGIN_URI"]
+- !private ["Ps23CustomStringConvertible", "LoginService"]
+- !private ["Ps23CustomStringConvertible", "NSMutableURLRequest"]
+- !private ["Ps23CustomStringConvertible", "NSURL"]
+- !private ["Ps23CustomStringConvertible", "NSUTF8StringEncoding"]
+- !private ["Ps23CustomStringConvertible", "Success"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "dataUsingEncoding"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "login"]
+- !private ["Ps23CustomStringConvertible", "responseJSON"]
+- !private ["Ps23CustomStringConvertible", "result"]
+- !private ["Ps23CustomStringConvertible", "setValue"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "toJSONString"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps28DictionaryLiteralConvertible", "subscript"]
+- !private ["Ps9Equatable", "Alamofire"]
+- !private ["Ps9Equatable", "BASE_URL"]
+- !private ["Ps9Equatable", "Constants"]
+- !private ["Ps9Equatable", "HTTPBody"]
+- !private ["Ps9Equatable", "HTTPMethod"]
+- ["Ps9Equatable", "LOGIN_METHOD"]
+- ["Ps9Equatable", "LOGIN_URI"]
+- !private ["Ps9Equatable", "LoginService"]
+- !private ["Ps9Equatable", "NSMutableURLRequest"]
+- !private ["Ps9Equatable", "NSURL"]
+- !private ["Ps9Equatable", "NSUTF8StringEncoding"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "dataUsingEncoding"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "login"]
+- !private ["Ps9Equatable", "setValue"]
+- !private ["Ps9Equatable", "subscript"]
+- !private ["Ps9Equatable", "toJSONString"]
+- ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
+- !private ["Ps8Hashable", "Alamofire"]
+- !private ["Ps8Hashable", "BASE_URL"]
+- !private ["Ps8Hashable", "Constants"]
+- !private ["Ps8Hashable", "HTTPBody"]
+- !private ["Ps8Hashable", "HTTPMethod"]
+- ["Ps8Hashable", "LOGIN_METHOD"]
+- ["Ps8Hashable", "LOGIN_URI"]
+- !private ["Ps8Hashable", "LoginService"]
+- !private ["Ps8Hashable", "NSMutableURLRequest"]
+- !private ["Ps8Hashable", "NSURL"]
+- !private ["Ps8Hashable", "NSUTF8StringEncoding"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "dataUsingEncoding"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "login"]
+- !private ["Ps8Hashable", "setValue"]
+- !private ["Ps8Hashable", "subscript"]
+- !private ["Ps8Hashable", "toJSONString"]
+- ["Ps8Hashable", ""]
 - !private ["C17ResolucionLegajos12LoginRequest", "toJSONString"]
 - !private ["C17ResolucionLegajos12LoginService", "Alamofire"]
 - !private ["C17ResolucionLegajos12LoginService", "Constants"]
@@ -128,6 +160,7 @@ depends-member:
 - ["C17ResolucionLegajos12LoginService", "LOGIN_URI"]
 - ["C17ResolucionLegajos12LoginService", "LoginRequest"]
 - !private ["C17ResolucionLegajos12LoginService", "LoginService"]
+- !private ["C17ResolucionLegajos12LoginService", "NSDictionary"]
 - ["C17ResolucionLegajos12LoginService", "NSError"]
 - !private ["C17ResolucionLegajos12LoginService", "NSMutableURLRequest"]
 - !private ["C17ResolucionLegajos12LoginService", "NSString"]
@@ -143,16 +176,22 @@ depends-member:
 - !private ["PSo8NSCoding", "dataUsingEncoding"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "setValue"]
+- !private ["PSo8NSCoding", "subscript"]
 - !private ["PSo9NSCopying", "HTTPBody"]
 - !private ["PSo9NSCopying", "HTTPMethod"]
 - !private ["PSo9NSCopying", "dataUsingEncoding"]
+- !private ["PSo9NSCopying", "deinit"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "setValue"]
+- !private ["PSo9NSCopying", "subscript"]
+- !private ["CSo12NSDictionary", "subscript"]
+- !private ["PSo17NSFastEnumeration", "subscript"]
 - !private ["PSo16NSMutableCopying", "HTTPBody"]
 - !private ["PSo16NSMutableCopying", "HTTPMethod"]
 - !private ["PSo16NSMutableCopying", "dataUsingEncoding"]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["PSo16NSMutableCopying", "setValue"]
+- !private ["PSo16NSMutableCopying", "subscript"]
 - !private ["CSo19NSMutableURLRequest", "HTTPBody"]
 - !private ["CSo19NSMutableURLRequest", "HTTPMethod"]
 - !private ["CSo19NSMutableURLRequest", "init"]
@@ -166,6 +205,7 @@ depends-member:
 - ["CSo8NSObject", "LOGIN_URI"]
 - ["CSo8NSObject", "LoginRequest"]
 - !private ["CSo8NSObject", "LoginService"]
+- !private ["CSo8NSObject", "NSDictionary"]
 - ["CSo8NSObject", "NSError"]
 - !private ["CSo8NSObject", "NSMutableURLRequest"]
 - !private ["CSo8NSObject", "NSString"]
@@ -177,6 +217,7 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "login"]
 - !private ["CSo8NSObject", "setValue"]
+- !private ["CSo8NSObject", "subscript"]
 - !private ["CSo8NSObject", "toJSONString"]
 - ["CSo8NSObject", ""]
 - !private ["PSo16NSObjectProtocol", "Alamofire"]
@@ -194,6 +235,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "login"]
 - !private ["PSo16NSObjectProtocol", "setValue"]
+- !private ["PSo16NSObjectProtocol", "subscript"]
 - !private ["PSo16NSObjectProtocol", "toJSONString"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "HTTPBody"]
@@ -201,6 +243,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "dataUsingEncoding"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "setValue"]
+- !private ["PSo14NSSecureCoding", "subscript"]
 - !private ["CSo8NSString", "dataUsingEncoding"]
 - !private ["CSo5NSURL", "init"]
 - !private ["CSo12NSURLRequest", "HTTPBody"]
@@ -212,8 +255,9 @@ depends-member:
 - !private ["V9Alamofire8Response", "result"]
 - !private ["O9Alamofire6Result", "Failure"]
 - !private ["O9Alamofire6Result", "Success"]
+- !private ["Ps12SequenceType", "subscript"]
 - !private ["SS", "deinit"]
-- !private ["PSs24StringLiteralConvertible", "dataUsingEncoding"]
+- !private ["Ps24StringLiteralConvertible", "dataUsingEncoding"]
 - !private ["P9Alamofire21URLRequestConvertible", "HTTPBody"]
 - !private ["P9Alamofire21URLRequestConvertible", "HTTPMethod"]
 - !private ["P9Alamofire21URLRequestConvertible", "init"]
@@ -222,24 +266,34 @@ depends-member:
 - !private ["P9Alamofire20URLStringConvertible", "HTTPMethod"]
 - !private ["P9Alamofire20URLStringConvertible", "init"]
 - !private ["P9Alamofire20URLStringConvertible", "setValue"]
-- !private ["PSs31UnicodeScalarLiteralConvertible", "dataUsingEncoding"]
-- !private ["PSs16_CocoaStringType", "dataUsingEncoding"]
-- !private ["PSs32_FileReferenceLiteralConvertible", "init"]
-- !private ["PSs12_Reflectable", "dataUsingEncoding"]
-- !private ["PSs12_Reflectable", "init"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "dataUsingEncoding"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps32_FileReferenceLiteralConvertible", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "dataUsingEncoding"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "subscript"]
 depends-nominal:
-- "PSs9AnyObject"
-- "PSs11CVarArgType"
+- "Ps9AnyObject"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
 - !private "C17ResolucionLegajos9Constants"
-- !private "PSs28CustomDebugStringConvertible"
-- "PSs23CustomStringConvertible"
-- "PSs9Equatable"
-- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
-- "PSs8Hashable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Ps28DictionaryLiteralConvertible"
+- "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- "Ps8Hashable"
 - !private "C17ResolucionLegajos12LoginRequest"
 - "C17ResolucionLegajos12LoginService"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
+- !private "CSo12NSDictionary"
+- !private "PSo17NSFastEnumeration"
 - !private "PSo16NSMutableCopying"
 - !private "CSo19NSMutableURLRequest"
 - "CSo8NSObject"
@@ -252,14 +306,17 @@ depends-nominal:
 - !private "C9Alamofire7Request"
 - !private "V9Alamofire8Response"
 - !private "O9Alamofire6Result"
+- !private "Ps12SequenceType"
 - !private "SS"
-- !private "PSs24StringLiteralConvertible"
+- !private "Ps24StringLiteralConvertible"
 - !private "P9Alamofire21URLRequestConvertible"
 - !private "P9Alamofire20URLStringConvertible"
-- !private "PSs31UnicodeScalarLiteralConvertible"
-- !private "PSs16_CocoaStringType"
-- !private "PSs32_FileReferenceLiteralConvertible"
-- !private "PSs12_Reflectable"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps32_FileReferenceLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"

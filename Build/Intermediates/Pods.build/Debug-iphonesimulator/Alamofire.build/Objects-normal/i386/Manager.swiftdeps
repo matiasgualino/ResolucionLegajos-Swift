@@ -8,554 +8,603 @@ provides-member:
 - ["C9Alamofire7Manager", ""]
 - ["CC9Alamofire7Manager15SessionDelegate", ""]
 provides-dynamic-lookup:
-- "dataTaskDidReceiveData"
+- "URLSessionDidFinishEventsForBackgroundURLSession"
+- "taskDidComplete"
+- "taskWillPerformHTTPRedirection"
+- "dataTaskDidReceiveResponse"
+- "URLSession"
+- "URLSession"
+- "URLSession"
+- "URLSession"
+- "URLSession"
+- "URLSession"
+- "URLSession"
+- "URLSession"
+- "URLSession"
+- "URLSession"
+- "URLSession"
+- "URLSession"
+- "URLSession"
+- "URLSession"
 - "taskDidSendBodyData"
-- "sessionDidFinishEventsForBackgroundURLSession"
+- "respondsToSelector"
+- "subscript"
+- "dataTaskDidBecomeDownloadTask"
+- "dataTaskDidReceiveData"
 - "downloadTaskDidResumeAtOffset"
-- "dataTaskWillCacheResponse"
 - "taskNeedNewBodyStream"
 - "sessionDidBecomeInvalidWithError"
-- "subscript"
-- "dataTaskDidReceiveResponse"
-- "respondsToSelector"
-- "URLSession"
-- "URLSession"
-- "URLSession"
-- "URLSession"
-- "URLSession"
-- "URLSession"
-- "URLSession"
-- "URLSession"
-- "URLSession"
-- "URLSession"
-- "URLSession"
-- "URLSession"
-- "URLSession"
-- "URLSession"
-- "URLSessionDidFinishEventsForBackgroundURLSession"
-- "dataTaskDidBecomeDownloadTask"
+- "sessionDidFinishEventsForBackgroundURLSession"
 - "downloadTaskDidWriteData"
-- "taskDidComplete"
+- "dataTaskWillCacheResponse"
 - "downloadTaskDidFinishDownloadingToURL"
-- "taskWillPerformHTTPRedirection"
 depends-top-level:
-- "??"
-- "-"
-- "ServerTrustPolicyManager"
-- "CFMutableString"
-- "URLStringConvertible"
-- "NSURLRequest"
-- "NSData"
-- "Int64"
-- "NSObject"
-- "Int"
-- "NSURLSessionTask"
-- "CFString"
+- "NSURLSessionDataDelegate"
+- "AnyObject"
 - "Selector"
 - "UnicodeScalarType"
-- !private "dispatch_barrier_async"
-- !private "=="
-- !private "~="
-- !private "NSURLAuthenticationMethodServerTrust"
-- "DISPATCH_QUEUE_SERIAL"
-- "NSURLCredential"
-- "String"
-- "NSURLSessionDelegate"
-- "URLRequestConvertible"
-- "NSString"
-- "NSError"
-- "NSURLResponse"
-- "NSURLSessionDataDelegate"
-- !private "dispatch_async"
-- "kCFBundleExecutableKey"
-- "NSURLSessionResponseDisposition"
-- "NSURLSessionTaskDelegate"
-- "NSCachedURLResponse"
-- "NSBundle"
-- "NSHTTPURLResponse"
-- !private "URLRequest"
-- !private "dispatch_get_main_queue"
-- "UnsafeMutablePointer"
-- "AnyObject"
+- !private "==="
+- "ServerTrustPolicyManager"
 - "Double"
-- "Method"
-- "CFRange"
-- "NSURLSessionDownloadTask"
 - "Manager"
-- "NSMutableString"
-- "CFStringTransform"
-- "*"
-- "StringLiteralType"
-- "kCFBundleVersionKey"
-- "NSURLSessionDataTask"
-- "NSURLSessionAuthChallengeDisposition"
-- "Request"
-- !private "!="
-- "kCFBundleIdentifierKey"
-- "dispatch_queue_create"
-- "ParameterEncoding"
-- "Any"
+- "Dictionary"
+- "DISPATCH_QUEUE_SERIAL"
+- "NSURLSession"
+- "NSError"
+- "NSURLAuthenticationChallenge"
+- !private "=="
 - "NSLocale"
+- "dispatch_queue_create"
+- !private "~="
+- "*"
+- !private "URLRequest"
 - !private "dispatch_sync"
+- "Request"
+- "NSURLSessionConfiguration"
+- "URLStringConvertible"
+- "NSURLSessionAuthChallengeDisposition"
+- "NSBundle"
+- "kCFBundleExecutableKey"
 - "NSURLSessionDownloadDelegate"
 - "NSInputStream"
-- "Void"
-- "Dictionary"
-- "NSURLAuthenticationChallenge"
-- !private "==="
-- "Bool"
-- "NSURLSessionConfiguration"
-- "NSURL"
+- "kCFBundleVersionKey"
+- "NSHTTPURLResponse"
+- "NSString"
+- "CFRange"
+- "NSMutableString"
+- !private "NSURLAuthenticationMethodServerTrust"
+- "NSURLSessionDelegate"
+- "URLRequestConvertible"
 - "NSProcessInfo"
-- "BooleanLiteralType"
+- "NSURLSessionTaskDelegate"
+- "CFString"
 - "DISPATCH_QUEUE_CONCURRENT"
-- "NSURLSession"
+- "CFStringTransform"
+- "Any"
+- !private "dispatch_async"
+- !private "!="
+- "String"
+- "NSURLCredential"
+- "UnsafeMutablePointer"
+- "Bool"
+- "Method"
+- "Void"
+- "NSURLRequest"
+- "ParameterEncoding"
+- "NSURLSessionTask"
+- "NSURLSessionDataTask"
+- "StringLiteralType"
+- "Int64"
+- !private "dispatch_get_main_queue"
+- "??"
+- "NSURL"
+- "NSURLResponse"
+- "NSURLSessionResponseDisposition"
+- "-"
+- "Int"
+- "NSURLSessionDownloadTask"
+- "NSData"
+- !private "dispatch_barrier_async"
+- "CFMutableString"
+- "NSCachedURLResponse"
+- "BooleanLiteralType"
+- "kCFBundleIdentifierKey"
+- "NSObject"
 depends-member:
-- ["PSs16AbsoluteValuable", "init"]
-- ["CSs12AnyGenerator", "Element"]
-- ["PSs9AnyObject", "CFStringTransform"]
-- ["PSs9AnyObject", "DISPATCH_QUEUE_CONCURRENT"]
-- ["PSs9AnyObject", "DISPATCH_QUEUE_SERIAL"]
-- !private ["PSs9AnyObject", "DataTaskDelegate"]
-- ["PSs9AnyObject", "Double"]
-- !private ["PSs9AnyObject", "DownloadTaskDelegate"]
-- ["PSs9AnyObject", "Element"]
-- ["PSs9AnyObject", "HTTPAdditionalHeaders"]
-- ["PSs9AnyObject", "Manager"]
-- ["PSs9AnyObject", "NSBundle"]
-- ["PSs9AnyObject", "NSLocale"]
-- ["PSs9AnyObject", "NSMutableString"]
-- ["PSs9AnyObject", "NSProcessInfo"]
-- ["PSs9AnyObject", "NSString"]
-- !private ["PSs9AnyObject", "NSURLAuthenticationMethodServerTrust"]
-- !private ["PSs9AnyObject", "NSURLCredential"]
-- !private ["PSs9AnyObject", "NSURLSession"]
-- ["PSs9AnyObject", "NSURLSessionConfiguration"]
-- !private ["PSs9AnyObject", "Request"]
-- !private ["PSs9AnyObject", "SessionDelegate"]
-- ["PSs9AnyObject", "TaskDelegate"]
-- !private ["PSs9AnyObject", "URLRequest"]
-- ["PSs9AnyObject", "URLSession"]
-- ["PSs9AnyObject", "URLSessionDidFinishEventsForBackgroundURLSession"]
-- ["PSs9AnyObject", "UnsafeMutablePointer"]
-- !private ["PSs9AnyObject", "UploadTaskDelegate"]
-- ["PSs9AnyObject", "_streamTaskBetterRouteDiscovered"]
-- ["PSs9AnyObject", "_streamTaskDidBecomeInputStream"]
-- ["PSs9AnyObject", "_streamTaskReadClosed"]
-- ["PSs9AnyObject", "_streamTaskWriteClosed"]
-- !private ["PSs9AnyObject", "authenticationMethod"]
-- !private ["PSs9AnyObject", "backgroundCompletionHandler"]
-- !private ["PSs9AnyObject", "commonInit"]
-- ["PSs9AnyObject", "dataTaskDidBecomeDownloadTask"]
-- ["PSs9AnyObject", "dataTaskDidReceiveData"]
-- ["PSs9AnyObject", "dataTaskDidReceiveResponse"]
-- ["PSs9AnyObject", "dataTaskWillCacheResponse"]
-- !private ["PSs9AnyObject", "dataTaskWithRequest"]
-- ["PSs9AnyObject", "defaultHTTPHeaders"]
-- ["PSs9AnyObject", "defaultSessionConfiguration"]
-- ["PSs9AnyObject", "deinit"]
-- !private ["PSs9AnyObject", "delegate"]
-- !private ["PSs9AnyObject", "dispatch_async"]
-- !private ["PSs9AnyObject", "dispatch_barrier_async"]
-- !private ["PSs9AnyObject", "dispatch_get_main_queue"]
-- ["PSs9AnyObject", "dispatch_queue_create"]
-- !private ["PSs9AnyObject", "dispatch_sync"]
-- ["PSs9AnyObject", "downloadTaskDidFinishDownloadingToURL"]
-- ["PSs9AnyObject", "downloadTaskDidResumeAtOffset"]
-- ["PSs9AnyObject", "downloadTaskDidWriteData"]
-- !private ["PSs9AnyObject", "host"]
-- ["PSs9AnyObject", "infoDictionary"]
-- ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "instancesRespondToSelector"]
-- !private ["PSs9AnyObject", "invalidateAndCancel"]
-- ["PSs9AnyObject", "kCFBundleExecutableKey"]
-- ["PSs9AnyObject", "kCFBundleIdentifierKey"]
-- ["PSs9AnyObject", "kCFBundleVersionKey"]
-- ["PSs9AnyObject", "mainBundle"]
-- ["PSs9AnyObject", "operatingSystemVersionString"]
-- ["PSs9AnyObject", "preferredLanguages"]
-- ["PSs9AnyObject", "processInfo"]
-- !private ["PSs9AnyObject", "protectionSpace"]
-- !private ["PSs9AnyObject", "queue"]
-- !private ["PSs9AnyObject", "request"]
-- ["PSs9AnyObject", "respondsToSelector"]
-- !private ["PSs9AnyObject", "resume"]
-- !private ["PSs9AnyObject", "serverTrust"]
-- !private ["PSs9AnyObject", "serverTrustPolicyForHost"]
-- !private ["PSs9AnyObject", "serverTrustPolicyManager"]
-- !private ["PSs9AnyObject", "session"]
-- ["PSs9AnyObject", "sessionDidBecomeInvalidWithError"]
-- ["PSs9AnyObject", "sessionDidFinishEventsForBackgroundURLSession"]
-- ["PSs9AnyObject", "sessionDidReceiveChallenge"]
-- !private ["PSs9AnyObject", "startRequestsImmediately"]
-- ["PSs9AnyObject", "subdelegateQueue"]
-- ["PSs9AnyObject", "subdelegates"]
-- ["PSs9AnyObject", "subscript"]
-- !private ["PSs9AnyObject", "task"]
-- ["PSs9AnyObject", "taskDidComplete"]
-- ["PSs9AnyObject", "taskDidReceiveChallenge"]
-- ["PSs9AnyObject", "taskDidSendBodyData"]
-- !private ["PSs9AnyObject", "taskIdentifier"]
-- ["PSs9AnyObject", "taskNeedNewBodyStream"]
-- ["PSs9AnyObject", "taskWillPerformHTTPRedirection"]
-- ["PSs9AnyObject", ""]
-- ["VSs11AnySequence", "Generator"]
-- ["VSs11AnySequence", "enumerate"]
+- ["Ps16AbsoluteValuable", "init"]
+- ["Vs12AnyGenerator", "Element"]
+- ["Ps9AnyObject", "CFStringTransform"]
+- ["Ps9AnyObject", "DISPATCH_QUEUE_CONCURRENT"]
+- ["Ps9AnyObject", "DISPATCH_QUEUE_SERIAL"]
+- !private ["Ps9AnyObject", "DataTaskDelegate"]
+- ["Ps9AnyObject", "Double"]
+- !private ["Ps9AnyObject", "DownloadTaskDelegate"]
+- ["Ps9AnyObject", "HTTPAdditionalHeaders"]
+- ["Ps9AnyObject", "Manager"]
+- ["Ps9AnyObject", "NSBundle"]
+- ["Ps9AnyObject", "NSLocale"]
+- ["Ps9AnyObject", "NSMutableString"]
+- ["Ps9AnyObject", "NSProcessInfo"]
+- ["Ps9AnyObject", "NSString"]
+- !private ["Ps9AnyObject", "NSURLAuthenticationMethodServerTrust"]
+- !private ["Ps9AnyObject", "NSURLCredential"]
+- !private ["Ps9AnyObject", "NSURLSession"]
+- ["Ps9AnyObject", "NSURLSessionConfiguration"]
+- !private ["Ps9AnyObject", "Request"]
+- !private ["Ps9AnyObject", "SessionDelegate"]
+- ["Ps9AnyObject", "TaskDelegate"]
+- !private ["Ps9AnyObject", "URLRequest"]
+- ["Ps9AnyObject", "URLSession"]
+- ["Ps9AnyObject", "URLSessionDidFinishEventsForBackgroundURLSession"]
+- ["Ps9AnyObject", "UnsafeMutablePointer"]
+- !private ["Ps9AnyObject", "UploadTaskDelegate"]
+- ["Ps9AnyObject", "_streamTaskBetterRouteDiscovered"]
+- ["Ps9AnyObject", "_streamTaskDidBecomeInputStream"]
+- ["Ps9AnyObject", "_streamTaskReadClosed"]
+- ["Ps9AnyObject", "_streamTaskWriteClosed"]
+- !private ["Ps9AnyObject", "authenticationMethod"]
+- !private ["Ps9AnyObject", "backgroundCompletionHandler"]
+- !private ["Ps9AnyObject", "commonInit"]
+- ["Ps9AnyObject", "dataTaskDidBecomeDownloadTask"]
+- ["Ps9AnyObject", "dataTaskDidReceiveData"]
+- ["Ps9AnyObject", "dataTaskDidReceiveResponse"]
+- ["Ps9AnyObject", "dataTaskWillCacheResponse"]
+- !private ["Ps9AnyObject", "dataTaskWithRequest"]
+- ["Ps9AnyObject", "defaultHTTPHeaders"]
+- ["Ps9AnyObject", "defaultSessionConfiguration"]
+- ["Ps9AnyObject", "deinit"]
+- !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "dispatch_async"]
+- !private ["Ps9AnyObject", "dispatch_barrier_async"]
+- !private ["Ps9AnyObject", "dispatch_get_main_queue"]
+- ["Ps9AnyObject", "dispatch_queue_create"]
+- !private ["Ps9AnyObject", "dispatch_sync"]
+- ["Ps9AnyObject", "downloadTaskDidFinishDownloadingToURL"]
+- ["Ps9AnyObject", "downloadTaskDidResumeAtOffset"]
+- ["Ps9AnyObject", "downloadTaskDidWriteData"]
+- !private ["Ps9AnyObject", "host"]
+- ["Ps9AnyObject", "infoDictionary"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "instancesRespondToSelector"]
+- !private ["Ps9AnyObject", "invalidateAndCancel"]
+- ["Ps9AnyObject", "kCFBundleExecutableKey"]
+- ["Ps9AnyObject", "kCFBundleIdentifierKey"]
+- ["Ps9AnyObject", "kCFBundleVersionKey"]
+- ["Ps9AnyObject", "mainBundle"]
+- ["Ps9AnyObject", "operatingSystemVersionString"]
+- ["Ps9AnyObject", "preferredLanguages"]
+- ["Ps9AnyObject", "processInfo"]
+- !private ["Ps9AnyObject", "protectionSpace"]
+- !private ["Ps9AnyObject", "queue"]
+- !private ["Ps9AnyObject", "request"]
+- ["Ps9AnyObject", "respondsToSelector"]
+- !private ["Ps9AnyObject", "resume"]
+- !private ["Ps9AnyObject", "serverTrust"]
+- !private ["Ps9AnyObject", "serverTrustPolicyForHost"]
+- !private ["Ps9AnyObject", "serverTrustPolicyManager"]
+- !private ["Ps9AnyObject", "session"]
+- ["Ps9AnyObject", "sessionDidBecomeInvalidWithError"]
+- ["Ps9AnyObject", "sessionDidFinishEventsForBackgroundURLSession"]
+- ["Ps9AnyObject", "sessionDidReceiveChallenge"]
+- !private ["Ps9AnyObject", "startRequestsImmediately"]
+- ["Ps9AnyObject", "subdelegateQueue"]
+- ["Ps9AnyObject", "subdelegates"]
+- ["Ps9AnyObject", "subscript"]
+- !private ["Ps9AnyObject", "task"]
+- ["Ps9AnyObject", "taskDidComplete"]
+- ["Ps9AnyObject", "taskDidReceiveChallenge"]
+- ["Ps9AnyObject", "taskDidSendBodyData"]
+- !private ["Ps9AnyObject", "taskIdentifier"]
+- ["Ps9AnyObject", "taskNeedNewBodyStream"]
+- ["Ps9AnyObject", "taskWillPerformHTTPRedirection"]
+- ["Ps9AnyObject", ""]
+- ["Vs11AnySequence", "Generator"]
+- ["Vs11AnySequence", "enumerate"]
 - ["Sa", "Generator"]
 - ["Sa", "Index"]
 - ["Sa", "SubSequence"]
 - ["Sa", "_Element"]
 - ["Sa", "joinWithSeparator"]
 - ["Sa", "prefix"]
-- ["PSs23ArrayLiteralConvertible", "Generator"]
-- ["PSs23ArrayLiteralConvertible", "Index"]
-- ["PSs23ArrayLiteralConvertible", "SubSequence"]
-- ["PSs23ArrayLiteralConvertible", "_Element"]
-- ["PSs23ArrayLiteralConvertible", "enumerate"]
-- ["PSs23ArrayLiteralConvertible", "joinWithSeparator"]
-- ["PSs23ArrayLiteralConvertible", "prefix"]
-- ["VSs10ArraySlice", "Generator"]
-- ["VSs10ArraySlice", "Index"]
-- ["VSs10ArraySlice", "_Element"]
-- ["VSs10ArraySlice", "enumerate"]
-- ["PSs22BidirectionalIndexType", "Distance"]
-- ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
-- ["PSs22BidirectionalIndexType", "init"]
-- ["PSs21BitwiseOperationsType", "Distance"]
-- ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- ["Ps23ArrayLiteralConvertible", "Generator"]
+- ["Ps23ArrayLiteralConvertible", "Index"]
+- ["Ps23ArrayLiteralConvertible", "SubSequence"]
+- ["Ps23ArrayLiteralConvertible", "_Element"]
+- ["Ps23ArrayLiteralConvertible", "enumerate"]
+- ["Ps23ArrayLiteralConvertible", "joinWithSeparator"]
+- ["Ps23ArrayLiteralConvertible", "prefix"]
+- ["Vs10ArraySlice", "Generator"]
+- ["Vs10ArraySlice", "Index"]
+- ["Vs10ArraySlice", "SubSequence"]
+- ["Vs10ArraySlice", "_Element"]
+- ["Vs10ArraySlice", "enumerate"]
+- ["Ps22BidirectionalIndexType", "Distance"]
+- ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- ["Ps22BidirectionalIndexType", "init"]
+- ["Ps21BitwiseOperationsType", "Distance"]
+- ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
 - ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
-- ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - ["CSo15CFMutableString", "deinit"]
 - ["CSo8CFString", "deinit"]
-- ["PSs11CVarArgType", "DISPATCH_QUEUE_CONCURRENT"]
-- ["PSs11CVarArgType", "Distance"]
-- ["PSs11CVarArgType", "HTTPAdditionalHeaders"]
-- ["PSs11CVarArgType", "IntegerLiteralType"]
-- !private ["PSs11CVarArgType", "NSURLAuthenticationMethodServerTrust"]
-- !private ["PSs11CVarArgType", "NSURLCredential"]
-- !private ["PSs11CVarArgType", "Request"]
-- ["PSs11CVarArgType", "URLSession"]
-- ["PSs11CVarArgType", "URLSessionDidFinishEventsForBackgroundURLSession"]
-- ["PSs11CVarArgType", "_streamTaskBetterRouteDiscovered"]
-- ["PSs11CVarArgType", "_streamTaskDidBecomeInputStream"]
-- ["PSs11CVarArgType", "_streamTaskReadClosed"]
-- ["PSs11CVarArgType", "_streamTaskWriteClosed"]
-- !private ["PSs11CVarArgType", "authenticationMethod"]
-- ["PSs11CVarArgType", "dataTaskDidBecomeDownloadTask"]
-- ["PSs11CVarArgType", "dataTaskDidReceiveData"]
-- ["PSs11CVarArgType", "dataTaskDidReceiveResponse"]
-- ["PSs11CVarArgType", "dataTaskWillCacheResponse"]
-- !private ["PSs11CVarArgType", "dataTaskWithRequest"]
-- ["PSs11CVarArgType", "defaultSessionConfiguration"]
-- !private ["PSs11CVarArgType", "delegate"]
-- !private ["PSs11CVarArgType", "dispatch_barrier_async"]
-- ["PSs11CVarArgType", "dispatch_queue_create"]
-- !private ["PSs11CVarArgType", "dispatch_sync"]
-- ["PSs11CVarArgType", "downloadTaskDidFinishDownloadingToURL"]
-- ["PSs11CVarArgType", "downloadTaskDidResumeAtOffset"]
-- ["PSs11CVarArgType", "downloadTaskDidWriteData"]
-- !private ["PSs11CVarArgType", "host"]
-- ["PSs11CVarArgType", "infoDictionary"]
-- ["PSs11CVarArgType", "init"]
-- !private ["PSs11CVarArgType", "instancesRespondToSelector"]
-- !private ["PSs11CVarArgType", "invalidateAndCancel"]
-- ["PSs11CVarArgType", "mainBundle"]
-- ["PSs11CVarArgType", "operatingSystemVersionString"]
-- ["PSs11CVarArgType", "preferredLanguages"]
-- ["PSs11CVarArgType", "processInfo"]
-- !private ["PSs11CVarArgType", "protectionSpace"]
-- ["PSs11CVarArgType", "respondsToSelector"]
-- !private ["PSs11CVarArgType", "serverTrust"]
-- !private ["PSs11CVarArgType", "serverTrustPolicyManager"]
-- ["PSs11CVarArgType", "sessionDidBecomeInvalidWithError"]
-- ["PSs11CVarArgType", "sessionDidFinishEventsForBackgroundURLSession"]
-- ["PSs11CVarArgType", "sessionDidReceiveChallenge"]
-- ["PSs11CVarArgType", "subdelegateQueue"]
-- ["PSs11CVarArgType", "subdelegates"]
-- ["PSs11CVarArgType", "subscript"]
-- !private ["PSs11CVarArgType", "task"]
-- ["PSs11CVarArgType", "taskDidComplete"]
-- ["PSs11CVarArgType", "taskDidReceiveChallenge"]
-- ["PSs11CVarArgType", "taskDidSendBodyData"]
-- !private ["PSs11CVarArgType", "taskIdentifier"]
-- ["PSs11CVarArgType", "taskNeedNewBodyStream"]
-- ["PSs11CVarArgType", "taskWillPerformHTTPRedirection"]
-- ["PSs11CVarArgType", ""]
-- ["VSs9Character", "deinit"]
-- ["PSs14CollectionType", "Generator"]
-- ["PSs14CollectionType", "Index"]
-- ["PSs14CollectionType", "Key"]
-- ["PSs14CollectionType", "SubSequence"]
-- ["PSs14CollectionType", "Value"]
-- ["PSs14CollectionType", "_Element"]
-- ["PSs14CollectionType", "enumerate"]
-- ["PSs14CollectionType", "joinWithSeparator"]
-- ["PSs14CollectionType", "prefix"]
-- ["PSs14CollectionType", "subscript"]
-- ["PSs10Comparable", "Distance"]
-- ["PSs10Comparable", "IntegerLiteralType"]
-- ["PSs10Comparable", "init"]
-- !private ["PSs28CustomDebugStringConvertible", "DataTaskDelegate"]
-- !private ["PSs28CustomDebugStringConvertible", "DownloadTaskDelegate"]
-- ["PSs28CustomDebugStringConvertible", "Generator"]
-- ["PSs28CustomDebugStringConvertible", "Index"]
-- ["PSs28CustomDebugStringConvertible", "Key"]
-- ["PSs28CustomDebugStringConvertible", "Some"]
-- ["PSs28CustomDebugStringConvertible", "SubSequence"]
-- ["PSs28CustomDebugStringConvertible", "TaskDelegate"]
-- !private ["PSs28CustomDebugStringConvertible", "UploadTaskDelegate"]
-- ["PSs28CustomDebugStringConvertible", "Value"]
-- ["PSs28CustomDebugStringConvertible", "_Element"]
-- !private ["PSs28CustomDebugStringConvertible", "delegate"]
-- ["PSs28CustomDebugStringConvertible", "enumerate"]
-- ["PSs28CustomDebugStringConvertible", "init"]
-- ["PSs28CustomDebugStringConvertible", "joinWithSeparator"]
-- ["PSs28CustomDebugStringConvertible", "prefix"]
-- !private ["PSs28CustomDebugStringConvertible", "resume"]
-- ["PSs28CustomDebugStringConvertible", "subscript"]
-- ["PSs23CustomStringConvertible", "DISPATCH_QUEUE_CONCURRENT"]
-- !private ["PSs23CustomStringConvertible", "DataTaskDelegate"]
-- ["PSs23CustomStringConvertible", "Distance"]
-- !private ["PSs23CustomStringConvertible", "DownloadTaskDelegate"]
-- ["PSs23CustomStringConvertible", "Generator"]
-- ["PSs23CustomStringConvertible", "HTTPAdditionalHeaders"]
-- ["PSs23CustomStringConvertible", "Index"]
-- ["PSs23CustomStringConvertible", "IntegerLiteralType"]
-- ["PSs23CustomStringConvertible", "Key"]
-- !private ["PSs23CustomStringConvertible", "NSURLAuthenticationMethodServerTrust"]
-- !private ["PSs23CustomStringConvertible", "NSURLCredential"]
-- !private ["PSs23CustomStringConvertible", "Request"]
-- ["PSs23CustomStringConvertible", "SubSequence"]
-- ["PSs23CustomStringConvertible", "TaskDelegate"]
-- ["PSs23CustomStringConvertible", "URLSession"]
-- ["PSs23CustomStringConvertible", "URLSessionDidFinishEventsForBackgroundURLSession"]
-- !private ["PSs23CustomStringConvertible", "UploadTaskDelegate"]
-- ["PSs23CustomStringConvertible", "Value"]
-- ["PSs23CustomStringConvertible", "_Element"]
-- ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
-- ["PSs23CustomStringConvertible", "_streamTaskBetterRouteDiscovered"]
-- ["PSs23CustomStringConvertible", "_streamTaskDidBecomeInputStream"]
-- ["PSs23CustomStringConvertible", "_streamTaskReadClosed"]
-- ["PSs23CustomStringConvertible", "_streamTaskWriteClosed"]
-- !private ["PSs23CustomStringConvertible", "authenticationMethod"]
-- ["PSs23CustomStringConvertible", "dataTaskDidBecomeDownloadTask"]
-- ["PSs23CustomStringConvertible", "dataTaskDidReceiveData"]
-- ["PSs23CustomStringConvertible", "dataTaskDidReceiveResponse"]
-- ["PSs23CustomStringConvertible", "dataTaskWillCacheResponse"]
-- !private ["PSs23CustomStringConvertible", "dataTaskWithRequest"]
-- ["PSs23CustomStringConvertible", "defaultSessionConfiguration"]
-- !private ["PSs23CustomStringConvertible", "delegate"]
-- !private ["PSs23CustomStringConvertible", "dispatch_barrier_async"]
-- ["PSs23CustomStringConvertible", "dispatch_queue_create"]
-- !private ["PSs23CustomStringConvertible", "dispatch_sync"]
-- ["PSs23CustomStringConvertible", "downloadTaskDidFinishDownloadingToURL"]
-- ["PSs23CustomStringConvertible", "downloadTaskDidResumeAtOffset"]
-- ["PSs23CustomStringConvertible", "downloadTaskDidWriteData"]
-- ["PSs23CustomStringConvertible", "enumerate"]
-- !private ["PSs23CustomStringConvertible", "host"]
-- ["PSs23CustomStringConvertible", "infoDictionary"]
-- ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "instancesRespondToSelector"]
-- !private ["PSs23CustomStringConvertible", "invalidateAndCancel"]
-- ["PSs23CustomStringConvertible", "joinWithSeparator"]
-- ["PSs23CustomStringConvertible", "mainBundle"]
-- ["PSs23CustomStringConvertible", "operatingSystemVersionString"]
-- ["PSs23CustomStringConvertible", "preferredLanguages"]
-- ["PSs23CustomStringConvertible", "prefix"]
-- ["PSs23CustomStringConvertible", "processInfo"]
-- !private ["PSs23CustomStringConvertible", "protectionSpace"]
-- ["PSs23CustomStringConvertible", "respondsToSelector"]
-- !private ["PSs23CustomStringConvertible", "resume"]
-- !private ["PSs23CustomStringConvertible", "serverTrust"]
-- !private ["PSs23CustomStringConvertible", "serverTrustPolicyManager"]
-- ["PSs23CustomStringConvertible", "sessionDidBecomeInvalidWithError"]
-- ["PSs23CustomStringConvertible", "sessionDidFinishEventsForBackgroundURLSession"]
-- ["PSs23CustomStringConvertible", "sessionDidReceiveChallenge"]
-- ["PSs23CustomStringConvertible", "subdelegateQueue"]
-- ["PSs23CustomStringConvertible", "subdelegates"]
-- ["PSs23CustomStringConvertible", "subscript"]
-- !private ["PSs23CustomStringConvertible", "task"]
-- ["PSs23CustomStringConvertible", "taskDidComplete"]
-- ["PSs23CustomStringConvertible", "taskDidReceiveChallenge"]
-- ["PSs23CustomStringConvertible", "taskDidSendBodyData"]
-- !private ["PSs23CustomStringConvertible", "taskIdentifier"]
-- ["PSs23CustomStringConvertible", "taskNeedNewBodyStream"]
-- ["PSs23CustomStringConvertible", "taskWillPerformHTTPRedirection"]
-- ["PSs23CustomStringConvertible", ""]
+- ["Ps11CVarArgType", "DISPATCH_QUEUE_CONCURRENT"]
+- ["Ps11CVarArgType", "Distance"]
+- ["Ps11CVarArgType", "HTTPAdditionalHeaders"]
+- ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "NSURLAuthenticationMethodServerTrust"]
+- !private ["Ps11CVarArgType", "NSURLCredential"]
+- !private ["Ps11CVarArgType", "Request"]
+- ["Ps11CVarArgType", "URLSession"]
+- ["Ps11CVarArgType", "URLSessionDidFinishEventsForBackgroundURLSession"]
+- ["Ps11CVarArgType", "_streamTaskBetterRouteDiscovered"]
+- ["Ps11CVarArgType", "_streamTaskDidBecomeInputStream"]
+- ["Ps11CVarArgType", "_streamTaskReadClosed"]
+- ["Ps11CVarArgType", "_streamTaskWriteClosed"]
+- !private ["Ps11CVarArgType", "authenticationMethod"]
+- ["Ps11CVarArgType", "dataTaskDidBecomeDownloadTask"]
+- ["Ps11CVarArgType", "dataTaskDidReceiveData"]
+- ["Ps11CVarArgType", "dataTaskDidReceiveResponse"]
+- ["Ps11CVarArgType", "dataTaskWillCacheResponse"]
+- !private ["Ps11CVarArgType", "dataTaskWithRequest"]
+- ["Ps11CVarArgType", "defaultSessionConfiguration"]
+- !private ["Ps11CVarArgType", "delegate"]
+- !private ["Ps11CVarArgType", "dispatch_barrier_async"]
+- ["Ps11CVarArgType", "dispatch_queue_create"]
+- !private ["Ps11CVarArgType", "dispatch_sync"]
+- ["Ps11CVarArgType", "downloadTaskDidFinishDownloadingToURL"]
+- ["Ps11CVarArgType", "downloadTaskDidResumeAtOffset"]
+- ["Ps11CVarArgType", "downloadTaskDidWriteData"]
+- !private ["Ps11CVarArgType", "host"]
+- ["Ps11CVarArgType", "infoDictionary"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "instancesRespondToSelector"]
+- !private ["Ps11CVarArgType", "invalidateAndCancel"]
+- ["Ps11CVarArgType", "mainBundle"]
+- ["Ps11CVarArgType", "operatingSystemVersionString"]
+- ["Ps11CVarArgType", "preferredLanguages"]
+- ["Ps11CVarArgType", "processInfo"]
+- !private ["Ps11CVarArgType", "protectionSpace"]
+- ["Ps11CVarArgType", "respondsToSelector"]
+- !private ["Ps11CVarArgType", "serverTrust"]
+- !private ["Ps11CVarArgType", "serverTrustPolicyManager"]
+- ["Ps11CVarArgType", "sessionDidBecomeInvalidWithError"]
+- ["Ps11CVarArgType", "sessionDidFinishEventsForBackgroundURLSession"]
+- ["Ps11CVarArgType", "sessionDidReceiveChallenge"]
+- ["Ps11CVarArgType", "subdelegateQueue"]
+- ["Ps11CVarArgType", "subdelegates"]
+- ["Ps11CVarArgType", "subscript"]
+- !private ["Ps11CVarArgType", "task"]
+- ["Ps11CVarArgType", "taskDidComplete"]
+- ["Ps11CVarArgType", "taskDidReceiveChallenge"]
+- ["Ps11CVarArgType", "taskDidSendBodyData"]
+- !private ["Ps11CVarArgType", "taskIdentifier"]
+- ["Ps11CVarArgType", "taskNeedNewBodyStream"]
+- ["Ps11CVarArgType", "taskWillPerformHTTPRedirection"]
+- ["Ps11CVarArgType", ""]
+- ["Vs9Character", "deinit"]
+- ["Ps14CollectionType", "Generator"]
+- ["Ps14CollectionType", "Index"]
+- ["Ps14CollectionType", "Key"]
+- ["Ps14CollectionType", "SubSequence"]
+- ["Ps14CollectionType", "Value"]
+- ["Ps14CollectionType", "_Element"]
+- ["Ps14CollectionType", "enumerate"]
+- ["Ps14CollectionType", "joinWithSeparator"]
+- ["Ps14CollectionType", "prefix"]
+- ["Ps14CollectionType", "subscript"]
+- ["Ps10Comparable", "Distance"]
+- ["Ps10Comparable", "IntegerLiteralType"]
+- ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "DISPATCH_QUEUE_CONCURRENT"]
+- !private ["Ps28CustomDebugStringConvertible", "DataTaskDelegate"]
+- !private ["Ps28CustomDebugStringConvertible", "DownloadTaskDelegate"]
+- ["Ps28CustomDebugStringConvertible", "Generator"]
+- ["Ps28CustomDebugStringConvertible", "HTTPAdditionalHeaders"]
+- ["Ps28CustomDebugStringConvertible", "Index"]
+- ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "NSURLAuthenticationMethodServerTrust"]
+- !private ["Ps28CustomDebugStringConvertible", "NSURLCredential"]
+- !private ["Ps28CustomDebugStringConvertible", "Request"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- ["Ps28CustomDebugStringConvertible", "TaskDelegate"]
+- ["Ps28CustomDebugStringConvertible", "URLSession"]
+- ["Ps28CustomDebugStringConvertible", "URLSessionDidFinishEventsForBackgroundURLSession"]
+- !private ["Ps28CustomDebugStringConvertible", "UploadTaskDelegate"]
+- ["Ps28CustomDebugStringConvertible", "Value"]
+- ["Ps28CustomDebugStringConvertible", "_Element"]
+- ["Ps28CustomDebugStringConvertible", "_streamTaskBetterRouteDiscovered"]
+- ["Ps28CustomDebugStringConvertible", "_streamTaskDidBecomeInputStream"]
+- ["Ps28CustomDebugStringConvertible", "_streamTaskReadClosed"]
+- ["Ps28CustomDebugStringConvertible", "_streamTaskWriteClosed"]
+- !private ["Ps28CustomDebugStringConvertible", "authenticationMethod"]
+- ["Ps28CustomDebugStringConvertible", "dataTaskDidBecomeDownloadTask"]
+- ["Ps28CustomDebugStringConvertible", "dataTaskDidReceiveData"]
+- ["Ps28CustomDebugStringConvertible", "dataTaskDidReceiveResponse"]
+- ["Ps28CustomDebugStringConvertible", "dataTaskWillCacheResponse"]
+- !private ["Ps28CustomDebugStringConvertible", "dataTaskWithRequest"]
+- ["Ps28CustomDebugStringConvertible", "defaultSessionConfiguration"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "dispatch_barrier_async"]
+- ["Ps28CustomDebugStringConvertible", "dispatch_queue_create"]
+- !private ["Ps28CustomDebugStringConvertible", "dispatch_sync"]
+- ["Ps28CustomDebugStringConvertible", "downloadTaskDidFinishDownloadingToURL"]
+- ["Ps28CustomDebugStringConvertible", "downloadTaskDidResumeAtOffset"]
+- ["Ps28CustomDebugStringConvertible", "downloadTaskDidWriteData"]
+- ["Ps28CustomDebugStringConvertible", "enumerate"]
+- !private ["Ps28CustomDebugStringConvertible", "host"]
+- ["Ps28CustomDebugStringConvertible", "infoDictionary"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "instancesRespondToSelector"]
+- !private ["Ps28CustomDebugStringConvertible", "invalidateAndCancel"]
+- ["Ps28CustomDebugStringConvertible", "joinWithSeparator"]
+- ["Ps28CustomDebugStringConvertible", "mainBundle"]
+- ["Ps28CustomDebugStringConvertible", "operatingSystemVersionString"]
+- ["Ps28CustomDebugStringConvertible", "preferredLanguages"]
+- ["Ps28CustomDebugStringConvertible", "prefix"]
+- ["Ps28CustomDebugStringConvertible", "processInfo"]
+- !private ["Ps28CustomDebugStringConvertible", "protectionSpace"]
+- ["Ps28CustomDebugStringConvertible", "respondsToSelector"]
+- !private ["Ps28CustomDebugStringConvertible", "resume"]
+- !private ["Ps28CustomDebugStringConvertible", "serverTrust"]
+- !private ["Ps28CustomDebugStringConvertible", "serverTrustPolicyManager"]
+- ["Ps28CustomDebugStringConvertible", "sessionDidBecomeInvalidWithError"]
+- ["Ps28CustomDebugStringConvertible", "sessionDidFinishEventsForBackgroundURLSession"]
+- ["Ps28CustomDebugStringConvertible", "sessionDidReceiveChallenge"]
+- ["Ps28CustomDebugStringConvertible", "subdelegateQueue"]
+- ["Ps28CustomDebugStringConvertible", "subdelegates"]
+- ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "task"]
+- ["Ps28CustomDebugStringConvertible", "taskDidComplete"]
+- ["Ps28CustomDebugStringConvertible", "taskDidReceiveChallenge"]
+- ["Ps28CustomDebugStringConvertible", "taskDidSendBodyData"]
+- !private ["Ps28CustomDebugStringConvertible", "taskIdentifier"]
+- ["Ps28CustomDebugStringConvertible", "taskNeedNewBodyStream"]
+- ["Ps28CustomDebugStringConvertible", "taskWillPerformHTTPRedirection"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "DISPATCH_QUEUE_CONCURRENT"]
+- !private ["Ps23CustomStringConvertible", "DataTaskDelegate"]
+- ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "DownloadTaskDelegate"]
+- ["Ps23CustomStringConvertible", "Generator"]
+- ["Ps23CustomStringConvertible", "HTTPAdditionalHeaders"]
+- ["Ps23CustomStringConvertible", "Index"]
+- ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "NSURLAuthenticationMethodServerTrust"]
+- !private ["Ps23CustomStringConvertible", "NSURLCredential"]
+- !private ["Ps23CustomStringConvertible", "Request"]
+- ["Ps23CustomStringConvertible", "SubSequence"]
+- ["Ps23CustomStringConvertible", "TaskDelegate"]
+- ["Ps23CustomStringConvertible", "URLSession"]
+- ["Ps23CustomStringConvertible", "URLSessionDidFinishEventsForBackgroundURLSession"]
+- !private ["Ps23CustomStringConvertible", "UploadTaskDelegate"]
+- ["Ps23CustomStringConvertible", "Value"]
+- ["Ps23CustomStringConvertible", "_Element"]
+- ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "_streamTaskBetterRouteDiscovered"]
+- ["Ps23CustomStringConvertible", "_streamTaskDidBecomeInputStream"]
+- ["Ps23CustomStringConvertible", "_streamTaskReadClosed"]
+- ["Ps23CustomStringConvertible", "_streamTaskWriteClosed"]
+- !private ["Ps23CustomStringConvertible", "authenticationMethod"]
+- ["Ps23CustomStringConvertible", "dataTaskDidBecomeDownloadTask"]
+- ["Ps23CustomStringConvertible", "dataTaskDidReceiveData"]
+- ["Ps23CustomStringConvertible", "dataTaskDidReceiveResponse"]
+- ["Ps23CustomStringConvertible", "dataTaskWillCacheResponse"]
+- !private ["Ps23CustomStringConvertible", "dataTaskWithRequest"]
+- ["Ps23CustomStringConvertible", "defaultSessionConfiguration"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "dispatch_barrier_async"]
+- ["Ps23CustomStringConvertible", "dispatch_queue_create"]
+- !private ["Ps23CustomStringConvertible", "dispatch_sync"]
+- ["Ps23CustomStringConvertible", "downloadTaskDidFinishDownloadingToURL"]
+- ["Ps23CustomStringConvertible", "downloadTaskDidResumeAtOffset"]
+- ["Ps23CustomStringConvertible", "downloadTaskDidWriteData"]
+- ["Ps23CustomStringConvertible", "enumerate"]
+- !private ["Ps23CustomStringConvertible", "host"]
+- ["Ps23CustomStringConvertible", "infoDictionary"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "instancesRespondToSelector"]
+- !private ["Ps23CustomStringConvertible", "invalidateAndCancel"]
+- ["Ps23CustomStringConvertible", "joinWithSeparator"]
+- ["Ps23CustomStringConvertible", "mainBundle"]
+- ["Ps23CustomStringConvertible", "operatingSystemVersionString"]
+- ["Ps23CustomStringConvertible", "preferredLanguages"]
+- ["Ps23CustomStringConvertible", "prefix"]
+- ["Ps23CustomStringConvertible", "processInfo"]
+- !private ["Ps23CustomStringConvertible", "protectionSpace"]
+- ["Ps23CustomStringConvertible", "respondsToSelector"]
+- !private ["Ps23CustomStringConvertible", "resume"]
+- !private ["Ps23CustomStringConvertible", "serverTrust"]
+- !private ["Ps23CustomStringConvertible", "serverTrustPolicyManager"]
+- ["Ps23CustomStringConvertible", "sessionDidBecomeInvalidWithError"]
+- ["Ps23CustomStringConvertible", "sessionDidFinishEventsForBackgroundURLSession"]
+- ["Ps23CustomStringConvertible", "sessionDidReceiveChallenge"]
+- ["Ps23CustomStringConvertible", "subdelegateQueue"]
+- ["Ps23CustomStringConvertible", "subdelegates"]
+- ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "task"]
+- ["Ps23CustomStringConvertible", "taskDidComplete"]
+- ["Ps23CustomStringConvertible", "taskDidReceiveChallenge"]
+- ["Ps23CustomStringConvertible", "taskDidSendBodyData"]
+- !private ["Ps23CustomStringConvertible", "taskIdentifier"]
+- ["Ps23CustomStringConvertible", "taskNeedNewBodyStream"]
+- ["Ps23CustomStringConvertible", "taskWillPerformHTTPRedirection"]
+- ["Ps23CustomStringConvertible", ""]
 - !private ["CC9Alamofire7Request16DataTaskDelegate", "URLSession"]
 - !private ["CC9Alamofire7Request16DataTaskDelegate", "deinit"]
-- ["VSs10Dictionary", "Index"]
-- ["VSs10Dictionary", "Key"]
-- ["VSs10Dictionary", "Value"]
-- ["VSs10Dictionary", "deinit"]
-- ["VSs10Dictionary", "subscript"]
-- ["PSs28DictionaryLiteralConvertible", "Index"]
-- ["PSs28DictionaryLiteralConvertible", "Key"]
-- ["PSs28DictionaryLiteralConvertible", "Value"]
-- ["PSs28DictionaryLiteralConvertible", "subscript"]
+- ["Vs10Dictionary", "Index"]
+- ["Vs10Dictionary", "Key"]
+- ["Vs10Dictionary", "Value"]
+- ["Vs10Dictionary", "deinit"]
+- ["Vs10Dictionary", "subscript"]
+- ["Ps28DictionaryLiteralConvertible", "Index"]
+- ["Ps28DictionaryLiteralConvertible", "Key"]
+- ["Ps28DictionaryLiteralConvertible", "Value"]
+- ["Ps28DictionaryLiteralConvertible", "subscript"]
 - ["Sd", "deinit"]
 - ["Sd", "init"]
 - !private ["CC9Alamofire7Request20DownloadTaskDelegate", "URLSession"]
 - !private ["CC9Alamofire7Request20DownloadTaskDelegate", "deinit"]
 - !private ["CC9Alamofire7Request20DownloadTaskDelegate", "init"]
-- ["VSs18EnumerateGenerator", "Element"]
-- ["VSs17EnumerateSequence", "Generator"]
-- ["VSs17EnumerateSequence", "deinit"]
-- ["VSs17EnumerateSequence", "map"]
-- !private ["PSs9Equatable", "Allow"]
-- !private ["PSs9Equatable", "CancelAuthenticationChallenge"]
-- ["PSs9Equatable", "DISPATCH_QUEUE_CONCURRENT"]
-- ["PSs9Equatable", "Distance"]
-- ["PSs9Equatable", "HTTPAdditionalHeaders"]
-- ["PSs9Equatable", "IntegerLiteralType"]
-- !private ["PSs9Equatable", "NSURLAuthenticationMethodServerTrust"]
-- !private ["PSs9Equatable", "NSURLCredential"]
-- !private ["PSs9Equatable", "PerformDefaultHandling"]
-- !private ["PSs9Equatable", "Request"]
-- ["PSs9Equatable", "URLSession"]
-- ["PSs9Equatable", "URLSessionDidFinishEventsForBackgroundURLSession"]
-- !private ["PSs9Equatable", "UseCredential"]
-- ["PSs9Equatable", "_getBuiltinLogicValue"]
-- ["PSs9Equatable", "_streamTaskBetterRouteDiscovered"]
-- ["PSs9Equatable", "_streamTaskDidBecomeInputStream"]
-- ["PSs9Equatable", "_streamTaskReadClosed"]
-- ["PSs9Equatable", "_streamTaskWriteClosed"]
-- !private ["PSs9Equatable", "authenticationMethod"]
-- ["PSs9Equatable", "dataTaskDidBecomeDownloadTask"]
-- ["PSs9Equatable", "dataTaskDidReceiveData"]
-- ["PSs9Equatable", "dataTaskDidReceiveResponse"]
-- ["PSs9Equatable", "dataTaskWillCacheResponse"]
-- !private ["PSs9Equatable", "dataTaskWithRequest"]
-- ["PSs9Equatable", "defaultSessionConfiguration"]
-- !private ["PSs9Equatable", "delegate"]
-- !private ["PSs9Equatable", "dispatch_barrier_async"]
-- ["PSs9Equatable", "dispatch_queue_create"]
-- !private ["PSs9Equatable", "dispatch_sync"]
-- ["PSs9Equatable", "downloadTaskDidFinishDownloadingToURL"]
-- ["PSs9Equatable", "downloadTaskDidResumeAtOffset"]
-- ["PSs9Equatable", "downloadTaskDidWriteData"]
-- !private ["PSs9Equatable", "host"]
-- ["PSs9Equatable", "infoDictionary"]
-- ["PSs9Equatable", "init"]
-- !private ["PSs9Equatable", "instancesRespondToSelector"]
-- !private ["PSs9Equatable", "invalidateAndCancel"]
-- ["PSs9Equatable", "mainBundle"]
-- ["PSs9Equatable", "operatingSystemVersionString"]
-- ["PSs9Equatable", "preferredLanguages"]
-- ["PSs9Equatable", "processInfo"]
-- !private ["PSs9Equatable", "protectionSpace"]
-- ["PSs9Equatable", "respondsToSelector"]
-- !private ["PSs9Equatable", "serverTrust"]
-- !private ["PSs9Equatable", "serverTrustPolicyManager"]
-- ["PSs9Equatable", "sessionDidBecomeInvalidWithError"]
-- ["PSs9Equatable", "sessionDidFinishEventsForBackgroundURLSession"]
-- ["PSs9Equatable", "sessionDidReceiveChallenge"]
-- ["PSs9Equatable", "subdelegateQueue"]
-- ["PSs9Equatable", "subdelegates"]
-- ["PSs9Equatable", "subscript"]
-- !private ["PSs9Equatable", "task"]
-- ["PSs9Equatable", "taskDidComplete"]
-- ["PSs9Equatable", "taskDidReceiveChallenge"]
-- ["PSs9Equatable", "taskDidSendBodyData"]
-- !private ["PSs9Equatable", "taskIdentifier"]
-- ["PSs9Equatable", "taskNeedNewBodyStream"]
-- ["PSs9Equatable", "taskWillPerformHTTPRedirection"]
-- ["PSs9Equatable", ""]
-- ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- ["Vs18EnumerateGenerator", "Element"]
+- ["Vs17EnumerateSequence", "Generator"]
+- ["Vs17EnumerateSequence", "deinit"]
+- ["Vs17EnumerateSequence", "map"]
+- !private ["Ps9Equatable", "Allow"]
+- !private ["Ps9Equatable", "CancelAuthenticationChallenge"]
+- ["Ps9Equatable", "DISPATCH_QUEUE_CONCURRENT"]
+- ["Ps9Equatable", "Distance"]
+- ["Ps9Equatable", "HTTPAdditionalHeaders"]
+- ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "NSURLAuthenticationMethodServerTrust"]
+- !private ["Ps9Equatable", "NSURLCredential"]
+- !private ["Ps9Equatable", "PerformDefaultHandling"]
+- !private ["Ps9Equatable", "Request"]
+- ["Ps9Equatable", "URLSession"]
+- ["Ps9Equatable", "URLSessionDidFinishEventsForBackgroundURLSession"]
+- !private ["Ps9Equatable", "UseCredential"]
+- ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "_streamTaskBetterRouteDiscovered"]
+- ["Ps9Equatable", "_streamTaskDidBecomeInputStream"]
+- ["Ps9Equatable", "_streamTaskReadClosed"]
+- ["Ps9Equatable", "_streamTaskWriteClosed"]
+- !private ["Ps9Equatable", "authenticationMethod"]
+- ["Ps9Equatable", "dataTaskDidBecomeDownloadTask"]
+- ["Ps9Equatable", "dataTaskDidReceiveData"]
+- ["Ps9Equatable", "dataTaskDidReceiveResponse"]
+- ["Ps9Equatable", "dataTaskWillCacheResponse"]
+- !private ["Ps9Equatable", "dataTaskWithRequest"]
+- ["Ps9Equatable", "defaultSessionConfiguration"]
+- !private ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "dispatch_barrier_async"]
+- ["Ps9Equatable", "dispatch_queue_create"]
+- !private ["Ps9Equatable", "dispatch_sync"]
+- ["Ps9Equatable", "downloadTaskDidFinishDownloadingToURL"]
+- ["Ps9Equatable", "downloadTaskDidResumeAtOffset"]
+- ["Ps9Equatable", "downloadTaskDidWriteData"]
+- !private ["Ps9Equatable", "host"]
+- ["Ps9Equatable", "infoDictionary"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "instancesRespondToSelector"]
+- !private ["Ps9Equatable", "invalidateAndCancel"]
+- ["Ps9Equatable", "mainBundle"]
+- ["Ps9Equatable", "operatingSystemVersionString"]
+- ["Ps9Equatable", "preferredLanguages"]
+- ["Ps9Equatable", "processInfo"]
+- !private ["Ps9Equatable", "protectionSpace"]
+- ["Ps9Equatable", "respondsToSelector"]
+- !private ["Ps9Equatable", "serverTrust"]
+- !private ["Ps9Equatable", "serverTrustPolicyManager"]
+- ["Ps9Equatable", "sessionDidBecomeInvalidWithError"]
+- ["Ps9Equatable", "sessionDidFinishEventsForBackgroundURLSession"]
+- ["Ps9Equatable", "sessionDidReceiveChallenge"]
+- ["Ps9Equatable", "subdelegateQueue"]
+- ["Ps9Equatable", "subdelegates"]
+- ["Ps9Equatable", "subscript"]
+- !private ["Ps9Equatable", "task"]
+- ["Ps9Equatable", "taskDidComplete"]
+- ["Ps9Equatable", "taskDidReceiveChallenge"]
+- ["Ps9Equatable", "taskDidSendBodyData"]
+- !private ["Ps9Equatable", "taskIdentifier"]
+- ["Ps9Equatable", "taskNeedNewBodyStream"]
+- ["Ps9Equatable", "taskWillPerformHTTPRedirection"]
+- ["Ps9Equatable", ""]
+- ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - ["Sf", "deinit"]
-- ["PSs23FloatLiteralConvertible", "init"]
-- ["PSs17FloatingPointType", "init"]
-- ["PSs16ForwardIndexType", "Distance"]
-- ["PSs16ForwardIndexType", "IntegerLiteralType"]
-- ["PSs16ForwardIndexType", "init"]
-- ["PSs13GeneratorType", "Element"]
-- !private ["PSs8Hashable", "Allow"]
-- !private ["PSs8Hashable", "CancelAuthenticationChallenge"]
-- ["PSs8Hashable", "DISPATCH_QUEUE_CONCURRENT"]
-- ["PSs8Hashable", "Distance"]
-- ["PSs8Hashable", "HTTPAdditionalHeaders"]
-- ["PSs8Hashable", "IntegerLiteralType"]
-- !private ["PSs8Hashable", "NSURLAuthenticationMethodServerTrust"]
-- !private ["PSs8Hashable", "NSURLCredential"]
-- !private ["PSs8Hashable", "PerformDefaultHandling"]
-- !private ["PSs8Hashable", "Request"]
-- ["PSs8Hashable", "URLSession"]
-- ["PSs8Hashable", "URLSessionDidFinishEventsForBackgroundURLSession"]
-- !private ["PSs8Hashable", "UseCredential"]
-- ["PSs8Hashable", "_getBuiltinLogicValue"]
-- ["PSs8Hashable", "_streamTaskBetterRouteDiscovered"]
-- ["PSs8Hashable", "_streamTaskDidBecomeInputStream"]
-- ["PSs8Hashable", "_streamTaskReadClosed"]
-- ["PSs8Hashable", "_streamTaskWriteClosed"]
-- !private ["PSs8Hashable", "authenticationMethod"]
-- ["PSs8Hashable", "dataTaskDidBecomeDownloadTask"]
-- ["PSs8Hashable", "dataTaskDidReceiveData"]
-- ["PSs8Hashable", "dataTaskDidReceiveResponse"]
-- ["PSs8Hashable", "dataTaskWillCacheResponse"]
-- !private ["PSs8Hashable", "dataTaskWithRequest"]
-- ["PSs8Hashable", "defaultSessionConfiguration"]
-- !private ["PSs8Hashable", "delegate"]
-- !private ["PSs8Hashable", "dispatch_barrier_async"]
-- ["PSs8Hashable", "dispatch_queue_create"]
-- !private ["PSs8Hashable", "dispatch_sync"]
-- ["PSs8Hashable", "downloadTaskDidFinishDownloadingToURL"]
-- ["PSs8Hashable", "downloadTaskDidResumeAtOffset"]
-- ["PSs8Hashable", "downloadTaskDidWriteData"]
-- !private ["PSs8Hashable", "host"]
-- ["PSs8Hashable", "infoDictionary"]
-- ["PSs8Hashable", "init"]
-- !private ["PSs8Hashable", "instancesRespondToSelector"]
-- !private ["PSs8Hashable", "invalidateAndCancel"]
-- ["PSs8Hashable", "mainBundle"]
-- ["PSs8Hashable", "operatingSystemVersionString"]
-- ["PSs8Hashable", "preferredLanguages"]
-- ["PSs8Hashable", "processInfo"]
-- !private ["PSs8Hashable", "protectionSpace"]
-- ["PSs8Hashable", "respondsToSelector"]
-- !private ["PSs8Hashable", "serverTrust"]
-- !private ["PSs8Hashable", "serverTrustPolicyManager"]
-- ["PSs8Hashable", "sessionDidBecomeInvalidWithError"]
-- ["PSs8Hashable", "sessionDidFinishEventsForBackgroundURLSession"]
-- ["PSs8Hashable", "sessionDidReceiveChallenge"]
-- ["PSs8Hashable", "subdelegateQueue"]
-- ["PSs8Hashable", "subdelegates"]
-- ["PSs8Hashable", "subscript"]
-- !private ["PSs8Hashable", "task"]
-- ["PSs8Hashable", "taskDidComplete"]
-- ["PSs8Hashable", "taskDidReceiveChallenge"]
-- ["PSs8Hashable", "taskDidSendBodyData"]
-- !private ["PSs8Hashable", "taskIdentifier"]
-- ["PSs8Hashable", "taskNeedNewBodyStream"]
-- ["PSs8Hashable", "taskWillPerformHTTPRedirection"]
-- ["PSs8Hashable", ""]
+- ["Ps23FloatLiteralConvertible", "init"]
+- ["Ps17FloatingPointType", "init"]
+- ["Ps16ForwardIndexType", "Distance"]
+- ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- ["Ps16ForwardIndexType", "init"]
+- ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "Allow"]
+- !private ["Ps8Hashable", "CancelAuthenticationChallenge"]
+- ["Ps8Hashable", "DISPATCH_QUEUE_CONCURRENT"]
+- ["Ps8Hashable", "Distance"]
+- ["Ps8Hashable", "HTTPAdditionalHeaders"]
+- ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "NSURLAuthenticationMethodServerTrust"]
+- !private ["Ps8Hashable", "NSURLCredential"]
+- !private ["Ps8Hashable", "PerformDefaultHandling"]
+- !private ["Ps8Hashable", "Request"]
+- ["Ps8Hashable", "URLSession"]
+- ["Ps8Hashable", "URLSessionDidFinishEventsForBackgroundURLSession"]
+- !private ["Ps8Hashable", "UseCredential"]
+- ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "_streamTaskBetterRouteDiscovered"]
+- ["Ps8Hashable", "_streamTaskDidBecomeInputStream"]
+- ["Ps8Hashable", "_streamTaskReadClosed"]
+- ["Ps8Hashable", "_streamTaskWriteClosed"]
+- !private ["Ps8Hashable", "authenticationMethod"]
+- ["Ps8Hashable", "dataTaskDidBecomeDownloadTask"]
+- ["Ps8Hashable", "dataTaskDidReceiveData"]
+- ["Ps8Hashable", "dataTaskDidReceiveResponse"]
+- ["Ps8Hashable", "dataTaskWillCacheResponse"]
+- !private ["Ps8Hashable", "dataTaskWithRequest"]
+- ["Ps8Hashable", "defaultSessionConfiguration"]
+- !private ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "dispatch_barrier_async"]
+- ["Ps8Hashable", "dispatch_queue_create"]
+- !private ["Ps8Hashable", "dispatch_sync"]
+- ["Ps8Hashable", "downloadTaskDidFinishDownloadingToURL"]
+- ["Ps8Hashable", "downloadTaskDidResumeAtOffset"]
+- ["Ps8Hashable", "downloadTaskDidWriteData"]
+- !private ["Ps8Hashable", "host"]
+- ["Ps8Hashable", "infoDictionary"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "instancesRespondToSelector"]
+- !private ["Ps8Hashable", "invalidateAndCancel"]
+- ["Ps8Hashable", "mainBundle"]
+- ["Ps8Hashable", "operatingSystemVersionString"]
+- ["Ps8Hashable", "preferredLanguages"]
+- ["Ps8Hashable", "processInfo"]
+- !private ["Ps8Hashable", "protectionSpace"]
+- ["Ps8Hashable", "respondsToSelector"]
+- !private ["Ps8Hashable", "serverTrust"]
+- !private ["Ps8Hashable", "serverTrustPolicyManager"]
+- ["Ps8Hashable", "sessionDidBecomeInvalidWithError"]
+- ["Ps8Hashable", "sessionDidFinishEventsForBackgroundURLSession"]
+- ["Ps8Hashable", "sessionDidReceiveChallenge"]
+- ["Ps8Hashable", "subdelegateQueue"]
+- ["Ps8Hashable", "subdelegates"]
+- ["Ps8Hashable", "subscript"]
+- !private ["Ps8Hashable", "task"]
+- ["Ps8Hashable", "taskDidComplete"]
+- ["Ps8Hashable", "taskDidReceiveChallenge"]
+- ["Ps8Hashable", "taskDidSendBodyData"]
+- !private ["Ps8Hashable", "taskIdentifier"]
+- ["Ps8Hashable", "taskNeedNewBodyStream"]
+- ["Ps8Hashable", "taskWillPerformHTTPRedirection"]
+- ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
-- ["PSs9Indexable", "Generator"]
-- ["PSs9Indexable", "Index"]
-- ["PSs9Indexable", "Key"]
-- ["PSs9Indexable", "SubSequence"]
-- ["PSs9Indexable", "Value"]
-- ["PSs9Indexable", "_Element"]
-- ["PSs9Indexable", "enumerate"]
-- ["PSs9Indexable", "joinWithSeparator"]
-- ["PSs9Indexable", "prefix"]
-- ["PSs9Indexable", "subscript"]
-- ["VSs17IndexingGenerator", "Element"]
+- ["Ps9Indexable", "Generator"]
+- ["Ps9Indexable", "Index"]
+- ["Ps9Indexable", "Key"]
+- ["Ps9Indexable", "SubSequence"]
+- ["Ps9Indexable", "Value"]
+- ["Ps9Indexable", "_Element"]
+- ["Ps9Indexable", "enumerate"]
+- ["Ps9Indexable", "joinWithSeparator"]
+- ["Ps9Indexable", "prefix"]
+- ["Ps9Indexable", "subscript"]
+- ["Vs17IndexingGenerator", "Element"]
 - ["Si", "Distance"]
 - ["Si", "IntegerLiteralType"]
 - ["Si", "deinit"]
-- ["VSs5Int16", "deinit"]
-- ["VSs5Int32", "deinit"]
-- ["VSs5Int64", "deinit"]
-- ["VSs4Int8", "deinit"]
-- ["PSs21IntegerArithmeticType", "Distance"]
-- ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
-- ["PSs25IntegerLiteralConvertible", "Distance"]
-- ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
-- ["PSs25IntegerLiteralConvertible", "init"]
-- ["PSs11IntegerType", "Distance"]
-- ["PSs11IntegerType", "IntegerLiteralType"]
+- ["Vs5Int16", "deinit"]
+- ["Vs5Int32", "deinit"]
+- ["Vs5Int64", "deinit"]
+- ["Vs4Int8", "deinit"]
+- ["Ps21IntegerArithmeticType", "Distance"]
+- ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- ["Ps25IntegerLiteralConvertible", "Distance"]
+- ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- ["Ps25IntegerLiteralConvertible", "init"]
+- ["Ps11IntegerType", "Distance"]
+- ["Ps11IntegerType", "IntegerLiteralType"]
 - ["C9Alamofire7Manager", "Any"]
 - ["C9Alamofire7Manager", "AnyObject"]
 - ["C9Alamofire7Manager", "Bool"]
@@ -628,30 +677,30 @@ depends-member:
 - ["C9Alamofire7Manager", "session"]
 - ["C9Alamofire7Manager", "sharedInstance"]
 - ["C9Alamofire7Manager", "startRequestsImmediately"]
-- ["PSs14MirrorPathType", "Distance"]
-- ["PSs14MirrorPathType", "IntegerLiteralType"]
-- ["PSs14MirrorPathType", "init"]
-- ["PSs21MutableCollectionType", "Generator"]
-- ["PSs21MutableCollectionType", "Index"]
-- ["PSs21MutableCollectionType", "SubSequence"]
-- ["PSs21MutableCollectionType", "_Element"]
-- ["PSs21MutableCollectionType", "enumerate"]
-- ["PSs21MutableCollectionType", "joinWithSeparator"]
-- ["PSs21MutableCollectionType", "prefix"]
-- ["PSs16MutableIndexable", "Generator"]
-- ["PSs16MutableIndexable", "Index"]
-- ["PSs16MutableIndexable", "SubSequence"]
-- ["PSs16MutableIndexable", "_Element"]
-- ["PSs16MutableIndexable", "enumerate"]
-- ["PSs16MutableIndexable", "joinWithSeparator"]
-- ["PSs16MutableIndexable", "prefix"]
-- ["PSs16MutableSliceable", "Generator"]
-- ["PSs16MutableSliceable", "Index"]
-- ["PSs16MutableSliceable", "SubSequence"]
-- ["PSs16MutableSliceable", "_Element"]
-- ["PSs16MutableSliceable", "enumerate"]
-- ["PSs16MutableSliceable", "joinWithSeparator"]
-- ["PSs16MutableSliceable", "prefix"]
+- ["Ps14MirrorPathType", "Distance"]
+- ["Ps14MirrorPathType", "IntegerLiteralType"]
+- ["Ps14MirrorPathType", "init"]
+- ["Ps21MutableCollectionType", "Generator"]
+- ["Ps21MutableCollectionType", "Index"]
+- ["Ps21MutableCollectionType", "SubSequence"]
+- ["Ps21MutableCollectionType", "_Element"]
+- ["Ps21MutableCollectionType", "enumerate"]
+- ["Ps21MutableCollectionType", "joinWithSeparator"]
+- ["Ps21MutableCollectionType", "prefix"]
+- ["Ps16MutableIndexable", "Generator"]
+- ["Ps16MutableIndexable", "Index"]
+- ["Ps16MutableIndexable", "SubSequence"]
+- ["Ps16MutableIndexable", "_Element"]
+- ["Ps16MutableIndexable", "enumerate"]
+- ["Ps16MutableIndexable", "joinWithSeparator"]
+- ["Ps16MutableIndexable", "prefix"]
+- ["Ps16MutableSliceable", "Generator"]
+- ["Ps16MutableSliceable", "Index"]
+- ["Ps16MutableSliceable", "SubSequence"]
+- ["Ps16MutableSliceable", "_Element"]
+- ["Ps16MutableSliceable", "enumerate"]
+- ["Ps16MutableSliceable", "joinWithSeparator"]
+- ["Ps16MutableSliceable", "prefix"]
 - ["CSo8NSBundle", "infoDictionary"]
 - ["CSo8NSBundle", "mainBundle"]
 - !private ["PSo8NSCoding", "authenticationMethod"]
@@ -975,28 +1024,28 @@ depends-member:
 - !private ["PSo24NSURLSessionTaskDelegate", "taskNeedNewBodyStream"]
 - !private ["PSo24NSURLSessionTaskDelegate", "taskWillPerformHTTPRedirection"]
 - ["PSo24NSURLSessionTaskDelegate", ""]
-- ["PSs21NilLiteralConvertible", "Some"]
-- ["PSs21NilLiteralConvertible", "init"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- ["Ps21NilLiteralConvertible", "init"]
 - ["Sq", "Some"]
 - ["Sq", "deinit"]
-- ["PSs16OutputStreamType", "init"]
+- ["Ps16OutputStreamType", "init"]
 - !private ["O9Alamofire17ParameterEncoding", "URL"]
 - !private ["O9Alamofire17ParameterEncoding", "encode"]
-- ["PSs21RandomAccessIndexType", "Distance"]
-- ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
-- ["PSs21RandomAccessIndexType", "init"]
-- !private ["VSs5Range", "deinit"]
-- ["PSs30RangeReplaceableCollectionType", "Generator"]
-- ["PSs30RangeReplaceableCollectionType", "Index"]
-- ["PSs30RangeReplaceableCollectionType", "SubSequence"]
-- ["PSs30RangeReplaceableCollectionType", "_Element"]
-- ["PSs30RangeReplaceableCollectionType", "enumerate"]
-- ["PSs30RangeReplaceableCollectionType", "joinWithSeparator"]
-- ["PSs30RangeReplaceableCollectionType", "prefix"]
-- !private ["PSs16RawRepresentable", "Allow"]
-- !private ["PSs16RawRepresentable", "CancelAuthenticationChallenge"]
-- !private ["PSs16RawRepresentable", "PerformDefaultHandling"]
-- !private ["PSs16RawRepresentable", "UseCredential"]
+- ["Ps21RandomAccessIndexType", "Distance"]
+- ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- ["Ps21RandomAccessIndexType", "init"]
+- !private ["Vs5Range", "deinit"]
+- ["Ps30RangeReplaceableCollectionType", "Generator"]
+- ["Ps30RangeReplaceableCollectionType", "Index"]
+- ["Ps30RangeReplaceableCollectionType", "SubSequence"]
+- ["Ps30RangeReplaceableCollectionType", "_Element"]
+- ["Ps30RangeReplaceableCollectionType", "enumerate"]
+- ["Ps30RangeReplaceableCollectionType", "joinWithSeparator"]
+- ["Ps30RangeReplaceableCollectionType", "prefix"]
+- !private ["Ps16RawRepresentable", "Allow"]
+- !private ["Ps16RawRepresentable", "CancelAuthenticationChallenge"]
+- !private ["Ps16RawRepresentable", "PerformDefaultHandling"]
+- !private ["Ps16RawRepresentable", "UseCredential"]
 - !private ["C9Alamofire7Request", "DataTaskDelegate"]
 - !private ["C9Alamofire7Request", "DownloadTaskDelegate"]
 - ["C9Alamofire7Request", "TaskDelegate"]
@@ -1005,18 +1054,18 @@ depends-member:
 - !private ["C9Alamofire7Request", "init"]
 - !private ["C9Alamofire7Request", "resume"]
 - !private ["V10ObjectiveC8Selector", "deinit"]
-- ["PSs12SequenceType", "Element"]
-- ["PSs12SequenceType", "Generator"]
-- ["PSs12SequenceType", "Index"]
-- ["PSs12SequenceType", "Key"]
-- ["PSs12SequenceType", "SubSequence"]
-- ["PSs12SequenceType", "Value"]
-- ["PSs12SequenceType", "_Element"]
-- ["PSs12SequenceType", "enumerate"]
-- ["PSs12SequenceType", "joinWithSeparator"]
-- ["PSs12SequenceType", "map"]
-- ["PSs12SequenceType", "prefix"]
-- ["PSs12SequenceType", "subscript"]
+- ["Ps12SequenceType", "Element"]
+- ["Ps12SequenceType", "Generator"]
+- ["Ps12SequenceType", "Index"]
+- ["Ps12SequenceType", "Key"]
+- ["Ps12SequenceType", "SubSequence"]
+- ["Ps12SequenceType", "Value"]
+- ["Ps12SequenceType", "_Element"]
+- ["Ps12SequenceType", "enumerate"]
+- ["Ps12SequenceType", "joinWithSeparator"]
+- ["Ps12SequenceType", "map"]
+- ["Ps12SequenceType", "prefix"]
+- ["Ps12SequenceType", "subscript"]
 - !private ["O9Alamofire17ServerTrustPolicy", "evaluateServerTrust"]
 - !private ["C9Alamofire24ServerTrustPolicyManager", "serverTrustPolicyForHost"]
 - ["CC9Alamofire7Manager15SessionDelegate", "Any"]
@@ -1075,162 +1124,157 @@ depends-member:
 - ["CC9Alamofire7Manager15SessionDelegate", "taskDidSendBodyData"]
 - ["CC9Alamofire7Manager15SessionDelegate", "taskNeedNewBodyStream"]
 - ["CC9Alamofire7Manager15SessionDelegate", "taskWillPerformHTTPRedirection"]
-- ["PSs17SignedIntegerType", "Distance"]
-- ["PSs17SignedIntegerType", "IntegerLiteralType"]
-- ["PSs16SignedNumberType", "Distance"]
-- ["PSs16SignedNumberType", "IntegerLiteralType"]
-- ["PSs16SignedNumberType", "init"]
-- ["VSs5Slice", "Generator"]
-- ["VSs5Slice", "Index"]
-- ["VSs5Slice", "SubSequence"]
-- ["VSs5Slice", "_Element"]
-- ["PSs10Streamable", "init"]
-- ["PSs10Strideable", "Distance"]
-- ["PSs10Strideable", "IntegerLiteralType"]
-- ["PSs10Strideable", "init"]
+- ["Ps17SignedIntegerType", "Distance"]
+- ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- ["Ps16SignedNumberType", "Distance"]
+- ["Ps16SignedNumberType", "IntegerLiteralType"]
+- ["Ps16SignedNumberType", "init"]
+- ["Vs5Slice", "Generator"]
+- ["Vs5Slice", "Index"]
+- ["Vs5Slice", "SubSequence"]
+- ["Vs5Slice", "_Element"]
+- ["Ps10Streamable", "init"]
+- ["Ps10Strideable", "Distance"]
+- ["Ps10Strideable", "IntegerLiteralType"]
+- ["Ps10Strideable", "init"]
 - ["SS", "deinit"]
 - ["SS", "init"]
-- ["PSs30StringInterpolationConvertible", "init"]
-- ["PSs24StringLiteralConvertible", "init"]
+- ["Ps30StringInterpolationConvertible", "init"]
+- ["Ps24StringLiteralConvertible", "init"]
 - !private ["CC9Alamofire7Request12TaskDelegate", "URLSession"]
 - !private ["CC9Alamofire7Request12TaskDelegate", "init"]
 - !private ["CC9Alamofire7Request12TaskDelegate", "task"]
 - ["Su", "deinit"]
-- ["VSs6UInt16", "deinit"]
-- ["VSs6UInt32", "deinit"]
-- ["VSs6UInt64", "deinit"]
-- ["VSs5UInt8", "deinit"]
+- ["Vs6UInt16", "deinit"]
+- ["Vs6UInt32", "deinit"]
+- ["Vs6UInt64", "deinit"]
+- ["Vs5UInt8", "deinit"]
 - !private ["P9Alamofire21URLRequestConvertible", "URLRequest"]
 - ["P9Alamofire20URLStringConvertible", "init"]
 - ["Sc", "deinit"]
-- ["PSs31UnicodeScalarLiteralConvertible", "init"]
-- ["VSs20UnsafeMutablePointer", "init"]
+- ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- ["Sp", "init"]
 - !private ["CC9Alamofire7Request18UploadTaskDelegate", "URLSession"]
 - !private ["CC9Alamofire7Request18UploadTaskDelegate", "deinit"]
-- ["CSs17_AnyGeneratorBase", "Element"]
-- ["PSs10_ArrayType", "Generator"]
-- ["PSs10_ArrayType", "Index"]
-- ["PSs10_ArrayType", "SubSequence"]
-- ["PSs10_ArrayType", "_Element"]
-- ["PSs10_ArrayType", "enumerate"]
-- ["PSs10_ArrayType", "joinWithSeparator"]
-- ["PSs10_ArrayType", "prefix"]
-- ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
-- ["PSs31_BuiltinFloatLiteralConvertible", "init"]
-- ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
-- ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
-- ["PSs33_BuiltinIntegerLiteralConvertible", "init"]
-- ["PSs32_BuiltinStringLiteralConvertible", "init"]
-- ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
-- ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
-- ["PSs19_CVarArgAlignedType", "init"]
-- ["PSs22_CVarArgPassedAsDouble", "init"]
-- ["PSs16_CocoaStringType", "init"]
-- ["PSs24_DestructorSafeContainer", "Generator"]
-- ["PSs24_DestructorSafeContainer", "Index"]
-- ["PSs24_DestructorSafeContainer", "SubSequence"]
-- ["PSs24_DestructorSafeContainer", "_Element"]
-- ["PSs24_DestructorSafeContainer", "enumerate"]
-- ["PSs24_DestructorSafeContainer", "joinWithSeparator"]
-- ["PSs24_DestructorSafeContainer", "prefix"]
-- ["PSs14_Incrementable", "Distance"]
-- ["PSs14_Incrementable", "IntegerLiteralType"]
-- ["PSs14_Incrementable", "init"]
-- ["PSs22_IntegerArithmeticType", "Distance"]
-- ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
-- ["PSs12_IntegerType", "Distance"]
-- ["PSs12_IntegerType", "IntegerLiteralType"]
-- ["PSs21_ObjectiveCBridgeable", "Distance"]
-- ["PSs21_ObjectiveCBridgeable", "Generator"]
-- ["PSs21_ObjectiveCBridgeable", "Index"]
-- ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
-- ["PSs21_ObjectiveCBridgeable", "Key"]
-- ["PSs21_ObjectiveCBridgeable", "SubSequence"]
-- ["PSs21_ObjectiveCBridgeable", "Value"]
-- ["PSs21_ObjectiveCBridgeable", "_Element"]
-- ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- ["PSs21_ObjectiveCBridgeable", "init"]
-- ["PSs21_ObjectiveCBridgeable", "joinWithSeparator"]
-- ["PSs21_ObjectiveCBridgeable", "prefix"]
-- ["PSs21_ObjectiveCBridgeable", "subscript"]
-- !private ["VSs26_OptionalNilComparisonType", "deinit"]
-- ["PSs12_PointerType", "init"]
-- ["PSs22_RandomAccessAmbiguity", "Distance"]
-- ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
-- ["PSs22_RandomAccessAmbiguity", "init"]
-- ["PSs12_Reflectable", "Distance"]
-- ["PSs12_Reflectable", "Generator"]
-- ["PSs12_Reflectable", "Index"]
-- ["PSs12_Reflectable", "IntegerLiteralType"]
-- ["PSs12_Reflectable", "Key"]
-- ["PSs12_Reflectable", "Some"]
-- ["PSs12_Reflectable", "SubSequence"]
-- ["PSs12_Reflectable", "Value"]
-- ["PSs12_Reflectable", "_Element"]
-- ["PSs12_Reflectable", "_getBuiltinLogicValue"]
-- ["PSs12_Reflectable", "enumerate"]
-- ["PSs12_Reflectable", "init"]
-- ["PSs12_Reflectable", "joinWithSeparator"]
-- ["PSs12_Reflectable", "prefix"]
-- ["PSs12_Reflectable", "subscript"]
-- ["PSs18_SignedIntegerType", "Distance"]
-- ["PSs18_SignedIntegerType", "IntegerLiteralType"]
-- ["PSs11_Strideable", "Distance"]
-- ["PSs11_Strideable", "IntegerLiteralType"]
-- ["PSs11_Strideable", "init"]
+- ["Ps10_ArrayType", "Generator"]
+- ["Ps10_ArrayType", "Index"]
+- ["Ps10_ArrayType", "SubSequence"]
+- ["Ps10_ArrayType", "_Element"]
+- ["Ps10_ArrayType", "enumerate"]
+- ["Ps10_ArrayType", "joinWithSeparator"]
+- ["Ps10_ArrayType", "prefix"]
+- ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- ["Ps31_BuiltinFloatLiteralConvertible", "init"]
+- ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
+- ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
+- ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- ["Ps19_CVarArgAlignedType", "init"]
+- ["Ps22_CVarArgPassedAsDouble", "init"]
+- ["Ps24_DestructorSafeContainer", "Generator"]
+- ["Ps24_DestructorSafeContainer", "Index"]
+- ["Ps24_DestructorSafeContainer", "SubSequence"]
+- ["Ps24_DestructorSafeContainer", "_Element"]
+- ["Ps24_DestructorSafeContainer", "enumerate"]
+- ["Ps24_DestructorSafeContainer", "joinWithSeparator"]
+- ["Ps24_DestructorSafeContainer", "prefix"]
+- ["Ps14_Incrementable", "Distance"]
+- ["Ps14_Incrementable", "IntegerLiteralType"]
+- ["Ps14_Incrementable", "init"]
+- ["Ps22_IntegerArithmeticType", "Distance"]
+- ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- ["Ps12_IntegerType", "Distance"]
+- ["Ps12_IntegerType", "IntegerLiteralType"]
+- ["Ps21_ObjectiveCBridgeable", "Distance"]
+- ["Ps21_ObjectiveCBridgeable", "Generator"]
+- ["Ps21_ObjectiveCBridgeable", "Index"]
+- ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- ["Ps21_ObjectiveCBridgeable", "Key"]
+- ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- ["Ps21_ObjectiveCBridgeable", "Value"]
+- ["Ps21_ObjectiveCBridgeable", "_Element"]
+- ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- ["Ps21_ObjectiveCBridgeable", "joinWithSeparator"]
+- ["Ps21_ObjectiveCBridgeable", "prefix"]
+- ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- ["Ps12_PointerType", "init"]
+- ["Ps22_RandomAccessAmbiguity", "Distance"]
+- ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- ["Ps22_RandomAccessAmbiguity", "init"]
+- ["Ps12_Reflectable", "Distance"]
+- ["Ps12_Reflectable", "Generator"]
+- ["Ps12_Reflectable", "Index"]
+- ["Ps12_Reflectable", "IntegerLiteralType"]
+- ["Ps12_Reflectable", "Key"]
+- ["Ps12_Reflectable", "Some"]
+- ["Ps12_Reflectable", "SubSequence"]
+- ["Ps12_Reflectable", "Value"]
+- ["Ps12_Reflectable", "_Element"]
+- ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- ["Ps12_Reflectable", "enumerate"]
+- ["Ps12_Reflectable", "init"]
+- ["Ps12_Reflectable", "joinWithSeparator"]
+- ["Ps12_Reflectable", "prefix"]
+- ["Ps12_Reflectable", "subscript"]
+- ["Ps18_SignedIntegerType", "Distance"]
+- ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 depends-nominal:
-- "PSs16AbsoluteValuable"
-- "CSs12AnyGenerator"
-- "PSs9AnyObject"
-- "VSs11AnySequence"
+- "Ps16AbsoluteValuable"
+- "Vs12AnyGenerator"
+- "Ps9AnyObject"
+- "Vs11AnySequence"
 - "Sa"
-- "PSs23ArrayLiteralConvertible"
-- "VSs10ArraySlice"
-- "PSs22BidirectionalIndexType"
-- "PSs21BitwiseOperationsType"
+- "Ps23ArrayLiteralConvertible"
+- "Vs10ArraySlice"
+- "Ps22BidirectionalIndexType"
+- "Ps21BitwiseOperationsType"
 - "Sb"
-- "PSs25BooleanLiteralConvertible"
-- "PSs11BooleanType"
+- "Ps25BooleanLiteralConvertible"
+- "Ps11BooleanType"
 - "CSo15CFMutableString"
 - "CSo8CFString"
-- "PSs11CVarArgType"
-- "VSs9Character"
-- "PSs14CollectionType"
-- "PSs10Comparable"
-- "PSs28CustomDebugStringConvertible"
-- "PSs23CustomStringConvertible"
+- "Ps11CVarArgType"
+- "Vs9Character"
+- "Ps14CollectionType"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
 - !private "CC9Alamofire7Request16DataTaskDelegate"
-- "VSs10Dictionary"
-- "PSs28DictionaryLiteralConvertible"
+- "Vs10Dictionary"
+- "Ps28DictionaryLiteralConvertible"
 - "Sd"
 - !private "CC9Alamofire7Request20DownloadTaskDelegate"
-- "VSs18EnumerateGenerator"
-- "VSs17EnumerateSequence"
-- "PSs9Equatable"
-- "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- "Vs18EnumerateGenerator"
+- "Vs17EnumerateSequence"
+- "Ps9Equatable"
+- "Ps41ExtendedGraphemeClusterLiteralConvertible"
 - "Sf"
-- "PSs23FloatLiteralConvertible"
-- "PSs17FloatingPointType"
-- "PSs16ForwardIndexType"
-- "PSs13GeneratorType"
-- "PSs8Hashable"
+- "Ps23FloatLiteralConvertible"
+- "Ps17FloatingPointType"
+- "Ps16ForwardIndexType"
+- "Ps13GeneratorType"
+- "Ps8Hashable"
 - "SQ"
-- "PSs9Indexable"
-- "VSs17IndexingGenerator"
+- "Ps9Indexable"
+- "Vs17IndexingGenerator"
 - "Si"
-- "VSs5Int16"
-- "VSs5Int32"
-- "VSs5Int64"
-- "VSs4Int8"
-- "PSs21IntegerArithmeticType"
-- "PSs25IntegerLiteralConvertible"
-- "PSs11IntegerType"
+- "Vs5Int16"
+- "Vs5Int32"
+- "Vs5Int64"
+- "Vs4Int8"
+- "Ps21IntegerArithmeticType"
+- "Ps25IntegerLiteralConvertible"
+- "Ps11IntegerType"
 - "C9Alamofire7Manager"
-- "PSs14MirrorPathType"
-- "PSs21MutableCollectionType"
-- "PSs16MutableIndexable"
-- "PSs16MutableSliceable"
+- "Ps14MirrorPathType"
+- "Ps21MutableCollectionType"
+- "Ps16MutableIndexable"
+- "Ps16MutableSliceable"
 - "CSo8NSBundle"
 - "PSo8NSCoding"
 - "PSo9NSCopying"
@@ -1256,63 +1300,60 @@ depends-nominal:
 - "PSo26NSURLSessionStreamDelegate"
 - !private "CSo16NSURLSessionTask"
 - "PSo24NSURLSessionTaskDelegate"
-- "PSs21NilLiteralConvertible"
+- "Ps21NilLiteralConvertible"
 - "Sq"
-- "PSs16OutputStreamType"
+- "Ps16OutputStreamType"
 - !private "O9Alamofire17ParameterEncoding"
-- "PSs21RandomAccessIndexType"
-- !private "VSs5Range"
-- "PSs30RangeReplaceableCollectionType"
-- !private "PSs16RawRepresentable"
+- "Ps21RandomAccessIndexType"
+- !private "Vs5Range"
+- "Ps30RangeReplaceableCollectionType"
+- !private "Ps16RawRepresentable"
 - "C9Alamofire7Request"
 - !private "V10ObjectiveC8Selector"
-- "PSs12SequenceType"
+- "Ps12SequenceType"
 - !private "O9Alamofire17ServerTrustPolicy"
 - !private "C9Alamofire24ServerTrustPolicyManager"
 - "CC9Alamofire7Manager15SessionDelegate"
-- "PSs17SignedIntegerType"
-- "PSs16SignedNumberType"
-- "VSs5Slice"
-- "PSs10Streamable"
-- "PSs10Strideable"
+- "Ps17SignedIntegerType"
+- "Ps16SignedNumberType"
+- "Vs5Slice"
+- "Ps10Streamable"
+- "Ps10Strideable"
 - "SS"
-- "PSs30StringInterpolationConvertible"
-- "PSs24StringLiteralConvertible"
+- "Ps30StringInterpolationConvertible"
+- "Ps24StringLiteralConvertible"
 - !private "CC9Alamofire7Request12TaskDelegate"
 - "Su"
-- "VSs6UInt16"
-- "VSs6UInt32"
-- "VSs6UInt64"
-- "VSs5UInt8"
+- "Vs6UInt16"
+- "Vs6UInt32"
+- "Vs6UInt64"
+- "Vs5UInt8"
 - !private "P9Alamofire21URLRequestConvertible"
 - "P9Alamofire20URLStringConvertible"
 - "Sc"
-- "PSs31UnicodeScalarLiteralConvertible"
-- "VSs20UnsafeMutablePointer"
+- "Ps31UnicodeScalarLiteralConvertible"
+- "Sp"
 - !private "CC9Alamofire7Request18UploadTaskDelegate"
-- "CSs17_AnyGeneratorBase"
-- "PSs10_ArrayType"
-- "PSs33_BuiltinBooleanLiteralConvertible"
-- "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
-- "PSs31_BuiltinFloatLiteralConvertible"
-- "PSs33_BuiltinIntegerLiteralConvertible"
-- "PSs32_BuiltinStringLiteralConvertible"
-- "PSs37_BuiltinUTF16StringLiteralConvertible"
-- "PSs39_BuiltinUnicodeScalarLiteralConvertible"
-- "PSs19_CVarArgAlignedType"
-- "PSs22_CVarArgPassedAsDouble"
-- "PSs16_CocoaStringType"
-- "PSs24_DestructorSafeContainer"
-- "PSs14_Incrementable"
-- "PSs22_IntegerArithmeticType"
-- "PSs12_IntegerType"
-- "PSs21_ObjectiveCBridgeable"
-- !private "VSs26_OptionalNilComparisonType"
-- "PSs12_PointerType"
-- "PSs22_RandomAccessAmbiguity"
-- "PSs12_Reflectable"
-- "PSs18_SignedIntegerType"
-- "PSs11_Strideable"
+- "Ps10_ArrayType"
+- "Ps33_BuiltinBooleanLiteralConvertible"
+- "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- "Ps31_BuiltinFloatLiteralConvertible"
+- "Ps33_BuiltinIntegerLiteralConvertible"
+- "Ps32_BuiltinStringLiteralConvertible"
+- "Ps37_BuiltinUTF16StringLiteralConvertible"
+- "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- "Ps19_CVarArgAlignedType"
+- "Ps22_CVarArgPassedAsDouble"
+- "Ps24_DestructorSafeContainer"
+- "Ps14_Incrementable"
+- "Ps22_IntegerArithmeticType"
+- "Ps12_IntegerType"
+- "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- "Ps12_PointerType"
+- "Ps22_RandomAccessAmbiguity"
+- "Ps12_Reflectable"
+- "Ps18_SignedIntegerType"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
@@ -1325,4 +1366,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
-interface-hash: "50adbe0d34a2f32091a3107a274573db"
+interface-hash: "9cdd9c3e3c136db2d410b839c9c1e32a"

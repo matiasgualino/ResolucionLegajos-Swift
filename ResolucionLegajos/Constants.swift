@@ -11,7 +11,7 @@ import UIKit
 class Constants: NSObject {
 
 	static let PRODUCTION_BASE_URL = "http://preproduccion.tech-mind.com/apiLegajo/api"
-	static let TEST_BASE_URL = "http://preproduccion.tech-mind.com/apiLegajo/api"
+	static let TEST_BASE_URL = "http://private-975e4-legajos.apiary-mock.com/apiLegajo/api"
 	static let BASE_URL = Constants.TEST_BASE_URL
 	
 	static let YELLOW_COLOR = UIColor(rgba: "#FFD300")

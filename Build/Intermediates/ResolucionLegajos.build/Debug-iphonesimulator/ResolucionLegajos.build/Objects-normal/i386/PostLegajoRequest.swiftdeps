@@ -6,83 +6,90 @@ provides-nominal:
 provides-member:
 - ["C17ResolucionLegajos17PostLegajoRequest", ""]
 provides-dynamic-lookup:
+- "toJSONString"
 - "token"
 - "legajo"
-- "toJSONString"
 depends-top-level:
+- !private "StringLiteralType"
+- "String"
+- !private "=="
+- !private "AnyObject"
+- "NSObject"
+- !private "Dictionary"
 - "Legajo"
 - "PostLegajoRequest"
-- !private "AnyObject"
-- !private "=="
-- !private "StringLiteralType"
-- "NSObject"
-- "String"
 - !private "JSON"
-- !private "Dictionary"
 depends-member:
-- !private ["PSs9AnyObject", "JSON"]
-- ["PSs9AnyObject", "init"]
-- ["PSs9AnyObject", "legajo"]
-- !private ["PSs9AnyObject", "mutableCopyOfTheObject"]
-- !private ["PSs9AnyObject", "null"]
-- !private ["PSs9AnyObject", "parse"]
-- ["PSs9AnyObject", "toJSONString"]
-- !private ["PSs9AnyObject", "toString"]
-- ["PSs9AnyObject", "token"]
-- ["PSs9AnyObject", ""]
+- !private ["Ps9AnyObject", "JSON"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "legajo"]
+- !private ["Ps9AnyObject", "mutableCopyOfTheObject"]
+- !private ["Ps9AnyObject", "null"]
+- !private ["Ps9AnyObject", "parse"]
+- ["Ps9AnyObject", "toJSONString"]
+- !private ["Ps9AnyObject", "toString"]
+- ["Ps9AnyObject", "token"]
+- ["Ps9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
-- !private ["PSs11CVarArgType", "JSON"]
-- ["PSs11CVarArgType", "init"]
-- ["PSs11CVarArgType", "legajo"]
-- ["PSs11CVarArgType", "toJSONString"]
-- ["PSs11CVarArgType", "token"]
-- ["PSs11CVarArgType", ""]
-- !private ["PSs14CollectionType", "Key"]
-- !private ["PSs14CollectionType", "Value"]
-- !private ["PSs28CustomDebugStringConvertible", "Key"]
-- !private ["PSs28CustomDebugStringConvertible", "Value"]
-- !private ["PSs23CustomStringConvertible", "JSON"]
-- !private ["PSs23CustomStringConvertible", "Key"]
-- !private ["PSs23CustomStringConvertible", "Value"]
-- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
-- ["PSs23CustomStringConvertible", "init"]
-- ["PSs23CustomStringConvertible", "legajo"]
-- !private ["PSs23CustomStringConvertible", "mutableCopyOfTheObject"]
-- !private ["PSs23CustomStringConvertible", "null"]
-- !private ["PSs23CustomStringConvertible", "parse"]
-- ["PSs23CustomStringConvertible", "toJSONString"]
-- !private ["PSs23CustomStringConvertible", "toString"]
-- ["PSs23CustomStringConvertible", "token"]
-- ["PSs23CustomStringConvertible", ""]
-- !private ["VSs10Dictionary", "Key"]
-- !private ["VSs10Dictionary", "Value"]
-- !private ["VSs10Dictionary", "deinit"]
-- !private ["PSs28DictionaryLiteralConvertible", "Key"]
-- !private ["PSs28DictionaryLiteralConvertible", "Value"]
-- !private ["PSs9Equatable", "JSON"]
-- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
-- ["PSs9Equatable", "init"]
-- ["PSs9Equatable", "legajo"]
-- ["PSs9Equatable", "toJSONString"]
-- ["PSs9Equatable", "token"]
-- ["PSs9Equatable", ""]
-- !private ["PSs8Hashable", "JSON"]
-- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
-- ["PSs8Hashable", "init"]
-- ["PSs8Hashable", "legajo"]
-- ["PSs8Hashable", "toJSONString"]
-- ["PSs8Hashable", "token"]
-- ["PSs8Hashable", ""]
-- !private ["PSs9Indexable", "Key"]
-- !private ["PSs9Indexable", "Value"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "JSON"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "legajo"]
+- ["Ps11CVarArgType", "toJSONString"]
+- ["Ps11CVarArgType", "token"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps14CollectionType", "Key"]
+- !private ["Ps14CollectionType", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "JSON"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "legajo"]
+- ["Ps28CustomDebugStringConvertible", "toJSONString"]
+- ["Ps28CustomDebugStringConvertible", "token"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "JSON"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "legajo"]
+- !private ["Ps23CustomStringConvertible", "mutableCopyOfTheObject"]
+- !private ["Ps23CustomStringConvertible", "null"]
+- !private ["Ps23CustomStringConvertible", "parse"]
+- ["Ps23CustomStringConvertible", "toJSONString"]
+- !private ["Ps23CustomStringConvertible", "toString"]
+- ["Ps23CustomStringConvertible", "token"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- !private ["Vs10Dictionary", "deinit"]
+- !private ["Ps28DictionaryLiteralConvertible", "Key"]
+- !private ["Ps28DictionaryLiteralConvertible", "Value"]
+- !private ["Ps9Equatable", "JSON"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "legajo"]
+- ["Ps9Equatable", "toJSONString"]
+- ["Ps9Equatable", "token"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "JSON"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "legajo"]
+- ["Ps8Hashable", "toJSONString"]
+- ["Ps8Hashable", "token"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "Value"]
 - !private ["C17ResolucionLegajos4JSON", "init"]
 - !private ["C17ResolucionLegajos4JSON", "mutableCopyOfTheObject"]
 - !private ["C17ResolucionLegajos4JSON", "null"]
 - !private ["C17ResolucionLegajos4JSON", "parse"]
 - !private ["C17ResolucionLegajos4JSON", "toString"]
 - !private ["C17ResolucionLegajos6Legajo", "toJSONString"]
+- !private ["PSo9NSCopying", "toJSONString"]
 - !private ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "JSON"]
 - ["CSo8NSObject", "Legajo"]
@@ -108,46 +115,47 @@ depends-member:
 - ["C17ResolucionLegajos17PostLegajoRequest", "legajo"]
 - ["C17ResolucionLegajos17PostLegajoRequest", "toJSONString"]
 - ["C17ResolucionLegajos17PostLegajoRequest", "token"]
-- !private ["PSs12SequenceType", "Key"]
-- !private ["PSs12SequenceType", "Value"]
-- !private ["PSs12SequenceType", "init"]
-- !private ["PSs12SequenceType", "mutableCopyOfTheObject"]
-- !private ["PSs12SequenceType", "null"]
-- !private ["PSs12SequenceType", "parse"]
-- !private ["PSs12SequenceType", "toString"]
-- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs21_ObjectiveCBridgeable", "Key"]
-- !private ["PSs21_ObjectiveCBridgeable", "Value"]
-- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["VSs26_OptionalNilComparisonType", "deinit"]
-- !private ["PSs12_Reflectable", "Key"]
-- !private ["PSs12_Reflectable", "Value"]
-- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12SequenceType", "Key"]
+- !private ["Ps12SequenceType", "Value"]
+- !private ["Ps12SequenceType", "init"]
+- !private ["Ps12SequenceType", "mutableCopyOfTheObject"]
+- !private ["Ps12SequenceType", "null"]
+- !private ["Ps12SequenceType", "parse"]
+- !private ["Ps12SequenceType", "toString"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps12_Reflectable", "Key"]
+- !private ["Ps12_Reflectable", "Value"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 depends-nominal:
-- "PSs9AnyObject"
+- "Ps9AnyObject"
 - !private "Sb"
-- !private "PSs25BooleanLiteralConvertible"
-- !private "PSs11BooleanType"
-- "PSs11CVarArgType"
-- !private "PSs14CollectionType"
-- !private "PSs28CustomDebugStringConvertible"
-- "PSs23CustomStringConvertible"
-- !private "VSs10Dictionary"
-- !private "PSs28DictionaryLiteralConvertible"
-- "PSs9Equatable"
-- "PSs8Hashable"
-- !private "PSs9Indexable"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Ps28DictionaryLiteralConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
 - !private "C17ResolucionLegajos4JSON"
 - !private "C17ResolucionLegajos6Legajo"
+- !private "PSo9NSCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "Sq"
 - "C17ResolucionLegajos17PostLegajoRequest"
-- !private "PSs12SequenceType"
-- !private "PSs33_BuiltinBooleanLiteralConvertible"
-- !private "PSs21_ObjectiveCBridgeable"
-- !private "VSs26_OptionalNilComparisonType"
-- !private "PSs12_Reflectable"
+- !private "Ps12SequenceType"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"

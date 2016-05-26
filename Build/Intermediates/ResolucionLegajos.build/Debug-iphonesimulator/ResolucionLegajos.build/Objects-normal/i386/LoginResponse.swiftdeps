@@ -8,25 +8,28 @@ provides-member:
 provides-dynamic-lookup:
 - "accessToken"
 depends-top-level:
+- "NSObject"
 - "String"
 - "LoginResponse"
-- "NSObject"
 depends-member:
-- ["PSs9AnyObject", "accessToken"]
-- ["PSs9AnyObject", "init"]
-- ["PSs9AnyObject", ""]
-- ["PSs11CVarArgType", "accessToken"]
-- ["PSs11CVarArgType", "init"]
-- ["PSs11CVarArgType", ""]
-- ["PSs23CustomStringConvertible", "accessToken"]
-- ["PSs23CustomStringConvertible", "init"]
-- ["PSs23CustomStringConvertible", ""]
-- ["PSs9Equatable", "accessToken"]
-- ["PSs9Equatable", "init"]
-- ["PSs9Equatable", ""]
-- ["PSs8Hashable", "accessToken"]
-- ["PSs8Hashable", "init"]
-- ["PSs8Hashable", ""]
+- ["Ps9AnyObject", "accessToken"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", ""]
+- ["Ps11CVarArgType", "accessToken"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", ""]
+- ["Ps28CustomDebugStringConvertible", "accessToken"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "accessToken"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "accessToken"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "accessToken"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", ""]
 - ["C17ResolucionLegajos13LoginResponse", "String"]
 - ["C17ResolucionLegajos13LoginResponse", "accessToken"]
 - ["C17ResolucionLegajos13LoginResponse", "deinit"]
@@ -39,11 +42,12 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", ""]
 depends-nominal:
-- "PSs9AnyObject"
-- "PSs11CVarArgType"
-- "PSs23CustomStringConvertible"
-- "PSs9Equatable"
-- "PSs8Hashable"
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
 - "C17ResolucionLegajos13LoginResponse"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"

@@ -71,8 +71,19 @@ class ResolucionView: UIView, UITextViewDelegate {
 		if self.infraccion != nil {
 			
 			if self.sancion?.puntosmax == 0 && self.sancion?.puntosmin == 0 {
-				self.puntosTextField.text = "0"
+				self.puntosTextField.text = "0 (No puedes editar este campo)"
 				self.puntosTextField.enabled = false
+			} else {
+				self.puntosTextField.text = String(format: "%.2f", self.sancion!.puntosmin!)
+				self.puntosTextField.enabled = true
+			}
+			
+			if self.sancion!.ufmin == 0 && self.sancion!.ufmax == 0 {
+				self.importeTextField.text = "0 (No puedes editar este campo)"
+				self.importeTextField.enabled = false
+			} else {
+				self.importeTextField.text = String(format: "%.2f", self.sancion!.ufmin!)
+				self.importeTextField.enabled = true
 			}
 			
 			if self.infraccion!.resolucion != nil {
@@ -129,12 +140,17 @@ class ResolucionView: UIView, UITextViewDelegate {
 							resolucion.puntos = Int(self.puntosTextField.text!)
 						}
 						
-						if self.segmentedControl.selectedSegmentIndex == self.IMPORTE_INDEX {
+						if self.sancion?.ufmax == 0 && self.sancion?.ufmin == 0 {
 							resolucion.uf = 0.0
-							resolucion.importe = self.importeTextField.text == nil ? 0.0 : Double(self.importeTextField.text!)
-						} else {
 							resolucion.importe = 0.0
-							resolucion.uf = self.importeTextField.text == nil ? 0.0 : Double(self.importeTextField.text!)
+						} else {
+							if self.segmentedControl.selectedSegmentIndex == self.IMPORTE_INDEX {
+								resolucion.uf = 0.0
+								resolucion.importe = self.importeTextField.text == nil ? 0.0 : Double(self.importeTextField.text!)
+							} else {
+								resolucion.importe = 0.0
+								resolucion.uf = self.importeTextField.text == nil ? 0.0 : Double(self.importeTextField.text!)
+							}
 						}
 						
 						resolucion.codigo = self.sancion?.codigo
@@ -171,36 +187,12 @@ class ResolucionView: UIView, UITextViewDelegate {
 		
 		var valid = true
 		
-		let puntosStr = self.puntosTextField.text
-		if (puntosStr != nil || puntosStr != "") {
-			let puntosInt = Int(puntosStr!)
-			if puntosInt != nil {
-				if self.sancion!.puntosmin > puntosInt || self.sancion?.puntosmax < puntosInt {
-					valid = false
-				}
-			} else {
-				valid = false
-			}
-		} else {
-			valid = false
-		}
-		
-		if self.segmentedControl.selectedSegmentIndex == self.IMPORTE_INDEX {
-			let importeStr = self.importeTextField.text
-			if (importeStr != nil || importeStr != "") {
-				let importeDouble = Double(importeStr!)
-				if importeDouble == nil {
-					valid = false
-				}
-			} else {
-				valid = false
-			}
-		} else if self.segmentedControl.selectedSegmentIndex == self.UF_INDEX {
-			let ufStr = self.puntosTextField.text
-			if (ufStr != nil || ufStr != "") {
-				let ufDouble = Double(ufStr!)
-				if ufDouble != nil {
-					if self.sancion!.ufmin > ufDouble || self.sancion?.ufmax < ufDouble {
+		if self.sancion!.puntosmin > 0 && self.sancion!.puntosmax > 0 {
+			let puntosStr = self.puntosTextField.text
+			if (puntosStr != nil || puntosStr != "") {
+				let puntosInt = Int(puntosStr!)
+				if puntosInt != nil {
+					if self.sancion!.puntosmin > puntosInt || self.sancion!.puntosmax < puntosInt {
 						valid = false
 					}
 				} else {
@@ -208,6 +200,34 @@ class ResolucionView: UIView, UITextViewDelegate {
 				}
 			} else {
 				valid = false
+			}
+		}
+
+		if self.sancion!.ufmin > 0 && self.sancion!.ufmax > 0 {
+			if self.segmentedControl.selectedSegmentIndex == self.IMPORTE_INDEX {
+				let importeStr = self.importeTextField.text
+				if (importeStr != nil || importeStr != "") {
+					let importeDouble = Double(importeStr!)
+					if importeDouble == nil {
+						valid = false
+					}
+				} else {
+					valid = false
+				}
+			} else if self.segmentedControl.selectedSegmentIndex == self.UF_INDEX {
+				let ufStr = self.importeTextField.text
+				if (ufStr != nil || ufStr != "") {
+					let ufDouble = Double(ufStr!)
+					if ufDouble != nil {
+						if self.sancion!.ufmin > ufDouble || self.sancion?.ufmax < ufDouble {
+							valid = false
+						}
+					} else {
+						valid = false
+					}
+				} else {
+					valid = false
+				}
 			}
 		}
 		

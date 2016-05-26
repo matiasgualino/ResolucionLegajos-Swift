@@ -1,0 +1,1 @@
+ const unsigned char MercadoPagoTrackerVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:MercadoPagoTracker  PROJECT:Pods-1" "\n"; const double MercadoPagoTrackerVersionNumber __attribute__ ((used)) = (double)1.;

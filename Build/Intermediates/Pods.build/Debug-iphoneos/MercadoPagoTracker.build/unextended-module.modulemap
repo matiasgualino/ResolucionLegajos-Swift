@@ -1,0 +1,10 @@
+framework module MercadoPagoTracker {
+  umbrella header "MercadoPagoTracker-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module MercadoPagoTracker.__Swift {
+    exclude header "MercadoPagoTracker-Swift.h"
+}

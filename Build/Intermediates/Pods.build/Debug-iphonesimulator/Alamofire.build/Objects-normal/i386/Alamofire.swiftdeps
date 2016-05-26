@@ -36,91 +36,98 @@ provides-dynamic-lookup:
 - "URLString"
 - "URLRequest"
 depends-top-level:
-- "Method"
-- "request"
-- "download"
-- "ParameterEncoding"
-- "URLStringConvertible"
-- "NSMutableURLRequest"
-- "NSURLRequest"
-- "UInt64"
-- "NSInputStream"
-- "upload"
-- "NSData"
-- "Void"
-- "NSURL"
-- "MultipartFormData"
-- "Request"
-- "URLRequest"
-- "String"
 - "URLRequestConvertible"
-- "AnyObject"
-- "NSURLComponents"
 - "Manager"
+- "Request"
+- "Method"
+- "String"
+- "NSData"
+- "MultipartFormData"
+- "Void"
+- "UInt64"
+- "ParameterEncoding"
+- "NSInputStream"
+- "NSURLRequest"
+- "download"
+- "NSURLComponents"
+- "AnyObject"
+- "request"
+- "URLStringConvertible"
+- "URLRequest"
+- "upload"
+- "NSMutableURLRequest"
+- "NSURL"
 depends-member:
-- ["PSs9AnyObject", "DownloadFileDestination"]
-- !private ["PSs9AnyObject", "HTTPMethod"]
-- !private ["PSs9AnyObject", "MultipartFormDataEncodingMemoryThreshold"]
-- ["PSs9AnyObject", "MultipartFormDataEncodingResult"]
-- !private ["PSs9AnyObject", "URL"]
-- ["PSs9AnyObject", "URLRequest"]
-- ["PSs9AnyObject", "URLString"]
-- !private ["PSs9AnyObject", "absoluteString"]
-- !private ["PSs9AnyObject", "download"]
-- !private ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "mutableCopy"]
-- !private ["PSs9AnyObject", "request"]
-- !private ["PSs9AnyObject", "setValue"]
-- !private ["PSs9AnyObject", "sharedInstance"]
-- !private ["PSs9AnyObject", "upload"]
-- !private ["PSs11CVarArgType", "HTTPMethod"]
-- !private ["PSs11CVarArgType", "URL"]
-- ["PSs11CVarArgType", "URLRequest"]
-- ["PSs11CVarArgType", "URLString"]
-- !private ["PSs11CVarArgType", "absoluteString"]
-- !private ["PSs11CVarArgType", "init"]
-- !private ["PSs11CVarArgType", "mutableCopy"]
-- !private ["PSs11CVarArgType", "setValue"]
-- !private ["PSs14CollectionType", "Generator"]
-- ["PSs10Comparable", "URLString"]
-- ["PSs28CustomDebugStringConvertible", "DownloadFileDestination"]
-- !private ["PSs28CustomDebugStringConvertible", "Generator"]
-- ["PSs28CustomDebugStringConvertible", "Some"]
-- ["PSs28CustomDebugStringConvertible", "URLString"]
-- ["PSs23CustomStringConvertible", "DownloadFileDestination"]
-- !private ["PSs23CustomStringConvertible", "Generator"]
-- !private ["PSs23CustomStringConvertible", "HTTPMethod"]
-- !private ["PSs23CustomStringConvertible", "URL"]
-- ["PSs23CustomStringConvertible", "URLRequest"]
-- ["PSs23CustomStringConvertible", "URLString"]
-- !private ["PSs23CustomStringConvertible", "absoluteString"]
-- !private ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "mutableCopy"]
-- !private ["PSs23CustomStringConvertible", "setValue"]
-- !private ["VSs10Dictionary", "Generator"]
-- !private ["VSs19DictionaryGenerator", "Element"]
-- !private ["PSs28DictionaryLiteralConvertible", "Generator"]
-- !private ["PSs9Equatable", "HTTPMethod"]
-- !private ["PSs9Equatable", "URL"]
-- ["PSs9Equatable", "URLRequest"]
-- ["PSs9Equatable", "URLString"]
-- !private ["PSs9Equatable", "absoluteString"]
-- !private ["PSs9Equatable", "init"]
-- !private ["PSs9Equatable", "mutableCopy"]
-- !private ["PSs9Equatable", "rawValue"]
-- !private ["PSs9Equatable", "setValue"]
-- ["PSs41ExtendedGraphemeClusterLiteralConvertible", "URLString"]
-- !private ["PSs13GeneratorType", "Element"]
-- !private ["PSs8Hashable", "HTTPMethod"]
-- !private ["PSs8Hashable", "URL"]
-- ["PSs8Hashable", "URLRequest"]
-- ["PSs8Hashable", "URLString"]
-- !private ["PSs8Hashable", "absoluteString"]
-- !private ["PSs8Hashable", "init"]
-- !private ["PSs8Hashable", "mutableCopy"]
-- !private ["PSs8Hashable", "rawValue"]
-- !private ["PSs8Hashable", "setValue"]
-- !private ["PSs9Indexable", "Generator"]
+- ["Ps9AnyObject", "DownloadFileDestination"]
+- !private ["Ps9AnyObject", "HTTPMethod"]
+- !private ["Ps9AnyObject", "MultipartFormDataEncodingMemoryThreshold"]
+- ["Ps9AnyObject", "MultipartFormDataEncodingResult"]
+- !private ["Ps9AnyObject", "URL"]
+- ["Ps9AnyObject", "URLRequest"]
+- ["Ps9AnyObject", "URLString"]
+- !private ["Ps9AnyObject", "absoluteString"]
+- !private ["Ps9AnyObject", "download"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "mutableCopy"]
+- !private ["Ps9AnyObject", "request"]
+- !private ["Ps9AnyObject", "setValue"]
+- !private ["Ps9AnyObject", "sharedInstance"]
+- !private ["Ps9AnyObject", "upload"]
+- !private ["Ps11CVarArgType", "HTTPMethod"]
+- !private ["Ps11CVarArgType", "URL"]
+- ["Ps11CVarArgType", "URLRequest"]
+- ["Ps11CVarArgType", "URLString"]
+- !private ["Ps11CVarArgType", "absoluteString"]
+- !private ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "mutableCopy"]
+- !private ["Ps11CVarArgType", "setValue"]
+- !private ["Ps14CollectionType", "Generator"]
+- ["Ps10Comparable", "URLString"]
+- ["Ps28CustomDebugStringConvertible", "DownloadFileDestination"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
+- !private ["Ps28CustomDebugStringConvertible", "HTTPMethod"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "URL"]
+- ["Ps28CustomDebugStringConvertible", "URLRequest"]
+- ["Ps28CustomDebugStringConvertible", "URLString"]
+- !private ["Ps28CustomDebugStringConvertible", "absoluteString"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "mutableCopy"]
+- !private ["Ps28CustomDebugStringConvertible", "setValue"]
+- ["Ps23CustomStringConvertible", "DownloadFileDestination"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
+- !private ["Ps23CustomStringConvertible", "HTTPMethod"]
+- !private ["Ps23CustomStringConvertible", "URL"]
+- ["Ps23CustomStringConvertible", "URLRequest"]
+- ["Ps23CustomStringConvertible", "URLString"]
+- !private ["Ps23CustomStringConvertible", "absoluteString"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "mutableCopy"]
+- !private ["Ps23CustomStringConvertible", "setValue"]
+- !private ["Vs10Dictionary", "Generator"]
+- !private ["Vs19DictionaryGenerator", "Element"]
+- !private ["Ps28DictionaryLiteralConvertible", "Generator"]
+- !private ["Ps9Equatable", "HTTPMethod"]
+- !private ["Ps9Equatable", "URL"]
+- ["Ps9Equatable", "URLRequest"]
+- ["Ps9Equatable", "URLString"]
+- !private ["Ps9Equatable", "absoluteString"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "mutableCopy"]
+- !private ["Ps9Equatable", "rawValue"]
+- !private ["Ps9Equatable", "setValue"]
+- ["Ps41ExtendedGraphemeClusterLiteralConvertible", "URLString"]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "HTTPMethod"]
+- !private ["Ps8Hashable", "URL"]
+- ["Ps8Hashable", "URLRequest"]
+- ["Ps8Hashable", "URLString"]
+- !private ["Ps8Hashable", "absoluteString"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "mutableCopy"]
+- !private ["Ps8Hashable", "rawValue"]
+- !private ["Ps8Hashable", "setValue"]
+- !private ["Ps9Indexable", "Generator"]
 - !private ["C9Alamofire7Manager", "MultipartFormDataEncodingMemoryThreshold"]
 - ["C9Alamofire7Manager", "MultipartFormDataEncodingResult"]
 - !private ["C9Alamofire7Manager", "download"]
@@ -129,7 +136,7 @@ depends-member:
 - !private ["C9Alamofire7Manager", "upload"]
 - !private ["O9Alamofire6Method", "deinit"]
 - !private ["O9Alamofire6Method", "rawValue"]
-- ["PSs14MirrorPathType", "URLString"]
+- ["Ps14MirrorPathType", "URLString"]
 - !private ["PSo8NSCoding", "HTTPMethod"]
 - !private ["PSo8NSCoding", "URL"]
 - ["PSo8NSCoding", "URLRequest"]
@@ -203,19 +210,19 @@ depends-member:
 - !private ["CSo12NSURLRequest", "init"]
 - !private ["CSo12NSURLRequest", "mutableCopy"]
 - !private ["CSo12NSURLRequest", "setValue"]
-- ["PSs21NilLiteralConvertible", "Some"]
+- ["Ps21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
-- ["PSs16OutputStreamType", "URLString"]
+- ["Ps16OutputStreamType", "URLString"]
 - !private ["O9Alamofire17ParameterEncoding", "URL"]
-- !private ["PSs16RawRepresentable", "rawValue"]
+- !private ["Ps16RawRepresentable", "rawValue"]
 - ["C9Alamofire7Request", "DownloadFileDestination"]
-- !private ["PSs12SequenceType", "Generator"]
-- ["PSs10Streamable", "URLString"]
+- !private ["Ps12SequenceType", "Generator"]
+- ["Ps10Streamable", "URLString"]
 - ["SS", "String"]
 - ["SS", "URLString"]
 - ["SS", "deinit"]
-- ["PSs30StringInterpolationConvertible", "URLString"]
-- ["PSs24StringLiteralConvertible", "URLString"]
+- ["Ps30StringInterpolationConvertible", "URLString"]
+- ["Ps24StringLiteralConvertible", "URLString"]
 - !private ["P9Alamofire21URLRequestConvertible", "HTTPMethod"]
 - ["P9Alamofire21URLRequestConvertible", "NSMutableURLRequest"]
 - !private ["P9Alamofire21URLRequestConvertible", "URL"]
@@ -235,39 +242,39 @@ depends-member:
 - !private ["P9Alamofire20URLStringConvertible", "mutableCopy"]
 - !private ["P9Alamofire20URLStringConvertible", "setValue"]
 - ["P9Alamofire20URLStringConvertible", ""]
-- ["PSs31UnicodeScalarLiteralConvertible", "URLString"]
-- ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "URLString"]
-- ["PSs32_BuiltinStringLiteralConvertible", "URLString"]
-- ["PSs37_BuiltinUTF16StringLiteralConvertible", "URLString"]
-- ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "URLString"]
-- ["PSs32_FileReferenceLiteralConvertible", "URLString"]
-- !private ["PSs32_FileReferenceLiteralConvertible", "absoluteString"]
-- !private ["PSs32_FileReferenceLiteralConvertible", "init"]
-- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
-- ["PSs21_ObjectiveCBridgeable", "URLString"]
-- !private ["PSs12_Reflectable", "Generator"]
-- ["PSs12_Reflectable", "Some"]
-- ["PSs12_Reflectable", "URLString"]
-- !private ["PSs12_Reflectable", "absoluteString"]
-- !private ["PSs12_Reflectable", "init"]
+- ["Ps31UnicodeScalarLiteralConvertible", "URLString"]
+- ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "URLString"]
+- ["Ps32_BuiltinStringLiteralConvertible", "URLString"]
+- ["Ps37_BuiltinUTF16StringLiteralConvertible", "URLString"]
+- ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "URLString"]
+- ["Ps32_FileReferenceLiteralConvertible", "URLString"]
+- !private ["Ps32_FileReferenceLiteralConvertible", "absoluteString"]
+- !private ["Ps32_FileReferenceLiteralConvertible", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
+- ["Ps21_ObjectiveCBridgeable", "URLString"]
+- !private ["Ps12_Reflectable", "Generator"]
+- ["Ps12_Reflectable", "Some"]
+- ["Ps12_Reflectable", "URLString"]
+- !private ["Ps12_Reflectable", "absoluteString"]
+- !private ["Ps12_Reflectable", "init"]
 depends-nominal:
-- "PSs9AnyObject"
-- "PSs11CVarArgType"
-- !private "PSs14CollectionType"
-- "PSs10Comparable"
-- "PSs28CustomDebugStringConvertible"
-- "PSs23CustomStringConvertible"
-- !private "VSs10Dictionary"
-- !private "VSs19DictionaryGenerator"
-- !private "PSs28DictionaryLiteralConvertible"
-- "PSs9Equatable"
-- "PSs41ExtendedGraphemeClusterLiteralConvertible"
-- !private "PSs13GeneratorType"
-- "PSs8Hashable"
-- !private "PSs9Indexable"
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Vs19DictionaryGenerator"
+- !private "Ps28DictionaryLiteralConvertible"
+- "Ps9Equatable"
+- "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
 - "C9Alamofire7Manager"
 - !private "O9Alamofire6Method"
-- "PSs14MirrorPathType"
+- "Ps14MirrorPathType"
 - "PSo8NSCoding"
 - "PSo9NSCopying"
 - !private "CSo6NSData"
@@ -279,27 +286,27 @@ depends-nominal:
 - "CSo5NSURL"
 - "CSo15NSURLComponents"
 - "CSo12NSURLRequest"
-- "PSs21NilLiteralConvertible"
+- "Ps21NilLiteralConvertible"
 - "Sq"
-- "PSs16OutputStreamType"
+- "Ps16OutputStreamType"
 - !private "O9Alamofire17ParameterEncoding"
-- !private "PSs16RawRepresentable"
+- !private "Ps16RawRepresentable"
 - "C9Alamofire7Request"
-- !private "PSs12SequenceType"
-- "PSs10Streamable"
+- !private "Ps12SequenceType"
+- "Ps10Streamable"
 - "SS"
-- "PSs30StringInterpolationConvertible"
-- "PSs24StringLiteralConvertible"
+- "Ps30StringInterpolationConvertible"
+- "Ps24StringLiteralConvertible"
 - "P9Alamofire21URLRequestConvertible"
 - "P9Alamofire20URLStringConvertible"
-- "PSs31UnicodeScalarLiteralConvertible"
-- "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
-- "PSs32_BuiltinStringLiteralConvertible"
-- "PSs37_BuiltinUTF16StringLiteralConvertible"
-- "PSs39_BuiltinUnicodeScalarLiteralConvertible"
-- "PSs32_FileReferenceLiteralConvertible"
-- "PSs21_ObjectiveCBridgeable"
-- "PSs12_Reflectable"
+- "Ps31UnicodeScalarLiteralConvertible"
+- "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- "Ps32_BuiltinStringLiteralConvertible"
+- "Ps37_BuiltinUTF16StringLiteralConvertible"
+- "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- "Ps32_FileReferenceLiteralConvertible"
+- "Ps21_ObjectiveCBridgeable"
+- "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"

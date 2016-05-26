@@ -1,0 +1,129 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PaymentTrackInfo"
+provides-nominal:
+- "C18MercadoPagoTracker16PaymentTrackInfo"
+provides-member:
+- ["C18MercadoPagoTracker16PaymentTrackInfo", ""]
+provides-dynamic-lookup:
+- "PAYMENT_STATUS_DETAIL"
+- "PAYMENT_STATUS"
+- "PAYMENT_INSTALLMENTS"
+- "PAYMENT_ISSUER_ID"
+- "PAYMENT_METHOD_ID"
+- "PAYMENT_TYPE_ID"
+depends-top-level:
+- "UInt"
+- "PaymentTrackInfo"
+- "NSObject"
+depends-member:
+- ["Ps9AnyObject", "PAYMENT_INSTALLMENTS"]
+- ["Ps9AnyObject", "PAYMENT_ISSUER_ID"]
+- ["Ps9AnyObject", "PAYMENT_METHOD_ID"]
+- ["Ps9AnyObject", "PAYMENT_STATUS"]
+- ["Ps9AnyObject", "PAYMENT_STATUS_DETAIL"]
+- ["Ps9AnyObject", "PAYMENT_TYPE_ID"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", ""]
+- ["Ps11CVarArgType", "PAYMENT_INSTALLMENTS"]
+- ["Ps11CVarArgType", "PAYMENT_ISSUER_ID"]
+- ["Ps11CVarArgType", "PAYMENT_METHOD_ID"]
+- ["Ps11CVarArgType", "PAYMENT_STATUS"]
+- ["Ps11CVarArgType", "PAYMENT_STATUS_DETAIL"]
+- ["Ps11CVarArgType", "PAYMENT_TYPE_ID"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", ""]
+- ["Ps28CustomDebugStringConvertible", "PAYMENT_INSTALLMENTS"]
+- ["Ps28CustomDebugStringConvertible", "PAYMENT_ISSUER_ID"]
+- ["Ps28CustomDebugStringConvertible", "PAYMENT_METHOD_ID"]
+- ["Ps28CustomDebugStringConvertible", "PAYMENT_STATUS"]
+- ["Ps28CustomDebugStringConvertible", "PAYMENT_STATUS_DETAIL"]
+- ["Ps28CustomDebugStringConvertible", "PAYMENT_TYPE_ID"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "PAYMENT_INSTALLMENTS"]
+- ["Ps23CustomStringConvertible", "PAYMENT_ISSUER_ID"]
+- ["Ps23CustomStringConvertible", "PAYMENT_METHOD_ID"]
+- ["Ps23CustomStringConvertible", "PAYMENT_STATUS"]
+- ["Ps23CustomStringConvertible", "PAYMENT_STATUS_DETAIL"]
+- ["Ps23CustomStringConvertible", "PAYMENT_TYPE_ID"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "PAYMENT_INSTALLMENTS"]
+- ["Ps9Equatable", "PAYMENT_ISSUER_ID"]
+- ["Ps9Equatable", "PAYMENT_METHOD_ID"]
+- ["Ps9Equatable", "PAYMENT_STATUS"]
+- ["Ps9Equatable", "PAYMENT_STATUS_DETAIL"]
+- ["Ps9Equatable", "PAYMENT_TYPE_ID"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "PAYMENT_INSTALLMENTS"]
+- ["Ps8Hashable", "PAYMENT_ISSUER_ID"]
+- ["Ps8Hashable", "PAYMENT_METHOD_ID"]
+- ["Ps8Hashable", "PAYMENT_STATUS"]
+- ["Ps8Hashable", "PAYMENT_STATUS_DETAIL"]
+- ["Ps8Hashable", "PAYMENT_TYPE_ID"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", ""]
+- ["CSo8NSObject", "PAYMENT_INSTALLMENTS"]
+- ["CSo8NSObject", "PAYMENT_ISSUER_ID"]
+- ["CSo8NSObject", "PAYMENT_METHOD_ID"]
+- ["CSo8NSObject", "PAYMENT_STATUS"]
+- ["CSo8NSObject", "PAYMENT_STATUS_DETAIL"]
+- ["CSo8NSObject", "PAYMENT_TYPE_ID"]
+- ["CSo8NSObject", "UInt"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "PAYMENT_INSTALLMENTS"]
+- ["PSo16NSObjectProtocol", "PAYMENT_ISSUER_ID"]
+- ["PSo16NSObjectProtocol", "PAYMENT_METHOD_ID"]
+- ["PSo16NSObjectProtocol", "PAYMENT_STATUS"]
+- ["PSo16NSObjectProtocol", "PAYMENT_STATUS_DETAIL"]
+- ["PSo16NSObjectProtocol", "PAYMENT_TYPE_ID"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", ""]
+- ["C18MercadoPagoTracker16PaymentTrackInfo", "PAYMENT_INSTALLMENTS"]
+- ["C18MercadoPagoTracker16PaymentTrackInfo", "PAYMENT_ISSUER_ID"]
+- ["C18MercadoPagoTracker16PaymentTrackInfo", "PAYMENT_METHOD_ID"]
+- ["C18MercadoPagoTracker16PaymentTrackInfo", "PAYMENT_STATUS"]
+- ["C18MercadoPagoTracker16PaymentTrackInfo", "PAYMENT_STATUS_DETAIL"]
+- ["C18MercadoPagoTracker16PaymentTrackInfo", "PAYMENT_TYPE_ID"]
+- ["C18MercadoPagoTracker16PaymentTrackInfo", "UInt"]
+- ["C18MercadoPagoTracker16PaymentTrackInfo", "deinit"]
+- ["C18MercadoPagoTracker16PaymentTrackInfo", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C18MercadoPagoTracker16PaymentTrackInfo"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAIFields.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAIEcommerceFields.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAIEcommercePromotion.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAIEcommerceProductAction.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAIEcommerceProduct.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAIDictionaryBuilder.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAITracker.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAITrackedViewController.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAILogger.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MPGoogleAnalytics/MPGoogleAnalytics/Classes/GAI.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/Target Support Files/MPGoogleAnalytics/MPGoogleAnalytics-umbrella.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Intermediates/Pods.build/Debug-iphonesimulator/MPGoogleAnalytics.build/module.modulemap"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/MercadoPagoTracker/MPTracker/MPTracker.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Pods/Target Support Files/MercadoPagoTracker/MercadoPagoTracker-umbrella.h"
+- "/Users/mgualino/Desktop/Development/ResolucionLegajos/Build/Intermediates/Pods.build/Debug-iphonesimulator/MercadoPagoTracker.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "3dc8f929dd1dc5e766fb327ec08a9175"

@@ -41,15 +41,22 @@ class ResumenTableViewCell: CardTableViewCell {
 		lblResolucion.text = nombreResolucion + " (" + ii.infraccion!.resolucion!.codigo! + ")"
 		lblNota.text = ii.infraccion!.resolucion!.nota != nil ? ii.infraccion!.resolucion!.nota : "Sin nota"
 		
-		lblPuntos.text = String(format: "%d", ii.infraccion!.resolucion!.puntos!)
-		
-		if ii.infraccion!.resolucion!.puntos >= 10 {
-			self.lblPuntos.textColor = UIColor.redColor()
+		if ii.infraccion!.resolucion != nil {
+			if ii.infraccion!.resolucion!.puntos != nil {
+				lblPuntos.text = String(format: "%d", ii.infraccion!.resolucion!.puntos!)
+				if ii.infraccion!.resolucion!.puntos >= 10 {
+					self.lblPuntos.textColor = UIColor.redColor()
+				}
+			}
+			
+			if ii.infraccion!.resolucion!.uf != nil {
+				lblUnidadesFijas.text = String(format: "%.2f", ii.infraccion!.resolucion!.uf!) + " (Costo UF: $" + String(format: "%.2f", ii.acta!.ufcosto!) + "). Total: $" + String(format: "%.2f", ii.acta!.ufcosto! * ii.infraccion!.resolucion!.uf!)
+			}
+			
+			if ii.infraccion!.resolucion!.importe != nil {
+				lblImporte.text = "$" + String(format: "%.2f", ii.infraccion!.resolucion!.importe!)
+			}
 		}
-		
-		lblUnidadesFijas.text = String(format: "%.2f", ii.infraccion!.resolucion!.uf!) + " (Costo UF: $" + String(format: "%.2f", ii.acta!.ufcosto!) + "). Total: $" + String(format: "%.2f", ii.acta!.ufcosto! * ii.infraccion!.resolucion!.uf!)
-		
-		lblImporte.text = "$" + String(format: "%.2f", ii.infraccion!.resolucion!.importe!)
 		
 	}
 	

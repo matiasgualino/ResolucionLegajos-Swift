@@ -62,9 +62,17 @@ class FinishViewController: MasterViewController, UITableViewDataSource, UITable
 		var puntosColor : UIColor = UIColor.whiteColor()
 		for acta in legajo.actas! {
 			for infraccion in acta.infracciones! {
-				importeRes = importeRes + infraccion.resolucion!.importe!
-				puntosRes = puntosRes + infraccion.resolucion!.puntos!
-				ufRes = ufRes + infraccion.resolucion!.uf!
+				if infraccion.resolucion != nil {
+					if infraccion.resolucion!.importe != nil {
+						importeRes = importeRes + infraccion.resolucion!.importe!
+					}
+					if infraccion.resolucion!.puntos != nil {
+						puntosRes = puntosRes + infraccion.resolucion!.puntos!
+					}
+					if infraccion.resolucion!.uf != nil {
+						ufRes = ufRes + infraccion.resolucion!.uf!
+					}
+				}
 			}
 		}
 		
